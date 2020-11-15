@@ -1,8 +1,10 @@
+const dotenv = require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `La-Terre-du-Milieu`,
+    description: `Chambre d'hôtes insolite, plongez dans l'univers Tolkien !`,
+    author: `Justine Hell & Kevin Fabre`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,6 +13,15 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: "351nji64",
+        dataset: "development",
+        watchMode: true, // when making a change in sanity CMS and save, it will automatically be updated inside gatsby, real time editing experience (no need to rebuild)
+        token: process.env.SANITY_TOKEN,
       },
     },
     `gatsby-transformer-sharp`,
