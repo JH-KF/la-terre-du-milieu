@@ -2,8 +2,6 @@ const dotenv = require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `La-Terre-du-Milieu`,
-    description: `Chambre d'hôtes insolite, plongez dans l'univers Tolkien !`,
     author: `Justine Hell & Kevin Fabre`,
   },
   plugins: [
