@@ -7,11 +7,13 @@
         "description": "Chambre d'hôtes insolite, plongez dans l'univers Tolkien !"
       },
       "utils": {
-        "book": "Réserver"
+        "book": "Réserver",
+        "discover": "Découvrir"
       },
       "pages": {
         "home": {
-          "title": "Accueil"
+          "title": "Accueil",
+          "incentive": "Plongez dans l'univers de"
         }
       },
       "header": {
@@ -27,11 +29,13 @@
         "description": "Unique Bed and breakfast, immerse yourself in the Tolkien universe!"
       },
       "utils": {
-        "book": "Book"
+        "book": "Book",
+        "discover": "Discover"
       },
       "pages": {
         "home": {
-          "title": "Home"
+          "title": "Home",
+          "incentive": "Fall into the universe of"
         }
       },
       "header": {

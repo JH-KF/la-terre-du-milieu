@@ -7,9 +7,9 @@ import { useTranslation } from "react-i18next"
 const Header = () => {
   const { t } = useTranslation()
   return (
-    <header className="bg-background">
+    <header className="bg-background max-h-14">
       <div className="px-12 py-6 flex flex-row items-center justify-between">
-        <div className="text-gray-800 text-4xl font-serif">
+        <div className="text-gray-800 text-4xl font-serif font-bold">
           {t("siteMetadata.title")}
         </div>
         <section className="flex flex-row items-center">

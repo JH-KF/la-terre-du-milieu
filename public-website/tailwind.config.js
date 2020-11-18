@@ -12,6 +12,7 @@ module.exports = {
       },
       spacing: {
         14: "3.5rem",
+        26: "6,5rem",
       },
       colors: {
         primary: "#5E4F41",
