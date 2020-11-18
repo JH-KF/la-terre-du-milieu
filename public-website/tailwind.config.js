@@ -2,10 +2,21 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
   theme: {
+    inset: {
+      1: "0.25rem",
+    },
     extend: {
       fontFamily: {
-        serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
-        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        serif: ["Judson", ...defaultTheme.fontFamily.serif],
+        sans: ["Josefin Sans", ...defaultTheme.fontFamily.sans],
+      },
+      spacing: {
+        14: "3.5rem",
+      },
+      colors: {
+        primary: "#5E4F41",
+        action: "#996515",
+        background: "#FAF6F1",
       },
     },
   },

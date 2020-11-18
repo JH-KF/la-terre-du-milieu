@@ -1,29 +1,43 @@
 {
-    "fr": {
-      "default": true,
-      "translation": {
-        "siteMetadata": {
-          "title": "La Terre du Milieu",
-          "description": "Chambre d'hôtes insolite, plongez dans l'univers Tolkien !"
-        },
-        "pages": {
-          "home": {
-            "title": "Accueil"
-          }
+  "fr": {
+    "default": true,
+    "translation": {
+      "siteMetadata": {
+        "title": "La Terre du Milieu",
+        "description": "Chambre d'hôtes insolite, plongez dans l'univers Tolkien !"
+      },
+      "utils": {
+        "book": "Réserver"
+      },
+      "pages": {
+        "home": {
+          "title": "Accueil"
         }
+      },
+      "header": {
+        "rooms": "Chambres",
+        "ourRegion": "Notre région"
       }
-    },  
-    "en": {
-      "translation": {
-        "siteMetadata": {
-          "title": "Middle Earth",
-          "description": "Unique Bed and breakfast, immerse yourself in the Tolkien universe!"
-        },
-        "pages": {
-          "home": {
-            "title": "Home"
-          }
+    }
+  },
+  "en": {
+    "translation": {
+      "siteMetadata": {
+        "title": "Middle Earth",
+        "description": "Unique Bed and breakfast, immerse yourself in the Tolkien universe!"
+      },
+      "utils": {
+        "book": "Book"
+      },
+      "pages": {
+        "home": {
+          "title": "Home"
         }
+      },
+      "header": {
+        "rooms": "Rooms",
+        "ourRegion": "Our region"
       }
     }
   }
+}
