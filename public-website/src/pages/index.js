@@ -16,28 +16,25 @@ const IndexPage = ({ pageContext }) => {
         description={t("siteMetadata.description")}
         lang={pageContext.locale}
       />
-      <div className="m-12 my-12">
-        <div className="grid grid-cols-2">
-          <div className="flex justify-items-center items-center">
-            <div>
-              <div className="mb-12">
-                <span className="text-primary text-5xl font-sans leading-4">
-                  {t("pages.home.incentive")}
-                </span>
-                &nbsp; &nbsp;
-                <span className="text-action text-5xl font-serif font-bold">
-                  Tolkien
-                </span>
-              </div>
-              <BaseSecondaryButton text={t("utils.discover")} />
-            </div>
-          </div>
+      <div className="display grid grid-cols-2">
+        <div className="flex justify-items-center items-center">
           <div>
-            <Image />
+            <div className="mb-12">
+              <span className="text-primary text-5xl font-sans leading-4">
+                {t("pages.home.incentive")}
+              </span>
+              &nbsp; &nbsp;
+              <span className="text-action text-5xl font-serif font-bold">
+                Tolkien
+              </span>
+            </div>
+            <BaseSecondaryButton text={t("utils.discover")} />
           </div>
         </div>
+        <div className="h-full">
+          <Image />
+        </div>
       </div>
-
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </>
   )

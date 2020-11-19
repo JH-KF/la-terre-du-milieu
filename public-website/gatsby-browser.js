@@ -5,9 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-import "tailwindcss/base.css"
-import "tailwindcss/components.css"
-import "tailwindcss/utilities.css"
+import "./src/css/index.css"
 
 import React from "react"
 import Layout from "./src/components/layout.js"

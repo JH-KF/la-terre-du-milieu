@@ -20,7 +20,7 @@ export default function HTML(props) {
       </head>
       <body
         {...props.bodyAttributes}
-        className="min-h-screen bg-background min-w-screen"
+        className="min-h-screen bg-background min-w-screen xs:px-6 px-12 mt-26 xs:mt-18"
       >
         {props.preBodyComponents}
         <div
