@@ -18,7 +18,10 @@ export default function HTML(props) {
           rel="stylesheet"
         />
       </head>
-      <body {...props.bodyAttributes} className="min-h-screen bg-background">
+      <body
+        {...props.bodyAttributes}
+        className="min-h-screen bg-background min-w-screen"
+      >
         {props.preBodyComponents}
         <div
           key={`body`}

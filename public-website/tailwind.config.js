@@ -15,12 +15,19 @@ module.exports = {
       inset: {
         1: "0.25rem",
       },
+      screens: {
+        xs: { max: "899px" },
+        md: { min: "900px", max: "1023px" },
+      },
       spacing: {
         14: "3.5rem",
         26: "6,5rem",
       },
       transitionProperty: {
         position: "top, right, bottom, left",
+      },
+      minWidth: {
+        screen: "320px",
       },
     },
   },

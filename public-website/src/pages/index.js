@@ -21,7 +21,7 @@ const IndexPage = ({ pageContext }) => {
           <div className="flex justify-items-center items-center">
             <div>
               <div className="mb-12">
-                <span class="text-primary text-5xl font-sans leading-4">
+                <span className="text-primary text-5xl font-sans leading-4">
                   {t("pages.home.incentive")}
                 </span>
                 &nbsp; &nbsp;
