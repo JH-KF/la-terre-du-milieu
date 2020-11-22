@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next"
 const Header = () => {
   const { t } = useTranslation()
   return (
-    <header className="z-50 fixed top-0 left-0 right-0 xs:px-6 px-12 bg-background max-h-14">
+    <header className="z-50 fixed top-0 left-0 right-0 xs:px-6 px-12 bg-background">
       <div className="py-6 flex flex-row items-center justify-between">
         <Logo />
         <section className="xs:hidden md:flex flex-row items-center">
