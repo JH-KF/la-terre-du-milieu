@@ -2,7 +2,10 @@ import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const SlideShow = () => {
+import { BsChevronLeft } from "react-icons/bs"
+import { BsChevronRight } from "react-icons/bs"
+
+const HomeSlider = () => {
   const [index, setIndex] = useState(0)
   const { allFile } = useStaticQuery(
     graphql`
@@ -35,21 +38,23 @@ const SlideShow = () => {
   const { node } = allFile.edges[index]
 
   return (
-    <div>
-      <div>
-        <Img
-          fluid={node.childImageSharp.fluid}
-          key={node.id}
-          alt={node.name.replace(/-/g, " ").substring(2)}
-          imgStyle={{ maxHeight: "calc(100vh-100px)" }}
-        />
-      </div>
-      <div>
-        <button onClick={() => handlePrevious()}>Previous</button>
-        <button onClick={() => handleNext()}>Next</button>
+    <div className="h-full xs:h-96 relative">
+      <Img
+        fluid={node.childImageSharp.fluid}
+        key={node.id}
+        alt={node.name.replace(/-/g, " ").substring(2)}
+        className="h-full"
+      />
+      <div className="absolute bottom-0 right-0 mb-6 mr-6">
+        <button onClick={() => handlePrevious()} className="mr-3">
+          <BsChevronLeft className="h-10 w-10 text-white" />
+        </button>
+        <button onClick={() => handleNext()}>
+          <BsChevronRight className="h-10 w-10 text-white" />
+        </button>
       </div>
     </div>
   )
 }
 
-export default SlideShow
+export default HomeSlider

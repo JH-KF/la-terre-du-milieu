@@ -5,10 +5,10 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import BaseSecondaryButton from "../components/Base/SecondaryButton/index"
 import BaseDescriptionBlock from "../components/Base/DescriptionBlock/index"
+import HomeSlider from "../components/HomeSlider"
 
 import translations from "../config/translations.json"
 import { useTranslation } from "react-i18next"
-import SlideShow from "../components/SlideShow"
 
 const IndexPage = ({ pageContext }) => {
   const { t } = useTranslation()
@@ -52,7 +52,7 @@ const IndexPage = ({ pageContext }) => {
         </div>
       </div>
       <div className="display px-12 xs:px-6">
-        <SlideShow />
+        <HomeSlider />
       </div>
       <div className="bg-white px-12 xs:px-6 py-14">{blockListElements}</div>
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
