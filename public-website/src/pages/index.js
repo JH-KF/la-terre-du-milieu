@@ -53,8 +53,8 @@ const IndexPage = ({ pageContext }) => {
           <Image />
         </div>
       </div>
-      <div className="display px-12 xs:px-6">
-        <HomeSlider className="pb-12" />
+      <div className="display px-12 xs:px-0">
+        <HomeSlider className="pb-12 xs:pb-0" />
       </div>
       <div className="bg-white px-12 xs:px-0 py-40 xs:py-24">
         {blockListElements}

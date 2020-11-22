@@ -38,20 +38,22 @@ const HomeSlider = ({ className }) => {
   const { node } = allFile.edges[index]
 
   return (
-    <div className={`h-full xs:h-96 relative ${className}`}>
-      <Img
-        fluid={node.childImageSharp.fluid}
-        key={node.id}
-        alt={node.name.replace(/-/g, " ").substring(2)}
-        className="h-full"
-      />
-      <div className="absolute bottom-0 right-0 mb-16 mr-6">
-        <button onClick={() => handlePrevious()} className="mr-3">
-          <BsChevronLeft className="h-10 w-10 text-white" />
-        </button>
-        <button onClick={() => handleNext()}>
-          <BsChevronRight className="h-10 w-10 text-white" />
-        </button>
+    <div className={`h-full xs:h-half min-h-96 ${className}`}>
+      <div className="h-full relative">
+        <Img
+          fluid={node.childImageSharp.fluid}
+          key={node.id}
+          alt={node.name.replace(/-/g, " ").substring(2)}
+          className="h-full"
+        ></Img>
+        <div className="absolute bottom-0 right-0 mb-6 mr-6">
+          <button onClick={() => handlePrevious()} className="mr-3">
+            <BsChevronLeft className="h-10 w-10 text-white" />
+          </button>
+          <button onClick={() => handleNext()}>
+            <BsChevronRight className="h-10 w-10 text-white" />
+          </button>
+        </div>
       </div>
     </div>
   )

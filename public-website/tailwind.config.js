@@ -15,6 +15,12 @@ module.exports = {
       inset: {
         1: "0.25rem",
       },
+      height: {
+        half: "50vh",
+      },
+      minHeight: {
+        96: "384px",
+      },
       maxHeight: {
         header: "104px",
         smallHeader: "72px",
