@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import { BsChevronLeft } from "react-icons/bs"
 import { BsChevronRight } from "react-icons/bs"
 
-const HomeSlider = () => {
+const HomeSlider = ({ className }) => {
   const [index, setIndex] = useState(0)
   const { allFile } = useStaticQuery(
     graphql`
@@ -38,14 +38,14 @@ const HomeSlider = () => {
   const { node } = allFile.edges[index]
 
   return (
-    <div className="h-full xs:h-96 relative">
+    <div className={`h-full xs:h-96 relative ${className}`}>
       <Img
         fluid={node.childImageSharp.fluid}
         key={node.id}
         alt={node.name.replace(/-/g, " ").substring(2)}
         className="h-full"
       />
-      <div className="absolute bottom-0 right-0 mb-6 mr-6">
+      <div className="absolute bottom-0 right-0 mb-16 mr-6">
         <button onClick={() => handlePrevious()} className="mr-3">
           <BsChevronLeft className="h-10 w-10 text-white" />
         </button>

@@ -2,7 +2,9 @@ import React from "react"
 
 const BaseDescription = ({ description, className }) => {
   return (
-    <span className={`text-primary text-xl ${className}`}> {description} </span>
+    <p className={`text-primary text-xl xs:text-base ${className}`}>
+      {description}
+    </p>
   )
 }
 
