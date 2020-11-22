@@ -13,7 +13,24 @@
       "pages": {
         "home": {
           "title": "Accueil",
-          "incentive": "Plongez dans l'univers de"
+          "incentive": "Plongez dans l'univers de",
+          "blocks": {
+            "first": {
+              "title": "Ipsum sunt in irure minim ea deserunt nulla ipsum cillum veniam cupidatat magna.",
+              "description": "Ad officia non ea aliqua velit. Pariatur nostrud nostrud aliqua adipisicing ipsum qui ex culpa veniam. Pariatur cillum aliquip ut do consectetur esse nostrud cillum consectetur. Cupidatat occaecat deserunt labore ad aute ut officia. Adipisicing cupidatat cillum dolor voluptate amet dolore sit magna labore pariatur est eiusmod.Aliquip reprehenderit veniam est minim veniam laborum do consequat irure velit magna. Eu dolor commodo eu dolor laboris. In commodo mollit exercitation tempor.Eiusmod exercitation tempor ipsum officia irure enim. Adipisicing occaecat aliqua officia proident nisi amet do esse commodo proident ut fugiat officia dolor. Exercitation ex nostrud cillum commodo. Culpa cillum est velit tempor consequat.",
+              "image": ""
+            },
+            "second": {
+              "title": "Nisi esse nulla cillum enim ipsum veniam veniam veniam.",
+              "description": "Ad officia non ea aliqua velit. Pariatur nostrud nostrud aliqua adipisicing ipsum qui ex culpa veniam. Pariatur cillum aliquip ut do consectetur esse nostrud cillum consectetur. Cupidatat occaecat deserunt labore ad aute ut officia. Adipisicing cupidatat cillum dolor voluptate amet dolore sit magna labore pariatur est eiusmod.Aliquip reprehenderit veniam est minim veniam laborum do consequat irure velit magna. Eu dolor commodo eu dolor laboris. In commodo mollit exercitation tempor.Eiusmod exercitation tempor ipsum officia irure enim. Adipisicing occaecat aliqua officia proident nisi amet do esse commodo proident ut fugiat officia dolor. Exercitation ex nostrud cillum commodo. Culpa cillum est velit tempor consequat.",
+              "image": ""
+            },
+            "third": {
+              "title": "Sit Lorem eu magna ullamco veniam do quis cupidatat nisi duis eu aliquip.",
+              "description": "Ad officia non ea aliqua velit. Pariatur nostrud nostrud aliqua adipisicing ipsum qui ex culpa veniam. Pariatur cillum aliquip ut do consectetur esse nostrud cillum consectetur. Cupidatat occaecat deserunt labore ad aute ut officia. Adipisicing cupidatat cillum dolor voluptate amet dolore sit magna labore pariatur est eiusmod.Aliquip reprehenderit veniam est minim veniam laborum do consequat irure velit magna. Eu dolor commodo eu dolor laboris. In commodo mollit exercitation tempor.Eiusmod exercitation tempor ipsum officia irure enim. Adipisicing occaecat aliqua officia proident nisi amet do esse commodo proident ut fugiat officia dolor. Exercitation ex nostrud cillum commodo. Culpa cillum est velit tempor consequat.",
+              "image": ""
+            }
+          }
         }
       },
       "header": {
@@ -35,7 +52,24 @@
       "pages": {
         "home": {
           "title": "Home",
-          "incentive": "Fall into the universe of"
+          "incentive": "Fall into the universe of",
+          "blocks": {
+            "first": {
+              "title": "Ipsum sunt in irure minim ea deserunt nulla ipsum cillum veniam cupidatat magna.",
+              "description": "Ad officia non ea aliqua velit. Pariatur nostrud nostrud aliqua adipisicing ipsum qui ex culpa veniam. Pariatur cillum aliquip ut do consectetur esse nostrud cillum consectetur. Cupidatat occaecat deserunt labore ad aute ut officia. Adipisicing cupidatat cillum dolor voluptate amet dolore sit magna labore pariatur est eiusmod.Aliquip reprehenderit veniam est minim veniam laborum do consequat irure velit magna. Eu dolor commodo eu dolor laboris. In commodo mollit exercitation tempor.Eiusmod exercitation tempor ipsum officia irure enim. Adipisicing occaecat aliqua officia proident nisi amet do esse commodo proident ut fugiat officia dolor. Exercitation ex nostrud cillum commodo. Culpa cillum est velit tempor consequat.",
+              "image": ""
+            },
+            "second": {
+              "title": "Nisi esse nulla cillum enim ipsum veniam veniam veniam.",
+              "description": "Ad officia non ea aliqua velit. Pariatur nostrud nostrud aliqua adipisicing ipsum qui ex culpa veniam. Pariatur cillum aliquip ut do consectetur esse nostrud cillum consectetur. Cupidatat occaecat deserunt labore ad aute ut officia. Adipisicing cupidatat cillum dolor voluptate amet dolore sit magna labore pariatur est eiusmod.Aliquip reprehenderit veniam est minim veniam laborum do consequat irure velit magna. Eu dolor commodo eu dolor laboris. In commodo mollit exercitation tempor.Eiusmod exercitation tempor ipsum officia irure enim. Adipisicing occaecat aliqua officia proident nisi amet do esse commodo proident ut fugiat officia dolor. Exercitation ex nostrud cillum commodo. Culpa cillum est velit tempor consequat.",
+              "image": ""
+            },
+            "third": {
+              "title": "Sit Lorem eu magna ullamco veniam do quis cupidatat nisi duis eu aliquip.",
+              "description": "Ad officia non ea aliqua velit. Pariatur nostrud nostrud aliqua adipisicing ipsum qui ex culpa veniam. Pariatur cillum aliquip ut do consectetur esse nostrud cillum consectetur. Cupidatat occaecat deserunt labore ad aute ut officia. Adipisicing cupidatat cillum dolor voluptate amet dolore sit magna labore pariatur est eiusmod.Aliquip reprehenderit veniam est minim veniam laborum do consequat irure velit magna. Eu dolor commodo eu dolor laboris. In commodo mollit exercitation tempor.Eiusmod exercitation tempor ipsum officia irure enim. Adipisicing occaecat aliqua officia proident nisi amet do esse commodo proident ut fugiat officia dolor. Exercitation ex nostrud cillum commodo. Culpa cillum est velit tempor consequat.",
+              "image": ""
+            }
+          }
         }
       },
       "header": {
