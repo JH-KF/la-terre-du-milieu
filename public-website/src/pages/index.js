@@ -14,20 +14,7 @@ import { useTranslation } from "react-i18next"
 const IndexPage = ({ pageContext }) => {
   const { t } = useTranslation()
   const blocks = translations.fr.translation.pages.home.blocks
-  let blockListElements = []
-  Object.keys(blocks).forEach((element, index) =>
-    blockListElements.push(
-      <BaseDescriptionBlock
-        title={t(blocks[element].title)}
-        description={t(blocks[element].description)}
-        key={element}
-        position={index + 1}
-        className={`${
-          index + 1 < Object.keys(blocks).length ? "mb-64 xs:mb-24" : ""
-        }`}
-      />
-    )
-  )
+
   const queryData = useStaticQuery(graphql`
     query {
       landingImage: file(relativePath: { eq: "home/landing/image1.jpg" }) {
@@ -37,8 +24,39 @@ const IndexPage = ({ pageContext }) => {
           }
         }
       }
+      blockImages: allFile(
+        filter: { relativeDirectory: { eq: "home/blocks" } }
+      ) {
+        nodes {
+          name
+          childImageSharp {
+            fluid(maxWidth: 600) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
     }
   `)
+
+  let blockListElements = []
+  Object.keys(blocks).forEach((element, index) =>
+    blockListElements.push(
+      <BaseDescriptionBlock
+        title={t(blocks[element].title)}
+        description={t(blocks[element].description)}
+        key={element}
+        image={queryData.blockImages.nodes
+          .filter(img => img.name === element)
+          .map(img => img.childImageSharp.fluid)}
+        position={index + 1}
+        className={`${
+          index + 1 < Object.keys(blocks).length ? "mb-64 xs:mb-24" : ""
+        }`}
+      />
+    )
+  )
+
   return (
     <>
       <SEO
