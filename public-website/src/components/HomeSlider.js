@@ -43,7 +43,7 @@ const HomeSlider = ({ className }) => {
         <Img
           fluid={node.childImageSharp.fluid}
           key={node.id}
-          alt={node.name.replace(/-/g, " ").substring(2)}
+          alt={node.name}
           className="h-full"
         ></Img>
         <div className="absolute bottom-0 right-0 mb-6 mr-6">

@@ -35,7 +35,8 @@
       },
       "header": {
         "rooms": "Chambres",
-        "ourRegion": "Notre région"
+        "ourRegion": "Notre région",
+        "home": "Accueil"
       }
     }
   },
@@ -74,7 +75,8 @@
       },
       "header": {
         "rooms": "Rooms",
-        "ourRegion": "Our region"
+        "ourRegion": "Our region",
+        "home": "Home"
       }
     }
   }
