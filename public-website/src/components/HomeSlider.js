@@ -12,7 +12,7 @@ const HomeSlider = ({ className }) => {
       query {
         allFile(
           sort: { fields: name, order: ASC }
-          filter: { relativeDirectory: { eq: "slides" } }
+          filter: { relativeDirectory: { eq: "home/slider" } }
         ) {
           edges {
             node {

@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Image from "../components/image"
 import SEO from "../components/seo"
 import BaseSecondaryButton from "../components/Base/SecondaryButton/index"
 import BaseDescriptionBlock from "../components/Base/DescriptionBlock/index"
@@ -27,6 +28,17 @@ const IndexPage = ({ pageContext }) => {
       />
     )
   )
+  const queryData = useStaticQuery(graphql`
+    query {
+      landingImage: file(relativePath: { eq: "home/landing/image1.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <>
       <SEO
@@ -34,7 +46,7 @@ const IndexPage = ({ pageContext }) => {
         description={t("siteMetadata.description")}
         lang={pageContext.locale}
       />
-      <div className="display grid grid-cols-2 px-12 xs:px-6">
+      <div className="display grid grid-cols-2 px-12 xs:px-6 pb-6">
         <div className="flex justify-items-center items-center">
           <div>
             <div className="mb-12">
@@ -49,9 +61,7 @@ const IndexPage = ({ pageContext }) => {
             <BaseSecondaryButton text={t("utils.discover")} />
           </div>
         </div>
-        <div className="h-full">
-          <Image />
-        </div>
+        <Img fluid={queryData.landingImage.childImageSharp.fluid} />
       </div>
       <div className="display px-12 xs:px-0">
         <HomeSlider className="pb-12 xs:pb-0" />
