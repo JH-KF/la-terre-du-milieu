@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import BaseSecondaryButton from "../components/Base/SecondaryButton/index"
 import BaseDescriptionBlock from "../components/Base/DescriptionBlock/index"
 import HomeSlider from "../components/HomeSlider"
+import BaseRoomCard from "../components/Base/RoomCard"
 
 import translations from "../config/translations.json"
 import { useTranslation } from "react-i18next"
@@ -14,6 +15,7 @@ import { useTranslation } from "react-i18next"
 const IndexPage = ({ pageContext }) => {
   const { t } = useTranslation()
   const blocks = translations.fr.translation.pages.home.blocks
+  const rooms = translations.fr.translation.pages.home.roomsList.rooms
 
   const queryData = useStaticQuery(graphql`
     query {
@@ -57,6 +59,20 @@ const IndexPage = ({ pageContext }) => {
     )
   )
 
+  let roomsListElements = []
+  Object.keys(rooms).forEach(element =>
+    roomsListElements.push(
+      <BaseRoomCard
+        title={t(rooms[element].title)}
+        quote={t(rooms[element].quote)}
+        quoteAuthor={t(rooms[element].quoteAuthor)}
+        description={t(rooms[element].description)}
+        key={element}
+        className={"mb-24 mx-6 xs:mx-0"}
+      />
+    )
+  )
+
   return (
     <>
       <SEO
@@ -81,12 +97,24 @@ const IndexPage = ({ pageContext }) => {
         </div>
         <Img fluid={queryData.landingImage.childImageSharp.fluid} />
       </div>
-      <div className="display px-12 xs:px-0">
+
+      <section className="display px-12 xs:px-0">
         <HomeSlider className="pb-12 xs:pb-0" />
-      </div>
-      <div className="bg-white px-12 xs:px-0 py-40 xs:py-24">
+      </section>
+
+      <section className="bg-white px-12 xs:px-0 py-40 xs:py-24">
         {blockListElements}
-      </div>
+      </section>
+
+      <section className="p-24 xs:p-6">
+        <h2 className="text-primary text-5xl font-sans mb-24">
+          {t("pages.home.roomsList.title")}
+        </h2>
+        <div className="m-auto max-w-4xl lg:max-w-7xl flex flex-wrap justify-around">
+          {roomsListElements}
+        </div>
+      </section>
+
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </>
   )

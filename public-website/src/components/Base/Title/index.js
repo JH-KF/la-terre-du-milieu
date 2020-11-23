@@ -5,8 +5,7 @@ const BaseTitle = ({ title, className }) => {
     <h5
       className={`text-primary text-3xl xs:text-2xl font-semibold ${className}`}
     >
-      {" "}
-      {title}{" "}
+      {title}
     </h5>
   )
 }
