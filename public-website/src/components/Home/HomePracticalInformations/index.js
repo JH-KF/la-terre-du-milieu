@@ -14,51 +14,40 @@ const HomePracticalInformations = () => {
   const { t } = useTranslation()
   return (
     <div className="m-auto max-w-4xl">
-      <div className="flex bg-white p-6 rounded items-center mb-6">
-        <FaClock size={24} className="text-action flex-shrink-0" />
-        <BaseDescription
-          description={t("pages.home.infos.content.hours")}
-          className="ml-6"
-        />
+      <div className="flex xs:block bg-background p-6 rounded items-center mb-12">
+        <FaClock className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
+        <BaseDescription description={t("pages.home.infos.content.hours")} />
       </div>
 
-      <div className="flex bg-white p-6 rounded items-center mb-6">
-        <FaCoffee size={24} className="text-action flex-shrink-0" />
+      <div className="flex xs:block bg-background p-6 rounded items-center mb-12">
+        <FaCoffee className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.breakfast")}
-          className="ml-6"
         />
       </div>
 
-      <div className="flex bg-white p-6 rounded items-center mb-6">
-        <FaPaw size={24} className="text-action flex-shrink-0" />
-        <BaseDescription
-          description={t("pages.home.infos.content.pets")}
-          className="ml-6"
-        />
+      <div className="flex xs:block bg-background p-6 rounded items-center mb-12">
+        <FaPaw className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
+        <BaseDescription description={t("pages.home.infos.content.pets")} />
       </div>
 
-      <div className="flex bg-white p-6 rounded items-center mb-6">
-        <TiWiFi size={24} className="text-action flex-shrink-0" />
-        <BaseDescription
-          description={t("pages.home.infos.content.rooms")}
-          className="ml-6"
-        />
+      <div className="flex xs:block bg-background p-6 rounded items-center mb-12">
+        <TiWiFi className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
+        <BaseDescription description={t("pages.home.infos.content.rooms")} />
       </div>
 
-      <div className="flex bg-white p-6 rounded items-center mb-6">
-        <FaBath size={24} className="text-action flex-shrink-0" />
+      <div className="flex xs:block bg-background p-6 rounded items-center mb-12">
+        <FaBath className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.bathrooms")}
-          className="ml-6"
         />
       </div>
-      <div className="flex bg-white p-6 rounded items-center">
-        <MdPool size={24} className="text-action flex-shrink-0" />
-        <BaseDescription
-          description={t("pages.home.infos.content.pool")}
-          className="ml-6"
+      <div className="flex xs:block bg-background p-6 rounded items-center">
+        <MdPool
+          size={24}
+          className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6"
         />
+        <BaseDescription description={t("pages.home.infos.content.pool")} />
       </div>
     </div>
   )
