@@ -112,7 +112,7 @@ const IndexPage = ({ pageContext }) => {
           {roomsListElements}
         </div>
       </section>
-      <section className="bg-white p-24 xs:p-6 xs:py-12">
+      <section className="bg-white p-24 xs:p-6 xs:pt-12 xs:pb-24">
         <BaseHeading
           text={t("pages.home.infos.title")}
           className="xs:text-center"

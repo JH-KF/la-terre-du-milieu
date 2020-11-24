@@ -2,38 +2,51 @@ import React from "react"
 import { Link } from "gatsby"
 import { HiOutlineX } from "react-icons/hi"
 import { useTranslation } from "react-i18next"
+
 import BasePrimaryButton from "./Base/PrimaryButton"
+import BaseTertiaryButton from "./Base/TertiaryButton"
+import Logo from "./Logo/index"
 
 const MobileNav = ({ className, handleClickBurgerMenu }) => {
   const { t } = useTranslation()
 
   return (
     <nav
-      className={`bg-background ${className} z-50 fixed top-0 left-0 w-screen h-screen overflow-y-scroll`}
+      className={`bg-background ${className} flex flex-col justify-between transition-position duration-150 ease-in-out z-50 fixed top-0 w-screen h-screen overflow-y-scroll`}
     >
-      <HiOutlineX
-        className="h-6 w-6 text-action mb-6 cursor-pointer"
-        onClick={handleClickBurgerMenu}
-      />
-      <p>{t("utils.menu").toUpperCase()}</p>
-      <hr />
-      <Link to="/">
-        <div>
-          <span>{t("header.home")}</span>
+      <div>
+        <div className="flex p-6 justify-between">
+          <Logo />
+          <button>
+            <HiOutlineX
+              className="h-6 w-6 text-action"
+              onClick={handleClickBurgerMenu}
+            />
+          </button>
         </div>
-      </Link>
-      <Link to="/">
-        <div>
-          <span>{t("header.rooms")}</span>
-        </div>
-      </Link>
-      <Link to="/">
-        <div>
-          <span>{t("header.ourRegion")}</span>
-        </div>
-      </Link>
-      <BasePrimaryButton text={t("utils.book")} className="lg:ml-12 md:ml-8" />
-      <hr />
+        <hr />
+        <section className="px-6 pt-12 flex flex-col items-center">
+          <div className="mb-12">
+            <Link to="/">
+              <BaseTertiaryButton text={t("header.home")} />
+            </Link>
+          </div>
+          <div className="mb-12">
+            <Link to="/">
+              <BaseTertiaryButton text={t("header.rooms")} />
+            </Link>
+          </div>
+          <div className="mb-12">
+            <Link to="/">
+              <BaseTertiaryButton text={t("header.ourRegion")} />
+            </Link>
+          </div>
+        </section>
+        <hr />
+      </div>
+      <section className="px-6 py-12 text-center">
+        <BasePrimaryButton text={t("utils.book")} />
+      </section>
     </nav>
   )
 }

@@ -14,40 +14,54 @@ const HomePracticalInformations = () => {
   const { t } = useTranslation()
   return (
     <div className="m-auto max-w-4xl">
-      <div className="flex xs:block bg-background p-6 rounded items-center mb-12">
+      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-6">
         <FaClock className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
-        <BaseDescription description={t("pages.home.infos.content.hours")} />
+        <BaseDescription
+          description={t("pages.home.infos.content.hours")}
+          className="xs:text-justify"
+        />
       </div>
 
-      <div className="flex xs:block bg-background p-6 rounded items-center mb-12">
+      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-6">
         <FaCoffee className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.breakfast")}
+          className="xs:text-justify"
         />
       </div>
 
-      <div className="flex xs:block bg-background p-6 rounded items-center mb-12">
+      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-6">
         <FaPaw className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
-        <BaseDescription description={t("pages.home.infos.content.pets")} />
+        <BaseDescription
+          description={t("pages.home.infos.content.pets")}
+          className="xs:text-justify"
+        />
       </div>
 
-      <div className="flex xs:block bg-background p-6 rounded items-center mb-12">
+      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-6">
         <TiWiFi className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
-        <BaseDescription description={t("pages.home.infos.content.rooms")} />
+        <BaseDescription
+          description={t("pages.home.infos.content.rooms")}
+          className="xs:text-justify"
+        />
       </div>
 
-      <div className="flex xs:block bg-background p-6 rounded items-center mb-12">
+      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-6">
         <FaBath className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.bathrooms")}
+          className="xs:text-justify"
         />
       </div>
-      <div className="flex xs:block bg-background p-6 rounded items-center">
+      <div className="flex xs:block bg-background p-12 rounded items-center">
         <MdPool
           size={24}
           className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6"
         />
-        <BaseDescription description={t("pages.home.infos.content.pool")} />
+        <BaseDescription
+          description={t("pages.home.infos.content.pool")}
+          className="xs:text-justify"
+        />
       </div>
     </div>
   )

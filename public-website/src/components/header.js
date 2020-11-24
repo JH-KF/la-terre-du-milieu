@@ -46,7 +46,7 @@ const Header = () => {
         </button>
       </div>
       <MobileNav
-        className={isClicked ? "block" : "hidden"}
+        className={isClicked ? "left-0" : "left-full"}
         handleClickBurgerMenu={handleClickBurgerMenu}
       />
     </header>
