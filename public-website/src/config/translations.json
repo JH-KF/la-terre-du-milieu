@@ -34,7 +34,7 @@
           },
           "roomsList": {
             "title": "Nos Chambres",
-            "rooms" : {
+            "rooms": {
               "first": {
                 "title": "La Lorien, domaine des Elfes",
                 "quote": "Ne laissez pas vos cœurs se troubler, ce soir, vous dormirez en paix.",
@@ -64,6 +64,11 @@
         "rooms": "Chambres",
         "ourRegion": "Notre région",
         "home": "Accueil"
+      },
+      "footer": {
+        "legalMention": "Mention légales",
+        "generalRentalTermsAndConditions": "Condition générales de location",
+        "madeBy": "Fait avec ❤️ par"
       }
     }
   },
@@ -131,6 +136,11 @@
         "rooms": "Rooms",
         "ourRegion": "Our region",
         "home": "Home"
+      },
+      "footer": {
+        "legalMention": "Legal mentions",
+        "generalRentalTermsAndConditions": "General Rental Terms and Conditions",
+        "madeBy": "Made with ❤️ by"
       }
     }
   }
