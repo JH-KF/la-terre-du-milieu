@@ -9,7 +9,8 @@
       "utils": {
         "book": "Réserver",
         "discover": "Découvrir",
-        "seeMore": "Voir plus"
+        "seeMore": "Voir plus",
+        "menu": "Menu"
       },
       "pages": {
         "home": {
@@ -57,6 +58,17 @@
                 "image": ""
               }
             }
+          },
+          "infos": {
+            "title": "Infos pratiques et équipements",
+            "content": {
+              "hours": "Les arrivées se font de 16h à 20h, les départs avant 11h le matin",
+              "breakfast": "Les petits-déjeuners, copieux et variés, sont servis de 8h à 9h30. Merci de préciser à la réservation les éventuelles allergies ou intolérances",
+              "pets": "Nos amis les animaux ne sont hélas pas autorisés. Non que nous ne les aimions pas, mais comme notre maison en est pleine, la cohabitation serait compliquée (chien, chats, tortues et poules)",
+              "rooms": "Toutes nos chambres sont non fumeur, équipées de literie confortable et de Wifi",
+              "bathrooms": "Les salles de bains disposent de sèche-cheveux et de linge de toilette ",
+              "pool": "Les transats, parasols et serviettes de piscine sont à votre disposition"
+            }
           }
         }
       },
@@ -81,7 +93,8 @@
       "utils": {
         "book": "Book",
         "discover": "Discover",
-        "seeMore": "See more"
+        "seeMore": "See more",
+        "menu": "Menu"
       },
       "pages": {
         "home": {
@@ -128,6 +141,17 @@
                 "description": "A sylvan bedroom with a rustic setting made of wood and stone, will wrap you with mystery and serenity. Those who know how to listen may be lucky enough to hear the murmur of the trees and the ancient legends they tell",
                 "image": ""
               }
+            }
+          },
+          "infos": {
+            "title": "Practical informations and appliances",
+            "content": {
+              "hours": "Arrivals between 4pm and 8pm, departures before 11am",
+              "breakfast": "Copious and varied breakfast, served between 8am and 9.30am. Please specify any allergies or dietary restrictions upon reservation",
+              "pets": "Pets are alas not allowed. Not that we don't like them, but we already have a houseful of them and cohabitation might prove difficult (dog, cats, tortoises and hens)",
+              "rooms": "Non smoking bedrooms, all equiped with comfortable bedding and wifi",
+              "bathrooms": "Bathrooms equiped with blow dryers and towels",
+              "pool": "Deckchairs, sun umbrellas and swimming pool towels at your disposal"
             }
           }
         }

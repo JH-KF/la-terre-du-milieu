@@ -7,13 +7,7 @@ import BaseDescription from "../Description/index"
 import BaseTertiaryButton from "../TertiaryButton"
 import BaseSecondaryButton from "../SecondaryButton"
 
-const BaseRoomCard = ({
-  title,
-  quote,
-  quoteAuthor,
-  description,
-  className,
-}) => {
+const BaseRoomCard = ({ name, className }) => {
   const { t } = useTranslation()
 
   return (
@@ -29,16 +23,22 @@ const BaseRoomCard = ({
       ></div>
 
       <div className="mb-6">
-        <BaseTitle title={title} className="mb-6" />
+        <BaseTitle
+          title={t(`pages.home.roomsList.rooms.${name}.title`)}
+          className="mb-6"
+        />
         <BaseDescription
-          description={`"${quote}"`}
+          description={`"${t(`pages.home.roomsList.rooms.${name}.quote`)}"`}
           className="text-justify italic mb-3"
         />
         <BaseDescription
-          description={quoteAuthor}
+          description={t(`pages.home.roomsList.rooms.${name}.quoteAuthor`)}
           className="text-justify italic font-bold mb-6"
         />
-        <BaseDescription description={description} className="text-justify" />
+        <BaseDescription
+          description={t(`pages.home.roomsList.rooms.${name}.description`)}
+          className="text-justify"
+        />
       </div>
       <div className="flex justify-between xs:flex-col xs:items-center">
         <BaseTertiaryButton

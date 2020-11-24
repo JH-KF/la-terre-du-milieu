@@ -15,7 +15,7 @@ const MobileNav = ({ className, handleClickBurgerMenu }) => {
         className="h-6 w-6 text-action mb-6 cursor-pointer"
         onClick={handleClickBurgerMenu}
       />
-      <p>MENU</p>
+      <p>{t("utils.menu").toUpperCase()}</p>
       <hr />
       <Link to="/">
         <div>

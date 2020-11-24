@@ -4,10 +4,11 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 import SEO from "../components/seo"
-import BaseSecondaryButton from "../components/Base/SecondaryButton/index"
-import BaseDescriptionBlock from "../components/Base/DescriptionBlock/index"
+import BaseSecondaryButton from "../components/Base/SecondaryButton"
+import BaseDescriptionBlock from "../components/Base/DescriptionBlock"
 import HomeSlider from "../components/HomeSlider"
 import BaseRoomCard from "../components/Base/RoomCard"
+import HomePracticalInformations from "../components/Home/HomePracticalInformations"
 
 import translations from "../config/translations.json"
 import { useTranslation } from "react-i18next"
@@ -45,8 +46,8 @@ const IndexPage = ({ pageContext }) => {
   Object.keys(blocks).forEach((element, index) =>
     blockListElements.push(
       <BaseDescriptionBlock
-        title={t(blocks[element].title)}
-        description={t(blocks[element].description)}
+        title={t(`pages.home.blocks.${element}.title`)}
+        description={t(`pages.home.blocks.${element}.description`)}
         key={element}
         image={queryData.blockImages.nodes
           .filter(img => img.name === element)
@@ -63,10 +64,7 @@ const IndexPage = ({ pageContext }) => {
   Object.keys(rooms).forEach(element =>
     roomsListElements.push(
       <BaseRoomCard
-        title={t(rooms[element].title)}
-        quote={t(rooms[element].quote)}
-        quoteAuthor={t(rooms[element].quoteAuthor)}
-        description={t(rooms[element].description)}
+        name={element}
         key={element}
         className={"mb-24 mx-6 xs:mx-0"}
       />
@@ -74,7 +72,7 @@ const IndexPage = ({ pageContext }) => {
   )
 
   return (
-    <>
+    <div>
       <SEO
         title={t("pages.home.title")}
         description={t("siteMetadata.description")}
@@ -115,8 +113,15 @@ const IndexPage = ({ pageContext }) => {
         </div>
       </section>
 
+      <section className="p-24 xs:p-6">
+        <h2 className="text-primary text-5xl font-sans mb-24">
+          {t("pages.home.infos.title")}
+        </h2>
+        <HomePracticalInformations />
+      </section>
+
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </>
+    </div>
   )
 }
 
