@@ -80,11 +80,11 @@ const IndexPage = ({ pageContext }) => {
         description={t("siteMetadata.description")}
         lang={pageContext.locale}
       />
-      <div className="display grid grid-cols-2 px-12 xs:px-6 pb-6">
+      <section className="display grid grid-cols-2 px-12 xs:px-6 pb-6">
         <div className="flex justify-items-center items-center">
           <div>
             <div className="mb-12">
-              <span className="text-primary text-5xl font-sans leading-4">
+              <span className="text-primary text-5xl font-sans">
                 {t("pages.home.incentive")}
               </span>
               &nbsp; &nbsp;
@@ -95,8 +95,11 @@ const IndexPage = ({ pageContext }) => {
             <BaseSecondaryButton text={t("utils.discover")} />
           </div>
         </div>
-        <Img fluid={queryData.landingImage.childImageSharp.fluid} />
-      </div>
+        <Img
+          fluid={queryData.landingImage.childImageSharp.fluid}
+          className="xs:hidden"
+        />
+      </section>
       <section className="display px-12 xs:px-0">
         <HomeSlider className="pb-12 xs:pb-0" />
       </section>
