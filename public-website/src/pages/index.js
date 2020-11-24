@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -55,7 +54,9 @@ const IndexPage = ({ pageContext }) => {
           .map(img => img.childImageSharp.fluid)}
         position={index + 1}
         className={`${
-          index + 1 < Object.keys(blocks).length ? "mb-64 xs:mb-24" : ""
+          index + 1 < Object.keys(blocks).length
+            ? "mb-64 md:mb-24 xs:mb-24"
+            : ""
         }`}
       />
     )
@@ -111,10 +112,11 @@ const IndexPage = ({ pageContext }) => {
           {roomsListElements}
         </div>
       </section>
-      <section className="p-24 xs:p-6">
-        <h2 className="text-primary text-5xl font-sans mb-24">
-          {t("pages.home.infos.title")}
-        </h2>
+      <section className="p-24 xs:p-6 xs:py-12">
+        <BaseHeading
+          text={t("pages.home.infos.title")}
+          className="xs:text-center"
+        />
         <HomePracticalInformations />
       </section>
     </div>
