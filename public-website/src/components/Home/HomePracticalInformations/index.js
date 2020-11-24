@@ -14,7 +14,7 @@ const HomePracticalInformations = () => {
   const { t } = useTranslation()
   return (
     <div className="m-auto max-w-4xl">
-      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-6">
+      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-12">
         <FaClock className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.hours")}
@@ -22,7 +22,7 @@ const HomePracticalInformations = () => {
         />
       </div>
 
-      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-6">
+      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-12">
         <FaCoffee className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.breakfast")}
@@ -30,7 +30,7 @@ const HomePracticalInformations = () => {
         />
       </div>
 
-      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-6">
+      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-12">
         <FaPaw className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.pets")}
@@ -38,7 +38,7 @@ const HomePracticalInformations = () => {
         />
       </div>
 
-      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-6">
+      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-12">
         <TiWiFi className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.rooms")}
@@ -46,7 +46,7 @@ const HomePracticalInformations = () => {
         />
       </div>
 
-      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-6">
+      <div className="flex xs:block bg-background p-12 rounded items-center mb-24 xs:mb-12">
         <FaBath className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.bathrooms")}
