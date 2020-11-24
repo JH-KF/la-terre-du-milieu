@@ -4,8 +4,9 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 import SEO from "../components/seo"
-import BaseSecondaryButton from "../components/Base/SecondaryButton"
+import BaseHeading from "../components/Base/Heading"
 import BaseDescriptionBlock from "../components/Base/DescriptionBlock"
+import BaseSecondaryButton from "../components/Base/SecondaryButton"
 import HomeSlider from "../components/HomeSlider"
 import BaseRoomCard from "../components/Base/RoomCard"
 import HomePracticalInformations from "../components/Home/HomePracticalInformations"
@@ -95,32 +96,27 @@ const IndexPage = ({ pageContext }) => {
         </div>
         <Img fluid={queryData.landingImage.childImageSharp.fluid} />
       </div>
-
       <section className="display px-12 xs:px-0">
         <HomeSlider className="pb-12 xs:pb-0" />
       </section>
-
       <section className="bg-white px-12 xs:px-0 py-40 xs:py-24">
         {blockListElements}
       </section>
-
-      <section className="p-24 xs:p-6">
-        <h2 className="text-primary text-5xl font-sans mb-24">
-          {t("pages.home.roomsList.title")}
-        </h2>
+      <section className="p-24 xs:px-6 xs:py-12">
+        <BaseHeading
+          text={t("pages.home.roomsList.title")}
+          className="xs:text-center"
+        />
         <div className="m-auto max-w-4xl lg:max-w-7xl flex flex-wrap justify-around">
           {roomsListElements}
         </div>
       </section>
-
       <section className="p-24 xs:p-6">
         <h2 className="text-primary text-5xl font-sans mb-24">
           {t("pages.home.infos.title")}
         </h2>
         <HomePracticalInformations />
       </section>
-
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </div>
   )
 }
