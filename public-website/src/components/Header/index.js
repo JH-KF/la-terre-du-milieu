@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react"
 
-import BasePrimaryButton from "../Base/PrimaryButton/index"
-import BaseTertiaryButton from "../Base/TertiaryButton/index"
-import Logo from "../Logo/index"
+import BasePrimaryButton from "../Base/PrimaryButton"
+import BaseTertiaryButton from "../Base/TertiaryButton"
+import Logo from "../Logo"
 import MobileNav from "../MobileNav"
 
 import { HiOutlineMenu } from "react-icons/hi"

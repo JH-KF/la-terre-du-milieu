@@ -2,8 +2,8 @@ import React, { useContext } from "react"
 // import Img from "gatsby-image"
 import { useTranslation } from "react-i18next"
 
-import BaseTitle from "../Title/index"
-import BaseDescription from "../Description/index"
+import BaseTitle from "../Title"
+import BaseDescription from "../Description"
 import BaseTertiaryButton from "../TertiaryButton"
 import BaseSecondaryButton from "../SecondaryButton"
 

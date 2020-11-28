@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"
 
 import BasePrimaryButton from "./Base/PrimaryButton"
 import BaseTertiaryButton from "./Base/TertiaryButton"
-import Logo from "./Logo/index"
+import Logo from "./Logo"
 
 const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
   const { t } = useTranslation()
