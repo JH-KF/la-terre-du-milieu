@@ -12,6 +12,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "../components/Footer/index"
 import BookModal from "./Base/Modal"
+import InformationBar from "./InformationBar"
+
 import { BookModalContext } from "../context/bookModalContext"
 
 const Layout = ({ children }) => {
@@ -31,6 +33,11 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
+        <InformationBar
+          informations={
+            "Salut les amis ! Toutes nos chambres sont réservées jusqu'au 15 décembre"
+          }
+        />
         <main>{children}</main>
       </div>
       <Footer />

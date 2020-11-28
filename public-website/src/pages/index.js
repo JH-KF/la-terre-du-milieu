@@ -55,7 +55,7 @@ const IndexPage = ({ pageContext }) => {
         position={index + 1}
         className={`${
           index + 1 < Object.keys(blocks).length
-            ? "mb-64 md:mb-24 xs:mb-24"
+            ? "mb-64 md:mb-24 mx-auto xs:mb-24 "
             : ""
         }`}
       />
@@ -80,7 +80,7 @@ const IndexPage = ({ pageContext }) => {
         description={t("siteMetadata.description")}
         lang={pageContext.locale}
       />
-      <section className="display grid grid-cols-2 px-12 xs:px-6 pb-6">
+      <section className="display grid xs:block grid-cols-2 px-12 xs:px-6 py-6">
         <div className="flex justify-items-center items-center">
           <div>
             <div className="mb-12">
@@ -92,7 +92,7 @@ const IndexPage = ({ pageContext }) => {
                 Tolkien
               </span>
             </div>
-            <BaseSecondaryButton text={t("utils.discover")} />
+            {/* <BaseSecondaryButton text={t("utils.discover")} /> */}
           </div>
         </div>
         <Img
