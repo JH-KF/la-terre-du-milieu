@@ -38,11 +38,12 @@ const Header = () => {
             className="lg:ml-12 md:ml-8"
           />
         </section>
-        <button type="button" className="xs:block hidden">
-          <HiOutlineMenu
-            className="h-6 w-6 text-action"
-            onClick={handleClickBurgerMenu}
-          />
+        <button
+          onClick={handleClickBurgerMenu}
+          type="button"
+          className="xs:block hidden"
+        >
+          <HiOutlineMenu className="h-6 w-6 text-action" />
         </button>
       </div>
       <MobileNav

@@ -27,7 +27,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <InformationBar />
+      <InformationBar
+        informations={
+          "Salut les amis ! Toutes nos chambres sont réservées jusqu'au 15 décembre"
+        }
+      />
       <div>
         <main>{children}</main>
       </div>

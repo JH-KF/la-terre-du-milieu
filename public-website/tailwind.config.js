@@ -7,6 +7,7 @@ module.exports = {
         primary: "#5E4F41",
         action: "#996515",
         background: "#FAF6F1",
+        "background-accent": "#F3EADC",
       },
       fontFamily: {
         serif: ["Judson", ...defaultTheme.fontFamily.serif],
@@ -14,6 +15,8 @@ module.exports = {
       },
       inset: {
         1: "0.25rem",
+        18: "4.5rem",
+        26: "6.5rem",
       },
       height: {
         half: "50vh",
