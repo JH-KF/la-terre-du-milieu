@@ -81,6 +81,11 @@
         "legalMention": "Mention légales",
         "generalRentalTermsAndConditions": "Condition générales de location",
         "madeBy": "Fait avec ❤️ par"
+      },
+      "modal": {
+        "callTo": "Vous pouvez m'appeler au :",
+        "sendTo": "Ou alors m'envoyer directement un email à l'adresse :",
+        "fromWebsites": "Réservation en ligne via :"
       }
     }
   },

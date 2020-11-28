@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
 import BaseHeading from "../components/Base/Heading"
 import BaseDescriptionBlock from "../components/Base/DescriptionBlock"
-import BaseSecondaryButton from "../components/Base/SecondaryButton"
+// import BaseSecondaryButton from "../components/Base/SecondaryButton"
 import HomeSlider from "../components/HomeSlider"
 import BaseRoomCard from "../components/Base/RoomCard"
 import HomePracticalInformations from "../components/Home/HomePracticalInformations"
@@ -53,10 +53,8 @@ const IndexPage = ({ pageContext }) => {
           .filter(img => img.name === element)
           .map(img => img.childImageSharp.fluid)}
         position={index + 1}
-        className={`${
-          index + 1 < Object.keys(blocks).length
-            ? "mb-64 md:mb-24 mx-auto xs:mb-24 "
-            : ""
+        className={`mx-auto xs:mb-24 ${
+          index + 1 < Object.keys(blocks).length ? "mb-64 md:mb-24" : ""
         }`}
       />
     )
