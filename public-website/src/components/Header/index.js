@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 
-import BasePrimaryButton from "../components/Base/PrimaryButton/index"
-import BaseTertiaryButton from "../components/Base/TertiaryButton/index"
-import Logo from "../components/Logo/index"
-import MobileNav from "./MobileNav"
+import BasePrimaryButton from "../Base/PrimaryButton/index"
+import BaseTertiaryButton from "../Base/TertiaryButton/index"
+import Logo from "../Logo/index"
+import MobileNav from "../MobileNav"
 
 import { HiOutlineMenu } from "react-icons/hi"
 
