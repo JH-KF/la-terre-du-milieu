@@ -8,7 +8,7 @@ import MobileNav from "../MobileNav"
 import { HiOutlineMenu } from "react-icons/hi"
 
 import { useTranslation } from "react-i18next"
-import { BookModalContext } from "../context/bookModalContext"
+import { BookModalContext } from "../../context/bookModalContext"
 
 const Header = () => {
   const { setIsOpen } = useContext(BookModalContext)
@@ -25,6 +25,7 @@ const Header = () => {
 
   const openModal = () => {
     setIsOpen(true)
+    document.querySelector("body").style.overflowY = "hidden"
   }
 
   return (

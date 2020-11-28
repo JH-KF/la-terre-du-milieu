@@ -10,12 +10,13 @@ import BaseSecondaryButton from "../SecondaryButton"
 import { BookModalContext } from "../../../context/bookModalContext"
 
 const BaseRoomCard = ({ name, className }) => {
-  const { setIsOpen, roomName, setRoomName } = useContext(BookModalContext)
+  const { setIsOpen, setRoomName } = useContext(BookModalContext)
   const { t } = useTranslation()
 
   const displayModalBookRoom = () => {
     setRoomName(t(`pages.home.roomsList.rooms.${name}.title`))
     setIsOpen(true)
+    document.querySelector("body").style.overflowY = "hidden"
   }
 
   return (

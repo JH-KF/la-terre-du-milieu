@@ -9,10 +9,10 @@ import React, { useContext } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import Footer from "../components/Footer/index"
-import BookModal from "./Base/Modal"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 import InformationBar from "./InformationBar"
+import TemplateModal from "./TemplateModal"
 
 import { BookModalContext } from "../context/bookModalContext"
 
@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <Footer />
-      <BookModal roomName={roomName} />
+      <TemplateModal roomName={roomName} />
     </>
   )
 }

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 
 import { RiCloseLine } from "react-icons/ri"
 import { useTranslation } from "react-i18next"
@@ -8,7 +8,11 @@ import Img from "gatsby-image"
 import BaseDescription from "../Base/Description"
 import BaseTitle from "../Base/Title"
 
-const TemplateModal = ({ roomTitle }) => {
+import { BookModalContext } from "../../context/bookModalContext"
+
+const TemplateModal = ({ roomName }) => {
+  const { isOpen, setIsOpen, setRoomName } = useContext(BookModalContext)
+
   const queryData = useStaticQuery(graphql`
     query {
       gitedefranceLogo: file(
@@ -30,13 +34,24 @@ const TemplateModal = ({ roomTitle }) => {
     }
   `)
   const { t } = useTranslation()
+
+  const closeModal = () => {
+    setIsOpen(false)
+    setRoomName("")
+    document.querySelector("body").style.overflowY = "scroll"
+  }
+
   return (
-    <div className="fixed z-1000 top-0 w-screen h-screen bg-modal-wrapper px-12 xs:px-0">
+    <div
+      className={`${
+        isOpen ? "" : "hidden"
+      } fixed z-1000 top-0 w-screen h-screen bg-modal-wrapper px-12 xs:px-0`}
+    >
       <section className="mx-auto w-full max-w-lg h-full flex justify-center items-center xs:items-stretch">
         <div className=" bg-background shadow w-full rounded xs:rounded-none p-4">
           <div className="flex justify-between items-center">
             <BaseTitle title={t("utils.book")} />
-            <button>
+            <button onClick={closeModal}>
               <RiCloseLine className="text-action h-8 w-8" />
             </button>
           </div>
@@ -89,9 +104,9 @@ const TemplateModal = ({ roomTitle }) => {
                         fixed={queryData.gitedefranceLogo.childImageSharp.fixed}
                       />
                     </div>
-                    {roomTitle ? (
+                    {roomName ? (
                       <BaseDescription
-                        description={roomTitle}
+                        description={roomName}
                         className="mt-2"
                       />
                     ) : null}
@@ -108,9 +123,9 @@ const TemplateModal = ({ roomTitle }) => {
                         fixed={queryData.bookingLogo.childImageSharp.fixed}
                       />
                     </div>
-                    {roomTitle ? (
+                    {roomName ? (
                       <BaseDescription
-                        description={roomTitle}
+                        description={roomName}
                         className="mt-2"
                       />
                     ) : null}
