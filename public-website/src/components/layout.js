@@ -5,16 +5,20 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useContext } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Footer from "./Footer/"
+import Header from "./header"
+import Footer from "../components/Footer/index"
+import BookModal from "./Base/Modal"
 import InformationBar from "./InformationBar"
-import Header from "./Header"
-import TemplateModal from "./TemplateModal"
+
+import { BookModalContext } from "../context/bookModalContext"
 
 const Layout = ({ children }) => {
+  const { roomName } = useContext(BookModalContext)
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -28,16 +32,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <InformationBar
-        informations={
-          "Salut les amis ! Toutes nos chambres sont réservées jusqu'au 15 décembre"
-        }
-      />
-      <TemplateModal roomTitle="La Lorien" />
       <div>
+        <InformationBar
+          informations={
+            "Salut les amis ! Toutes nos chambres sont réservées jusqu'au 15 décembre"
+          }
+        />
         <main>{children}</main>
       </div>
       <Footer />
+      <BookModal roomName={roomName} />
     </>
   )
 }

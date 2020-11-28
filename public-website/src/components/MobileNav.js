@@ -7,7 +7,7 @@ import BasePrimaryButton from "./Base/PrimaryButton"
 import BaseTertiaryButton from "./Base/TertiaryButton"
 import Logo from "./Logo/index"
 
-const MobileNav = ({ className, handleClickBurgerMenu }) => {
+const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
   const { t } = useTranslation()
 
   return (
@@ -17,11 +17,8 @@ const MobileNav = ({ className, handleClickBurgerMenu }) => {
       <div>
         <div className="flex p-6 justify-between">
           <Logo />
-          <button>
-            <HiOutlineX
-              className="h-6 w-6 text-action"
-              onClick={handleClickBurgerMenu}
-            />
+          <button onClick={handleClickBurgerMenu}>
+            <HiOutlineX className="h-6 w-6 text-action" />
           </button>
         </div>
         <hr />
@@ -45,7 +42,13 @@ const MobileNav = ({ className, handleClickBurgerMenu }) => {
         <hr />
       </div>
       <section className="px-6 py-12 text-center">
-        <BasePrimaryButton text={t("utils.book")} />
+        <BasePrimaryButton
+          text={t("utils.book")}
+          onClick={() => {
+            handleClickBurgerMenu()
+            openModal()
+          }}
+        />
       </section>
     </nav>
   )

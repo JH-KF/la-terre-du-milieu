@@ -1,11 +1,12 @@
 import React, { useState } from "react"
 
-const BasePrimaryButton = ({ text, className }) => {
+const BasePrimaryButton = ({ text, className, onClick }) => {
   const [isButtonHover, setButtonIsHover] = useState(false)
 
   return (
     <button
       type="button"
+      onClick={onClick}
       onMouseEnter={() => setButtonIsHover(true)}
       onMouseLeave={() => setButtonIsHover(false)}
       className={`h-14 bg-action ${className} relative ${

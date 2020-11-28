@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
 
 import BasePrimaryButton from "../Base/PrimaryButton/index"
 import BaseTertiaryButton from "../Base/TertiaryButton/index"
@@ -8,8 +8,11 @@ import MobileNav from "../MobileNav"
 import { HiOutlineMenu } from "react-icons/hi"
 
 import { useTranslation } from "react-i18next"
+import { BookModalContext } from "../context/bookModalContext"
 
 const Header = () => {
+  const { setIsOpen } = useContext(BookModalContext)
+
   const [isClicked, setIsClicked] = useState(false)
 
   const handleClickBurgerMenu = () => {
@@ -19,6 +22,10 @@ const Header = () => {
       : "hidden"
   }
   const { t } = useTranslation()
+
+  const openModal = () => {
+    setIsOpen(true)
+  }
 
   return (
     <header className="z-40 fixed top-0 left-0 right-0 xs:px-6 px-12 bg-background min-w-screen shadow">
@@ -36,6 +43,7 @@ const Header = () => {
           <BasePrimaryButton
             text={t("utils.book")}
             className="lg:ml-12 md:ml-8"
+            onClick={openModal}
           />
         </section>
         <button
@@ -49,6 +57,7 @@ const Header = () => {
       <MobileNav
         className={isClicked ? "left-0" : "left-full"}
         handleClickBurgerMenu={handleClickBurgerMenu}
+        openModal={openModal}
       />
     </header>
   )

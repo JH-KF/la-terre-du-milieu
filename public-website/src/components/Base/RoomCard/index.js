@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 // import Img from "gatsby-image"
 import { useTranslation } from "react-i18next"
 
@@ -7,8 +7,16 @@ import BaseDescription from "../Description/index"
 import BaseTertiaryButton from "../TertiaryButton"
 import BaseSecondaryButton from "../SecondaryButton"
 
+import { BookModalContext } from "../../../context/bookModalContext"
+
 const BaseRoomCard = ({ name, className }) => {
+  const { setIsOpen, roomName, setRoomName } = useContext(BookModalContext)
   const { t } = useTranslation()
+
+  const displayModalBookRoom = () => {
+    setRoomName(t(`pages.home.roomsList.rooms.${name}.title`))
+    setIsOpen(true)
+  }
 
   return (
     <article className={`bg-background max-w-sm ${className}`}>
@@ -45,7 +53,10 @@ const BaseRoomCard = ({ name, className }) => {
           text={t("utils.seeMore")}
           className="ml-6 xs:ml-0 xs:mb-6"
         />
-        <BaseSecondaryButton text={t("utils.book")} />
+        <BaseSecondaryButton
+          text={t("utils.book")}
+          onClick={displayModalBookRoom}
+        />
       </div>
     </article>
   )
