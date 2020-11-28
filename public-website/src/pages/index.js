@@ -80,7 +80,7 @@ const IndexPage = ({ pageContext }) => {
         description={t("siteMetadata.description")}
         lang={pageContext.locale}
       />
-      <section className="display grid grid-cols-2 px-12 xs:px-6 pb-6">
+      <section className="display grid grid-cols-2 px-12 xs:px-6 py-6">
         <div className="flex justify-items-center items-center">
           <div>
             <div className="mb-12">
