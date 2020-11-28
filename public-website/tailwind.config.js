@@ -8,6 +8,7 @@ module.exports = {
         action: "#996515",
         background: "#FAF6F1",
         "background-accent": "#F3EADC",
+        "modal-wrapper": "#00000066",
       },
       fontFamily: {
         serif: ["Judson", ...defaultTheme.fontFamily.serif],
@@ -42,6 +43,9 @@ module.exports = {
       },
       transitionProperty: {
         position: "top, right, bottom, left",
+      },
+      zIndex: {
+        1000: 1000,
       },
     },
   },

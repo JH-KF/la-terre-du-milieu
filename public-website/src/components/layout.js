@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Footer from "./Footer/"
 import InformationBar from "./InformationBar"
 import Header from "./Header"
+import TemplateModal from "./TemplateModal"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,6 +33,7 @@ const Layout = ({ children }) => {
           "Salut les amis ! Toutes nos chambres sont réservées jusqu'au 15 décembre"
         }
       />
+      <TemplateModal roomTitle="La Lorien" />
       <div>
         <main>{children}</main>
       </div>
