@@ -1,10 +1,11 @@
 import React, { useState } from "react"
 
-const BaseTertiaryButton = ({ text, className }) => {
+const BaseTertiaryButton = ({ text, className, onClick }) => {
   const [isButtonHover, setButtonIsHover] = useState(false)
   return (
     <button
       className={`${className}`}
+      onClick={onClick}
       onMouseEnter={() => setButtonIsHover(true)}
       onMouseLeave={() => setButtonIsHover(false)}
     >

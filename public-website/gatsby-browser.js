@@ -10,15 +10,20 @@ import "./src/css/index.css"
 import React from "react"
 import Layout from "./src/components/layout.js"
 
-import { PageContextProvider } from "./pageContext"
 import i18n from "./src/config/i18next.js"
 import { I18nextProvider } from "react-i18next"
+import { PageContextProvider } from "./src/context/pageContext"
+import { BookModalContextProvider } from "./src/context/bookModalContext"
 
 /**
  * Wrap all pages with a Translation provider and set the language on SSR time
  */
 export const wrapRootElement = ({ element }) => {
-  return <I18nextProvider i18n={i18n}>{element}</I18nextProvider>
+  return (
+    <I18nextProvider i18n={i18n}>
+      <BookModalContextProvider>{element}</BookModalContextProvider>
+    </I18nextProvider>
+  )
 }
 
 /**
