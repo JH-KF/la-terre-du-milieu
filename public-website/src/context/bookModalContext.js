@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-export const BookModalContext = React.createContext()
+export const BookModalContext = React.createContext({})
 
 export const BookModalContextProvider = ({ children }) => {
   const [roomName, setRoomName] = useState("")

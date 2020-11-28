@@ -39,6 +39,7 @@ module.exports = {
       spacing: {
         14: "3.5rem",
         18: "4.5rem",
+        26: "6.5rem",
       },
       transitionProperty: {
         position: "top, right, bottom, left",
