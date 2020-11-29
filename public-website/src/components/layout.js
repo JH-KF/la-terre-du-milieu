@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import InformationBar from "./InformationBar"
-import TemplateModal from "./TemplateModal"
+import BookModal from "./BookModal"
 
 import { BookModalContext } from "../context/bookModalContext"
 
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <Footer />
-      <TemplateModal roomName={roomName} />
+      <BookModal roomName={roomName} />
     </>
   )
 }

@@ -13,7 +13,7 @@ const Footer = () => {
         relativePath: { eq: "footer/gite-de-france-logo.png" }
       ) {
         childImageSharp {
-          fixed {
+          fixed(width: 93) {
             ...GatsbyImageSharpFixed
           }
         }

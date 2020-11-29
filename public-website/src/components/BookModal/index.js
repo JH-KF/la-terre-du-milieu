@@ -10,7 +10,7 @@ import BaseTitle from "../Base/Title"
 
 import { BookModalContext } from "../../context/bookModalContext"
 
-const TemplateModal = ({ roomName }) => {
+const BookModal = ({ roomName }) => {
   const { isOpen, setIsOpen, setRoomName } = useContext(BookModalContext)
 
   const queryData = useStaticQuery(graphql`
@@ -139,4 +139,4 @@ const TemplateModal = ({ roomName }) => {
     </div>
   )
 }
-export default TemplateModal
+export default BookModal
