@@ -53,8 +53,10 @@ const IndexPage = ({ pageContext }) => {
           .filter(img => img.name === element)
           .map(img => img.childImageSharp.fluid)}
         position={index + 1}
-        className={`mx-auto xs:mb-24 ${
-          index + 1 < Object.keys(blocks).length ? "mb-64 md:mb-24" : ""
+        className={`mx-24 xs:mx-0 ${
+          index + 1 < Object.keys(blocks).length
+            ? "mb-64 md:mb-24 xs:mb-12"
+            : ""
         }`}
       />
     )
@@ -101,7 +103,7 @@ const IndexPage = ({ pageContext }) => {
       <section className="display px-12 xs:px-0">
         <HomeSlider className="pb-12 xs:pb-0" />
       </section>
-      <section className="bg-white px-12 xs:px-0 py-40 xs:py-24">
+      <section className="bg-white px-12 xs:px-0 py-40 xs:py-24 flex flex-col items-center">
         {blockListElements}
       </section>
       <section className="p-24 xs:px-6 xs:py-12">
