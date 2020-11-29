@@ -22,7 +22,7 @@ const Footer = () => {
   `)
 
   return (
-    <footer className="pt-24">
+    <footer className="pt-24 xs:pt-12">
       <div className="px-24 pb-4 xs:px-6">
         <div className="flex items-center mb-12">
           <span className="hidden border-t border-solid border-primary  mx-12 flex-grow xs:block xs:mx-0 xs:mr-8"></span>
