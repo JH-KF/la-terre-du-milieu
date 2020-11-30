@@ -37,16 +37,16 @@ const BaseRoomCard = ({ name, className }) => {
           className="mb-6"
         />
         <BaseDescription
+          description={t(`pages.home.roomsList.rooms.${name}.description`)}
+          className="text-justify mb-6"
+        />
+        <BaseDescription
           description={`"${t(`pages.home.roomsList.rooms.${name}.quote`)}"`}
-          className="text-justify italic mb-3"
+          className="text-justify italic mb-1"
         />
         <BaseDescription
           description={t(`pages.home.roomsList.rooms.${name}.quoteAuthor`)}
-          className="text-justify italic font-bold mb-6"
-        />
-        <BaseDescription
-          description={t(`pages.home.roomsList.rooms.${name}.description`)}
-          className="text-justify"
+          className="text-justify italic mb-6 font-semibold"
         />
       </div>
       <div className="flex justify-between xs:flex-col xs:items-center">

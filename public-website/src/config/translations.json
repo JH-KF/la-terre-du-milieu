@@ -40,21 +40,21 @@
                 "title": "La Lorien, domaine des Elfes",
                 "quote": "Ne laissez pas vos cœurs se troubler, ce soir, vous dormirez en paix.",
                 "quoteAuthor": "Galadriel, dame de la Lorien",
-                "description": "La chambre des Elfes, toute en douceur et en lumières, vous transportera dans un monde enchanteur aux rêves apaisés",
+                "description": "La chambre des Elfes, toute en douceur et en lumières, vous transportera dans un monde enchanteur aux rêves apaisés.",
                 "image": ""
               },
               "second": {
                 "title": "Le Gondor, terre des Hommes",
                 "quote": "Des cendres, un feu s’éveillera. Des ombres, une lumière jaillira ; Renouvelée sera l’épée qui fut brisée, le sans couronne sera de nouveau roi.",
                 "quoteAuthor": "Aragorn",
-                "description": "La chambre d’Aragorn vous plongera dans un univers blanc, épuré, au charme discret, où trône l’arbre blanc de Minastirith, l’arbre des Rois, symbole de vie et d’espoir",
+                "description": "La chambre d’Aragorn vous plongera dans un univers blanc, épuré, au charme discret, où trône l’arbre blanc de Minastirith, l’arbre des Rois, symbole de vie et d’espoir.",
                 "image": ""
               },
               "third": {
                 "title": "Fangorn, royaume des Ents",
                 "quote": "Oh errants dans la terre obscurcie, ne désespérez point. Car si ténébreuses qu’elles soient, toutes les forêts doivent s’éclaircir.",
                 "quoteAuthor": "Fangorn",
-                "description": "Chambre sylvestre au décor rustique de bois et de pierres, vous enveloppera de mystère et de sérénité. Peut-être même aurez-vous la chance d’entendre les murmures des arbres et les légendes anciennes qu’ils racontent à ceux qui savent écouter",
+                "description": "Chambre sylvestre au décor rustique de bois et de pierres, vous enveloppera de mystère et de sérénité. Peut-être même aurez-vous la chance d’entendre les murmures des arbres et les légendes anciennes qu’ils racontent à ceux qui savent écouter.",
                 "image": ""
               }
             }
@@ -129,21 +129,21 @@
                 "title": "Lorien, domain of the Elves",
                 "quote": "Do not let your hearts be troubled. Tonight, you shall sleep in peace.",
                 "quoteAuthor": "Galadriel, lady of Lorien",
-                "description": "The Elves' room is all soft and bright. It will take you away in an enchanting world made of soothing dreams",
+                "description": "The Elves' room is all soft and bright. It will take you away in an enchanting world made of soothing dreams.",
                 "image": ""
               },
               "second": {
                 "title": "Gondor, land of Men",
                 "quote": "From the ashes a fire shall be woken, A light from the shadows shall spring; Renewed shall be blade that was broken, The crownless again shall be king.",
                 "quoteAuthor": "Aragorn",
-                "description": "This Bedroom will swoop you in a white and refined universe with a discreet charm. This is where the white tree of Minas Tirith resides, symbol of life and hope",
+                "description": "This Bedroom will swoop you in a white and refined universe with a discreet charm. This is where the white tree of Minas Tirith resides, symbol of life and hope.",
                 "image": ""
               },
               "third": {
                 "title": "Fangorn, kingdom of the Ents",
                 "quote": "O! Wanderers in the shadowed landdespair not! For though dark they stand,all woods there be must end at last, and see the open sun go past.",
                 "quoteAuthor": "Fangorn",
-                "description": "A sylvan bedroom with a rustic setting made of wood and stone, will wrap you with mystery and serenity. Those who know how to listen may be lucky enough to hear the murmur of the trees and the ancient legends they tell",
+                "description": "A sylvan bedroom with a rustic setting made of wood and stone, will wrap you with mystery and serenity. Those who know how to listen may be lucky enough to hear the murmur of the trees and the ancient legends they tell.",
                 "image": ""
               }
             }
