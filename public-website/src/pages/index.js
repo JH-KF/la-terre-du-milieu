@@ -83,11 +83,11 @@ const IndexPage = ({ pageContext }) => {
       <section className="display grid xs:block grid-cols-2 px-12 xs:px-6 py-6">
         <div className="flex justify-items-center items-center">
           <div>
-            <div className="mb-12">
+            <div className="mr-12">
               <span className="text-primary text-5xl font-sans">
                 {t("pages.home.incentivePartOne")}
               </span>
-              &nbsp; &nbsp;
+              &nbsp;
               <span className="text-action text-5xl font-serif font-bold">
                 {t("pages.home.incentivePartTwo")}
               </span>
@@ -95,12 +95,12 @@ const IndexPage = ({ pageContext }) => {
             {/* <BaseSecondaryButton text={t("utils.discover")} /> */}
           </div>
         </div>
-
-        <Img
-          fluid={queryData.landingImage.childImageSharp.fluid}
-          className="border-4 border-solid border-action"
-          style={{ height: "66%" }}
-        />
+        <div className="h-full flex justify-items-center items-center">
+          <Img
+            fluid={queryData.landingImage.childImageSharp.fluid}
+            className="border-4 border-solid border-action w-full"
+          />
+        </div>
       </section>
       <section className="display px-12 xs:px-0">
         <HomeSlider className="pb-12 xs:pb-0" />
