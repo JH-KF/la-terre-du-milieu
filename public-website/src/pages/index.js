@@ -85,11 +85,11 @@ const IndexPage = ({ pageContext }) => {
           <div>
             <div className="mb-12">
               <span className="text-primary text-5xl font-sans">
-                {t("pages.home.incentive")}
+                {t("pages.home.incentivePartOne")}
               </span>
               &nbsp; &nbsp;
               <span className="text-action text-5xl font-serif font-bold">
-                Tolkien
+                {t("pages.home.incentivePartTwo")}
               </span>
             </div>
             {/* <BaseSecondaryButton text={t("utils.discover")} /> */}
