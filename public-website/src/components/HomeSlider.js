@@ -44,7 +44,7 @@ const HomeSlider = ({ className }) => {
           fluid={node.childImageSharp.fluid}
           key={node.id}
           alt={node.name}
-          className="h-full"
+          className="h-full xs:border-none border-4 border-solid border-action"
         ></Img>
         <div className="absolute bottom-0 right-0 mb-6 mr-6">
           <button onClick={() => handlePrevious()} className="mr-3">

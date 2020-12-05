@@ -22,8 +22,8 @@ const Footer = () => {
   `)
 
   return (
-    <footer className="pt-24 xs:pt-12">
-      <div className="px-24 pb-4 xs:px-6">
+    <footer className="pt-24 xs:pt-12 px-12 xs:px-6">
+      <div className=" pb-4 max-w-screen-xl m-auto">
         <div className="flex items-center mb-12">
           <span className="hidden border-t border-solid border-primary  mx-12 flex-grow xs:block xs:mx-0 xs:mr-8"></span>
           <span className="font-serif font-semibold text-gray-800 text-3xl text-center xs:text-xl">

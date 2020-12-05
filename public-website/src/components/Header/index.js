@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header className="z-40 fixed top-0 left-0 right-0 xs:px-6 px-12 bg-background min-w-screen shadow">
-      <div className="py-6 flex flex-row items-center justify-between">
+      <div className="max-w-screen-xl m-auto py-6 flex flex-row items-center justify-between">
         <Logo />
         <section className="xs:hidden flex flex-row items-center">
           <BaseTertiaryButton

@@ -12,7 +12,7 @@ const InformationBar = ({ informations }) => {
         isClicked ? "hidden" : "block"
       } z-30 bg-background-accent py-2 px-12 xs:px-6 shadow`}
     >
-      <div className="relative pr-6 flex justify-center items-center">
+      <div className="max-w-screen-xl m-auto relative pr-6 flex justify-center items-center">
         <BaseDescription description={informations} />
         <button onClick={() => setIsClicked(true)} className="absolute right-0">
           <RiCloseLine className="text-action h-6 w-6" />
