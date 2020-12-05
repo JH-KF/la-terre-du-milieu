@@ -22,7 +22,7 @@ const IndexPage = ({ pageContext }) => {
     query {
       landingImage: file(relativePath: { eq: "home/landing/image1.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 600, maxHeight: 600) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -95,9 +95,11 @@ const IndexPage = ({ pageContext }) => {
             {/* <BaseSecondaryButton text={t("utils.discover")} /> */}
           </div>
         </div>
+
         <Img
           fluid={queryData.landingImage.childImageSharp.fluid}
-          className="xs:hidden"
+          className="border-4 border-solid border-action"
+          style={{ height: "66%" }}
         />
       </section>
       <section className="display px-12 xs:px-0">
