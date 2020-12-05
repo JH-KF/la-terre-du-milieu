@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 import SEO from "../components/seo"
@@ -24,6 +24,7 @@ const IndexPage = ({ pageContext }) => {
         childImageSharp {
           fluid(maxWidth: 600, maxHeight: 600) {
             ...GatsbyImageSharpFluid
+            src
           }
         }
       }
@@ -94,10 +95,32 @@ const IndexPage = ({ pageContext }) => {
             </div>
           </div>
           <div className="xs:hidden h-full flex items-center">
-            <Img
-              fluid={queryData.landingImage.childImageSharp.fluid}
-              className="border-4 border-solid border-action w-full"
-            />
+            <div className="w-full picture-custom-border-1 relative">
+              <div className="relative" style={{ paddingTop: "98%" }}>
+                <svg
+                  width="100%"
+                  height="100%"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                  viewBox="0 0 587.61 331.46"
+                  role="presentation"
+                  className="absolute inset-0"
+                >
+                  <rect
+                    width="100%"
+                    height="100%"
+                    clipPath="url(#article-panel)"
+                  ></rect>
+                  <g>
+                    <image
+                      href={queryData.landingImage.childImageSharp.fluid.src}
+                      className="clip-panel"
+                      preserveAspectRatio="none"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </section>

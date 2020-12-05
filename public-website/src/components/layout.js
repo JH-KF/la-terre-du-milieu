@@ -13,6 +13,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import InformationBar from "./InformationBar"
 import BookModal from "./BookModal"
+import MaskDefinitions from "./MaskDefinitions"
 
 import { BookModalContext } from "../context/bookModalContext"
 
@@ -31,6 +32,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <MaskDefinitions />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <InformationBar informations="Salut les amis ! Toutes nos chambres sont réservées jusqu'au 15 décembre" />
