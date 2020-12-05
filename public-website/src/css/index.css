@@ -10,3 +10,15 @@
     height: min-content;
   }
 }
+.information-bar::before {
+  background: url("../assets/information-bar.svg") repeat-x;
+  background-size: auto 100%;
+  z-index: 0;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
