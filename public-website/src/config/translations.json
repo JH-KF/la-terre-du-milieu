@@ -15,8 +15,6 @@
       "pages": {
         "home": {
           "title": "Accueil",
-          "incentivePartOne": "Bienvenue en",
-          "incentivePartTwo": "Terre du milieu",
           "blocks": {
             "first": {
               "title": "Ipsum sunt in irure minim ea deserunt nulla ipsum cillum veniam cupidatat magna.",
@@ -105,8 +103,6 @@
       "pages": {
         "home": {
           "title": "Home",
-          "incentivePartOne": "Welcome to",
-          "incentivePartTwo": "the Middle Earth",
           "blocks": {
             "first": {
               "title": "Ipsum sunt in irure minim ea deserunt nulla ipsum cillum veniam cupidatat magna.",

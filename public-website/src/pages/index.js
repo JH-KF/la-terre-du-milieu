@@ -1,5 +1,5 @@
 import React from "react"
-// import Img from "gatsby-image"
+import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 import SEO from "../components/seo"
@@ -23,6 +23,14 @@ const IndexPage = ({ pageContext }) => {
       landingImage: file(relativePath: { eq: "home/landing/image1.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 600, maxHeight: 600) {
+            ...GatsbyImageSharpFluid
+            src
+          }
+        }
+      }
+      logoImage: file(relativePath: { eq: "home/landing/logo.png" }) {
+        childImageSharp {
+          fluid {
             ...GatsbyImageSharpFluid
             src
           }
@@ -82,20 +90,15 @@ const IndexPage = ({ pageContext }) => {
         lang={pageContext.locale}
       />
       <section className="px-12 xs:px-6 calligraph-background">
-        <div className="max-w-screen-xl m-auto display grid xs:block grid-cols-2">
-          <div className="flex justify-center items-center">
-            <div className="mr-12 xs:mr-0 xs:my-24">
-              <span className="text-primary text-5xl font-sans">
-                {t("pages.home.incentivePartOne")}
-              </span>
-              &nbsp;
-              <span className="text-action text-5xl font-serif font-bold">
-                {t("pages.home.incentivePartTwo")}
-              </span>
-            </div>
-          </div>
-          <div className="xs:hidden h-full flex items-center">
-            <div className="w-full picture-custom-border-1 relative">
+        <div className="max-w-screen-xl m-auto display grid gap-x-12 xs:block grid-cols-2">
+          <Img
+            imgStyle={{
+              objectFit: "contain",
+            }}
+            fluid={queryData.logoImage.childImageSharp.fluid}
+          ></Img>
+          <div className="xs:hidden h-full flex items-center ">
+            <div className="w-full picture-custom-border-1 relative transform rotate-2">
               <div className="relative" style={{ paddingTop: "98%" }}>
                 <svg
                   width="100%"
