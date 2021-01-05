@@ -13,7 +13,7 @@ const BaseDescriptionBlock = ({
 }) => {
   return (
     <article
-      className={`bg-background md:bg-transparent xs:bg-transparent max-w-screen-lg xs:max-w-md flex md:flex-col xs:flex-col md:px-6 xs:px-6 py-12  ${
+      className={`bg-paper md:bg-transparent xs:bg-transparent max-w-screen-lg xs:max-w-md flex md:flex-col xs:flex-col md:px-6 xs:px-6 py-12  ${
         position % 2 ? "pr-12" : "pl-12"
       } ${className}`}
     >

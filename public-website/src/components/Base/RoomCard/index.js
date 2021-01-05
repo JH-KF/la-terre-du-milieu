@@ -20,7 +20,7 @@ const BaseRoomCard = ({ name, className }) => {
   }
 
   return (
-    <article className={`bg-background max-w-sm ${className}`}>
+    <article className={`max-w-sm ${className}`}>
       {/* <Img
         fluid={image}
         style={{ height: "344px", width: "344px" }}

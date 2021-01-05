@@ -6,9 +6,8 @@
   font-family: Onciale;
   src: url("./fonts/onciale.ttf");
 }
-main,
-header,
-footer {
+body,
+.bg-paper {
   background-image: url("../assets/natural-paper.png");
   background-color: theme("colors.background");
 }
@@ -16,26 +15,25 @@ footer {
 .calligraph-background {
   position: relative;
 }
-.calligraph-background::after {
+.calligraph-background::after,
+.calligraph-background::before {
   position: absolute;
+  opacity: 0.05;
+  font-size: 36px;
+  font-family: theme("fontFamily.calligraphy");
+  max-width: 1024px;
+}
+
+.calligraph-background::after {
   bottom: 96px;
   left: -10%;
-  opacity: 0.1;
-  font-size: 36px;
   transform: rotate(-3deg);
-  max-width: 1024px;
-  font-family: theme("fontFamily.calligraphy");
   content: "Ai! laurië lantar lassi súrinen, yéni únótimë ve rámar aldaron! Yéni ve lintë yuldar avánier mi oromardi lissë-miruvóreva Andúnë pella, Vardo tellumar nu luini yassen tintilar i eleni ómaryo airetári-lírinen.";
 }
 .calligraph-background::before {
-  position: absolute;
   top: 0px;
   right: -10%;
-  opacity: 0.1;
-  font-size: 36px;
   transform: rotate(3deg);
-  max-width: 1024px;
-  font-family: theme("fontFamily.calligraphy");
   content: "Ai! laurië lantar lassi súrinen, yéni únótimë ve rámar aldaron! Yéni ve lintë yuldar avánier mi oromardi lissë-miruvóreva Andúnë pella, Vardo tellumar nu luini yassen tintilar i eleni ómaryo airetári-lírinen.";
 }
 .clip-panel {
@@ -46,11 +44,6 @@ footer {
 
 .display {
   height: calc(theme("height.screen") - theme("maxHeight.header"));
-}
-@screen xs {
-  .display {
-    height: min-content;
-  }
 }
 .information-bar::before {
   background: url("../assets/information-bar.svg") repeat-x;
@@ -75,4 +68,12 @@ footer {
   height: 102%;
   top: -1.5%;
   left: -1%;
+}
+@screen xs {
+  .display {
+    height: min-content;
+  }
+  .calligraph-background::after {
+    display: none;
+  }
 }

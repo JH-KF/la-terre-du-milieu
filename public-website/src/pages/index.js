@@ -5,7 +5,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
 import BaseHeading from "../components/Base/Heading"
 import BaseDescriptionBlock from "../components/Base/DescriptionBlock"
-// import BaseSecondaryButton from "../components/Base/SecondaryButton"
 import HomeSlider from "../components/HomeSlider"
 import BaseRoomCard from "../components/Base/RoomCard"
 import HomePracticalInformations from "../components/Home/HomePracticalInformations"
@@ -30,7 +29,7 @@ const IndexPage = ({ pageContext }) => {
       }
       logoImage: file(relativePath: { eq: "home/landing/logo.png" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
             src
           }
@@ -89,13 +88,14 @@ const IndexPage = ({ pageContext }) => {
         description={t("siteMetadata.description")}
         lang={pageContext.locale}
       />
-      <section className="px-12 xs:px-6 calligraph-background">
-        <div className="max-w-screen-xl m-auto display grid gap-x-12 xs:block grid-cols-2">
+      <section className="px-12 xs:px-6 xs:py-16 calligraph-background">
+        <div className="max-w-screen-xl m-auto display grid gap-x-12 xs:block grid-cols-2 ">
           <Img
             imgStyle={{
               objectFit: "contain",
             }}
             fluid={queryData.logoImage.childImageSharp.fluid}
+            className="xs:max-w-xl xs:m-auto"
           ></Img>
           <div className="xs:hidden h-full flex items-center ">
             <div className="w-full picture-custom-border-1 relative transform rotate-2">

@@ -12,7 +12,7 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
 
   return (
     <nav
-      className={`bg-background ${className} flex flex-col justify-between transition-position duration-150 ease-in-out z-50 fixed top-0 w-screen h-screen overflow-y-scroll`}
+      className={`bg-paper ${className} flex flex-col justify-between transition-position duration-150 ease-in-out z-50 fixed top-0 w-screen h-screen overflow-y-scroll`}
     >
       <div>
         <div className="flex p-6 justify-between">

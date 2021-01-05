@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import InformationBar from "./InformationBar"
 import BookModal from "./BookModal"
 import MaskDefinitions from "./MaskDefinitions"
 
@@ -34,10 +33,7 @@ const Layout = ({ children }) => {
     <>
       <MaskDefinitions />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div>
-        <InformationBar informations="Salut les amis ! Toutes nos chambres sont réservées jusqu'au 15 décembre" />
-        <main>{children}</main>
-      </div>
+      <main>{children}</main>
       <Footer />
       <BookModal roomName={roomName} />
     </>
