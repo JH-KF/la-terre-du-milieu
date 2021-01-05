@@ -6,14 +6,15 @@ module.exports = {
     extend: {
       colors: {
         primary: "#5E4F41",
-        action: "#996515",
-        background: "#FAF6F1",
+        action: "#98753B",
+        background: "#D3C8AC",
         "background-accent": "#F3EADC",
         "modal-wrapper": "#00000066",
       },
       fontFamily: {
         serif: ["Judson", ...defaultTheme.fontFamily.serif],
         sans: ["Josefin Sans", ...defaultTheme.fontFamily.sans],
+        calligraphy: ["Onciale", ...defaultTheme.fontFamily.serif],
       },
       inset: {
         1: "0.25rem",

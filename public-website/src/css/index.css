@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Onciale;
+  src: url("./fonts/onciale.ttf");
+}
+main,
+header,
+footer {
+  background-image: url("../assets/natural-paper.png");
+  background-color: theme("colors.background");
+}
+
+.calligraph-background {
+  position: relative;
+}
+.calligraph-background::after {
+  position: absolute;
+  bottom: 96px;
+  left: -10%;
+  opacity: 0.1;
+  font-size: 36px;
+  transform: rotate(-3deg);
+  max-width: 1024px;
+  font-family: theme("fontFamily.calligraphy");
+  content: "Ai! laurië lantar lassi súrinen, yéni únótimë ve rámar aldaron! Yéni ve lintë yuldar avánier mi oromardi lissë-miruvóreva Andúnë pella, Vardo tellumar nu luini yassen tintilar i eleni ómaryo airetári-lírinen.";
+}
+.calligraph-background::before {
+  position: absolute;
+  top: 0px;
+  right: -10%;
+  opacity: 0.1;
+  font-size: 36px;
+  transform: rotate(3deg);
+  max-width: 1024px;
+  font-family: theme("fontFamily.calligraphy");
+  content: "Ai! laurië lantar lassi súrinen, yéni únótimë ve rámar aldaron! Yéni ve lintë yuldar avánier mi oromardi lissë-miruvóreva Andúnë pella, Vardo tellumar nu luini yassen tintilar i eleni ómaryo airetári-lírinen.";
+}
 .clip-panel {
   clip-path: url(#article-panel);
   width: 100%;
