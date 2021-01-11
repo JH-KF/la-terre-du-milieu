@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { useMediaQuery } from "react-responsive"
 
 import { BsChevronLeft } from "react-icons/bs"
 import { BsChevronRight } from "react-icons/bs"
@@ -8,6 +9,12 @@ import CustomImage from "./CustomImage"
 
 const HomeSlider = () => {
   const [index, setIndex] = useState(0)
+  const [isDesktopOrLaptop] = useState(
+    useMediaQuery({
+      query: "(min-width: 900px)",
+    })
+  )
+
   const { allFile } = useStaticQuery(
     graphql`
       query {
@@ -31,13 +38,15 @@ const HomeSlider = () => {
       }
     `
   )
+  // Remove first image for largest screens
+  const images = isDesktopOrLaptop ? allFile.edges.slice(1) : allFile.edges
   //Minus 1 for array offset from 0
-  const length = allFile.edges.length - 1
+  const length = images.length - 1
   const handleNext = () =>
     index === length ? setIndex(0) : setIndex(index + 1)
   const handlePrevious = () =>
     index === 0 ? setIndex(length) : setIndex(index - 1)
-  const { node } = allFile.edges[index]
+  const { node } = images[index]
 
   return (
     <div className={"h-full xs:h-half min-h-96"}>
