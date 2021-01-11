@@ -1,9 +1,26 @@
 import React from "react"
 
-const CustomImage = ({ className, image }) => {
+const CustomImage = ({ className, hasBorder, image, typeFrame }) => {
+  const getPaddingTop = () => {
+    switch (typeFrame) {
+      case "square":
+        return "98%"
+      case "landscape":
+        return "70%"
+      case "portrait":
+        return "150%"
+      default:
+        return "98%"
+    }
+  }
   return (
-    <div className={`${className} picture-custom-border-1 relative`}>
-      <div className="relative" style={{ paddingTop: "98%" }}>
+    <div
+      className={`
+        ${className ? className : ""} 
+        ${hasBorder ? "picture-custom-border-1" : ""} 
+        relative`}
+    >
+      <div className="relative" style={{ paddingTop: getPaddingTop() }}>
         <svg
           width="100%"
           height="100%"

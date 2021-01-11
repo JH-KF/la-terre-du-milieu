@@ -1,11 +1,12 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
 import { BsChevronLeft } from "react-icons/bs"
 import { BsChevronRight } from "react-icons/bs"
 
-const HomeSlider = ({ className }) => {
+import CustomImage from "./CustomImage"
+
+const HomeSlider = () => {
   const [index, setIndex] = useState(0)
   const { allFile } = useStaticQuery(
     graphql`
@@ -19,8 +20,9 @@ const HomeSlider = ({ className }) => {
               id
               name
               childImageSharp {
-                fluid(maxWidth: 600) {
-                  ...GatsbyImageSharpFluid_withWebp
+                fluid {
+                  ...GatsbyImageSharpFluid
+                  src
                 }
               }
             }
@@ -38,15 +40,17 @@ const HomeSlider = ({ className }) => {
   const { node } = allFile.edges[index]
 
   return (
-    <div className={`h-full xs:h-half min-h-96 ${className}`}>
-      <div className="h-full relative">
-        <Img
-          fluid={node.childImageSharp.fluid}
+    <div className={"h-full xs:h-half min-h-96"}>
+      <div className="relative">
+        <CustomImage
+          image={node.childImageSharp.fluid.src}
           key={node.id}
           alt={node.name}
-          className="h-full xs:border-none border-4 border-solid border-action"
-        ></Img>
-        <div className="absolute bottom-0 right-0 mb-6 mr-6">
+          typeFrame="landscape"
+          className="z-0"
+          hasBorder={false}
+        />
+        <div className="absolute bottom-0 right-0 mb-6 mr-6 z-10">
           <button onClick={() => handlePrevious()} className="mr-3">
             <BsChevronLeft className="h-10 w-10 text-white" />
           </button>

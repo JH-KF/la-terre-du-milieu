@@ -102,12 +102,13 @@ const IndexPage = ({ pageContext }) => {
             <CustomImage
               className="w-full transform rotate-2"
               image={queryData.landingImage.childImageSharp.fluid.src}
+              hasBorder={true}
             />
           </div>
         </div>
       </section>
-      <section className="display px-12 xs:px-0">
-        <HomeSlider className="pb-12 xs:pb-0 max-w-screen-xl m-auto" />
+      <section className="display px-12 xs:px-0 max-w-screen-xl m-auto">
+        <HomeSlider />
       </section>
       <section className="bg-white px-12 xs:px-0 py-40 xs:py-24 ">
         <div className="max-w-screen-xl m-auto flex flex-col items-center">
