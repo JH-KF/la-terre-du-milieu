@@ -14,6 +14,7 @@ body,
 
 .calligraph-background {
   position: relative;
+  overflow: hidden;
 }
 .calligraph-background::after,
 .calligraph-background::before {
