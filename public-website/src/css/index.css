@@ -22,7 +22,7 @@ body,
   opacity: 0.05;
   font-size: 36px;
   font-family: theme("fontFamily.calligraphy");
-  max-width: 1024px;
+  max-width: 50vw;
 }
 
 .calligraph-background::after {
@@ -33,9 +33,9 @@ body,
 }
 .calligraph-background::before {
   top: 0px;
-  right: -10%;
+  right: 0px;
   transform: rotate(3deg);
-  content: "Ai! laurië lantar lassi súrinen, yéni únótimë ve rámar aldaron! Yéni ve lintë yuldar avánier mi oromardi lissë-miruvóreva Andúnë pella, Vardo tellumar nu luini yassen tintilar i eleni ómaryo airetári-lírinen.";
+  content: "Ai! laurië lantar lassi súrinen, yéni únótimë ve rámar aldaron! Yéni ve lintë yuldar avánier mi oromardi lissë-miruvóreva Andúnë pella, Vardo tellumar nu luini yassen tintilar i eleni ómaryo airetári-lírinen. Ai! laurië lantar lassi súrinen, yéni únótimë ve rámar aldaron! Yéni ve lintë yuldar avánier mi oromardi lissë-miruvóreva Andúnë pella, Vardo tellumar nu luini yassen tintilar i eleni ómaryo airetári-lírinen.Ai! laurië lantar lassi súrinen, yéni únótimë ve rámar aldaron! Yéni ve lintë yuldar avánier mi oromardi lissë-miruvóreva Andúnë pella, Vardo tellumar nu luini yassen tintilar i eleni ómaryo airetári-lírinen.";
 }
 .clip-panel {
   clip-path: url(#article-panel);
@@ -73,6 +73,10 @@ body,
 @screen xs {
   .display {
     height: min-content;
+  }
+  .calligraph-background::before,
+  .calligraph-background::after {
+    max-width: none;
   }
   .calligraph-background::after {
     display: none;
