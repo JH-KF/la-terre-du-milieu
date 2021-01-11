@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
 import BaseHeading from "../components/Base/Heading"
 import BaseDescriptionBlock from "../components/Base/DescriptionBlock"
+import CustomImage from "../components/CustomImage"
 import HomeSlider from "../components/HomeSlider"
 import BaseRoomCard from "../components/Base/RoomCard"
 import HomePracticalInformations from "../components/Home/HomePracticalInformations"
@@ -29,7 +30,7 @@ const IndexPage = ({ pageContext }) => {
       }
       logoImage: file(relativePath: { eq: "home/landing/logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid {
             ...GatsbyImageSharpFluid
             src
           }
@@ -97,33 +98,11 @@ const IndexPage = ({ pageContext }) => {
             fluid={queryData.logoImage.childImageSharp.fluid}
             className="xs:max-w-xl xs:m-auto"
           ></Img>
-          <div className="xs:hidden h-full flex items-center ">
-            <div className="w-full picture-custom-border-1 relative transform rotate-2">
-              <div className="relative" style={{ paddingTop: "98%" }}>
-                <svg
-                  width="100%"
-                  height="100%"
-                  preserveAspectRatio="none"
-                  aria-hidden="true"
-                  viewBox="0 0 587.61 331.46"
-                  role="presentation"
-                  className="absolute inset-0"
-                >
-                  <rect
-                    width="100%"
-                    height="100%"
-                    clipPath="url(#article-panel)"
-                  ></rect>
-                  <g>
-                    <image
-                      href={queryData.landingImage.childImageSharp.fluid.src}
-                      className="clip-panel"
-                      preserveAspectRatio="none"
-                    />
-                  </g>
-                </svg>
-              </div>
-            </div>
+          <div className="xs:hidden h-full flex items-center">
+            <CustomImage
+              className="w-full transform rotate-2"
+              image={queryData.landingImage.childImageSharp.fluid.src}
+            />
           </div>
         </div>
       </section>
