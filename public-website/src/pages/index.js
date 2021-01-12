@@ -44,6 +44,7 @@ const IndexPage = ({ pageContext }) => {
           childImageSharp {
             fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid_withWebp
+              src
             }
           }
         }
@@ -60,7 +61,7 @@ const IndexPage = ({ pageContext }) => {
         key={element}
         image={queryData.blockImages.nodes
           .filter(img => img.name === element)
-          .map(img => img.childImageSharp.fluid)}
+          .map(img => img.childImageSharp.fluid.src)}
         position={index + 1}
         className={`mx-24 xs:mx-0 ${
           index + 1 < Object.keys(blocks).length

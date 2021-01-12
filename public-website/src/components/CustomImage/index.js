@@ -4,7 +4,7 @@ const CustomImage = ({ className, hasBorder, image, typeFrame }) => {
   const getPaddingTop = () => {
     switch (typeFrame) {
       case "square":
-        return "98%"
+        return "100%"
       case "landscape":
         return "70%"
       case "portrait":

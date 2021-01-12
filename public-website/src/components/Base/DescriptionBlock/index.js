@@ -1,9 +1,8 @@
 import React from "react"
-import Img from "gatsby-image"
 
 import BaseTitle from "../Title/index"
 import BaseDescription from "../Description/index"
-
+import CustomImage from "../../CustomImage"
 const BaseDescriptionBlock = ({
   title,
   description,
@@ -17,9 +16,11 @@ const BaseDescriptionBlock = ({
         position % 2 ? "pr-12" : "pl-12"
       } ${className}`}
     >
-      <Img
-        fluid={image}
-        className={`h-96 w-96 xs:h-64 xs:w-64 bg-gray-400 flex-shrink-0 transform md:order-first xs:order-first -translate-y-24 md:-translate-y-12 xs:-translate-y-12 ${
+      <CustomImage
+        hasBorder={true}
+        image={image}
+        typeFrame="square"
+        className={`h-96 w-96 xs:h-64 xs:w-64 flex-shrink-0 transform md:order-first xs:order-first -translate-y-24 md:-translate-y-12 xs:-translate-y-12 ${
           position % 2
             ? "-rotate-2 -translate-x-12 md:-translate-x-0 xs:-translate-x-0  order-first"
             : "rotate-2 translate-x-12 md:translate-x-0 xs:translate-x-0 order-last md:self-end xs:self-end"
