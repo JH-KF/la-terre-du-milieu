@@ -9,7 +9,6 @@
 .altered-after,
 .altered-before {
   position: relative;
-  overflow: hidden;
 }
 
 .altered-after::after,
