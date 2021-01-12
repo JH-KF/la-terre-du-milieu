@@ -125,7 +125,7 @@ const IndexPage = ({ pageContext }) => {
         <div className="max-w-screen-xl m-auto">
           <BaseHeading
             text={t("pages.home.roomsList.title")}
-            className="xs:text-center"
+            className="xs:text-center font-calligraphy"
           />
           <div className="m-auto max-w-4xl lg:max-w-7xl flex flex-wrap justify-around">
             {roomsListElements}
@@ -136,7 +136,7 @@ const IndexPage = ({ pageContext }) => {
         <div className="max-w-screen-xl m-auto">
           <BaseHeading
             text={t("pages.home.infos.title")}
-            className="xs:text-center"
+            className="xs:text-center font-calligraphy"
           />
           <HomePracticalInformations />
         </div>
