@@ -6,6 +6,29 @@
   font-family: Onciale;
   src: url("./fonts/onciale.ttf");
 }
+.altered-after,
+.altered-before {
+  position: relative;
+}
+
+.altered-after::after,
+.altered-before::before {
+  content: "";
+  background: url("../assets/content-divider.svg") repeat-x 50% 50% / auto 100%;
+  background-size: auto 22px;
+  position: absolute;
+  height: 22px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+.altered-after::after {
+  bottom: -12px;
+}
+.altered-before::before {
+  top: -12px;
+}
 .anchor {
   scroll-margin-top: 104px;
 }

@@ -113,14 +113,14 @@ const IndexPage = ({ pageContext }) => {
           <HomeSlider />
         </div>
       </section>
-      <section className="bg-white px-12 xs:px-0 py-40 xs:py-24">
+      <section className="bg-white px-12 xs:px-0 py-40 xs:py-24 altered-before">
         <div className="max-w-screen-xl m-auto flex flex-col items-center">
           {blockListElements}
         </div>
       </section>
       <section
         id={t("pages.home.roomsList.slug")}
-        className="anchor py-24 px-12 xs:px-6 xs:py-12"
+        className="anchor py-24 px-12 xs:px-6 xs:py-12 altered-before"
       >
         <div className="max-w-screen-xl m-auto">
           <BaseHeading
@@ -132,7 +132,7 @@ const IndexPage = ({ pageContext }) => {
           </div>
         </div>
       </section>
-      <section className="bg-white py-24 px-12 xs:p-6 xs:pt-12 xs:pb-24">
+      <section className="bg-white py-24 px-12 xs:p-6 xs:pt-12 xs:pb-24 altered-before">
         <div className="max-w-screen-xl m-auto">
           <BaseHeading
             text={t("pages.home.infos.title")}
