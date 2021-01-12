@@ -48,7 +48,7 @@ const BookModal = ({ roomName }) => {
       } fixed z-1000 top-0 w-screen h-screen bg-modal-wrapper px-12 xs:px-0`}
     >
       <section className="mx-auto w-full max-w-lg h-full flex justify-center items-center xs:items-stretch">
-        <div className=" bg-paper shadow w-full rounded xs:rounded-none p-4">
+        <div className=" bg-white shadow w-full rounded xs:rounded-none p-4">
           <div className="flex justify-between items-center">
             <BaseTitle title={t("utils.book")} />
             <button onClick={closeModal}>

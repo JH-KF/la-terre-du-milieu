@@ -27,7 +27,7 @@ const BaseDescriptionBlock = ({
         }`}
       />
       <div className="order-none">
-        <BaseTitle title={title} className="mb-10" />
+        <BaseTitle title={title} className="mb-10 font-calligraphy" />
         <BaseDescription description={description} className="text-justify" />
       </div>
     </article>
