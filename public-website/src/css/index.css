@@ -6,6 +6,9 @@
   font-family: Onciale;
   src: url("./fonts/onciale.ttf");
 }
+.anchor {
+  scroll-margin-top: 104px;
+}
 body,
 .bg-paper {
   background-image: url("../assets/natural-paper.png");
@@ -45,6 +48,7 @@ body,
 
 .display {
   height: calc(theme("height.screen") - theme("maxHeight.header"));
+  min-height: 720px;
 }
 .information-bar::before {
   background: url("../assets/information-bar.svg") repeat-x;
@@ -70,9 +74,14 @@ body,
   top: -1.5%;
   left: -1%;
 }
-@screen xs {
+@screen md {
   .display {
-    height: min-content;
+    min-height: 675px;
+  }
+}
+@screen xs {
+  .anchor {
+    scroll-margin-top: 96px;
   }
   .calligraph-background::before,
   .calligraph-background::after {
@@ -80,5 +89,9 @@ body,
   }
   .calligraph-background::after {
     display: none;
+  }
+  .display {
+    height: max-content;
+    min-height: max-content;
   }
 }

@@ -35,10 +35,12 @@ const Header = () => {
         <div className="max-w-screen-xl m-auto py-6 xs:px-6 px-12 flex flex-row items-center justify-between">
           <Logo />
           <nav className="xs:hidden flex flex-row items-center">
-            <BaseTertiaryButton
-              text={t("header.rooms")}
-              className="lg:mx-10 md:mx-6"
-            />
+            <a href={`#${t("pages.home.roomsList.slug")}`}>
+              <BaseTertiaryButton
+                text={t("header.rooms")}
+                className="lg:mx-10 md:mx-6"
+              />
+            </a>
             <BaseTertiaryButton
               text={t("header.ourRegion")}
               className="lg:mx-10 md:mx-6"

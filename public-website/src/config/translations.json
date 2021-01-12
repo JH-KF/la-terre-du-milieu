@@ -34,6 +34,7 @@
           },
           "roomsList": {
             "title": "Nos Chambres",
+            "slug": "nos-chambres",
             "rooms": {
               "first": {
                 "title": "La Lorien, domaine des Elfes",
@@ -103,6 +104,7 @@
       "pages": {
         "home": {
           "title": "Home",
+          "slug": "our-rooms",
           "blocks": {
             "first": {
               "title": "Ipsum sunt in irure minim ea deserunt nulla ipsum cillum veniam cupidatat magna.",

@@ -29,9 +29,12 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
             </Link>
           </div>
           <div className="mb-12">
-            <Link to="/">
-              <BaseTertiaryButton text={t("header.rooms")} />
-            </Link>
+            <a href={`#${t("pages.home.roomsList.slug")}`}>
+              <BaseTertiaryButton
+                onClick={() => handleClickBurgerMenu()}
+                text={t("header.rooms")}
+              />
+            </a>
           </div>
           <div className="mb-12">
             <Link to="/">

@@ -90,7 +90,7 @@ const IndexPage = ({ pageContext }) => {
         lang={pageContext.locale}
       />
       <section className="px-12 xs:px-6 xs:py-16 calligraph-background">
-        <div className="max-w-screen-xl m-auto display grid gap-x-12 xs:block grid-cols-2 ">
+        <div className="max-w-screen-xl m-auto display grid gap-x-24 xs:block grid-cols-2">
           <Img
             imgStyle={{
               objectFit: "contain",
@@ -107,15 +107,20 @@ const IndexPage = ({ pageContext }) => {
           </div>
         </div>
       </section>
-      <section className="display px-12 xs:px-0 max-w-screen-xl m-auto">
-        <HomeSlider />
+      <section className="min-h-96 flex justify-center px-12 xs:px-0 pb-24 xs:pb-12 m-auto">
+        <div className={"w-full max-w-screen-sm"}>
+          <HomeSlider />
+        </div>
       </section>
-      <section className="bg-white px-12 xs:px-0 py-40 xs:py-24 ">
+      <section className="bg-white px-12 xs:px-0 py-40 xs:py-24">
         <div className="max-w-screen-xl m-auto flex flex-col items-center">
           {blockListElements}
         </div>
       </section>
-      <section className="py-24 px-12 xs:px-6 xs:py-12">
+      <section
+        id={t("pages.home.roomsList.slug")}
+        className="anchor py-24 px-12 xs:px-6 xs:py-12"
+      >
         <div className="max-w-screen-xl m-auto">
           <BaseHeading
             text={t("pages.home.roomsList.title")}

@@ -49,24 +49,22 @@ const HomeSlider = () => {
   const { node } = images[index]
 
   return (
-    <div className={"h-full xs:h-half min-h-96"}>
-      <div className="relative">
-        <CustomImage
-          image={node.childImageSharp.fluid.src}
-          key={node.id}
-          alt={node.name}
-          typeFrame="landscape"
-          className="z-0"
-          hasBorder={false}
-        />
-        <div className="absolute bottom-0 right-0 mb-6 mr-6 z-10">
-          <button onClick={() => handlePrevious()} className="mr-3">
-            <BsChevronLeft className="h-10 w-10 text-white" />
-          </button>
-          <button onClick={() => handleNext()}>
-            <BsChevronRight className="h-10 w-10 text-white" />
-          </button>
-        </div>
+    <div className="relative w-full">
+      <CustomImage
+        image={node.childImageSharp.fluid.src}
+        key={node.id}
+        alt={node.name}
+        typeFrame="landscape"
+        className="z-0"
+        hasBorder={true}
+      />
+      <div className="absolute bottom-0 right-0 mb-6 mr-6 z-10">
+        <button onClick={() => handlePrevious()} className="mr-3">
+          <BsChevronLeft className="h-10 w-10 text-white" />
+        </button>
+        <button onClick={() => handleNext()}>
+          <BsChevronRight className="h-10 w-10 text-white" />
+        </button>
       </div>
     </div>
   )
