@@ -90,7 +90,7 @@ const IndexPage = ({ pageContext }) => {
         description={t("siteMetadata.description")}
         lang={pageContext.locale}
       />
-      <section className="px-12 xs:px-6 xs:py-16 calligraph-background">
+      <section className="px-12 xs:px-6 xs:py-16 calligraph-background-before">
         <div className="max-w-screen-xl m-auto display grid gap-x-24 xs:block grid-cols-2">
           <Img
             imgStyle={{

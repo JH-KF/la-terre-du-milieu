@@ -42,8 +42,8 @@ body,
   position: relative;
   overflow: hidden;
 }
-.calligraph-background::after,
-.calligraph-background::before {
+.calligraph-background-after::after,
+.calligraph-background-before::before {
   position: absolute;
   opacity: 0.05;
   font-size: 36px;
@@ -51,13 +51,13 @@ body,
   max-width: 50vw;
 }
 
-.calligraph-background::after {
+.calligraph-background-after::after {
   bottom: 96px;
   left: -10%;
   transform: rotate(-3deg);
   content: "Ai! laurië lantar lassi súrinen, yéni únótimë ve rámar aldaron! Yéni ve lintë yuldar avánier mi oromardi lissë-miruvóreva Andúnë pella, Vardo tellumar nu luini yassen tintilar i eleni ómaryo airetári-lírinen.";
 }
-.calligraph-background::before {
+.calligraph-background-before::before {
   top: 0px;
   right: 0px;
   transform: rotate(3deg);
