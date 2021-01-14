@@ -45,16 +45,16 @@
               },
               "second": {
                 "title": "Le Gondor, terre des Hommes",
-                "quote": "Des cendres, un feu s’éveillera. Des ombres, une lumière jaillira ; Renouvelée sera l’épée qui fut brisée, le sans couronne sera de nouveau roi.",
-                "quoteAuthor": "Aragorn",
+                "quote": "Des cendres, un feu s’éveillera. Des ombres, une lumière jaillira ; Renouvelée sera l’épée qui fut brisée, le sans-couronne sera de nouveau roi.",
+                "quoteAuthor": "J.R.R. Tolkien",
                 "description": "La chambre d’Aragorn vous plongera dans un univers blanc, épuré, au charme discret, où trône l’arbre blanc de Minastirith, l’arbre des Rois, symbole de vie et d’espoir.",
                 "image": ""
               },
               "third": {
                 "title": "Fangorn, royaume des Ents",
                 "quote": "Oh errants dans la terre obscurcie, ne désespérez point. Car si ténébreuses qu’elles soient, toutes les forêts doivent s’éclaircir.",
-                "quoteAuthor": "Fangorn",
-                "description": "Chambre sylvestre au décor rustique de bois et de pierres, vous enveloppera de mystère et de sérénité. Peut-être même aurez-vous la chance d’entendre les murmures des arbres et les légendes anciennes qu’ils racontent à ceux qui savent écouter.",
+                "quoteAuthor": "J.R.R. Tolkien",
+                "description": "Une chambre sylvestre au décor rustique de bois et de pierres qui vous enveloppera de mystère et de sérénité. Peut-être même aurez-vous la chance d’entendre les murmures des arbres et les légendes anciennes qu’ils racontent à ceux qui savent écouter.",
                 "image": ""
               }
             }
@@ -64,10 +64,10 @@
             "content": {
               "hours": "Les arrivées se font de 16h à 20h, les départs avant 11h le matin",
               "breakfast": "Les petits-déjeuners, copieux et variés, sont servis de 8h à 9h30. Merci de préciser à la réservation les éventuelles allergies ou intolérances",
-              "pets": "Nos amis les animaux ne sont hélas pas autorisés. Non que nous ne les aimions pas, mais comme notre maison en est pleine, la cohabitation serait compliquée (chien, chats, tortues et poules)",
-              "rooms": "Toutes nos chambres sont non fumeur, équipées de literie confortable et de Wifi",
+              "pets": "Nos amis les animaux ne sont hélas pas autorisés. Non que nous ne les aimions pas, mais comme notre maison en est pleine, la cohabitation serait compliquée",
+              "rooms": "Toutes nos chambres sont non-fumeurs, équipées de literie confortable et de Wifi",
               "bathrooms": "Les salles de bains disposent de sèche-cheveux et de linge de toilette ",
-              "pool": "Les transats, parasols et serviettes de piscine sont à votre disposition"
+              "pool": "Des transats, parasols et serviettes de piscine sont à votre disposition"
             }
           }
         }
@@ -78,8 +78,8 @@
         "home": "Accueil"
       },
       "footer": {
-        "legalMention": "Mention légales",
-        "generalRentalTermsAndConditions": "Condition générales de location",
+        "legalMention": "Mentions légales",
+        "generalRentalTermsAndConditions": "Conditions générales de location",
         "madeBy": "Fait avec ❤️ par"
       },
       "modal": {
