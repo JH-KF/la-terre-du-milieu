@@ -2,7 +2,10 @@ import React from "react"
 
 import BaseTitle from "../Title/index"
 import BaseDescription from "../Description/index"
+import BaseParchment from "../Parchment"
+
 import CustomImage from "../../CustomImage"
+
 const BaseDescriptionBlock = ({
   title,
   description,
@@ -11,8 +14,8 @@ const BaseDescriptionBlock = ({
   className,
 }) => {
   return (
-    <article
-      className={`bg-paper md:bg-transparent xs:bg-transparent max-w-screen-lg xs:max-w-md flex md:flex-col xs:flex-col md:px-6 xs:px-6 py-12  ${
+    <BaseParchment
+      className={`max-w-screen-lg xs:max-w-md flex md:flex-col xs:flex-col md:px-6 xs:px-6 py-12  ${
         position % 2 ? "pr-12" : "pl-12"
       } ${className}`}
     >
@@ -30,7 +33,7 @@ const BaseDescriptionBlock = ({
         <BaseTitle title={title} className="mb-10 font-calligraphy" />
         <BaseDescription description={description} className="text-justify" />
       </div>
-    </article>
+    </BaseParchment>
   )
 }
 

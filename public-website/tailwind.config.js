@@ -8,6 +8,7 @@ module.exports = {
         primary: "#5E4F41",
         action: "#98753B",
         background: "#D3C8AC",
+        "background--light": "#fbf8f3",
         "background-accent": "#F3EADC",
         "modal-wrapper": "#00000066",
       },

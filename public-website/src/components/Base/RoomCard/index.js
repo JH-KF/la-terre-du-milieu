@@ -6,6 +6,7 @@ import BaseTitle from "../Title"
 import BaseDescription from "../Description"
 import BaseTertiaryButton from "../TertiaryButton"
 import BaseSecondaryButton from "../SecondaryButton"
+import BaseParchment from "../Parchment"
 
 import { BookModalContext } from "../../../context/bookModalContext"
 
@@ -20,12 +21,13 @@ const BaseRoomCard = ({ name, className }) => {
   }
 
   return (
-    <article className={`max-w-sm ${className}`}>
+    <BaseParchment className={`max-w-sm p-4 ${className}`} light elevation>
       {/* <Img
         fluid={image}
         style={{ height: "344px", width: "344px" }}
         className={`bg-gray-400 flex-shrink-0 transform md:order-first xs:order-first -translate-y-24 md:-translate-y-12 xs:-translate-y-12`}
       /> */}
+
       <div
         style={{ height: "250px" }}
         className={`bg-gray-400 mb-6 w-sm`}
@@ -59,7 +61,7 @@ const BaseRoomCard = ({ name, className }) => {
           onClick={displayModalBookRoom}
         />
       </div>
-    </article>
+    </BaseParchment>
   )
 }
 
