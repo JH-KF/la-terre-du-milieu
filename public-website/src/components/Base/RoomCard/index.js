@@ -5,8 +5,8 @@ import { useTranslation } from "react-i18next"
 import BaseTitle from "../Title"
 import BaseDescription from "../Description"
 import BaseTertiaryButton from "../TertiaryButton"
-import BaseSecondaryButton from "../SecondaryButton"
 import BaseParchment from "../Parchment"
+import BasePrimaryButton from "../PrimaryButton"
 
 import { BookModalContext } from "../../../context/bookModalContext"
 
@@ -56,7 +56,7 @@ const BaseRoomCard = ({ name, className }) => {
           text={t("utils.seeMore")}
           className="ml-6 xs:ml-0 xs:mb-6"
         />
-        <BaseSecondaryButton
+        <BasePrimaryButton
           text={t("utils.book")}
           onClick={displayModalBookRoom}
         />
