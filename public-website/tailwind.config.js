@@ -8,6 +8,7 @@ module.exports = {
         text: "#5E4F41",
         action: "#6D542C",
         background: "#D3C8AC",
+        header:"#F3EADC99",
         "background--light": "#fbf8f3",
         "background-accent": "#F3EADC",
         "modal-wrapper": "#00000066",

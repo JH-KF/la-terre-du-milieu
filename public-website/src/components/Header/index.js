@@ -29,8 +29,8 @@ const Header = () => {
   }
 
   return (
-    <header className="bg-paper z-40 w-screen fixed top-0 left-0 right-0 min-w-screen shadow">
-      <div className="relative">
+    <header className="z-40 w-screen fixed top-0 left-0 right-0 min-w-screen">
+      <div className="relative global-header">
         <div className="max-w-screen-xl m-auto py-6 xs:px-6 px-12 flex flex-row items-center justify-between">
           <Logo />
           <nav className="xs:hidden flex flex-row items-center">
