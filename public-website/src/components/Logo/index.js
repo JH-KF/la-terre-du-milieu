@@ -26,7 +26,7 @@ const Logo = () => {
           fluid={queryData.logo.childImageSharp.fluid}
           className="h-12 w-12 mr-4 flex-shrink-0"
         ></Img>
-        <span className="text-gray-800 lg:text-2xl md:text-xl xs:text-xl xs:leading-6 font-calligraphy font-bold">
+        <span className="text-gray-700 lg:text-2xl md:text-xl xs:text-xl xs:leading-6 font-calligraphy font-bold">
           {t("siteMetadata.title")}
         </span>
       </div>

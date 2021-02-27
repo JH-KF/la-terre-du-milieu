@@ -1,15 +1,14 @@
 import React from "react"
 
-const BaseSecondaryButton = ({ text, className, onClick }) => (
-  <button
-    type="button"
-    className={`h-14 bg-white border border-solid border-action ${className}`}
-    onClick={onClick}
-  >
-    <div className="px-12 flex flex-row justify-items-center item-center">
-      <span className="font-serif text-action text-xl">{text}</span>
-    </div>
-  </button>
-)
+const BaseSecondaryButton = ({ text, className, onClick }) => {
+  return (
+    <button
+      className={`${className} secondary-btn text-action text-xl font-calligraphy`}
+      onClick={onClick}
+    >
+      {text}
+    </button>
+  )
+}
 
 export default BaseSecondaryButton

@@ -1,8 +1,7 @@
 import React, { useState, useContext } from "react"
 
 import BasePrimaryButton from "../Base/PrimaryButton"
-import BaseTertiaryButton from "../Base/TertiaryButton"
-import InformationBar from "../InformationBar"
+import BaseSecondaryButton from "../Base/SecondaryButton"
 import Logo from "../Logo"
 import MobileNav from "../MobileNav"
 
@@ -36,12 +35,12 @@ const Header = () => {
           <Logo />
           <nav className="xs:hidden flex flex-row items-center">
             <a href={`#${t("pages.home.roomsList.slug")}`}>
-              <BaseTertiaryButton
+              <BaseSecondaryButton
                 text={t("header.rooms")}
                 className="lg:mx-10 md:mx-6"
               />
             </a>
-            <BaseTertiaryButton
+            <BaseSecondaryButton
               text={t("header.ourRegion")}
               className="lg:mx-10 md:mx-6"
             />
@@ -64,9 +63,6 @@ const Header = () => {
           handleClickBurgerMenu={handleClickBurgerMenu}
           openModal={openModal}
         />
-        <div className="absolute w-full">
-          <InformationBar informations="Salut les amis ! Toutes nos chambres sont réservées jusqu'au 15 décembre" />
-        </div>
       </div>
     </header>
   )

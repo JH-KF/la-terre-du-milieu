@@ -4,7 +4,7 @@ import { HiOutlineX } from "react-icons/hi"
 import { useTranslation } from "react-i18next"
 
 import BasePrimaryButton from "./Base/PrimaryButton"
-import BaseTertiaryButton from "./Base/TertiaryButton"
+import BaseSecondaryButton from "./Base/SecondaryButton"
 import Logo from "./Logo"
 
 const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
@@ -25,12 +25,12 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
         <section className="px-6 pt-12 flex flex-col items-center">
           <div className="mb-12">
             <Link to="/">
-              <BaseTertiaryButton text={t("header.home")} />
+              <BaseSecondaryButton text={t("header.home")} />
             </Link>
           </div>
           <div className="mb-12">
             <a href={`#${t("pages.home.roomsList.slug")}`}>
-              <BaseTertiaryButton
+              <BaseSecondaryButton
                 onClick={() => handleClickBurgerMenu()}
                 text={t("header.rooms")}
               />
@@ -38,7 +38,7 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
           </div>
           <div className="mb-12">
             <Link to="/">
-              <BaseTertiaryButton text={t("header.ourRegion")} />
+              <BaseSecondaryButton text={t("header.ourRegion")} />
             </Link>
           </div>
         </section>

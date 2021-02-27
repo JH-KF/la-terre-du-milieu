@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next"
 
 import BaseTitle from "../Title"
 import BaseDescription from "../Description"
-import BaseTertiaryButton from "../TertiaryButton"
+import BaseSecondaryButton from "../SecondaryButton"
 import BaseParchment from "../Parchment"
 import BasePrimaryButton from "../PrimaryButton"
 
@@ -52,7 +52,7 @@ const BaseRoomCard = ({ name, className }) => {
         />
       </div>
       <div className="flex justify-between xs:flex-col xs:items-center">
-        <BaseTertiaryButton
+        <BaseSecondaryButton
           text={t("utils.seeMore")}
           className="ml-6 xs:ml-0 xs:mb-6"
         />
