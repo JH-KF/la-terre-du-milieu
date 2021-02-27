@@ -74,7 +74,7 @@ body,
   min-height: 720px;
 }
 .information-bar::before {
-  background: url("../assets/information-bar.svg") repeat-x;
+  background: url("../assets/information-bar.svg") 50% 50%/100% 100% repeat-x;
   background-size: auto 100%;
   z-index: 0;
   display: block;
@@ -114,6 +114,38 @@ body,
 }
 .parchment--shadow {
   box-shadow: -1px 0px 15px 10px #8a7d72;
+}
+.primary-btn {
+  background: url("../assets/primary-btn.svg") 0 0/100% 100% no-repeat;
+  display: inline-block;
+  height: 48px;
+  color: white;
+  position: relative;
+  min-width: 140px;
+}
+.primary-btn:hover {
+  background: url("../assets/primary-btn--hover.svg") 0 0/100% 100% no-repeat;
+}
+.primary-btn::before {
+  top: -20px;
+  transform: translateX(-50%) rotate(180deg);
+}
+.primary-btn::after {
+  bottom: -22px;
+  transform: translateX(-50%);
+}
+.primary-btn::before,
+.primary-btn::after {
+  content: "";
+  background: url("../assets/primary-btn-decoration.svg");
+  position: absolute;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-origin: initial;
+  width: 100%;
+  left: 50%;
+  height: 50%;
+  transition: all 300ms;
 }
 
 @screen md {

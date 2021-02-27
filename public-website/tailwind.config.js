@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         primary: "#5E4F41",
         action: "#98753B",
+        // maquette : border: "#98753B",
+        // maquette : action: "#6D542C",
+        text: "#5E4F41",
         background: "#D3C8AC",
         "background--light": "#fbf8f3",
         "background-accent": "#F3EADC",
