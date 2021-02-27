@@ -18,7 +18,19 @@
   color: theme("colors.header");
   z-index: -1;
 }
-
+.global-footer {
+  position: relative;
+  margin-top: 48px;
+}
+.global-footer::before {
+  content: "";
+  background: url("../assets/footer-top.svg") repeat-x 50% 100%/1280px 48px;
+  position: absolute;
+  height: 48px;
+  width: 100%;
+  top: -48px;
+  left: 0;
+}
 
 .altered-after,
 .altered-before {
@@ -46,10 +58,12 @@
 .anchor {
   scroll-margin-top: 104px;
 }
-body,
 .bg-paper {
   background-image: url("../assets/natural-paper.png");
   background-color: theme("colors.background");
+}
+.bg-paper--white {
+  background-color: theme("colors.background--light");
 }
 
 .calligraph-background {
