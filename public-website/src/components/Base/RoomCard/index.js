@@ -21,7 +21,7 @@ const BaseRoomCard = ({ name, className }) => {
   }
 
   return (
-    <BaseParchment className={`max-w-sm p-4 ${className}`} light elevation>
+    <BaseParchment className={`max-w-md p-4 ${className}`} light elevation>
       {/* <Img
         fluid={image}
         style={{ height: "344px", width: "344px" }}
