@@ -22,14 +22,14 @@ const Footer = () => {
   `)
 
   return (
-    <footer className="pt-16 global-footer bg-paper">
-      <div className=" pb-4 xs:pt-12 px-12 xs:px-6 max-w-screen-xl m-auto">
-        <div className="flex items-center mb-12">
-          <span className="hidden border-t border-solid border-primary  mx-12 flex-grow xs:block xs:mx-0 xs:mr-8"></span>
+    <footer className="pt-16 xs:pt-0 global-footer bg-paper">
+      <div className="pb-4 xs:pt-12 px-12 xs:px-6 max-w-screen-xl m-auto">
+        <div className="flex items-center xs:justify-center mb-12">
+          <span className="hidden border-t border-solid border-primary mx-12 flex-grow xs:hidden"></span>
           <span className="font-calligraphy font-semibold text-gray-800 text-3xl text-center xs:text-xl">
             {t("siteMetadata.title")}
           </span>
-          <span className="border-t border-solid border-primary mx-12 flex-grow xs:mx-0 xs:ml-8"></span>
+          <span className="border-t border-solid border-primary mx-12 flex-grow xs:hidden"></span>
           <a href="/">
             <FaFacebookSquare className="text-primary h-6 w-6 hover:text-action xs:hidden" />
           </a>
@@ -37,10 +37,10 @@ const Footer = () => {
             <FaInstagram className="text-primary h-6 w-6 ml-12 hover:text-action xs:hidden" />
           </a>
         </div>
-        <div className="mb-12">
+        <div className="mb-12 xs:mb-4">
           <Img fixed={queryData.gitedefranceImage.childImageSharp.fixed} />
         </div>
-        <div className="hidden xs:flex justify-center my-12">
+        <div className="hidden xs:flex justify-center my-12 xs:my-4">
           <a href="/">
             <FaFacebookSquare className="text-primary h-10 w-10 mx-12 hover:text-action" />
           </a>

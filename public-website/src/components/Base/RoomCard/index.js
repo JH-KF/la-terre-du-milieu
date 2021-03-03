@@ -21,7 +21,7 @@ const BaseRoomCard = ({ name, className }) => {
   }
 
   return (
-    <BaseParchment className={`max-w-md p-4 ${className}`} light elevation>
+    <BaseParchment className={`max-w-md px-2 py-6 ${className}`} light elevation>
       {/* <Img
         fluid={image}
         style={{ height: "344px", width: "344px" }}
@@ -54,7 +54,7 @@ const BaseRoomCard = ({ name, className }) => {
       <div className="flex justify-between xs:flex-col xs:items-center">
         <BaseSecondaryButton
           text={t("utils.seeMore")}
-          className="ml-6 xs:ml-0 xs:mb-6"
+          className="ml-6 xs:ml-0 xs:mb-12"
         />
         <BasePrimaryButton
           text={t("utils.book")}

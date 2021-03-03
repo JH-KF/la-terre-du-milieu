@@ -1,4 +1,4 @@
-import React from "react"
+import React,  { useEffect } from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -26,7 +26,15 @@ const IndexPage = ({ pageContext }) => {
             src
           }
         }
-      }
+      },
+      roomsBackground: file(relativePath: { eq: "home/rooms-background.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid
+            src
+          }
+        }
+      }, 
       logoImage: file(relativePath: { eq: "home/landing/logo.png" }) {
         childImageSharp {
           fluid {
@@ -64,7 +72,7 @@ const IndexPage = ({ pageContext }) => {
         position={index + 1}
         className={`mx-24 xs:mx-0 ${
           index + 1 < Object.keys(blocks).length
-            ? "mb-64 md:mb-24 xs:mb-12"
+            ? "mb-64 md:mb-48 xs:mb-48"
             : ""
         }`}
       />
@@ -89,44 +97,55 @@ const IndexPage = ({ pageContext }) => {
         description={t("siteMetadata.description")}
         lang={pageContext.locale}
       />
-      <section className="px-12 xs:px-6 xs:py-16 calligraph-background calligraph-background-before">
-        <div className="max-w-screen-xl m-auto display grid gap-x-24 xs:block grid-cols-2">
+      <section className="bg-paper px-12 xs:px-6 xs:py-16 calligraph-background calligraph-background-before">
+        <div className="max-w-screen-xl m-auto display grid gap-x-24 xs:block grid-cols-5">
           <Img
             imgStyle={{
               objectFit: "contain",
             }}
             fluid={queryData.logoImage.childImageSharp.fluid}
-            className="xs:max-w-xl xs:m-auto"
+            className="xs:max-w-sm xs:m-auto col-span-2 xs:mb-16"
           ></Img>
-          <div className="xs:hidden h-full flex items-center">
+          <div className="flex items-center col-span-3">
             <HomeSlider />
           </div>
         </div>
       </section>
-      <section className="bg-paper bg-paper--white px-12 xs:px-0 py-40 xs:py-24 altered-before">
-        <div className="max-w-screen-xl m-auto flex flex-col items-center">
+      <section className="relative bg-paper bg-paper--white px-12 xs:px-6 py-40 xs:py-24 altered-before">
+        <div className="absolute h-full top-0 left-0 right-0 z-0">
+          <div className="sticky top-0 h-screen w-full">
+            <Img
+              imgStyle={{
+                objectFit: "cover",
+              }}
+              fluid={queryData.roomsBackground.childImageSharp.fluid}
+              className="w-full h-screen"
+            ></Img>
+          </div>
+        </div>
+        <div className="relative z-10 max-w-screen-xl m-auto flex flex-col items-center">
           {blockListElements}
         </div>
       </section>
       <section
-        id={t("pages.home.roomsList.slug")}
-        className="anchor  py-24 px-12 xs:px-6 xs:py-12 altered-before"
+        id={t("pages.home.roomsList.slug")} 
+        className="relative bg-paper anchor py-24 px-12 xs:px-6 xs:py-12 altered-before"
       >
         <div className="max-w-screen-xl m-auto">
           <BaseHeading
             text={t("pages.home.roomsList.title")}
-            className="xs:text-center font-calligraphy"
+            className="xs:text-center font-calligraphy mb-16"
           />
-          <div className="m-auto max-w-4xl lg:max-w-7xl flex flex-wrap justify-around">
+          <div className="m-auto max-w-4xl lg:max-w-7xl flex flex-wrap justify-around items-start">
             {roomsListElements}
           </div>
         </div>
       </section>
-      <section className="bg-paper bg-paper--white py-24 px-12 xs:p-6 xs:pt-12 xs:pb-24 altered-before">
+      <section  className="bg-paper bg-paper--white py-24 px-8 xs:py-12 altered-before">
         <div className="max-w-screen-xl m-auto">
           <BaseHeading
             text={t("pages.home.infos.title")}
-            className="xs:text-center font-calligraphy"
+            className="xs:text-center font-calligraphy mb-16"
           />
           <HomePracticalInformations />
         </div>

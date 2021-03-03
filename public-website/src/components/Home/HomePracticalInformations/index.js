@@ -16,7 +16,7 @@ const HomePracticalInformations = () => {
   return (
     <div className="m-auto max-w-4xl">
       <BaseParchment
-        className="flex xs:block p-8 items-center mb-12 xs:mb-4"
+        className="flex xs:block px-4 xs:px-2 py-6 items-center mb-16"
         horizontal
       >
         <FaClock className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
@@ -27,7 +27,7 @@ const HomePracticalInformations = () => {
       </BaseParchment>
 
       <BaseParchment
-        className="flex xs:block p-8 items-center mb-12 xs:mb-4"
+        className="flex xs:block px-4 xs:px-2 py-6 items-center mb-16"
         horizontal
       >
         <FaCoffee className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
@@ -38,7 +38,7 @@ const HomePracticalInformations = () => {
       </BaseParchment>
 
       <BaseParchment
-        className="flex xs:block p-8 items-center mb-12 xs:mb-4"
+        className="flex xs:block px-4 xs:px-2 py-6 items-center mb-16"
         horizontal
       >
         <FaPaw className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
@@ -49,7 +49,7 @@ const HomePracticalInformations = () => {
       </BaseParchment>
 
       <BaseParchment
-        className="flex xs:block p-8 items-center mb-12 xs:mb-4"
+        className="flex xs:block px-4 xs:px-2 py-6 items-center mb-16"
         horizontal
       >
         <TiWiFi className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
@@ -60,7 +60,7 @@ const HomePracticalInformations = () => {
       </BaseParchment>
 
       <BaseParchment
-        className="flex xs:block p-8 items-center mb-12 xs:mb-4"
+        className="flex xs:block px-4 xs:px-2 py-6 items-center mb-16"
         horizontal
       >
         <FaBath className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
@@ -70,7 +70,7 @@ const HomePracticalInformations = () => {
         />
       </BaseParchment>
       <BaseParchment
-        className="flex xs:block p-8 items-center mb-12 xs:mb-4"
+        className="flex xs:block px-4 xs:px-2 py-6 items-center mb-16"
         horizontal
       >
         <MdPool
