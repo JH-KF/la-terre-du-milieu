@@ -49,7 +49,7 @@ const HomeSlider = () => {
   const { node } = images[index]
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full transform rotate-2">
       <CustomImage
         image={node.childImageSharp.fluid.src}
         key={node.id}

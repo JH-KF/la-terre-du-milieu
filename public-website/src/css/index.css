@@ -25,6 +25,7 @@
 .global-footer::before {
   content: "";
   background: url("../assets/footer-top.svg") repeat-x 50% 100%/1280px 48px;
+  background-color: theme("colors.background--light");
   position: absolute;
   height: 48px;
   width: 100%;
@@ -186,6 +187,9 @@
   }
 }
 @screen xs {
+  .parchment--shadow {
+    box-shadow: -1px 0px 15px 10px #8a7d72;
+  }
   .anchor {
     scroll-margin-top: 96px;
   }
