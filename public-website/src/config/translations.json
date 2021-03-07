@@ -17,18 +17,18 @@
           "title": "Accueil",
           "blocks": {
             "first": {
-              "title": "Ipsum sunt in irure minim ea deserunt nulla ipsum cillum veniam cupidatat magna.",
-              "description": "Ad officia non ea aliqua velit. Pariatur nostrud nostrud aliqua adipisicing ipsum qui ex culpa veniam. Pariatur cillum aliquip ut do consectetur esse nostrud cillum consectetur. Cupidatat occaecat deserunt labore ad aute ut officia. Adipisicing cupidatat cillum dolor voluptate amet dolore sit magna labore pariatur est eiusmod.Aliquip reprehenderit veniam est minim veniam laborum do consequat irure velit magna. Eu dolor commodo eu dolor laboris. In commodo mollit exercitation tempor.Eiusmod exercitation tempor ipsum officia irure enim. Adipisicing occaecat aliqua officia proident nisi amet do esse commodo proident ut fugiat officia dolor. Exercitation ex nostrud cillum commodo. Culpa cillum est velit tempor consequat.",
-              "image": ""
+              "title": "Il était une fois…",
+              "description": "Ainsi commencent toutes les belles histoires. La nôtre a débuté il y a fort longtemps : le rêve d’ouvrir une structure d’accueil nous a accompagnés durant toute notre vie commune. Un rêve qui se réalise sous forme de maison d’hôtes : « La Terre du Milieu ».\n\n Passionnés de fleurs, d’animaux, de brocante et de convivialité, nous vous accueillerons dans un environnement chaleureux et reposant.\n\nInspirés par le talentueux J.R.R. Tolkien, nos trois chambres d’hôtes à la décoration soignée vous apporteront confort, dépaysement et calme au milieu des Elfes, des Rois et des Ents.\n\nAu plaisir de faire votre connaissance,\n\nMartial et Monique Bousch\n\n(une quatrième chambre est en cours de réalisation : un trou de Hobbits pour petits et grands)",
+              "image": "first"
             },
             "second": {
-              "title": "Nisi esse nulla cillum enim ipsum veniam veniam veniam.",
-              "description": "Ad officia non ea aliqua velit. Pariatur nostrud nostrud aliqua adipisicing ipsum qui ex culpa veniam. Pariatur cillum aliquip ut do consectetur esse nostrud cillum consectetur. Cupidatat occaecat deserunt labore ad aute ut officia. Adipisicing cupidatat cillum dolor voluptate amet dolore sit magna labore pariatur est eiusmod.Aliquip reprehenderit veniam est minim veniam laborum do consequat irure velit magna. Eu dolor commodo eu dolor laboris. In commodo mollit exercitation tempor.Eiusmod exercitation tempor ipsum officia irure enim. Adipisicing occaecat aliqua officia proident nisi amet do esse commodo proident ut fugiat officia dolor. Exercitation ex nostrud cillum commodo. Culpa cillum est velit tempor consequat.",
+              "title": "Piscine et sauna",
+              "description": "Dans un jardin clos et aménagé, vous pourrez profiter d'une piscine extérieure aux belles dimensions (10m sur 5m) chauffée de mai à septembre et sécurisée. Aux abords de la piscine, chaises longues et parasols vous assureront confort et détente. Une salle de repos est également mise à votre disposition, ainsi qu'un sauna pour deux personnes moyennant un supplément.\n\nPour parfaire votre détente et assurer votre sérénité, deux masseurs professionnels pourront, sur réservation uniquement, vous proposer différents massages bien-être.",
               "image": ""
             },
             "third": {
-              "title": "Sit Lorem eu magna ullamco veniam do quis cupidatat nisi duis eu aliquip.",
-              "description": "Ad officia non ea aliqua velit. Pariatur nostrud nostrud aliqua adipisicing ipsum qui ex culpa veniam. Pariatur cillum aliquip ut do consectetur esse nostrud cillum consectetur. Cupidatat occaecat deserunt labore ad aute ut officia. Adipisicing cupidatat cillum dolor voluptate amet dolore sit magna labore pariatur est eiusmod.Aliquip reprehenderit veniam est minim veniam laborum do consequat irure velit magna. Eu dolor commodo eu dolor laboris. In commodo mollit exercitation tempor.Eiusmod exercitation tempor ipsum officia irure enim. Adipisicing occaecat aliqua officia proident nisi amet do esse commodo proident ut fugiat officia dolor. Exercitation ex nostrud cillum commodo. Culpa cillum est velit tempor consequat.",
+              "title": "Où sommes nous ?",
+              "description": "La Terre du Milieu se situe en Moselle-est dans le sympathique village de Spicheren, connu pour son accueil, ses balades bucoliques et ses petits restaurants incontournables. De nombreux sentiers pédestres ou cyclistes raviront les amateurs du genre. Idéalement situé à cinq minutes de l'Allemagne, à vingt minutes de l'Alsace, à trois quarts d'heures de Metz, à une heure du Luxembourg, son rayonnement géographique vous permettra de découvrir une Lorraine verdoyante, beaucoup moins grise que le charbon des mines qu'elle a abritées durant plus de deux siècles.",
               "image": ""
             }
           },

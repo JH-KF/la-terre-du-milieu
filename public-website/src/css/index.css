@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  white-space: pre-line;
+}
+
 @font-face {
   font-family: Onciale;
   src: url("./fonts/onciale.ttf");
