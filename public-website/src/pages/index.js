@@ -9,13 +9,14 @@ import HomeSlider from "../components/HomeSlider"
 import BaseRoomCard from "../components/Base/RoomCard"
 import HomePracticalInformations from "../components/Home/HomePracticalInformations"
 
-import translations from "../config/translations.json"
+import { rooms } from "../config/site"
+
 import { useTranslation } from "react-i18next"
+
+const informationBlocks = ["monique-martial", "pool", "location"];
 
 const IndexPage = ({ pageContext }) => {
   const { t } = useTranslation()
-  const blocks = translations.fr.translation.pages.home.blocks
-  const rooms = translations.fr.translation.pages.home.roomsList.rooms
 
   const queryData = useStaticQuery(graphql`
     query {
@@ -71,18 +72,18 @@ const IndexPage = ({ pageContext }) => {
   `)
 
   let blockListElements = []
-  Object.keys(blocks).forEach((element, index) =>
+  informationBlocks.forEach((blockName, index) =>
     blockListElements.push(
       <BaseDescriptionBlock
-        title={t(`pages.home.blocks.${element}.title`)}
-        description={t(`pages.home.blocks.${element}.description`)}
-        key={element}
+        title={t(`pages.home.blocks.${blockName}.title`)}
+        description={t(`pages.home.blocks.${blockName}.description`)}
+        key={blockName}
         image={queryData.blockImages.nodes
-          .filter(img => img.name === element)
+          .filter(img => img.name === blockName)
           .map(img => img.childImageSharp.fluid)}
         position={index + 1}
         className={`mx-24 xs:mx-0 ${
-          index + 1 < Object.keys(blocks).length
+          index + 1 < informationBlocks.length
             ? "mb-64 md:mb-48 xs:mb-48"
             : ""
         }`}
@@ -91,13 +92,13 @@ const IndexPage = ({ pageContext }) => {
   )
 
   let roomsListElements = []
-  Object.keys(rooms).forEach(element =>
+  rooms.forEach(roomName =>
     roomsListElements.push(
       <BaseRoomCard
-        name={element}
-        key={element}
+        name={roomName}
+        key={roomName}
         thumbnailImage={queryData.roomThumbnailImages.nodes
-          .filter(img => img.name === element)
+          .filter(img => img.name === roomName)
           .map(img => img.childImageSharp.fluid)}
         className={"mb-24 mx-6 xs:mx-0"}
       />
