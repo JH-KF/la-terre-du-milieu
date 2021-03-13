@@ -98,13 +98,16 @@ const IndexPage = ({ pageContext }) => {
       />
       <section className="bg-paper px-12 xs:px-6 xs:py-16 calligraph-background calligraph-background-before">
         <div className="max-w-screen-xl m-auto display grid gap-x-24 xs:block grid-cols-5">
-          <Img
-            imgStyle={{
-              objectFit: "contain",
-            }}
-            fluid={queryData.logoImage.childImageSharp.fluid}
-            className="xs:max-w-sm xs:m-auto col-span-2 xs:mb-16"
-          ></Img>
+          <div className="flex items-center xs:max-w-sm xs:m-auto col-span-2 xs:mb-16">
+            <div style={{width: "100%"}}>
+              <Img
+                imgStyle={{
+                  objectFit: "contain",
+                }}
+                fluid={queryData.logoImage.childImageSharp.fluid}
+              ></Img>
+            </div>
+          </div>
           <div className="flex items-center col-span-3">
             <HomeSlider />
           </div>
