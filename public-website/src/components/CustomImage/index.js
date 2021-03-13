@@ -1,6 +1,9 @@
 import React from "react"
+import Img from "gatsby-image"
 
-const CustomImage = ({ className, hasBorder, image, typeFrame }) => {
+const CustomImage = ({ className, hasBorder, typeFrame, fluid, fixed }) => {
+ 
+ 
   const getPaddingTop = () => {
     switch (typeFrame) {
       case "square":
@@ -13,6 +16,15 @@ const CustomImage = ({ className, hasBorder, image, typeFrame }) => {
         return "98%"
     }
   }
+
+  const Image =  <Img 
+    imgStyle={{ objectFit: fixed ? "fill" : "cover", position: "absolute" }}
+    style={{ position: fluid ? "absolute" : '', height: fixed ? '100%' : '', width: fixed ? '100%' : '', display: "block" }}
+    fluid={fluid}
+    fixed={fixed}
+    className="clip-panel"
+  ></Img>
+
   return (
     <div
       className={`
@@ -36,11 +48,9 @@ const CustomImage = ({ className, hasBorder, image, typeFrame }) => {
             clipPath="url(#article-panel)"
           ></rect>
           <g>
-            <image
-              href={image}
-              className="clip-panel"
-              preserveAspectRatio="none"
-            />
+            <foreignObject width="100%" height="100%">
+                { Image }
+            </foreignObject>
           </g>
         </svg>
       </div>

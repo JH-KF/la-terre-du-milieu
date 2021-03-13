@@ -21,7 +21,7 @@ const HomeSlider = () => {
               id
               name
               childImageSharp {
-                fluid {
+                fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
                   src
                 }
@@ -44,7 +44,7 @@ const HomeSlider = () => {
   return (
     <div className="relative w-full transform rotate-2">
       <CustomImage
-        image={node.childImageSharp.fluid.src}
+        fluid=  {node.childImageSharp.fluid}
         key={node.id}
         alt={node.name}
         typeFrame="landscape"

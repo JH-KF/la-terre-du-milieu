@@ -16,13 +16,13 @@ const BaseDescriptionBlock = ({
   return (
     <BaseParchment
       elevation
-      className={`max-w-screen-lg xs:max-w-md flex md:flex-col xs:flex-col md:px-6 xs:px-2 py-6  ${
+      className={`max-w-screen-lg xs:max-w-md flex flex-col lg:flex-row md:px-6 xs:px-2 py-6  ${
         position % 2 ? "pr-12" : "pl-12"
       } ${className}`}
     >
       <CustomImage
         hasBorder={true}
-        image={image}
+        fixed={image}
         typeFrame="square"
         className={`h-96 w-96 xs:h-64 xs:w-64 flex-shrink-0 transform md:order-first xs:order-first -translate-y-24 md:-translate-y-16 xs:-translate-y-16 ${
           position % 2

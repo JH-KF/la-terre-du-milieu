@@ -119,6 +119,7 @@
   left: -1%;
 }
 .parchment {
+  border-width: 1px;
   border-image: url("../assets/parchement.svg");
   border-image-repeat: repeat stretch !important;
   border-image-slice: 29 62 28 !important;

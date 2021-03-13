@@ -49,8 +49,8 @@ const IndexPage = ({ pageContext }) => {
         nodes {
           name
           childImageSharp {
-            fixed(width: 400, height: 400) {
-              ...GatsbyImageSharpFixed_tracedSVG
+            fixed(width: 400, height: 400, quality: 100) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
@@ -67,7 +67,7 @@ const IndexPage = ({ pageContext }) => {
         key={element}
         image={queryData.blockImages.nodes
           .filter(img => img.name === element)
-          .map(img => img.childImageSharp.fixed.src)}
+          .map(img => img.childImageSharp.fixed)}
         position={index + 1}
         className={`mx-24 xs:mx-0 ${
           index + 1 < Object.keys(blocks).length
