@@ -54,6 +54,18 @@ const IndexPage = ({ pageContext }) => {
             }
           }
         }
+      },
+      roomThumbnailImages: allFile(
+        filter: { relativeDirectory: { eq: "home/rooms" } }
+      ) {
+        nodes {
+          name
+          childImageSharp {
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   `)
@@ -84,6 +96,9 @@ const IndexPage = ({ pageContext }) => {
       <BaseRoomCard
         name={element}
         key={element}
+        thumbnailImage={queryData.roomThumbnailImages.nodes
+          .filter(img => img.name === element)
+          .map(img => img.childImageSharp.fluid)}
         className={"mb-24 mx-6 xs:mx-0"}
       />
     )

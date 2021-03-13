@@ -8,9 +8,11 @@ import BaseSecondaryButton from "../SecondaryButton"
 import BaseParchment from "../Parchment"
 import BasePrimaryButton from "../PrimaryButton"
 
+import CustomImage from "../../CustomImage"
+
 import { BookModalContext } from "../../../context/bookModalContext"
 
-const BaseRoomCard = ({ name, className }) => {
+const BaseRoomCard = ({ name, className, thumbnailImage }) => {
   const { setIsOpen, setRoomName } = useContext(BookModalContext)
   const { t } = useTranslation()
 
@@ -21,17 +23,8 @@ const BaseRoomCard = ({ name, className }) => {
   }
 
   return (
-    <BaseParchment className={`max-w-md px-2 py-6 ${className}`} light elevation>
-      {/* <Img
-        fluid={image}
-        style={{ height: "344px", width: "344px" }}
-        className={`bg-gray-400 flex-shrink-0 transform md:order-first xs:order-first -translate-y-24 md:-translate-y-12 xs:-translate-y-12`}
-      /> */}
-
-      <div
-        style={{ height: "250px" }}
-        className={`bg-gray-400 mb-6 w-sm`}
-      ></div>
+    <BaseParchment className={`max-w-md px-2 pt-4 pb-6 ${className}`} light elevation>
+      <CustomImage fluid={thumbnailImage} className="w-full mb-6" typeFrame="landscape" />
 
       <div className="mb-6">
         <BaseTitle
@@ -54,7 +47,7 @@ const BaseRoomCard = ({ name, className }) => {
       <div className="flex justify-between xs:flex-col xs:items-center">
         <BaseSecondaryButton
           text={t("utils.seeMore")}
-          className="ml-6 xs:ml-0 xs:mb-12"
+          className="xs:mb-12"
         />
         <BasePrimaryButton
           text={t("utils.book")}

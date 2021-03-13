@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 
-const CustomImage = ({ className, hasBorder, typeFrame, fluid, fixed }) => {
+const CustomImage = ({ className, hasBorder = false, typeFrame, fluid, fixed }) => {
  
  
   const getPaddingBottom = () => {
