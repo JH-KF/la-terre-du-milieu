@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react"
 
 import BasePrimaryButton from "../Base/PrimaryButton"
-import BaseSecondaryButton from "../Base/SecondaryButton"
+import BaseTertiaryButton from "../Base/TertiaryButton"
 import Logo from "../Logo"
 import MobileNav from "../MobileNav"
 
@@ -35,12 +35,12 @@ const Header = () => {
           <Logo />
           <nav className="xs:hidden flex flex-row items-center">
             <a href={`#${t("pages.home.roomsList.slug")}`}>
-              <BaseSecondaryButton
+              <BaseTertiaryButton
                 text={t("header.rooms")}
                 className="lg:mx-10 md:mx-6"
               />
             </a>
-            <BaseSecondaryButton
+            <BaseTertiaryButton
               text={t("header.ourRegion")}
               className="lg:mx-10 md:mx-6"
             />

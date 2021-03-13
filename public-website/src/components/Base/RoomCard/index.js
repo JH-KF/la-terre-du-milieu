@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next"
 
 import BaseTitle from "../Title"
 import BaseDescription from "../Description"
-import BaseSecondaryButton from "../SecondaryButton"
+import BaseTertiaryButton from "../TertiaryButton"
 import BaseParchment from "../Parchment"
-import BasePrimaryButton from "../PrimaryButton"
+import BaseSecondaryButton from "../SecondaryButton"
 
 import CustomImage from "../../CustomImage"
 
@@ -45,11 +45,11 @@ const BaseRoomCard = ({ name, className, thumbnailImage }) => {
         />
       </div>
       <div className="flex justify-between xs:flex-col xs:items-center">
-        <BaseSecondaryButton
+        <BaseTertiaryButton
           text={t("utils.seeMore")}
           className="xs:mb-12"
         />
-        <BasePrimaryButton
+        <BaseSecondaryButton
           text={t("utils.book")}
           onClick={displayModalBookRoom}
         />

@@ -1,13 +1,14 @@
 import React from "react"
 
-const BaseSecondaryButton = ({ text, className, onClick }) => {
+const BaseSecondaryButton = ({ className, text, onClick }) => {
   return (
-    <button
-      className={`${className} secondary-btn text-action text-xl font-calligraphy`}
-      onClick={onClick}
-    >
-      {text}
-    </button>
+      <button 
+        type="button" 
+        onClick={onClick} 
+        className={`${className} secondary-btn text-base font-calligraphy py-3 px-8`} 
+      >
+        {text}
+      </button>
   )
 }
 

@@ -137,29 +137,43 @@
 .parchment--shadow {
   box-shadow: -1px 0px 15px 10px #8a7d72;
 }
-.primary-btn {
-  background: url("../assets/primary-btn.svg") 0 0/100% 100% no-repeat;
+.primary-btn,
+.secondary-btn {
   display: inline-block;
   height: 48px;
-  color: white;
   position: relative;
   min-width: 140px;
 }
-.primary-btn:hover {
-  background: url("../assets/primary-btn--hover.svg") 0 0/100% 100% no-repeat;
+.primary-btn {
+  background: url("../assets/primary-btn/off.svg") 0 0/100% 100% no-repeat;
+  color: white;
 }
-.primary-btn::before {
+.primary-btn:hover {
+  background: url("../assets/primary-btn/hover.svg") 0 0/100% 100% no-repeat;
+}
+.secondary-btn {
+  background: url("../assets/secondary-btn/off.svg") 0 0/100% 100% no-repeat;
+  color: theme("colors.primary");
+}
+.secondary-btn:hover {
+  background: url("../assets/secondary-btn/hover.svg") 0 0/100% 100% no-repeat;
+}
+.primary-btn::before,
+.secondary-btn::before {
   top: -20px;
   transform: translateX(-50%) rotate(180deg);
 }
-.primary-btn::after {
+.primary-btn::after,
+.secondary-btn::after {
   bottom: -22px;
   transform: translateX(-50%);
 }
 .primary-btn::before,
-.primary-btn::after {
+.primary-btn::after,
+.secondary-btn::before,
+.secondary-btn::after {
   content: "";
-  background: url("../assets/primary-btn-decoration.svg");
+  background: url("../assets/primary-btn/decoration.svg");
   position: absolute;
   background-position: 50% 0%;
   background-repeat: no-repeat;
@@ -169,12 +183,12 @@
   height: 50%;
   transition: all 300ms;
 }
-.secondary-btn {
+.tertiary-btn {
   position: relative;
 }
-.secondary-btn::after {
+.tertiary-btn::after {
   content: "";
-  background: url("../assets/secondary-btn-decoration.svg");
+  background: url("../assets/tertiary-btn/decoration.svg");
   position: absolute;
   background-position: 50% 0%;
   background-repeat: no-repeat;
