@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 const CustomImage = ({ className, hasBorder, typeFrame, fluid, fixed }) => {
  
  
-  const getPaddingTop = () => {
+  const getPaddingBottom = () => {
     switch (typeFrame) {
       case "square":
         return "100%"
@@ -17,14 +17,6 @@ const CustomImage = ({ className, hasBorder, typeFrame, fluid, fixed }) => {
     }
   }
 
-  const Image =  <Img 
-    imgStyle={{ objectFit: fixed ? "fill" : "cover", position: "absolute" }}
-    style={{ position: fluid ? "absolute" : '', height: fixed ? '100%' : '', width: fixed ? '100%' : '', display: "block" }}
-    fluid={fluid}
-    fixed={fixed}
-    className="clip-panel"
-  ></Img>
-
   return (
     <div
       className={`
@@ -32,27 +24,15 @@ const CustomImage = ({ className, hasBorder, typeFrame, fluid, fixed }) => {
         ${hasBorder ? "picture-custom-border-1" : ""} 
         relative`}
     >
-      <div className="relative" style={{ paddingTop: getPaddingTop() }}>
-        <svg
-          width="100%"
-          height="100%"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          viewBox="0 0 587.61 331.46"
-          role="presentation"
-          className="absolute inset-0"
-        >
-          <rect
-            width="100%"
-            height="100%"
-            clipPath="url(#article-panel)"
-          ></rect>
-          <g>
-            <foreignObject width="100%" height="100%">
-                { Image }
-            </foreignObject>
-          </g>
-        </svg>
+      <div className="relative" style={{ paddingBottom: getPaddingBottom() }}>
+        <div className="absolute inset-0">
+          <Img 
+            fluid={fluid}
+            fixed={fixed}
+            imgStyle={{clipPath: "url(#image-path)"}}
+            style={{height: "100%" , width: "100%"}}
+          ></Img>
+        </div>
       </div>
     </div>
   )

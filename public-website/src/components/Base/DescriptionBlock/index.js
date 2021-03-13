@@ -22,7 +22,7 @@ const BaseDescriptionBlock = ({
     >
       <CustomImage
         hasBorder={true}
-        fixed={image}
+        fluid={image}
         typeFrame="square"
         className={`h-96 w-96 xs:h-64 xs:w-64 flex-shrink-0 transform md:order-first xs:order-first -translate-y-24 md:-translate-y-16 xs:-translate-y-16 ${
           position % 2
