@@ -36,17 +36,27 @@ exports.createPages = async ({ graphql, actions }) => {
   const roomTemplate = path.resolve(`src/templates/room.js`)
   const { createPage } = actions
   const allRooms = await graphql(`
-  query AllRooms {
+  query allRooms {
     allRoomsJson {
       nodes {
         id
-        slug {
-          en
-          fr
+        fr {
+          description
+          path
+          quote
+          quoteAuthor
+          slug
+          title
+          informations
         }
-        path {
-          en
-          fr
+        en {
+          description
+          quote
+          path
+          quoteAuthor
+          slug
+          title
+          informations
         }
       }
     }
@@ -55,12 +65,16 @@ exports.createPages = async ({ graphql, actions }) => {
 `)
   
   allRooms.data.allRoomsJson.nodes.forEach(node => {
-    Object.keys(node.slug).forEach(lang => {
+    const rooms = allRooms.data.allRoomsJson.nodes;
+    Object.keys(translations).forEach(lang => {
       createPage({
-        path: `/${node.path[lang]}${node.slug[lang]}`,
+        path: `/${node[lang].path}${node[lang].slug}`,
         component: roomTemplate,
         context: {
-          roomId: node.id
+          locale: lang,
+          room: node[lang],
+          id : node.id,
+          otherRooms: rooms.filter(otherRoom => otherRoom.id !== node.id).map(room => { return {id: room.id, ...room[lang]}})
         },
       })
     })

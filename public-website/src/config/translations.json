@@ -73,7 +73,7 @@
           }
         },
         "room" : {
-          "path": "chambre/"
+          "other-rooms" : "Nos autres chambres"
         }
       },
       "header": {
@@ -163,6 +163,9 @@
               "pool": "Deckchairs, sun umbrellas and swimming pool towels at your disposal"
             }
           }
+        },
+        "room" : {
+          "other-rooms" : "Our other rooms"
         }
       },
       "header": {

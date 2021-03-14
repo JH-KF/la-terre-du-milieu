@@ -38,7 +38,7 @@ module.exports = {
       },
       screens: {
         xs: { max: "899px" },
-        md: { min: "900px", max: "1023px" },
+        md: { min: "900px" },
       },
       spacing: {
         14: "3.5rem",

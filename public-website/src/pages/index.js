@@ -55,9 +55,9 @@ const IndexPage = ({ pageContext }) => {
         }
       },
       roomThumbnailImages: allFile(
-        filter: { relativeDirectory: { eq: "home/rooms" } }
+        filter: { relativeDirectory: {eq : "rooms/thumbnails"} }
       ) {
-        nodes {
+        nodes {  
           name
           childImageSharp {
             fluid(quality: 100) {
@@ -69,19 +69,27 @@ const IndexPage = ({ pageContext }) => {
       allRoomsJson {
         nodes {
           id
-          slug {
-            en
-            fr
+          fr {
+            description
+            path
+            quote
+            quoteAuthor
+            slug
+            title
           }
-          path {
-            en
-            fr
+          en {
+            description
+            quote
+            path
+            quoteAuthor
+            slug
+            title
           }
         }
       }
     }
   `)
-
+    
   let blockListElements = []
   informationBlocks.forEach((blockName, index) =>
     blockListElements.push(
@@ -101,20 +109,25 @@ const IndexPage = ({ pageContext }) => {
       />
     )
   )
-
   let roomsListElements = []
-  queryData.allRoomsJson.nodes.forEach(room => 
+  queryData.allRoomsJson.nodes.forEach(room => {
+    const path = `/${room[pageContext.locale].path+room[pageContext.locale].slug}`;
     roomsListElements.push(
       <BaseRoomCard
-        name={room.id}
+        elevation={true}
+        title={room[pageContext.locale].title}
+        description={room[pageContext.locale].description}
+        quote={room[pageContext.locale].quote}
+        quoteAuthor={room[pageContext.locale].quoteAuthor}
         key={room.id}
-        path={`/${room.path[pageContext.locale]+room.slug[pageContext.locale]}`}
+        path={path}
         thumbnailImage={queryData.roomThumbnailImages.nodes
           .filter(img => img.name === room.id)
           .map(img => img.childImageSharp.fluid)}
         className={"mb-24 mx-6 xs:mx-0"}
       />
     )
+    }
   )
 
   return (
@@ -164,7 +177,7 @@ const IndexPage = ({ pageContext }) => {
         <div className="max-w-screen-xl m-auto">
           <BaseHeading
             text={t("pages.home.roomsList.title")}
-            className="xs:text-center font-calligraphy mb-16"
+            className="xs:text-center mb-16"
           />
           <div className="m-auto max-w-4xl lg:max-w-7xl flex flex-wrap justify-around items-start">
             {roomsListElements}
@@ -175,7 +188,7 @@ const IndexPage = ({ pageContext }) => {
         <div className="max-w-screen-xl m-auto">
           <BaseHeading
             text={t("pages.home.infos.title")}
-            className="xs:text-center font-calligraphy mb-16"
+            className="xs:text-center mb-16"
           />
           <HomePracticalInformations />
         </div>

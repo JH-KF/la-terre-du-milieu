@@ -10,7 +10,6 @@ const BaseTertiaryButton = ({ text, className, onClick, path }) => {
       {text}
     </button>
     if(typeof path === "string" && path.length){
-      console.log(path);
       return (
         <Link to={path}>{button}</Link>
       )
