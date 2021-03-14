@@ -1,0 +1,35 @@
+[
+    {
+        "id" : "lorien",
+        "slug" : {
+            "fr" : "la-lorien-domaine-des-elfes",
+            "en" : "lorien-domain-of-the-elves"
+        },
+        "path" : {
+            "fr" : "chambre/",
+            "en" : "room/"
+        }
+    },
+    {
+        "id" : "gondor",
+        "slug" : {
+            "fr" : "le-gondor-terre-des-hommes",
+            "en" : "gondo-land-of-men"
+        },
+        "path" : {
+            "fr" : "chambre/",
+            "en" : "room/"
+        }
+    },
+    {
+        "id" : "fangorn",
+        "slug" : {
+            "fr" : "fangorn-royaume-des-ents",
+            "en" : "fangornk-kingdom-of-the-ents"
+        },
+        "path" : {
+            "fr" : "chambre/",
+            "en" : "room/"
+        }
+    }
+]

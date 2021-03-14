@@ -12,7 +12,7 @@ import CustomImage from "../../CustomImage"
 
 import { BookModalContext } from "../../../context/bookModalContext"
 
-const BaseRoomCard = ({ name, className, thumbnailImage }) => {
+const BaseRoomCard = ({ name, className, thumbnailImage, path }) => {
   const { setIsOpen, setRoomName } = useContext(BookModalContext)
   const { t } = useTranslation()
 
@@ -21,7 +21,6 @@ const BaseRoomCard = ({ name, className, thumbnailImage }) => {
     setIsOpen(true)
     document.querySelector("body").style.overflowY = "hidden"
   }
-
   return (
     <BaseParchment className={`max-w-md px-2 pt-4 pb-6 ${className}`} light elevation>
       <CustomImage fluid={thumbnailImage} className="w-full mb-6" typeFrame="landscape" />
@@ -44,10 +43,11 @@ const BaseRoomCard = ({ name, className, thumbnailImage }) => {
           className="text-justify italic mb-6 font-semibold"
         />
       </div>
-      <div className="flex justify-between xs:flex-col xs:items-center">
+      <div className="flex justify-between items-center xs:flex-col xs:items-center">
         <BaseTertiaryButton
           text={t("utils.seeMore")}
           className="xs:mb-12"
+          path={path}
         />
         <BaseSecondaryButton
           text={t("utils.book")}

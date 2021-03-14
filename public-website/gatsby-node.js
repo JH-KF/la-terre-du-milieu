@@ -1,4 +1,6 @@
 const translations = require("./src/config/translations.json")
+const path = require("path")
+
 /**
  * Makes sure to create localized paths for each file in the /pages folder.
  * For example, pages/404.js will be converted to /en/404.js and /el/404.js and
@@ -28,4 +30,39 @@ exports.onCreatePage = async ({
       })
     })
   )
+}
+
+exports.createPages = async ({ graphql, actions }) => {
+  const roomTemplate = path.resolve(`src/templates/room.js`)
+  const { createPage } = actions
+  const allRooms = await graphql(`
+  query AllRooms {
+    allRoomsJson {
+      nodes {
+        id
+        slug {
+          en
+          fr
+        }
+        path {
+          en
+          fr
+        }
+      }
+    }
+  }
+  
+`)
+  
+  allRooms.data.allRoomsJson.nodes.forEach(node => {
+    Object.keys(node.slug).forEach(lang => {
+      createPage({
+        path: `/${node.path[lang]}${node.slug[lang]}`,
+        component: roomTemplate,
+        context: {
+          roomId: node.id
+        },
+      })
+    })
+  })
 }

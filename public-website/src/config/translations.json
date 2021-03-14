@@ -73,7 +73,7 @@
           }
         },
         "room" : {
-          "path": "chambre"
+          "path": "chambre/"
         }
       },
       "header": {
@@ -143,7 +143,7 @@
                 "description": "This Bedroom will swoop you in a white and refined universe with a discreet charm. This is where the white tree of Minas Tirith resides, symbol of life and hope.",
                 "image": ""
               },
-              "fangor": {
+              "fangorn": {
                 "title": "Fangorn, kingdom of the Ents",
                 "quote": "O! Wanderers in the shadowed landdespair not! For though dark they stand,all woods there be must end at last, and see the open sun go past.",
                 "quoteAuthor": "Fangorn",
@@ -163,9 +163,6 @@
               "pool": "Deckchairs, sun umbrellas and swimming pool towels at your disposal"
             }
           }
-        },
-        "room" : {
-          "path": "room"
         }
       },
       "header": {

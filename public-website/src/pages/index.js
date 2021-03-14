@@ -9,8 +9,6 @@ import HomeSlider from "../components/HomeSlider"
 import BaseRoomCard from "../components/Base/RoomCard"
 import HomePracticalInformations from "../components/Home/HomePracticalInformations"
 
-import { rooms } from "../config/site"
-
 import { useTranslation } from "react-i18next"
 
 const informationBlocks = ["monique-martial", "pool", "location"];
@@ -67,6 +65,19 @@ const IndexPage = ({ pageContext }) => {
             }
           }
         }
+      },
+      allRoomsJson {
+        nodes {
+          id
+          slug {
+            en
+            fr
+          }
+          path {
+            en
+            fr
+          }
+        }
       }
     }
   `)
@@ -92,13 +103,14 @@ const IndexPage = ({ pageContext }) => {
   )
 
   let roomsListElements = []
-  rooms.forEach(roomName =>
+  queryData.allRoomsJson.nodes.forEach(room => 
     roomsListElements.push(
       <BaseRoomCard
-        name={roomName}
-        key={roomName}
+        name={room.id}
+        key={room.id}
+        path={`/${room.path[pageContext.locale]+room.slug[pageContext.locale]}`}
         thumbnailImage={queryData.roomThumbnailImages.nodes
-          .filter(img => img.name === roomName)
+          .filter(img => img.name === room.id)
           .map(img => img.childImageSharp.fluid)}
         className={"mb-24 mx-6 xs:mx-0"}
       />
