@@ -16,18 +16,18 @@ const BaseDescriptionBlock = ({
   return (
     <BaseParchment
       elevation
-      className={`max-w-screen-lg xs:max-w-md flex flex-col lg:flex-row md:px-6 xs:px-2 py-6  ${
-        position % 2 ? "pr-12" : "pl-12"
+      className={`max-w-md md:max-w-screen-lg flex flex-col lg:flex-row px-2 py-6  ${
+        position % 2 ? "md:pr-12" : "md:pl-12"
       } ${className}`}
     >
       <CustomImage
         hasBorder={true}
         fluid={image}
         typeFrame="square"
-        className={`h-96 w-96 xs:h-64 xs:w-64 flex-shrink-0 transform md:order-first xs:order-first -translate-y-24 md:-translate-y-16 xs:-translate-y-16 ${
+        className={`h-64 w-64 md:h-96 md:w-96 flex-shrink-0 transform order-first -translate-y-16 lg:-translate-y-24 ${
           position % 2
-            ? "-rotate-2 -translate-x-12 md:-translate-x-0 xs:-translate-x-0  order-first"
-            : "rotate-2 translate-x-12 md:translate-x-0 xs:translate-x-0 order-last md:self-end xs:self-end"
+            ? "-rotate-2 -translate-x-0 lg:-translate-x-12"
+            : "rotate-2 translate-x-0 lg:translate-x-12 self-end lg:order-last"
         }`}
       />
       <div className="order-none">
