@@ -74,6 +74,7 @@ exports.createPages = async ({ graphql, actions }) => {
           locale: lang,
           room: node[lang],
           id : node.id,
+          imagesPath: `rooms/${node.id}`,
           otherRooms: rooms.filter(otherRoom => otherRoom.id !== node.id).map(room => { return {id: room.id, ...room[lang]}})
         },
       })

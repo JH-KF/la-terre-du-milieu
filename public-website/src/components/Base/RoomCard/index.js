@@ -13,7 +13,7 @@ import CustomImage from "../../CustomImage"
 
 import { BookModalContext } from "../../../context/bookModalContext"
 
-const BaseRoomCard = ({ title, description, quote, quoteAuthor, className, thumbnailImage, path, light = true, imageHasBorder = false, elevation = false }) => {
+const BaseRoomCard = ({ title, description, quote, quoteAuthor, className, thumbnailImage, path, light = true, imageHasBorder = false }) => {
   const { setIsOpen, setRoomName } = useContext(BookModalContext)
   const { t } = useTranslation()
 
@@ -23,7 +23,7 @@ const BaseRoomCard = ({ title, description, quote, quoteAuthor, className, thumb
     document.querySelector("body").style.overflowY = "hidden"
   }
   return (
-    <BaseParchment className={`max-w-md px-2 pt-4 pb-6 ${className}`} light={light} elevation={elevation}>
+    <BaseParchment className={`max-w-md px-2 pt-4 pb-6 ${className}`} light={light} >
       <Link to={path}>
         <CustomImage fluid={thumbnailImage} className="w-full mb-6" typeFrame="landscape" hasBorder={imageHasBorder}/>
       </Link>    

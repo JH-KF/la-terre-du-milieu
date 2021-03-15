@@ -1,12 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const BaseParchment = ({ className, light, elevation, horizontal, children }) => {
+const BaseParchment = ({ className, light, horizontal, children }) => {
   return (
     <article
       className={`bg-paper parchment ${className} ${
         light ? "parchment--light" : ""
-      } ${elevation ? "parchment--shadow" : ""} ${
+      } ${
         horizontal ? "parchment--horizontal" : ""
       } `}
     >
@@ -19,7 +19,6 @@ export default BaseParchment
 
 BaseParchment.propTypes = {
   light: PropTypes.bool,
-  elevation: PropTypes.bool,
   horizontal: PropTypes.bool,
   className: PropTypes.string,
   // children: PropTypes.element.isRequired,
@@ -33,7 +32,6 @@ BaseParchment.propTypes = {
 
 BaseParchment.defaultProps = {
   light: false,
-  elevation: false,
   horizontal: false,
   className: "",
   children: [],

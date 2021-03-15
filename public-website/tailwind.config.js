@@ -32,6 +32,7 @@ module.exports = {
       maxHeight: {
         header: "104px",
         smallHeader: "72px",
+        gallery: "564px",
       },
       minWidth: {
         screen: "320px",

@@ -15,7 +15,6 @@ const BaseDescriptionBlock = ({
 }) => {
   return (
     <BaseParchment
-      elevation
       className={`max-w-md md:max-w-screen-lg flex flex-col lg:flex-row px-2 py-6  ${
         position % 2 ? "md:pr-12" : "md:pl-12"
       } ${className}`}
