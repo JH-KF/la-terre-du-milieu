@@ -42,8 +42,8 @@ const Room = ({pageContext, data}) => {
   <>
     <SEO title={pageContext.room.title} />
     <div className="mt-16 md:mt-6">
-      <section className="px-6 md:px-12 mb-24 bg-paper">
-        <div className="max-w-screen-xl m-auto">
+      <section className="mb-24 bg-paper">
+        <div className="max-w-screen-xl mx-auto px-6 md:px-12">
           <BaseHeading text={pageContext.room.title} className="mb-8" />
           <div>
             <BaseGallery images={data.roomImages.nodes} className="mb-8" />
@@ -68,8 +68,8 @@ const Room = ({pageContext, data}) => {
           </div>
         </div>
       </section>
-      <section className="px-6 md:px-12 py-24 bg-paper bg-paper--white altered-before">
-        <div className="max-w-screen-xl m-auto">
+      <section className="py-24 bg-paper bg-paper--white altered-before">
+        <div className="max-w-screen-xl m-auto px-6 md:px-12">
           <BaseHeading text={t("pages.room.other-rooms")} className="mb-16" />
           <div className="flex flex-wrap items-start justify-center md:justify-between">
             {otherRooms}
