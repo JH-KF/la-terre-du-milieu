@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 
 import BaseDescription from "../Base/Description"
 import BaseTitle from "../Base/Title"
+import BaseParchment from "../Base/Parchment"
 
 import { BookModalContext } from "../../context/bookModalContext"
 
@@ -48,15 +49,15 @@ const BookModal = ({ roomName }) => {
       } fixed z-1000 top-0 w-screen h-screen bg-modal-wrapper px-12 xs:px-0`}
     >
       <section className="mx-auto w-full max-w-lg h-full flex justify-center items-center xs:items-stretch">
-        <div className=" bg-white shadow w-full rounded xs:rounded-none p-4">
+        <BaseParchment light className="p-4 w-full">
           <div className="flex justify-between items-center">
-            <BaseTitle title={t("utils.book")} />
+            <BaseTitle title={t("utils.book")} className="font-calligraphy" />
             <button onClick={closeModal}>
               <RiCloseLine className="text-action h-8 w-8" />
             </button>
           </div>
           <hr className="border-t border-solid border-gray mt-2"></hr>
-          <div className="overflow-y-auto max-h-96 xs:max-h-full pt-2">
+          <div className="overflow-y-auto max-h-full md:max-h-96 pt-2">
             {/* Contact Monique */}
             <div className="mb-12">
               {/* By phone */}
@@ -94,29 +95,29 @@ const BookModal = ({ roomName }) => {
               />
               <div className="flex mt-6 xs:block">
                 <a href="/" target="blank" className="flex-1 w-32 mr-4">
-                  <article className="w-full flex-1 p-4 bg-background-accent shadow rounded-2xl">
-                    <BaseDescription
-                      description="Gîtes de France"
-                      className="mb-6 text-action"
-                    />
-                    <div className="w-24 h-24 m-auto flex justify-center items-center">
-                      <Img
-                        fixed={queryData.gitedefranceLogo.childImageSharp.fixed}
-                      />
-                    </div>
-                    {roomName ? (
+                  <BaseParchment className="w-full flex-1 p-4">
                       <BaseDescription
-                        description={roomName}
-                        className="mt-2"
+                        description="Gîtes de France"
+                        className="mb-6 text-action font-calligraphy"
                       />
-                    ) : null}
-                  </article>
+                      <div className="w-24 h-24 m-auto flex justify-center items-center">
+                        <Img
+                          fixed={queryData.gitedefranceLogo.childImageSharp.fixed}
+                        />
+                      </div>
+                      {roomName ? (
+                        <BaseDescription
+                          description={roomName}
+                          className="mt-2"
+                        />
+                      ) : null}
+                  </BaseParchment>
                 </a>
                 <a href="/" target="blank" className="flex-1 w-32">
-                  <article className="w-full p-4 bg-background-accent shadow rounded-2xl">
+                  <BaseParchment className="w-full  p-4">
                     <BaseDescription
                       description="Booking"
-                      className="mb-6 text-action"
+                      className="mb-6 text-action font-calligraphy"
                     />
                     <div className="w-24 h-24 m-auto flex justify-center items-center">
                       <Img
@@ -129,12 +130,12 @@ const BookModal = ({ roomName }) => {
                         className="mt-2"
                       />
                     ) : null}
-                  </article>
+                    </BaseParchment>
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </BaseParchment>
       </section>
     </div>
   )

@@ -25,16 +25,19 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
         <section className="px-6 pt-12 flex flex-col items-center">
           <div className="mb-12">
             <Link to="/">
-              <BaseSecondaryButton text={t("header.home")} />
+              <BaseSecondaryButton 
+                onClick={() => handleClickBurgerMenu()} 
+                text={t("header.home")} 
+              />
             </Link>
           </div>
           <div className="mb-12">
-            <a href={`#${t("pages.home.roomsList.slug")}`}>
+          <Link to={`/${t("pages.home.path")}#${t("pages.home.roomsList.slug")}`}>
               <BaseSecondaryButton
                 onClick={() => handleClickBurgerMenu()}
                 text={t("header.rooms")}
               />
-            </a>
+            </Link>
           </div>
           <div className="mb-12">
             <Link to="/">

@@ -1,4 +1,7 @@
-import React from "react"
+import React, { useState, useContext } from "react"
+import Calendar from 'react-calendar';
+import { BsChevronLeft } from "react-icons/bs"
+import { BsChevronRight } from "react-icons/bs"
 import { graphql } from "gatsby"
 
 import BaseHeading from "../components/Base/Heading"
@@ -6,12 +9,26 @@ import BaseParchment from "../components/Base/Parchment"
 import BaseDescription from "../components/Base/Description"
 import BaseGallery from "../components/Base/BaseGallery"
 import BaseRoomCard from "../components/Base/RoomCard"
+import BaseSecondaryButton from "../components/Base/SecondaryButton"
+
+import { BookModalContext } from "../context/bookModalContext"
 
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 
 import { useTranslation } from "react-i18next"
 const Room = ({pageContext, data}) => {
+
+  const { setIsOpen, setRoomName } = useContext(BookModalContext)
+
+  const displayModalBookRoom = () => {
+    setRoomName(pageContext.room.title)
+    setIsOpen(true)
+    document.querySelector("body").style.overflowY = "hidden"
+  }
+
+  const dayNextYear = new Date(Date.now() + 31556952000);
+  const [date, onChange] = useState(new Date());
   const { t } = useTranslation()
   const informations = [];
   pageContext.room.informations.forEach(i => {
@@ -30,7 +47,7 @@ const Room = ({pageContext, data}) => {
         thumbnailImage={data.roomThumbnailImages.nodes
           .filter(img => img.name === room.id)
           .map(img => img.childImageSharp.fluid)}
-          className="mb-16 flex-shrink-0"
+          className="mb-16 flex-shrink-0 w-full"
         light={false}
         imageHasBorder={true}
         elevation={false}
@@ -47,16 +64,36 @@ const Room = ({pageContext, data}) => {
           <BaseHeading text={pageContext.room.title} className="mb-8" />
           <div>
             <BaseGallery images={data.roomImages.nodes} className="mb-8" />
-            <div className="block md:grid gap-x-6 md:grid-rows-1 md:grid-cols-2 lg:grid-cols-3" >
-              <div className="bg-white h-40 w-full md:col-start-3 md:col-end-4">
+            <div className="block md:grid gap-x-6 md:grid-rows-1 md:grid-cols-3" >
+              <div className="w-full md:col-start-3 md:col-end-4 pb-6 md:pb-0">
+              <BaseParchment light={true}  className="p-4">
+                <Calendar
+                  onChange={onChange}
+                  value={date}
+                  locale="fr-FR"
+                  minDate={new Date()}
+                  maxDate={dayNextYear}
+                  showNeighboringMonth={false}
+                  prevLabel={<BsChevronLeft className="h-6 w-6" />}
+                  prev2Label={null}
+                  nextLabel={<BsChevronRight className="h-6 w-6" />}
+                  next2Label={null}
+                  maxDetail="month"
+                  className="text-primary text-center mb-4"
+                />
+                <div className="flex justify-end">
+                 <BaseSecondaryButton text={t("utils.book")} onClick={displayModalBookRoom} />
+                </div>
+
+                </BaseParchment>
               </div>
-              <BaseParchment light={true} className="px-2 md:p-6 block md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-1">
+              <BaseParchment light={true} className="p-4 md:p-6 block md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-1">
                   {informations}
                   <div className="my-16">
                     <Img 
-                      fixed={data.separtor.childImageSharp.fixed}
+                      fluid={data.separtor.childImageSharp.fluid}
                       objectFit="contain"
-                      className="m-auto"
+                      className="m-auto w-full max-w-xs"
                       style={{display: "block"}}
                     ></Img>
                   </div>
@@ -96,8 +133,8 @@ export const query = graphql`
     },
     separtor: file(relativePath: { eq: "decorations/separator.png" }) {
       childImageSharp {
-        fixed(width: 320) {
-          ...GatsbyImageSharpFixed_tracedSVG
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
           src
         }
       }

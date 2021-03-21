@@ -107,6 +107,7 @@
       },
       "pages": {
         "home": {
+          "path": "en",
           "title": "Home",
           "slug": "our-rooms",
           "blocks": {
@@ -128,6 +129,7 @@
           },
           "roomsList": {
             "title": "Our Rooms",
+            "slug": "our-rooms",
             "rooms": {
               "lorien": {
                 "title": "Lorien, domain of the Elves",
@@ -177,6 +179,11 @@
         "legalMention": "Legal mentions",
         "generalRentalTermsAndConditions": "General Rental Terms and Conditions",
         "madeBy": "Made with ❤️ by"
+      },
+      "modal": {
+        "callTo": "You can call me at:",
+        "sendTo": "Or send me a email:",
+        "fromWebsites": "Online booking with:"
       }
     }
   }
