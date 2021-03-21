@@ -74,6 +74,10 @@
         },
         "room" : {
           "other-rooms" : "Nos autres chambres"
+        },
+        "ourRegion" : {
+          "path": "notre-region",
+          "title": "Notre région"
         }
       },
       "header": {
@@ -168,6 +172,10 @@
         },
         "room" : {
           "other-rooms" : "Our other rooms"
+        },
+        "ourRegion" : {
+          "path": "/our-region",
+          "title": "Our region"
         }
       },
       "header": {

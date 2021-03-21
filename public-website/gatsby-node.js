@@ -33,8 +33,9 @@ exports.onCreatePage = async ({
 }
 
 exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
+
   const roomTemplate = path.resolve(`src/templates/room.js`)
-  const { createPage } = actions
   const allRooms = await graphql(`
   query allRooms {
     allRoomsJson {
@@ -63,7 +64,6 @@ exports.createPages = async ({ graphql, actions }) => {
   }
   
 `)
-  
   allRooms.data.allRoomsJson.nodes.forEach(node => {
     const rooms = allRooms.data.allRoomsJson.nodes;
     Object.keys(translations).forEach(lang => {
@@ -78,6 +78,20 @@ exports.createPages = async ({ graphql, actions }) => {
           otherRooms: rooms.filter(otherRoom => otherRoom.id !== node.id).map(room => { return {id: room.id, ...room[lang]}})
         },
       })
+    })
+  })
+
+  const ourRegionTemplate = path.resolve("src/templates/our-region.js");
+  Object.keys(translations).forEach(lang => {
+    const localizedPath = translations[lang].default
+        ? translations[lang].translation.pages.ourRegion.path 
+        : `${lang}${translations[lang].translation.pages.ourRegion.path}`
+    createPage({
+      path: localizedPath,
+      component: ourRegionTemplate,
+      context: {
+        locale: lang
+      },
     })
   })
 }
