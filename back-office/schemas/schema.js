@@ -11,6 +11,59 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    /* Your types here! */
+    {
+      name: "Activities",
+      type: "document",
+      title: "activity",
+      fields: [
+        {
+          name: "title",
+          type: "string",
+          title: "Titre"
+        },
+        {
+          name: "image",
+          type: "image",
+          title: "Image"
+        },
+        {
+          name: "description",
+          type: "string",
+          title: "Description"
+        },
+        {
+          name: "url",
+          type: "url",
+          title: "Lien"
+        }
+      ]
+    },
+    {
+      name: "Events",
+      type: "document",
+      title: "event",
+      fields: [
+        {
+          name: "title",
+          type: "string",
+          title: "Titre"
+        },
+        {
+          name: "image",
+          type: "image",
+          title: "Image"
+        },
+        {
+          name: "description",
+          type: "string",
+          title: "Description"
+        },
+        {
+          name: "url",
+          type: "url",
+          title: "Lien"
+        }
+      ]
+    }
   ]),
 })

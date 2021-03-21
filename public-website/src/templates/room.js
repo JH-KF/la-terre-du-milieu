@@ -35,7 +35,7 @@ const Room = ({pageContext, data}) => {
     informations.push(<BaseDescription description={i} className="mb-4" />)
   })
   const otherRooms = [];
-  pageContext.otherRooms.forEach((room,index) => {
+  pageContext.otherRooms.forEach(room => {
     otherRooms.push(
       <BaseRoomCard 
         title={room.title} 
