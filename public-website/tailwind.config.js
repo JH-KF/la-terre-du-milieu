@@ -28,6 +28,7 @@ module.exports = {
       },
       minHeight: {
         96: "384px",
+        half: "50vh"
       },
       maxHeight: {
         header: "104px",

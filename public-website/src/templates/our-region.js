@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import BaseHeading from "../components/Base/Heading"
+import BaseDescription from "../components/Base/Description"
+import BaseActivity from "../components/Base/ActivityCard"
 
 import { useTranslation } from "react-i18next"
 
@@ -11,21 +13,53 @@ const OurRegion = ({data}) => {
 
   const { t } = useTranslation()
   const activities = []; 
-  console.log(data.allSanityActivities)
   data.allSanityActivities.nodes.forEach(activity => {
-    activities.push(activity.title)
+    activities.push(<BaseActivity 
+      key={activity.id} 
+      title={activity.title} 
+      description={activity.description} 
+      thumbnailImage={activity.image.asset.fluid} 
+      url={activity.url}
+      light={true}
+      className="mb-4 mx-auto"
+    />)
+  });
+  const events = []; 
+  data.allSanityEvents.nodes.forEach(event => {
+    events.push(<BaseActivity 
+      key={event.id} 
+      title={event.title} 
+      description={event.description} 
+      thumbnailImage={event.image.asset.fluid} 
+      url={event.url}
+      className="mb-4 mx-auto"
+    />)
   });
   return (
   <>
-    <SEO title={t("pages.ourRegion.title")} />
-    <div className="mt-16 md:mt-6">
-    <BaseHeading
-      text={t("pages.ourRegion.title")}
-      className="xs:text-center mb-16"
-    />
-    {activities}
-
-    </div>
+    <SEO title={t("pages.ourRegion.title")} /> 
+    <section className="bg-paper mt-16 md:mt-6">
+      <div className="max-w-screen-xl px-6 md:px-12 m-auto">
+        <BaseHeading
+          text={t("pages.ourRegion.activitiesTitle")}
+          className="xs:text-center mb-16"
+        />
+        <div className="min-h-half block md:flex md:flex-wrap md:justify-around md:items-center">
+          {activities}
+        </div>
+      </div>
+    </section>
+    <section className="relative bg-paper bg-paper--white mt-16 md:mt-6 py-12 md:py-24 altered-before">
+      <div className="max-w-screen-xl px-6 md:px-12 m-auto">
+        <BaseHeading
+          text={t("pages.ourRegion.eventsTitle")}
+          className="xs:text-center mb-16"
+        />
+        <div className="min-h-half block md:flex md:flex-wrap md:justify-around md:items-center">
+          {events.length ? events : <BaseDescription description={t("pages.ourRegion.noEvents")} />}
+        </div>
+      </div>
+    </section>
   </>
   )
 }
@@ -38,14 +72,29 @@ export const query = graphql`
     allSanityActivities {
       nodes {
         id
-        titre
+        title
         url
         image {
-          _key
-          _type
-          _rawAsset
-          _rawHotspot
-          _rawCrop
+          asset {
+            fluid(maxWidth: 400) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+        description
+      }
+    }
+    allSanityEvents {
+      nodes {
+        id
+        title
+        url
+        image {
+          asset {
+            fluid(maxWidth: 400) {
+              ...GatsbySanityImageFluid
+            }
+          }
         }
         description
       }

@@ -184,7 +184,7 @@ const IndexPage = ({ pageContext }) => {
           </div>
         </div>
       </section>
-      <section  className="bg-paper bg-paper--white py-24 px-8 xs:py-12 altered-before">
+      <section className="bg-paper bg-paper--white py-24 px-8 xs:py-12 altered-before">
         <div className="max-w-screen-xl m-auto px-6 md:px-12">
           <BaseHeading
             text={t("pages.home.infos.title")}

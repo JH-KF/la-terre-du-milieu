@@ -19,22 +19,26 @@ export default createSchema({
         {
           name: "title",
           type: "string",
-          title: "Titre"
+          title: "Titre",
+          validation: Rule => Rule.required()
         },
         {
           name: "image",
           type: "image",
-          title: "Image"
+          title: "Image",
+          validation: Rule => Rule.required()
         },
         {
           name: "description",
           type: "string",
-          title: "Description"
+          title: "Description",
+          validation: Rule => Rule.required()
         },
         {
           name: "url",
           type: "url",
-          title: "Lien"
+          title: "Lien",
+          validation: Rule => Rule.required()
         }
       ]
     },
@@ -46,22 +50,26 @@ export default createSchema({
         {
           name: "title",
           type: "string",
-          title: "Titre"
+          title: "Titre",
+          validation: Rule => Rule.required()
         },
         {
           name: "image",
           type: "image",
-          title: "Image"
+          title: "Image",
+          validation: Rule => Rule.required()
         },
         {
           name: "description",
           type: "string",
-          title: "Description"
+          title: "Description",
+          validation: Rule => Rule.required()
         },
         {
           name: "url",
           type: "url",
-          title: "Lien"
+          title: "Lien",
+          validation: Rule => Rule.required()
         }
       ]
     }

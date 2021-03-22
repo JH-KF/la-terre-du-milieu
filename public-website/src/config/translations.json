@@ -76,8 +76,10 @@
           "other-rooms" : "Nos autres chambres"
         },
         "ourRegion" : {
+          "title": "Notre région",
           "path": "notre-region",
-          "title": "Notre région"
+          "activitiesTitle": "A découvrir",
+          "eventsTitle": "Évènements"
         }
       },
       "header": {
@@ -174,8 +176,11 @@
           "other-rooms" : "Our other rooms"
         },
         "ourRegion" : {
+          "title": "Our region",
           "path": "/our-region",
-          "title": "Our region"
+          "activitiesTitle": "To discover",
+          "eventsTitle": "Events",
+          "noEvents": "Currently, there is no event around."
         }
       },
       "header": {
