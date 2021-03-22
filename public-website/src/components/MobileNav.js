@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { HiOutlineX } from "react-icons/hi"
 import { useTranslation } from "react-i18next"
 
-import BasePrimaryButton from "./Base/PrimaryButton"
+import BaseTertiaryButton from "./Base/TertiaryButton"
 import BaseSecondaryButton from "./Base/SecondaryButton"
 import Logo from "./Logo"
 
@@ -25,7 +25,7 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
         <section className="px-6 pt-12 flex flex-col items-center">
           <div className="mb-12">
             <Link to="/">
-              <BaseSecondaryButton 
+              <BaseTertiaryButton 
                 onClick={() => handleClickBurgerMenu()} 
                 text={t("header.home")} 
               />
@@ -33,22 +33,25 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
           </div>
           <div className="mb-12">
           <Link to={`/${t("pages.home.path")}#${t("pages.home.roomsList.slug")}`}>
-              <BaseSecondaryButton
+              <BaseTertiaryButton
                 onClick={() => handleClickBurgerMenu()}
                 text={t("header.rooms")}
               />
             </Link>
           </div>
           <div className="mb-12">
-            <Link to="/">
-              <BaseSecondaryButton text={t("header.ourRegion")} />
+            <Link to={`/${t("pages.home.path")}${t("pages.ourRegion.path")}`}>
+              <BaseTertiaryButton 
+                onClick={() => handleClickBurgerMenu()} 
+                text={t("header.ourRegion")} 
+              />
             </Link>
           </div>
         </section>
         <hr />
       </div>
       <section className="px-6 py-12 text-center">
-        <BasePrimaryButton
+        <BaseSecondaryButton
           text={t("utils.book")}
           onClick={() => {
             handleClickBurgerMenu()

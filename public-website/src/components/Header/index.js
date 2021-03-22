@@ -28,7 +28,6 @@ const Header = () => {
     setIsOpen(true)
     document.querySelector("body").style.overflowY = "hidden"
   }
-  console.log(i18n)
   return (
     <header className="z-40 w-screen fixed top-0 left-0 right-0 min-w-screen">
       <div className="relative global-header">
