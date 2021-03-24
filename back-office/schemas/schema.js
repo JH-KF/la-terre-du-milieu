@@ -4,6 +4,42 @@ import createSchema from 'part:@sanity/base/schema-creator'
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
+import { MdEvent, MdPlace } from 'react-icons/md'
+
+
+// Since schemas are code, we can programmatically build
+// fields to hold translated values. We'll use this array
+// of languages to determine which fields to define.
+const supportedLanguages = [
+  { id: 'fr', title: 'French', isDefault: true },
+  { id: 'en', title: 'English'}
+]
+
+const baseLanguage = supportedLanguages.find(l => l.isDefault)
+
+const localeString = {
+  title: 'Localized string',
+  name: 'localeString',
+  type: 'object',
+  // Fieldsets can be used to group object fields.
+  // Here we omit a fieldset for the "default language",
+  // making it stand out as the main field.
+  fieldsets: [
+    {
+      title: 'Translations',
+      name: 'translations',
+      options: { collapsible: true }
+    }
+  ],
+  // Dynamically define one field per language
+  fields: supportedLanguages.map(lang => ({
+    title: lang.title,
+    name: lang.id,
+    type: 'string',
+    validation: Rule => Rule.required()
+  }))
+}
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -12,15 +48,15 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     {
+      title: "Activités",
       name: "Activities",
       type: "document",
-      title: "activity",
+      icon: MdPlace,
       fields: [
         {
-          name: "title",
-          type: "string",
           title: "Titre",
-          validation: Rule => Rule.required()
+          name: "title",
+          type: "localeString",
         },
         {
           name: "image",
@@ -29,41 +65,46 @@ export default createSchema({
           validation: Rule => Rule.required()
         },
         {
-          name: "description",
-          type: "string",
           title: "Description",
-          validation: Rule => Rule.required()
+          name: "description",
+          type: "localeString",
         },
         {
+          title: "Lien",
           name: "url",
           type: "url",
-          title: "Lien",
           validation: Rule => Rule.required()
         }
-      ]
+      ],
+      preview: {
+        select: {
+          title: `title.${baseLanguage.id}`,
+          subtitle: `description.${baseLanguage.id}`,
+          media: "image"
+        }
+      }
     },
     {
+      title: "Évènements",
       name: "Events",
       type: "document",
-      title: "event",
+      icon: MdEvent,
       fields: [
         {
-          name: "title",
-          type: "string",
           title: "Titre",
-          validation: Rule => Rule.required()
+          name: "title",
+          type: "localeString"
         },
         {
+          title: "Image",
           name: "image",
           type: "image",
-          title: "Image",
           validation: Rule => Rule.required()
         },
         {
-          name: "description",
-          type: "string",
           title: "Description",
-          validation: Rule => Rule.required()
+          name: "description",
+          type: "localeString",
         },
         {
           name: "url",
@@ -71,7 +112,15 @@ export default createSchema({
           title: "Lien",
           validation: Rule => Rule.required()
         }
-      ]
-    }
+      ],
+      preview: {
+        select: {
+          title: `title.${baseLanguage.id}`,
+          subtitle: `description.${baseLanguage.description}`,
+          media: "image"
+        }
+      }
+    },
+    localeString
   ]),
 })

@@ -9,7 +9,9 @@
   "scripts": {
     "start": "sanity start",
     "test": "sanity check",
-    "build": "sanity build"
+    "build": "sanity build",
+    "graphql": "sanity graphql deploy --no-playground",
+    "graphql:development": "sanity graphql deploy --dataset development"
   },
   "keywords": [
     "sanity"
@@ -25,7 +27,8 @@
     "@sanity/vision": "^2.7.0",
     "prop-types": "^15.7",
     "react": "^17.0",
-    "react-dom": "^17.0"
+    "react-dom": "^17.0",
+    "react-icons": "^4.2.0"
   },
   "devDependencies": {}
 }
