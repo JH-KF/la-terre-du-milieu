@@ -79,7 +79,8 @@
           "title": "Notre région",
           "path": "notre-region",
           "activitiesTitle": "A découvrir",
-          "eventsTitle": "Évènements"
+          "eventsTitle": "Évènements",
+          "noEvents": "Pas d'évènements au programme."
         }
       },
       "header": {
