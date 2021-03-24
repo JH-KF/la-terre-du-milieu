@@ -37,6 +37,10 @@ module.exports = {
       },
       minWidth: {
         screen: "320px",
+        card: "280px"
+      },
+      maxWidth: {
+        card: "344px"
       },
       screens: {
         xs: { max: "899px" },

@@ -9,15 +9,16 @@ import { useTranslation } from "react-i18next"
 
 import SEO from "../components/seo"
 
-const OurRegion = ({data}) => {
+const OurRegion = ({data, pageContext}) => {
 
   const { t } = useTranslation()
+  const lng = pageContext.locale
   const activities = []; 
   data.allSanityActivities.nodes.forEach(activity => {
     activities.push(<BaseActivity 
       key={activity.id} 
-      title={activity.title} 
-      description={activity.description} 
+      title={activity.title[lng]} 
+      description={activity.description[lng]} 
       thumbnailImage={activity.image.asset.fluid} 
       url={activity.url}
       light={true}
@@ -28,8 +29,8 @@ const OurRegion = ({data}) => {
   data.allSanityEvents.nodes.forEach(event => {
     events.push(<BaseActivity 
       key={event.id} 
-      title={event.title} 
-      description={event.description} 
+      title={event.title[lng]} 
+      description={event.description[lng]} 
       thumbnailImage={event.image.asset.fluid} 
       url={event.url}
       className="mb-4 mx-auto"
@@ -72,7 +73,10 @@ export const query = graphql`
     allSanityActivities {
       nodes {
         id
-        title
+        title {
+          fr
+          en
+        }
         url
         image {
           asset {
@@ -81,13 +85,19 @@ export const query = graphql`
             }
           }
         }
-        description
+        description {
+          fr
+          en
+        }
       }
     }
     allSanityEvents {
       nodes {
         id
-        title
+        title {
+          fr
+          en
+        }
         url
         image {
           asset {
@@ -96,7 +106,10 @@ export const query = graphql`
             }
           }
         }
-        description
+        description {
+          fr
+          en
+        }
       }
     }
   }`
