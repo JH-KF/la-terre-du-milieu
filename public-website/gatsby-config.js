@@ -34,13 +34,23 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Chambres d'hôte | La terre du milieu`,
+        short_name: `La terre du milieu`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        lang: `fr`,
+        background_color: `#ffffff`,
+        theme_color: `#6D542C`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        localize: [
+          {
+            start_url: `/en/`,
+            lang: `en`,
+            name: `Guest rooms | La terre du milieu`,
+            short_name: `La terre du milieu`,
+            description: `Die Anwendung macht coole Dinge und macht Ihr Leben besser.`,
+          },
+        ],
       },
     },
     `gatsby-plugin-postcss`,
