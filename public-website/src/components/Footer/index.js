@@ -1,7 +1,7 @@
 import React from "react"
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import { useTranslation } from "react-i18next"
 
@@ -49,8 +49,24 @@ const Footer = () => {
           </a>
         </div>
         <div className="text-center text-primary text-opacity-70">
-          <div>{t("footer.legalMention")}</div>
-          <div>{t("footer.generalRentalTermsAndConditions")}</div>
+          <div>
+            <Link to="/">
+              <span className="text-action hover:underline">FR</span>
+            </Link>
+            &nbsp;
+            <span>|</span>
+            &nbsp;
+            <Link to="/en/">
+              <span className="text-action hover:underline">EN</span>
+            </Link>
+          </div>
+        
+          <Link to="/">
+            <div className="hover:underline">{t("footer.legalMention")}</div>
+          </Link>
+          <Link to="/">
+            <div className="hover:underline">{t("footer.generalRentalTermsAndConditions")}</div>
+          </Link>
         </div>
       </div>
       <div className="bg-white text-gray-600 text-sm text-center py-2">
