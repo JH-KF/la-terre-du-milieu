@@ -27,8 +27,10 @@ module.exports = {
         dataset: process.env.NODE_ENV === "development" ? "development" : "production",
         watchMode: true, // when making a change in sanity CMS and save, it will automatically be updated inside gatsby, real time editing experience (no need to rebuild)
         token: process.env.SANITY_TOKEN,
+        apiVersion: '2021-03-28'
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

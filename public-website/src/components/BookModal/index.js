@@ -2,8 +2,7 @@ import React, { useContext } from "react"
 
 import { RiCloseLine } from "react-icons/ri"
 import { useTranslation } from "react-i18next"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 import BaseDescription from "../Base/Description"
 import BaseTitle from "../Base/Title"
@@ -14,26 +13,6 @@ import { BookModalContext } from "../../context/bookModalContext"
 const BookModal = ({ roomName }) => {
   const { isOpen, setIsOpen, setRoomName } = useContext(BookModalContext)
 
-  const queryData = useStaticQuery(graphql`
-    query {
-      gitedefranceLogo: file(
-        relativePath: { eq: "modal/gite-de-france-logo.png" }
-      ) {
-        childImageSharp {
-          fixed(width: 96) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      bookingLogo: file(relativePath: { eq: "modal/booking-logo.png" }) {
-        childImageSharp {
-          fixed(width: 96) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
   const { t } = useTranslation()
 
   const closeModal = () => {
@@ -101,8 +80,11 @@ const BookModal = ({ roomName }) => {
                         className="mb-6 text-action font-calligraphy"
                       />
                       <div className="w-24 h-24 m-auto flex justify-center items-center">
-                        <Img
-                          fixed={queryData.gitedefranceLogo.childImageSharp.fixed}
+                        <StaticImage
+                          src="../../images/modal/gite-de-france-logo.png"
+                          alt="gite de france"
+                          layout="constrained"
+                          width={96}
                         />
                       </div>
                       {roomName ? (
@@ -120,8 +102,11 @@ const BookModal = ({ roomName }) => {
                       className="mb-6 text-action font-calligraphy"
                     />
                     <div className="w-24 h-24 m-auto flex justify-center items-center">
-                      <Img
-                        fixed={queryData.bookingLogo.childImageSharp.fixed}
+                      <StaticImage
+                        src="../../images/modal/booking-logo.png"
+                        alt="Booking"
+                        layout="constrained"
+                        width={96}
                       />
                     </div>
                     {roomName ? (

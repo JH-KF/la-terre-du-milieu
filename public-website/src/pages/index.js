@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import { StaticImage, getImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 import SEO from "../components/seo"
@@ -18,39 +18,13 @@ const IndexPage = ({ pageContext }) => {
 
   const queryData = useStaticQuery(graphql`
     query {
-      landingImage: file(relativePath: { eq: "home/landing/image1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 600, maxHeight: 600) {
-            ...GatsbyImageSharpFluid
-            src
-          }
-        }
-      },
-      roomsBackground: file(relativePath: { eq: "home/rooms-background.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1920) {
-            ...GatsbyImageSharpFluid
-            src
-          }
-        }
-      }, 
-      logoImage: file(relativePath: { eq: "home/landing/logo.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-            src
-          }
-        }
-      }
       blockImages: allFile(
         filter: { relativeDirectory: { eq: "home/blocks" } }
       ) {
         nodes {
           name
           childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 400)
           }
         }
       },
@@ -60,9 +34,7 @@ const IndexPage = ({ pageContext }) => {
         nodes {  
           name
           childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 400)
           }
         }
       },
@@ -99,7 +71,7 @@ const IndexPage = ({ pageContext }) => {
         key={blockName}
         image={queryData.blockImages.nodes
           .filter(img => img.name === blockName)
-          .map(img => img.childImageSharp.fluid)}
+          .map(img => getImage(img))[0]}
         position={index + 1}
         className={`mx-24 xs:mx-0 ${
           index + 1 < informationBlocks.length
@@ -123,7 +95,7 @@ const IndexPage = ({ pageContext }) => {
         path={path}
         thumbnailImage={queryData.roomThumbnailImages.nodes
           .filter(img => img.name === room.id)
-          .map(img => img.childImageSharp.fluid)}
+          .map(img => getImage(img))[0]}
         className={"mb-24"}
       />
     )
@@ -141,12 +113,11 @@ const IndexPage = ({ pageContext }) => {
         <div className="max-w-screen-xl px-6 md:px-12 m-auto display grid gap-x-24 xs:block grid-cols-5">
           <div className="flex items-center xs:max-w-sm xs:m-auto col-span-2 xs:mb-16">
             <div style={{width: "100%"}}>
-              <Img
-                imgStyle={{
-                  objectFit: "contain",
-                }}
-                fluid={queryData.logoImage.childImageSharp.fluid}
-              ></Img>
+              <StaticImage
+                src="../images/home/landing/logo.png"
+                placeholder="tracedSVG"
+                alt="Chambres d'hôte | La terre du milieu"
+              ></StaticImage>
             </div>
           </div>
           <div className="flex items-center col-span-3">
@@ -157,13 +128,14 @@ const IndexPage = ({ pageContext }) => {
       <section className="relative bg-paper bg-paper--white px-12 xs:px-6 py-40 xs:py-24 altered-before">
         <div className="absolute h-full top-0 left-0 right-0 z-0">
           <div className="sticky top-0 h-screen w-full">
-            <Img
+            <StaticImage
               imgStyle={{
                 objectFit: "cover",
               }}
-              fluid={queryData.roomsBackground.childImageSharp.fluid}
+              alt="tolkien map"
+              src="../images/home/rooms-background.png"
               className="w-full h-screen"
-            ></Img>
+            ></StaticImage>
           </div>
         </div>
         <div className="relative z-10 max-w-screen-xl m-auto flex flex-col items-center">

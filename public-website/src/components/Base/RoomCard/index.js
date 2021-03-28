@@ -25,7 +25,7 @@ const BaseRoomCard = ({ title, description, quote, quoteAuthor, className, thumb
   return (
     <BaseParchment className={`max-w-md px-2 pt-4 pb-6 ${className}`} light={light} >
       <Link to={path}>
-        <CustomImage fluid={thumbnailImage} className="w-full mb-6" typeFrame="landscape" hasBorder={imageHasBorder}/>
+        <CustomImage image={thumbnailImage} alt={title} className="w-full mb-6" typeFrame="landscape" hasBorder={imageHasBorder}/>
       </Link>    
       <div className="mb-6">
         <BaseTitle

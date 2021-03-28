@@ -1,25 +1,12 @@
 import React from "react"
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 import { useTranslation } from "react-i18next"
 
 const Footer = () => {
   const { t } = useTranslation()
-  const queryData = useStaticQuery(graphql`
-    query {
-      gitedefranceImage: file(
-        relativePath: { eq: "footer/gite-de-france-logo.png" }
-      ) {
-        childImageSharp {
-          fixed(width: 93) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
 
   return (
     <footer className="pt-16 xs:pt-0 global-footer bg-paper">
@@ -38,7 +25,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="mb-12 xs:mb-4">
-          <Img fixed={queryData.gitedefranceImage.childImageSharp.fixed} />
+          <StaticImage src="../../images/footer/gite-de-france-logo.png" alt="gite de france" />
         </div>
         <div className="hidden xs:flex justify-center my-12 xs:my-4">
           <a href="/">

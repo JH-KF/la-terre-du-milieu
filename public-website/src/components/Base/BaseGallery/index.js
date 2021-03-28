@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const BaseGallery = ({className, images}) => {
   const image1 = images[0]
@@ -10,50 +10,49 @@ const BaseGallery = ({className, images}) => {
   return (
     <div className={`${className} block md:grid grid-cols-4 grid-rows-2 gap-4 max-h-gallery md:min-h-96`}>
         <div className="relative picture-custom-border-1">
-          <Img 
-            fluid={image1.childImageSharp.fluid} 
-            hasBorder={true} 
+          <GatsbyImage 
+            image={getImage(image1)} 
+            alt={image1.name}
             imgStyle={{clipPath: "url(#image-path)"}} 
-            typeFrame="landscape"
             className="block md:hidden"
           />
         </div>
         <div className="hidden md:block col-start-1 col-end-3 row-start-1 row-end-3 relative picture-custom-border-1">
-          <Img 
-            fluid={image1.childImageSharp.fluid} 
-            hasBorder={true} 
+          <GatsbyImage 
+            image={getImage(image1)}  
+            alt={image1.name}
             className="h-full w-full" 
             imgStyle={{clipPath: "url(#image-path)"}} 
           />
         </div>
         <div className="hidden md:block col-start-3 col-end-4 row-start-1 row-end-2 relative picture-custom-border-1">
-          <Img 
-            fluid={image2.childImageSharp.fluid} 
-            hasBorder={true} 
+          <GatsbyImage 
+            image={getImage(image2)} 
+            alt={image2.name}
             className="h-full w-full" 
             imgStyle={{clipPath: "url(#image-path)"}} 
           />
         </div>
         <div className="hidden md:block col-start-4 col-end-5 row-start-1 row-end-2 relative picture-custom-border-1">
-          <Img 
-            fluid={image3.childImageSharp.fluid} 
-            hasBorder={true} 
+          <GatsbyImage 
+            image={getImage(image3)} 
+            alt={image3.name}
             className="h-full w-full" 
             imgStyle={{clipPath: "url(#image-path)"}} 
           />
         </div>
         <div className="hidden md:block col-start-3 col-end-4 row-start-2 row-end-3 relative picture-custom-border-1">
-          <Img 
-            fluid={image4.childImageSharp.fluid} 
-            hasBorder={true} 
+          <GatsbyImage 
+            image={getImage(image4)} 
+            alt={image4.name}
             className="h-full w-full" 
             imgStyle={{clipPath: "url(#image-path)"}} 
             />
         </div>
         <div className="hidden md:block col-start-4 col-end-5 row-start-2 row-end-3 relative picture-custom-border-1">
-          <Img 
-            fluid={image5.childImageSharp.fluid} 
-            hasBorder={true} 
+          <GatsbyImage 
+            image={getImage(image5)}
+            alt={image5.name}
             className="h-full w-full" 
             imgStyle={{clipPath: "url(#image-path)"}} 
           />

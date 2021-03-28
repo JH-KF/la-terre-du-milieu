@@ -1,8 +1,8 @@
 import React from "react"
-import Img from "gatsby-image"
 
-const CustomImage = ({ className, hasBorder = false, typeFrame, fluid, fixed }) => {
- 
+import { GatsbyImage } from "gatsby-plugin-image"
+
+const CustomImage = ({ className, hasBorder = false, typeFrame, alt, image = {} }) => {
  
   const getPaddingBottom = () => {
     switch (typeFrame) {
@@ -26,12 +26,12 @@ const CustomImage = ({ className, hasBorder = false, typeFrame, fluid, fixed }) 
     >
       <div className="relative" style={{ paddingBottom: getPaddingBottom() }}>
         <div className="absolute inset-0">
-          <Img 
-            fluid={fluid}
-            fixed={fixed}
+          <GatsbyImage 
+            image={image}
+            alt={alt}
             imgStyle={{clipPath: "url(#image-path)"}}
             style={{height: "100%" , width: "100%"}}
-          ></Img>
+          ></GatsbyImage>
         </div>
       </div>
     </div>

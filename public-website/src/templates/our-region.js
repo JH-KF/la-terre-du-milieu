@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { getImage } from "gatsby-plugin-image"
 
 import BaseHeading from "../components/Base/Heading"
 import BaseDescription from "../components/Base/Description"
@@ -19,7 +20,7 @@ const OurRegion = ({data, pageContext}) => {
       key={activity.id} 
       title={activity.title[lng]} 
       description={activity.description[lng]} 
-      thumbnailImage={activity.image.asset.fluid} 
+      thumbnailImage={getImage(activity.image.asset)} 
       url={activity.url}
       light={true}
       className="mb-4 mx-auto"
@@ -31,7 +32,7 @@ const OurRegion = ({data, pageContext}) => {
       key={event.id} 
       title={event.title[lng]} 
       description={event.description[lng]} 
-      thumbnailImage={event.image.asset.fluid} 
+      thumbnailImage={getImage(event.image.asset.fluid)}
       url={event.url}
       className="mb-4 mx-auto"
     />)
@@ -80,9 +81,7 @@ export const query = graphql`
         url
         image {
           asset {
-            fluid(maxWidth: 300) {
-              ...GatsbySanityImageFluid
-            }
+            gatsbyImageData(width: 400)
           }
         }
         description {
@@ -101,9 +100,7 @@ export const query = graphql`
         url
         image {
           asset {
-            fluid(maxWidth: 300) {
-              ...GatsbySanityImageFluid
-            }
+            gatsbyImageData(width: 400)
           }
         }
         description {

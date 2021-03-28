@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { getImage } from "gatsby-plugin-image"
 
 import { BsChevronLeft } from "react-icons/bs"
 import { BsChevronRight } from "react-icons/bs"
@@ -21,10 +22,7 @@ const HomeSlider = () => {
               id
               name
               childImageSharp {
-                fluid(quality: 100) {
-                  ...GatsbyImageSharpFluid
-                  src
-                }
+                gatsbyImageData(width: 800)
               }
             }
           }
@@ -44,7 +42,7 @@ const HomeSlider = () => {
   return (
     <div className="relative w-full transform rotate-2">
       <CustomImage
-        fluid=  {node.childImageSharp.fluid}
+        image={getImage(node)}
         key={node.id}
         alt={node.name}
         typeFrame="landscape"

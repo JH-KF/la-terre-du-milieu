@@ -14,7 +14,7 @@ import BaseSecondaryButton from "../components/Base/SecondaryButton"
 import { BookModalContext } from "../context/bookModalContext"
 
 import SEO from "../components/seo"
-import Img from "gatsby-image"
+import { getImage, StaticImage } from "gatsby-plugin-image"
 
 import { useTranslation } from "react-i18next"
 const Room = ({pageContext, data}) => {
@@ -32,7 +32,7 @@ const Room = ({pageContext, data}) => {
   const { t } = useTranslation()
   const informations = [];
   pageContext.room.informations.forEach(i => {
-    informations.push(<BaseDescription description={i} className="mb-4" />)
+    informations.push(<BaseDescription description={i} key={i} className="mb-4" />)
   })
   const otherRooms = [];
   pageContext.otherRooms.forEach(room => {
@@ -46,7 +46,7 @@ const Room = ({pageContext, data}) => {
         path={`/${room.path}${room.slug}`}
         thumbnailImage={data.roomThumbnailImages.nodes
           .filter(img => img.name === room.id)
-          .map(img => img.childImageSharp.fluid)}
+          .map(img => getImage(img))[0]}
           className="mb-16 flex-shrink-0 w-full"
         light={false}
         imageHasBorder={true}
@@ -90,12 +90,12 @@ const Room = ({pageContext, data}) => {
               <BaseParchment light={true} className="p-4 md:p-6 block md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-1">
                   {informations}
                   <div className="my-16">
-                    <Img 
-                      fluid={data.separtor.childImageSharp.fluid}
-                      objectFit="contain"
+                    <StaticImage 
+                      src="../images/decorations/separator.png"
+                      alt=""
                       className="m-auto w-full max-w-xs"
                       style={{display: "block"}}
-                    ></Img>
+                    ></StaticImage>
                   </div>
                   <BaseDescription className="mb-16" description={pageContext.room.description} />
                   <BaseDescription className="mb-2 italic" description={pageContext.room.quote} />
@@ -125,17 +125,7 @@ export const query = graphql`
       nodes {  
         name
         childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    },
-    separtor: file(relativePath: { eq: "decorations/separator.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
-          src
+          gatsbyImageData(width: 400)
         }
       }
     },
@@ -145,9 +135,7 @@ export const query = graphql`
       nodes {  
         name
         childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(width: 400)
         }
       }
     }
