@@ -80,7 +80,7 @@
           "path": "notre-region",
           "activitiesTitle": "A découvrir",
           "eventsTitle": "Évènements",
-          "noEvents": "Pas d'évènements au programme."
+          "noEvents": "Pas d'évènements en cours."
         }
       },
       "header": {
@@ -114,7 +114,7 @@
       },
       "pages": {
         "home": {
-          "path": "en",
+          "path": "en/",
           "title": "Home",
           "slug": "our-rooms",
           "blocks": {

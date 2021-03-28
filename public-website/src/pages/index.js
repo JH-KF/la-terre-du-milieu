@@ -124,7 +124,7 @@ const IndexPage = ({ pageContext }) => {
         thumbnailImage={queryData.roomThumbnailImages.nodes
           .filter(img => img.name === room.id)
           .map(img => img.childImageSharp.fluid)}
-        className={"mb-24 mx-6 xs:mx-0"}
+        className={"mb-24"}
       />
     )
     }
@@ -179,7 +179,7 @@ const IndexPage = ({ pageContext }) => {
             text={t("pages.home.roomsList.title")}
             className="xs:text-center mb-16"
           />
-          <div className="m-auto max-w-4xl lg:max-w-7xl flex flex-wrap justify-around items-start">
+          <div className="m-auto max-w-4xl lg:max-w-7xl flex flex-wrap justify-center lg:justify-between items-start">
             {roomsListElements}
           </div>
         </div>
