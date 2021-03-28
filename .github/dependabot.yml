@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/public-website"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: develop
+- package-ecosystem: npm
+  directory: "/back-office"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
