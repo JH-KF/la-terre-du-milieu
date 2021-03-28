@@ -14,7 +14,6 @@ module.exports = {
         "modal-wrapper": "#00000066",
       },
       fontFamily: {
-        serif: ["Judson", ...defaultTheme.fontFamily.serif],
         sans: ["Josefin Sans", ...defaultTheme.fontFamily.sans],
         calligraphy: ["Onciale", ...defaultTheme.fontFamily.serif],
       },

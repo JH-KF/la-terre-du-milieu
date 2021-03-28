@@ -12,11 +12,6 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Judson:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body
         {...props.bodyAttributes}
