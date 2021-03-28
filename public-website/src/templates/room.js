@@ -125,7 +125,7 @@ export const query = graphql`
       nodes {  
         name
         childImageSharp {
-          gatsbyImageData(width: 400)
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     },

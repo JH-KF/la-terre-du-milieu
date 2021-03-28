@@ -9,12 +9,12 @@ const BaseGallery = ({className, images}) => {
   const image5 = images[4] || images[images.length -1];
   return (
     <div className={`${className} block md:grid grid-cols-4 grid-rows-2 gap-4 max-h-gallery md:min-h-96`}>
-        <div className="relative picture-custom-border-1">
+        <div className="block md:hidden relative picture-custom-border-1">
           <GatsbyImage 
             image={getImage(image1)} 
             alt={image1.name}
             imgStyle={{clipPath: "url(#image-path)"}} 
-            className="block md:hidden"
+            layout="fullWidth"   
           />
         </div>
         <div className="hidden md:block col-start-1 col-end-3 row-start-1 row-end-3 relative picture-custom-border-1">
