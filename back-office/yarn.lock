@@ -976,6 +976,18 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
+"@sanity/client@2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-2.7.1.tgz#0163ecad3ad0875dac5a87bfa20a1652dd3e6a80"
+  dependencies:
+    "@sanity/eventsource" "2.2.6"
+    "@sanity/generate-help-url" "2.2.6"
+    "@sanity/observable" "2.0.9"
+    deep-assign "^2.0.0"
+    get-it "^5.0.3"
+    make-error "^1.3.0"
+    object-assign "^4.1.1"
+
 "@sanity/color@^1.0.0":
   version "1.0.0"
   resolved "https://registry.npmjs.org/@sanity/color/-/color-1.0.0.tgz#6cc44d4a8f6da4567828f52f141deed4d17aa31e"
@@ -988,9 +1000,9 @@
   version "2.2.6"
   resolved "https://registry.npmjs.org/@sanity/components/-/components-2.2.6.tgz#d1d6d1017a53ebb413ef026eabd5dd0b4a1bcdad"
 
-"@sanity/core@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/@sanity/core/-/core-2.7.0.tgz#5d8dd52426791de5ec7fcc739d3696fcc529a949"
+"@sanity/core@^2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.7.2.tgz#d0b2d3b789aa99f9468834bc035a04c06aa6ff6b"
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.10.4"
     "@babel/preset-env" "^7.11.5"
@@ -998,17 +1010,17 @@
     "@babel/preset-typescript" "^7.10.4"
     "@babel/register" "^7.7.4"
     "@sanity/eventsource" "2.2.6"
-    "@sanity/export" "2.7.0"
+    "@sanity/export" "2.7.1"
     "@sanity/generate-help-url" "2.2.6"
-    "@sanity/import" "2.7.0"
+    "@sanity/import" "2.7.1"
     "@sanity/mutator" "2.2.6"
-    "@sanity/plugin-loader" "2.7.0"
-    "@sanity/resolver" "2.7.0"
+    "@sanity/plugin-loader" "2.7.2"
+    "@sanity/resolver" "2.7.2"
     "@sanity/schema" "2.5.0"
-    "@sanity/server" "2.7.0"
-    "@sanity/util" "2.7.0"
+    "@sanity/server" "2.7.2"
+    "@sanity/util" "2.7.2"
     "@sanity/uuid" "^3.0.1"
-    "@sanity/webpack-integration" "2.7.0"
+    "@sanity/webpack-integration" "2.7.2"
     batch-stream-operation "^1.0.2"
     chokidar "^3.0.0"
     configstore "^5.0.1"
@@ -1147,9 +1159,9 @@
     "@rexxars/eventsource-polyfill" "^1.0.0"
     eventsource "^1.0.6"
 
-"@sanity/export@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/@sanity/export/-/export-2.7.0.tgz#ad1725e6410678d463bfed14e1f3b86184ddd524"
+"@sanity/export@2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-2.7.1.tgz#7b3b0ad1131e51c4e6d19a3d00555444d8918d1c"
   dependencies:
     agentkeepalive "^4.1.0"
     archiver "^5.0.0"
@@ -1243,9 +1255,9 @@
     dom-event "1.0.0"
     lodash "^4.17.15"
 
-"@sanity/import@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/@sanity/import/-/import-2.7.0.tgz#9a4f180d1d1f37bccf43b47ff7a4870646ca8193"
+"@sanity/import@2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@sanity/import/-/import-2.7.1.tgz#a3a535a1d6acbc9fe0c1829f0b968032a9a0cdd1"
   dependencies:
     "@sanity/generate-help-url" "2.2.6"
     "@sanity/mutator" "2.2.6"
@@ -1293,13 +1305,13 @@
     object-assign "^4.1.1"
     rxjs "^6.5.3"
 
-"@sanity/plugin-loader@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/@sanity/plugin-loader/-/plugin-loader-2.7.0.tgz#1ced769ad5ac3f4427b6556cb6f3634237d77814"
+"@sanity/plugin-loader@2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@sanity/plugin-loader/-/plugin-loader-2.7.2.tgz#8c58fff3f70e970c3218f388da3001ee164c02a4"
   dependencies:
-    "@sanity/resolver" "2.7.0"
-    "@sanity/util" "2.7.0"
-    "@sanity/webpack-integration" "2.7.0"
+    "@sanity/resolver" "2.7.2"
+    "@sanity/util" "2.7.2"
+    "@sanity/webpack-integration" "2.7.2"
     css-modules-require-hook "4.1.0"
     interop-require "^1.0.0"
 
@@ -1327,12 +1339,12 @@
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
 
-"@sanity/resolver@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/@sanity/resolver/-/resolver-2.7.0.tgz#44c941b53e1179eddf09c8a5fd8fb9394769cb2d"
+"@sanity/resolver@2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@sanity/resolver/-/resolver-2.7.2.tgz#c9b6967245d708f554f09679a38d404eb3c2e259"
   dependencies:
     "@sanity/generate-help-url" "2.2.6"
-    "@sanity/util" "2.7.0"
+    "@sanity/util" "2.7.2"
     fs-extra "^6.0.1"
     lodash "^4.17.15"
     path-exists "^3.0.0"
@@ -1350,9 +1362,9 @@
     lodash "^4.17.15"
     object-inspect "^1.6.0"
 
-"@sanity/server@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/@sanity/server/-/server-2.7.0.tgz#b7dc039dbe15c1b512d25dcf3f369a38b69d2638"
+"@sanity/server@2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@sanity/server/-/server-2.7.2.tgz#a25fe45fb27bc82b93e1dd353b9d83e10f401b29"
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/plugin-proposal-class-properties" "^7.10.4"
@@ -1363,9 +1375,9 @@
     "@hot-loader/react-dom" "^16.9.0-4.12.11"
     "@sanity/css-loader" "^0.28.12"
     "@sanity/eventsource" "2.2.6"
-    "@sanity/resolver" "2.7.0"
-    "@sanity/webpack-integration" "2.7.0"
-    "@sanity/webpack-loader" "2.7.0"
+    "@sanity/resolver" "2.7.2"
+    "@sanity/webpack-integration" "2.7.2"
+    "@sanity/webpack-loader" "2.7.2"
     babel-loader "^8.0.6"
     eventsource-polyfill "^0.9.6"
     express "^4.16.1"
@@ -1441,6 +1453,14 @@
     "@types/react" "^17.0.0"
     rxjs "^6.5.3"
 
+"@sanity/types@2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@sanity/types/-/types-2.7.2.tgz#f395de81c38c1b58fc7852b08a712f2b40d27d76"
+  dependencies:
+    "@sanity/client" "2.7.1"
+    "@types/react" "^17.0.0"
+    rxjs "^6.5.3"
+
 "@sanity/ui@^0.33.9":
   version "0.33.10"
   resolved "https://registry.npmjs.org/@sanity/ui/-/ui-0.33.10.tgz#d67185d2de1fc5c3286646a6392b524b4cc85d87"
@@ -1461,6 +1481,17 @@
   resolved "https://registry.npmjs.org/@sanity/util/-/util-2.7.0.tgz#452a4c01f10f222bbfe3a3f1b48fdb10d1715610"
   dependencies:
     "@sanity/types" "2.7.0"
+    dotenv "^8.2.0"
+    fs-extra "^6.0.1"
+    get-random-values "^1.2.0"
+    lodash "^4.17.15"
+    resolve-from "^4.0.0"
+
+"@sanity/util@2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@sanity/util/-/util-2.7.2.tgz#1296425e80851f3085e87cc959393a147575cbc1"
+  dependencies:
+    "@sanity/types" "2.7.2"
     dotenv "^8.2.0"
     fs-extra "^6.0.1"
     get-random-values "^1.2.0"
@@ -1499,12 +1530,12 @@
     react-spinner "^0.2.6"
     react-split-pane "^0.1.84"
 
-"@sanity/webpack-integration@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/@sanity/webpack-integration/-/webpack-integration-2.7.0.tgz#20c3d8113a5fa91de28da4ba6f39155a65d7446b"
+"@sanity/webpack-integration@2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@sanity/webpack-integration/-/webpack-integration-2.7.2.tgz#93da1a6de4226a0e6c2c3ebb29275c387f76d9b1"
   dependencies:
-    "@sanity/resolver" "2.7.0"
-    "@sanity/webpack-loader" "2.7.0"
+    "@sanity/resolver" "2.7.2"
+    "@sanity/webpack-loader" "2.7.2"
     dotenv "^8.2.0"
     fs.realpath "^1.0.0"
     p-async-cache "^1.0.2"
@@ -1513,12 +1544,12 @@
     postcss-url "^7.3.1"
     resolve "^1.3.3"
 
-"@sanity/webpack-loader@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/@sanity/webpack-loader/-/webpack-loader-2.7.0.tgz#6f626dfb35983ea6d812d873710c3772805bfda7"
+"@sanity/webpack-loader@2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@sanity/webpack-loader/-/webpack-loader-2.7.2.tgz#4a9be4cb0b05bbd7846f09f4c7b3af440006b766"
   dependencies:
-    "@sanity/resolver" "2.7.0"
-    "@sanity/util" "2.7.0"
+    "@sanity/resolver" "2.7.2"
+    "@sanity/util" "2.7.2"
     loader-utils "1.1.0"
 
 "@types/diff-match-patch@^1.0.32":
