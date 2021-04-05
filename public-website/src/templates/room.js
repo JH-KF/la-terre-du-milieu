@@ -55,10 +55,9 @@ const Room = ({pageContext, data}) => {
       />)
   })
 
-    
   return (
   <>
-    <SEO title={pageContext.room.title} lang={i18n.language} image={getSrc(data.roomImages.nodes[0])} />
+    <SEO title={pageContext.room.title} lang={i18n.language} description={pageContext.room.description} path={pageContext.roomPath} image={getSrc(data.roomImages.nodes[0])} />
     <div className="mt-16 md:mt-6">
       <section className="mb-24 bg-paper">
         <div className="max-w-screen-xl mx-auto px-6 md:px-12">

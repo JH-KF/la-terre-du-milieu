@@ -6,14 +6,15 @@ import { useTranslation } from "react-i18next"
 
 import previewImage from "../images/home/page-preview.jpg"
 
-function SEO({ description, lang, meta, title, image }) {
+function SEO({ description, lang, meta, title, image, path }) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             author,
-            website
+            website,
+            websiteName
           }
         }
       }
@@ -70,6 +71,18 @@ function SEO({ description, lang, meta, title, image }) {
           property: `og:image`,
           content: `${websiteUrl}${image || previewImage}`,
         },
+        {
+          property: `og:url`,
+          content: `${ path ? websiteUrl+path : websiteUrl}`,
+        },
+        {
+          property: `og:local`,
+          content: lang,
+        }, 
+        {
+          property: `og:site_name`,
+          content: site.siteMetadata.websiteName,
+        }
       ].concat(meta)}
     />
   )
@@ -79,6 +92,7 @@ SEO.defaultProps = {
   lang: `fr`,
   meta: [],
   description: ``, 
+  path: ""
 }
 
 SEO.propTypes = {
@@ -86,6 +100,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  path: PropTypes.string
 }
 
 export default SEO
