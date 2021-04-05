@@ -1,50 +1,29 @@
 import React, { useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 
 import { BsChevronLeft } from "react-icons/bs"
 import { BsChevronRight } from "react-icons/bs"
 
-import CustomImage from "./CustomImage"
+import CustomImage from "../CustomImage"
 
-const HomeSlider = () => {
+const PictureSlider = ({images}) => {
+
   const [index, setIndex] = useState(0)
 
-  const { allFile } = useStaticQuery(
-    graphql`
-      query {
-        allFile(
-          sort: { fields: name, order: ASC }
-          filter: { relativeDirectory: { eq: "home/slider" } }
-        ) {
-          edges {
-            node {
-              id
-              name
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-          }
-        }
-      }
-    `
-  )
-  const images = allFile.edges
   //Minus 1 for array offset from 0
   const length = images.length - 1
   const handleNext = () =>
     index === length ? setIndex(0) : setIndex(index + 1)
   const handlePrevious = () =>
     index === 0 ? setIndex(length) : setIndex(index - 1)
-  const { node } = images[index]
+  const image = images[index]
 
   return (
-    <div className="relative w-full transform rotate-2">
+    <div className="relative w-full">
       <CustomImage
-        image={getImage(node)}
-        key={node.id}
-        alt={node.name}
+        image={getImage(image)}
+        key={image.id}
+        alt={image.name}
         typeFrame="landscape"
         className="z-0"
         hasBorder={true}
@@ -61,4 +40,4 @@ const HomeSlider = () => {
   )
 }
 
-export default HomeSlider
+export default PictureSlider

@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import SEO from "../components/seo"
 import BaseHeading from "../components/Base/Heading"
 import BaseDescriptionBlock from "../components/Base/DescriptionBlock"
-import HomeSlider from "../components/HomeSlider"
+import PictureSlider from "../components/PictureSlider"
 import BaseRoomCard from "../components/Base/RoomCard"
 import HomePracticalInformations from "../components/Home/HomePracticalInformations"
 
@@ -18,6 +18,18 @@ const IndexPage = ({ pageContext }) => {
 
   const queryData = useStaticQuery(graphql`
     query {
+      sliderPictures: allFile(
+        sort: { fields: name, order: ASC }
+        filter: { relativeDirectory: { eq: "home/slider" } }
+      ) {
+        nodes { 
+          id
+          name
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      },
       blockImages: allFile(
         filter: { relativeDirectory: { eq: "home/blocks" } }
       ) {
@@ -123,7 +135,7 @@ const IndexPage = ({ pageContext }) => {
             </div>
           </div>
           <div className="flex items-center col-span-3">
-            <HomeSlider />
+            <PictureSlider images={queryData.sliderPictures.nodes} />
           </div>
         </div>
       </section>

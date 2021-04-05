@@ -7,7 +7,7 @@ import { graphql } from "gatsby"
 import BaseHeading from "../components/Base/Heading"
 import BaseParchment from "../components/Base/Parchment"
 import BaseDescription from "../components/Base/Description"
-import BaseGallery from "../components/Base/BaseGallery"
+import RoomPictureGallery from "../components/Base/BaseGallery"
 import BaseRoomCard from "../components/Base/RoomCard"
 import BaseSecondaryButton from "../components/Base/SecondaryButton"
 
@@ -63,7 +63,7 @@ const Room = ({pageContext, data}) => {
         <div className="max-w-screen-xl mx-auto px-6 md:px-12">
           <BaseHeading text={pageContext.room.title} className="mb-8" />
           <div>
-            <BaseGallery images={data.roomImages.nodes} className="mb-8" />
+            <RoomPictureGallery images={data.roomImages.nodes} className="mb-8" />
             <div className="block md:grid gap-x-6 md:grid-rows-1 md:grid-cols-3" >
               <div className="w-full md:col-start-3 md:col-end-4 pb-6 md:pb-0">
               <BaseParchment light={true}  className="p-4">
