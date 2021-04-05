@@ -55,7 +55,12 @@
           "activitiesTitle": "A découvrir",
           "eventsTitle": "Évènements",
           "noEvents": "Pas d'évènements en cours."
-        }
+        },
+        "404" : {
+          "title" : "Désolé, page non trouvée",
+          "description" : "La page que vous recherchiez n'existe pas.",
+          "homeButton" : "Retour à l'accueil"
+        } 
       },
       "header": {
         "rooms": "Chambres",
@@ -137,7 +142,13 @@
           "activitiesTitle": "To discover",
           "eventsTitle": "Events",
           "noEvents": "Currently, there is no event around."
+        },
+        "404": {
+          "title" : "Page not found",
+          "description" : "The page you were looking for doesn't exist",
+          "homeButton": "Back home"
         }
+      }
       },
       "header": {
         "rooms": "Rooms",
@@ -157,6 +168,6 @@
       "room" : {
         "toCome": "Opening soon..."
       }
-    }
   }
 }
+
