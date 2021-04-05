@@ -13,7 +13,7 @@ import CustomImage from "../../CustomImage"
 
 import { BookModalContext } from "../../../context/bookModalContext"
 
-const BaseRoomCard = ({ title, description, quote, quoteAuthor, className, thumbnailImage, path, light = true, imageHasBorder = false }) => {
+const BaseRoomCard = ({ title, description, quote, quoteAuthor, className, thumbnailImage, path, light = true, imageHasBorder = false, isAvailable = true }) => {
   const { setIsOpen, setRoomName } = useContext(BookModalContext)
   const { t } = useTranslation()
 
@@ -28,10 +28,19 @@ const BaseRoomCard = ({ title, description, quote, quoteAuthor, className, thumb
         <CustomImage image={thumbnailImage} alt={title} className="w-full mb-6" typeFrame="landscape" hasBorder={imageHasBorder}/>
       </Link>    
       <div className="mb-6">
-        <BaseTitle
-          title={title}
-          className="mb-6"
-        />
+        <Link to={path}>
+          <BaseTitle
+            title={title}
+            className="mb-6"
+          />
+        </Link> 
+        {!isAvailable 
+          ? <BaseDescription
+              description={t("room.toCome")}
+              className="text-center text-action font-semibold mb-6"
+            />  
+          : null
+        } 
         <BaseDescription
           description={description}
           className="text-justify mb-6"
@@ -42,7 +51,7 @@ const BaseRoomCard = ({ title, description, quote, quoteAuthor, className, thumb
         />
         <BaseDescription
           description={quoteAuthor}
-          className="text-justify italic mb-6 font-semibold"
+          className="text-justify italic mb-6 font-semibold font-calligraphy"
         />
       </div>
       <div className="flex justify-between items-center xs:flex-col xs:items-center">
@@ -51,10 +60,11 @@ const BaseRoomCard = ({ title, description, quote, quoteAuthor, className, thumb
           className="xs:mb-12"
           path={path}
         />
-        <BaseSecondaryButton
+        {isAvailable ? <BaseSecondaryButton
           text={t("utils.book")}
           onClick={displayModalBookRoom}
-        />
+        /> : "" }
+        
       </div>
     </BaseParchment>
   )

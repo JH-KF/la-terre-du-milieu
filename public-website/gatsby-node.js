@@ -41,6 +41,7 @@ exports.createPages = async ({ graphql, actions }) => {
     allRoomsJson {
       nodes {
         id
+        isAvailable
         fr {
           description
           path
@@ -74,8 +75,9 @@ exports.createPages = async ({ graphql, actions }) => {
           locale: lang,
           room: node[lang],
           id : node.id,
+          isAvailable: node.isAvailable,
           imagesPath: `rooms/${node.id}`,
-          otherRooms: rooms.filter(otherRoom => otherRoom.id !== node.id).map(room => { return {id: room.id, ...room[lang]}})
+          otherRooms: rooms.filter(otherRoom => otherRoom.id !== node.id).map(room => { return {id: room.id, isAvailable: room.isAvailable, ...room[lang]}})
         },
       })
     })

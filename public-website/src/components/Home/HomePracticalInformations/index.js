@@ -5,6 +5,7 @@ import { FaCoffee } from "react-icons/fa"
 import { FaBath } from "react-icons/fa"
 import { FaClock } from "react-icons/fa"
 import { MdPool } from "react-icons/md"
+import { GiBarbecue } from "react-icons/gi"
 
 import { useTranslation } from "react-i18next"
 
@@ -69,6 +70,18 @@ const HomePracticalInformations = () => {
           className="xs:text-justify"
         />
       </BaseParchment>
+
+      <BaseParchment
+        className="flex xs:block px-4 xs:px-2 py-6 items-center mb-16"
+        horizontal
+      >
+        <GiBarbecue className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
+        <BaseDescription
+          description={t("pages.home.infos.content.outsideEquiments")}
+          className="xs:text-justify"
+        />
+      </BaseParchment>
+
       <BaseParchment
         className="flex xs:block px-4 xs:px-2 py-6 items-center mb-16"
         horizontal

@@ -44,6 +44,7 @@ const Room = ({pageContext, data}) => {
         quoteAuthor={room.quoteAuthor}
         key={room.id}
         path={`/${room.path}${room.slug}`}
+        isAvailable={room.isAvailable}
         thumbnailImage={data.roomThumbnailImages.nodes
           .filter(img => img.name === room.id)
           .map(img => getImage(img))[0]}
@@ -81,25 +82,36 @@ const Room = ({pageContext, data}) => {
                   maxDetail="month"
                   className="text-primary text-center mb-4"
                 />
-                <div className="flex justify-end">
-                 <BaseSecondaryButton text={t("utils.book")} onClick={displayModalBookRoom} />
-                </div>
+                { pageContext.isAvailable 
+                  ? <div className="flex justify-end">
+                      <BaseSecondaryButton text={t("utils.book")} onClick={displayModalBookRoom} />
+                    </div> 
+                  : ""
+                }
+               
 
                 </BaseParchment>
               </div>
               <BaseParchment light={true} className="p-4 md:p-6 block md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-1">
-                  {informations}
-                  <div className="my-16">
-                    <StaticImage 
-                      src="../images/decorations/separator.png"
-                      alt=""
-                      className="m-auto w-full max-w-xs"
-                      style={{display: "block"}}
-                    ></StaticImage>
-                  </div>
-                  <BaseDescription className="mb-16" description={pageContext.room.description} />
-                  <BaseDescription className="mb-2 italic" description={pageContext.room.quote} />
-                  <BaseDescription className="font-calligraphy" description={pageContext.room.quoteAuthor} />
+                {!pageContext.isAvailable 
+                  ? <BaseDescription
+                      description={t("room.toCome")}
+                      className="text-center text-action font-semibold mb-6"
+                    />  
+                  : null
+                } 
+                {informations}
+                <div className="my-16">
+                  <StaticImage 
+                    src="../images/decorations/separator.png"
+                    alt=""
+                    className="m-auto w-full max-w-xs"
+                    style={{display: "block"}}
+                  ></StaticImage>
+                </div>
+                <BaseDescription className="mb-16" description={pageContext.room.description} />
+                <BaseDescription className="mb-2 italic" description={pageContext.room.quote} />
+                <BaseDescription className="font-calligraphy font-semibold" description={pageContext.room.quoteAuthor} />
               </BaseParchment>
             </div>
           </div>
@@ -135,7 +147,7 @@ export const query = graphql`
       nodes {  
         name
         childImageSharp {
-          gatsbyImageData(width: 400)
+          gatsbyImageData
         }
       }
     }

@@ -24,7 +24,7 @@ const IndexPage = ({ pageContext }) => {
         nodes {
           name
           childImageSharp {
-            gatsbyImageData(width: 400)
+            gatsbyImageData
           }
         }
       },
@@ -34,13 +34,14 @@ const IndexPage = ({ pageContext }) => {
         nodes {  
           name
           childImageSharp {
-            gatsbyImageData(width: 400)
+            gatsbyImageData
           }
         }
       },
       allRoomsJson {
         nodes {
           id
+          isAvailable
           fr {
             description
             path
@@ -93,6 +94,7 @@ const IndexPage = ({ pageContext }) => {
         quoteAuthor={room[pageContext.locale].quoteAuthor}
         key={room.id}
         path={path}
+        isAvailable={room.isAvailable}
         thumbnailImage={queryData.roomThumbnailImages.nodes
           .filter(img => img.name === room.id)
           .map(img => getImage(img))[0]}
