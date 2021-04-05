@@ -5,8 +5,10 @@ import BaseTitle from "../Title"
 import BaseDescription from "../Description"
 import BaseParchment from "../Parchment"
 import BaseSecondaryButton from "../SecondaryButton"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import CustomImage from "../../CustomImage"
+
 
 
 const BaseRoomCard = ({ title, description, className, thumbnailImage, url, light = false }) => {
@@ -26,11 +28,11 @@ const BaseRoomCard = ({ title, description, className, thumbnailImage, url, ligh
         /> 
       </div>
       <div className="flex justify-end">
-        <a href={url} target="blank">
+        <OutboundLink href={url} target="blank">
         <BaseSecondaryButton
           text={t("utils.seeMore")}
         />
-        </a>
+        </OutboundLink>
       </div>
     </BaseParchment>
   )

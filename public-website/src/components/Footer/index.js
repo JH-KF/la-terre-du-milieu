@@ -2,6 +2,7 @@ import React from "react"
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import { useTranslation } from "react-i18next"
 
@@ -17,23 +18,23 @@ const Footer = () => {
             {t("siteMetadata.title")}
           </span>
           <span className="border-t border-solid border-primary mx-12 flex-grow xs:hidden"></span>
-          <a href="/">
+          <OutboundLink href="https://www.facebook.com/">
             <FaFacebookSquare className="text-primary h-6 w-6 hover:text-action xs:hidden" />
-          </a>
-          <a href="/">
+          </OutboundLink>
+          <OutboundLink href="https://www.instagram.com/">
             <FaInstagram className="text-primary h-6 w-6 ml-12 hover:text-action xs:hidden" />
-          </a>
+          </OutboundLink>
         </div>
         <div className="mb-12 xs:mb-4">
           <StaticImage src="../../images/footer/gite-de-france-logo.png" alt="gite de france" />
         </div>
         <div className="hidden xs:flex justify-center my-12 xs:my-4">
-          <a href="/">
+          <OutboundLink href="https://www.facebook.com/">
             <FaFacebookSquare className="text-primary h-10 w-10 mx-12 hover:text-action" />
-          </a>
-          <a href="/">
+          </OutboundLink>
+          <OutboundLink href="https://www.instagram.com/">
             <FaInstagram className="text-primary h-10 w-10 mx-12 hover:text-action" />
-          </a>
+          </OutboundLink>
         </div>
         <div className="text-center text-primary text-opacity-70">
           <div>
@@ -58,21 +59,21 @@ const Footer = () => {
       </div>
       <div className="bg-white text-gray-600 text-sm text-center py-2">
         {t("footer.madeBy")}{" "}
-        <a
+        <OutboundLink
           href="https://www.linkedin.com/in/justinehell/"
           target="blank"
           className="text-primary hover:text-action underline"
         >
           {"Justine"}
-        </a>
+        </OutboundLink>
         {" & "}
-        <a
+        <OutboundLink
           href="https://www.linkedin.com/in/kevin-fabre/"
           target="blank"
           className="text-primary hover:text-action underline"
         >
           Kevin
-        </a>
+        </OutboundLink>
       </div>
     </footer>
   )

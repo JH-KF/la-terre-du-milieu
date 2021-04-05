@@ -4,6 +4,8 @@ import { RiCloseLine } from "react-icons/ri"
 import { useTranslation } from "react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 
+import { OutboundLink } from "gatsby-plugin-google-gtag"
+
 import BaseDescription from "../Base/Description"
 import BaseTitle from "../Base/Title"
 import BaseParchment from "../Base/Parchment"
@@ -45,12 +47,12 @@ const BookModal = ({ roomName }) => {
                   description={t("modal.callTo")}
                   className="mb-2"
                 />
-                <a href={`tel:${process.env.GATSBY_HREF_MONIQUE_MOBILE_PHONE}`}>
+                <OutboundLink href={`tel:${process.env.GATSBY_HREF_MONIQUE_MOBILE_PHONE}`}>
                   <BaseTitle
                     title={process.env.GATSBY_DISPLAY_MONIQUE_MOBILE_PHONE}
                     className="text-action"
                   />
-                </a>
+                </OutboundLink>
               </div>
               {/* By e-mail */}
               <div className="text-center">
@@ -58,12 +60,12 @@ const BookModal = ({ roomName }) => {
                   description={t("modal.sendTo")}
                   className="mb-2"
                 />
-                <a href={`mailto:${process.env.GATSBY_MONIQUE_EMAIL}`}>
+                <OutboundLink href={`mailto:${process.env.GATSBY_MONIQUE_EMAIL}`}>
                   <BaseTitle
                     title={process.env.GATSBY_MONIQUE_EMAIL}
                     className="text-action"
                   />
-                </a>
+                </OutboundLink>
               </div>
             </div>
             {/* Book Online */}
@@ -73,7 +75,7 @@ const BookModal = ({ roomName }) => {
                 className="mb-4"
               />
               <div className="flex mt-6 xs:block">
-                <a href="/" target="blank" className="flex-1 w-32 mr-4">
+                <OutboundLink href="https://www.gites-de-france.com/" target="blank" className="flex-1 w-32 mr-4">
                   <BaseParchment className="w-full flex-1 p-4">
                       <BaseDescription
                         description="Gîtes de France"
@@ -94,8 +96,8 @@ const BookModal = ({ roomName }) => {
                         />
                       ) : null}
                   </BaseParchment>
-                </a>
-                <a href="/" target="blank" className="flex-1 w-32">
+                </OutboundLink>
+                <OutboundLink href="https://www.booking.com" target="blank" className="flex-1 w-32">
                   <BaseParchment className="w-full  p-4">
                     <BaseDescription
                       description="Booking"
@@ -116,7 +118,7 @@ const BookModal = ({ roomName }) => {
                       />
                     ) : null}
                     </BaseParchment>
-                </a>
+                </OutboundLink>
               </div>
             </div>
           </div>

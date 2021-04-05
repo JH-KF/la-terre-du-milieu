@@ -32,7 +32,7 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
             </Link>
           </div>
           <div className="mb-12">
-          <Link to={`/${t("pages.home.path")}#${t("pages.home.roomsList.slug")}`}>
+          <Link to={`/${t("pages.home.path")}#${t("pages.home.rooms.slug")}`}>
               <BaseTertiaryButton
                 onClick={() => handleClickBurgerMenu()}
                 text={t("header.rooms")}
