@@ -1,0 +1,15 @@
+:root {
+    /* Brand colors */
+    --brand-primary: #D3C8AC;
+    --brand-primary--inverted: #ffffff;
+    --brand-secondary--inverted: #fbf8f3;
+    --brand-secondary: #5E4F41;
+      /* Main Navigation */
+    --main-navigation-color: var(--brand-secondary);
+    --main-navigation-color--inverted: var(--brand-secondary--inverted);
+     /* "Default" button */
+    --default-button-color: var(--brand-secondary--inverted);
+    --default-button-color--inverted: var(--brand-secondary--inverted);
+    /* Selectable item */
+
+  }

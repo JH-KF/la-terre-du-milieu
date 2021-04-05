@@ -14,14 +14,14 @@ const OurRegion = ({data, pageContext}) => {
 
   const { t } = useTranslation()
   const lng = pageContext.locale
-  const activities = []; 
-  data.allSanityActivities.nodes.forEach(activity => {
-    activities.push(<BaseActivity 
-      key={activity.id} 
-      title={activity.title[lng]} 
-      description={activity.description[lng]} 
-      thumbnailImage={getImage(activity.image.asset)} 
-      url={activity.url}
+  const pointsOfInterest = []; 
+  data.allSanityPoi.nodes.forEach( poi => {
+    pointsOfInterest.push(<BaseActivity 
+      key={poi.id} 
+      title={poi.title[lng]} 
+      description={poi.description[lng]} 
+      thumbnailImage={getImage(poi.image.asset)} 
+      url={poi.url}
       light={true}
       className="mb-4 mx-auto"
     />)
@@ -47,7 +47,7 @@ const OurRegion = ({data, pageContext}) => {
           className="xs:text-center mb-16"
         />
         <div className="min-h-half block md:flex md:flex-wrap md:justify-around md:items-center">
-          {activities}
+          {pointsOfInterest}
         </div>
       </div>
     </section>
@@ -71,7 +71,7 @@ export default OurRegion
 
 export const query = graphql`
   query {
-    allSanityActivities {
+    allSanityPoi {
       nodes {
         id
         title {

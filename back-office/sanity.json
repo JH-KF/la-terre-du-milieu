@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "back-office"
+    "name": "La terre du milieu"
   },
   "api": {
     "projectId": "351nji64",
@@ -28,6 +28,14 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "./logo/index.js"
+    },
+    {
+      "implements": "part:@sanity/base/theme/variables/override-style",
+      "path": "./styles/variables.css"
     }
   ]
 }

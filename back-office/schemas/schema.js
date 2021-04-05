@@ -11,8 +11,9 @@ import { MdEvent, MdPlace } from 'react-icons/md'
 // fields to hold translated values. We'll use this array
 // of languages to determine which fields to define.
 const supportedLanguages = [
-  { id: 'fr', title: 'French', isDefault: true },
-  { id: 'en', title: 'English'}
+  { id: 'fr', title: 'Français', isDefault: true },
+  { id: 'de', title: 'Allemand'},
+  { id: 'en', title: 'Anglais'}
 ]
 
 const baseLanguage = supportedLanguages.find(l => l.isDefault)
@@ -40,6 +41,29 @@ const localeString = {
   }))
 }
 
+const localeText = {
+  title: 'Localized text',
+  name: 'localeText',
+  type: 'object',
+  // Fieldsets can be used to group object fields.
+  // Here we omit a fieldset for the "default language",
+  // making it stand out as the main field.
+  fieldsets: [
+    {
+      title: 'Translations',
+      name: 'translations',
+      options: { collapsible: true }
+    }
+  ],
+  // Dynamically define one field per language
+  fields: supportedLanguages.map(lang => ({
+    title: lang.title,
+    name: lang.id,
+    type: 'text',
+    validation: Rule => Rule.required()
+  }))
+}
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -48,8 +72,8 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     {
-      title: "Activités",
-      name: "Activities",
+      title: "Points d'intérêt",
+      name: "POI",
       type: "document",
       icon: MdPlace,
       fields: [
@@ -67,7 +91,7 @@ export default createSchema({
         {
           title: "Description",
           name: "description",
-          type: "localeString",
+          type: "localeText",
         },
         {
           title: "Lien",
@@ -104,7 +128,7 @@ export default createSchema({
         {
           title: "Description",
           name: "description",
-          type: "localeString",
+          type: "localeText",
         },
         {
           name: "url",
@@ -121,6 +145,7 @@ export default createSchema({
         }
       }
     },
-    localeString
+    localeString,
+    localeText
   ]),
 })
