@@ -33,6 +33,10 @@
               "image": ""
             }
           },
+          "rooms": {
+            "title": "Nos Chambres",
+            "slug": "nos-chambres"
+          },
           "infos": {
             "title": "Infos pratiques et équipements",
             "content": {
@@ -116,7 +120,7 @@
               "image": ""
             }
           },
-          "roomsList": {
+          "rooms": {
             "title": "Our Rooms",
             "slug": "our-rooms"
           },

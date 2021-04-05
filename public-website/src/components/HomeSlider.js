@@ -22,7 +22,7 @@ const HomeSlider = () => {
               id
               name
               childImageSharp {
-                gatsbyImageData(width: 800)
+                gatsbyImageData
               }
             }
           }

@@ -145,12 +145,12 @@ const IndexPage = ({ pageContext }) => {
         </div>
       </section>
       <section
-        id={t("pages.home.roomsList.slug")} 
+        id={t("pages.home.rooms.slug")} 
         className="relative bg-paper anchor py-24 m-auto xs:py-12 altered-before"
       >
         <div className="max-w-screen-xl m-auto px-6 md:px-12">
           <BaseHeading
-            text={t("pages.home.roomsList.title")}
+            text={t("pages.home.rooms.title")}
             className="xs:text-center mb-16"
           />
           <div className="m-auto max-w-4xl lg:max-w-7xl flex flex-wrap justify-center lg:justify-between items-start">
