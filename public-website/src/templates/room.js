@@ -14,7 +14,7 @@ import BaseSecondaryButton from "../components/Base/SecondaryButton"
 import { BookModalContext } from "../context/bookModalContext"
 
 import SEO from "../components/seo"
-import { getImage, StaticImage } from "gatsby-plugin-image"
+import { getImage, StaticImage, getSrc } from "gatsby-plugin-image"
 
 import { useTranslation } from "react-i18next"
 const Room = ({pageContext, data}) => {
@@ -29,7 +29,7 @@ const Room = ({pageContext, data}) => {
 
   const dayNextYear = new Date(Date.now() + 31556952000);
   const [date, onChange] = useState(new Date());
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const informations = [];
   pageContext.room.informations.forEach(i => {
     informations.push(<BaseDescription description={i} key={i} className="mb-4" />)
@@ -58,7 +58,7 @@ const Room = ({pageContext, data}) => {
     
   return (
   <>
-    <SEO title={pageContext.room.title} />
+    <SEO title={pageContext.room.title} lang={i18n.language} image={getSrc(data.roomImages.nodes[0])} />
     <div className="mt-16 md:mt-6">
       <section className="mb-24 bg-paper">
         <div className="max-w-screen-xl mx-auto px-6 md:px-12">

@@ -39,7 +39,7 @@ const OurRegion = ({data, pageContext}) => {
   });
   return (
   <>
-    <SEO title={t("pages.ourRegion.title")} /> 
+    <SEO title={t("pages.ourRegion.title")} lang={lng} /> 
     <section className="bg-paper mt-16 md:mt-6">
       <div className="max-w-screen-xl px-6 md:px-12 m-auto">
         <BaseHeading

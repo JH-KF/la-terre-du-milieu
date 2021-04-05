@@ -2,7 +2,8 @@ const dotenv = require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    author: `Justine Hell & Kevin Fabre`,
+    author: `Monique et Marial Bousch`,
+    website: "laterredumilieu"
   },
   plugins: [
     `gatsby-transformer-json`,

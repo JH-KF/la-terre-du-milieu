@@ -4,15 +4,16 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import { useTranslation } from "react-i18next"
 
-function SEO({ description, lang, meta, title }) {
+import previewImage from "../images/home/page-preview.jpg"
+
+function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
-            description
-            author
+            author,
+            website
           }
         }
       }
@@ -23,6 +24,7 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = t("siteMetadata.title")
+  const websiteUrl = `https://${process.env.GATSBY_WEBSITE_DOMAIN}.${site.siteMetadata.website}.com`;
 
   return (
     <Helmet
@@ -64,15 +66,19 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          property: `og:image`,
+          content: `${websiteUrl}${image || previewImage}`,
+        },
       ].concat(meta)}
     />
   )
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `fr`,
   meta: [],
-  description: ``,
+  description: ``, 
 }
 
 SEO.propTypes = {
