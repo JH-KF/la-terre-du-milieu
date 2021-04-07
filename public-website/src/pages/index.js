@@ -11,10 +11,8 @@ import HomePracticalInformations from "../components/Home/HomePracticalInformati
 
 import { useTranslation } from "react-i18next"
 
-const informationBlocks = ["monique-martial", "pool", "location"];
-
 const IndexPage = ({ pageContext }) => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   const queryData = useStaticQuery(graphql`
     query {
@@ -71,23 +69,44 @@ const IndexPage = ({ pageContext }) => {
             title
           }
         }
+      },
+      allPresentationJson {
+        nodes {
+          en {
+            description
+            title
+          }
+          fr {
+            description
+            title
+          }
+          id
+          link {
+            name {
+              en
+              fr
+            }
+            to
+          }
+        }
       }
     }
   `)
     
-  let blockListElements = []
-  informationBlocks.forEach((blockName, index) =>
+  let blockListElements = [];
+  queryData.allPresentationJson.nodes.forEach((block, index) =>
     blockListElements.push(
       <BaseDescriptionBlock
-        title={t(`pages.home.blocks.${blockName}.title`)}
-        description={t(`pages.home.blocks.${blockName}.description`)}
-        key={blockName}
+        title={block[i18n.language].title}
+        description={block[i18n.language].description}
+        key={block.id}
         image={queryData.blockImages.nodes
-          .filter(img => img.name === blockName)
+          .filter(img => img.name === block.id)
           .map(img => getImage(img))[0]}
+        link={block.link}
         position={index + 1}
         className={`mx-24 xs:mx-0 ${
-          index + 1 < informationBlocks.length
+          index + 1 < queryData.allPresentationJson.nodes.length
             ? "mb-64 md:mb-48 xs:mb-48"
             : ""
         }`}
@@ -127,6 +146,10 @@ const IndexPage = ({ pageContext }) => {
         <div className="max-w-screen-xl px-6 md:px-12 m-auto display grid gap-x-24 xs:block grid-cols-5">
           <div className="flex items-center xs:max-w-sm xs:m-auto col-span-2 xs:mb-16">
             <div style={{width: "100%"}}>
+              <div className="text-lg text-center text-primary font-calligraphy mb-4">
+                  Parlez Ami et entrez
+              </div>
+
               <StaticImage
                 src="../images/home/landing/logo.png"
                 placeholder="tracedSVG"

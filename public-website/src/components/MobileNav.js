@@ -12,7 +12,7 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
 
   return (
     <nav
-      className={`bg-paper ${className} flex flex-col justify-between transition-position duration-150 ease-in-out z-50 fixed top-0 w-screen h-screen overflow-y-scroll`}
+      className={`bg-paper ${className} flex flex-col transition-position duration-150 ease-in-out z-50 fixed top-0 w-screen min-h-screen overflow-y-scroll`}
     >
       <div>
         <div className="flex p-6 justify-between">
@@ -22,9 +22,9 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
           </button>
         </div>
         <hr />
-        <section className="px-6 pt-12 flex flex-col items-center">
+        <section className="relative px-6 pt-12 flex flex-col items-center bg-paper bg-paper--white altered-after altered-before">
           <div className="mb-12">
-            <Link to="/">
+            <Link to={"/"+t("pages.home.path")}>
               <BaseTertiaryButton 
                 onClick={() => handleClickBurgerMenu()} 
                 text={t("header.home")} 
@@ -44,6 +44,14 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
               <BaseTertiaryButton 
                 onClick={() => handleClickBurgerMenu()} 
                 text={t("header.ourRegion")} 
+              />
+            </Link>
+          </div>
+          <div className="mb-12">
+            <Link to={`/${t("pages.home.path")}${t("pages.ourOffers.path")}`}>
+              <BaseTertiaryButton 
+                onClick={() => handleClickBurgerMenu()} 
+                text={t("header.ourOffers")} 
               />
             </Link>
           </div>

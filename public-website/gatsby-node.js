@@ -89,10 +89,24 @@ exports.createPages = async ({ graphql, actions }) => {
   Object.keys(translations).forEach(lang => {
     const localizedPath = translations[lang].default
         ? translations[lang].translation.pages.ourRegion.path 
-        : `${lang}${translations[lang].translation.pages.ourRegion.path}`
+        : `${lang}/${translations[lang].translation.pages.ourRegion.path}`
     createPage({
       path: localizedPath,
       component: ourRegionTemplate,
+      context: {
+        locale: lang
+      },
+    })
+  })
+
+  const ourOffersTemplate = path.resolve("src/templates/our-offers.js");
+  Object.keys(translations).forEach(lang => {
+    const localizedPath = translations[lang].default
+        ? translations[lang].translation.pages.ourOffers.path 
+        : `${lang}/${translations[lang].translation.pages.ourOffers.path}`
+    createPage({
+      path: localizedPath,
+      component: ourOffersTemplate,
       context: {
         locale: lang
       },

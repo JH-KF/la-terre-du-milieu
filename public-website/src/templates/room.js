@@ -109,7 +109,7 @@ const Room = ({pageContext, data}) => {
                   ></StaticImage>
                 </div>
                 <BaseDescription className="mb-16" description={pageContext.room.description} />
-                <BaseDescription className="mb-2 italic" description={pageContext.room.quote} />
+                <BaseDescription className="mb-2 italic" description={`"${pageContext.room.quote}"`} />
                 <BaseDescription className="font-calligraphy font-semibold" description={pageContext.room.quoteAuthor} />
               </BaseParchment>
             </div>

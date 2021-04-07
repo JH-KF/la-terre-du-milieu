@@ -50,7 +50,7 @@ const BaseRoomCard = ({ title, description, quote, quoteAuthor, className, thumb
           className="text-justify italic mb-1"
         />
         <BaseDescription
-          description={quoteAuthor}
+          description={`"${quoteAuthor}"`}
           className="text-justify italic mb-6 font-semibold font-calligraphy"
         />
       </div>

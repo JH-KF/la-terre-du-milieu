@@ -1,0 +1,35 @@
+[
+    {
+        "id": "" ,
+        "fr" : {
+            "title": "", 
+            "description": ""
+        },
+        "en" : {
+            "title": "", 
+            "description": ""
+        },
+        "de" : {
+            "title": "", 
+            "description": ""
+        },
+        "deals" : [
+            {
+                "id": "",
+                "price": "",
+                "fr" : {
+                    "title" : "",
+                    "subtitle" : ""                
+                },
+                "en" : {
+                    "title" : "",
+                    "subtitle" : ""                
+                },
+                "de" : {
+                    "title": "", 
+                    "description": ""
+                }
+            }
+        ]
+    }
+]

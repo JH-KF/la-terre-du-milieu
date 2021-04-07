@@ -16,23 +16,6 @@
         "home": {
           "path": "",
           "title": "Accueil",
-          "blocks": {
-            "monique-martial": {
-              "title": "Il était une fois…",
-              "description": "Ainsi commencent toutes les belles histoires. La nôtre a débuté il y a fort longtemps : le rêve d’ouvrir une structure d’accueil nous a accompagnés durant toute notre vie commune. Un rêve qui se réalise sous forme de maison d’hôtes : « La Terre du Milieu ».\n\n Passionnés de fleurs, d’animaux, de brocante et de convivialité, nous vous accueillerons dans un environnement chaleureux et reposant.\n\nInspirés par le talentueux J.R.R. Tolkien, nos quatre chambres d’hôtes à la décoration soignée vous apporteront confort, dépaysement et calme au milieu des Elfes, des Rois et des Ents.\n\nAu plaisir de faire votre connaissance,\n\nMartial et Monique Bousch\n\n(une quatrième chambre est en cours de réalisation : un trou de Hobbits pour petits et grands)",
-              "image": "first"
-            },
-            "pool": {
-              "title": "Bien-être",
-              "description": "Dans un jardin clos et aménagé, vous pourrez profiter d'une piscine extérieure aux belles dimensions (10m sur 5m) chauffée de mai à septembre et sécurisée. Aux abords de la piscine, chaises longues et parasols vous assureront confort et détente. Une salle de repos est également mise à votre disposition, ainsi qu'un sauna pour deux personnes moyennant un supplément.\n\nPour parfaire votre détente et assurer votre sérénité, deux masseurs professionnels pourront, sur réservation uniquement, vous proposer différents massages bien-être.",
-              "image": ""
-            },
-            "location": {
-              "title": "Spicheren, un joli coin de France",
-              "description": "La Terre du Milieu se situe en Moselle-est dans le sympathique village de Spicheren, connu pour son accueil, ses balades bucoliques et ses petits restaurants incontournables. De nombreux sentiers pédestres ou cyclistes raviront les amateurs du genre. Idéalement situé à cinq minutes de l'Allemagne, à vingt minutes de l'Alsace, à trois quarts d'heures de Metz, à une heure du Luxembourg, son rayonnement géographique vous permettra de découvrir une Lorraine verdoyante, beaucoup moins grise que le charbon des mines qu'elle a abritées durant plus de deux siècles.",
-              "image": ""
-            }
-          },
           "rooms": {
             "title": "Nos Chambres",
             "slug": "nos-chambres"
@@ -44,8 +27,8 @@
               "breakfast": "Les petits-déjeuners, copieux et variés, sont servis de 8h à 9h30. Merci de préciser à la réservation les éventuelles allergies ou intolérances",
               "pets": "Nos amis les animaux ne sont hélas pas autorisés. Non que nous ne les aimions pas, mais comme notre maison en est pleine, la cohabitation serait compliquée",
               "rooms": "Toutes nos chambres sont non-fumeurs, équipées de literie confortable et de Wifi",
-              "bathrooms": "Les salles de bains disposent de sèche-cheveux et de linge de toilette ",
-              "pool": "Des transats, parasols et serviettes de piscine sont à votre disposition",
+              "bathrooms": "Les salles de bains disposent de sèche-cheveux et de linge de toilette",
+              "pool": "Des transats, parasols et serviettes de piscine sont fournis sur simple demande",
               "outsideEquiments": "Une cuisine d'été est à votre disposition (réfrigérateur, gazinière, vaisselle, barbecue...) ainsi qu'un abri vélos/motos"
             }
           }
@@ -60,6 +43,10 @@
           "eventsTitle": "Évènements",
           "noEvents": "Pas d'évènements en cours."
         },
+        "ourOffers" : {
+          "path": "nos-offres",
+          "title": "Nos offres"
+        },
         "404" : {
           "title" : "Désolé, page non trouvée",
           "description" : "La page que vous recherchiez n'existe pas.",
@@ -67,8 +54,9 @@
         } 
       },
       "header": {
-        "rooms": "Chambres",
+        "rooms": "Nos chambres",
         "ourRegion": "Notre région",
+        "ourOffers": "Nos offres",
         "home": "Accueil"
       },
       "footer": {
@@ -103,23 +91,6 @@
           "path": "en/",
           "title": "Home",
           "slug": "our-rooms",
-          "blocks": {
-            "monique-martial": {
-              "title": "Once upon a time...",
-              "description": "This how all beautiful stories start.\n\nOurs began a long time ago, with a shared dream of opening a welcoming place. This dream finally came true in the shape of a guest house : The Middle Earth.\n\nWe are passionate about conviviality, flowers, animals and flea markets, and we will welcome you in a warm and relaxing environment.\n\nOur rooms are inspired by the talented J. R. R. Tolkien, and will offer you calm, cosiness, and a change of scenery amongst elves, ents or hobbits.\n\nWe are looking forward to getting to know you.\n\nMartial and Monique Bousch",
-              "image": ""
-            },
-            "pool": {
-              "title": "Wellness",
-              "description": "Dans un jardin clos et aménagé, vous pourrez profiter d'une piscine extérieure aux belles dimensions (10m sur 5m) chauffée de mai à septembre et sécurisée. Aux abords de la piscine, chaises longues et parasols vous assureront confort et détente. Une salle de repos est également mise à votre disposition, ainsi qu'un sauna pour deux personnes moyennant un supplément.\n\nPour parfaire votre détente et assurer votre sérénité, deux masseurs professionnels pourront, sur réservation uniquement, vous proposer différents massages bien-être.",
-              "image": ""
-            },
-            "location": {
-              "title": "Spicheren, a quaint little nook of France",
-              "description": "La Terre du Milieu se situe en Moselle-est dans le sympathique village de Spicheren, connu pour son accueil, ses balades bucoliques et ses petits restaurants incontournables. De nombreux sentiers pédestres ou cyclistes raviront les amateurs du genre. Idéalement situé à cinq minutes de l'Allemagne, à vingt minutes de l'Alsace, à trois quarts d'heures de Metz, à une heure du Luxembourg, son rayonnement géographique vous permettra de découvrir une Lorraine verdoyante, beaucoup moins grise que le charbon des mines qu'elle a abritées durant plus de deux siècles.",
-              "image": ""
-            }
-          },
           "rooms": {
             "title": "Our Rooms",
             "slug": "our-rooms"
@@ -142,22 +113,26 @@
         },
         "ourRegion" : {
           "title": "Our region",
-          "path": "/our-region",
+          "path": "our-region",
           "activitiesTitle": "To discover",
           "eventsTitle": "Events",
           "noEvents": "Currently, there is no event around."
+        },
+        "ourOffers" : {
+          "path": "our-offers",
+          "title": "Our Offers"
         },
         "404": {
           "title" : "Page not found",
           "description" : "The page you were looking for doesn't exist",
           "homeButton": "Back home"
         }
-      }
       },
       "header": {
-        "rooms": "Rooms",
+        "rooms": "Our rooms",
         "ourRegion": "Our region",
-        "home": "Home"
+        "home": "Home",
+        "ourOffers": "Our offers"
       },
       "footer": {
         "legalMention": "Legal mentions",
@@ -172,6 +147,7 @@
       "room" : {
         "toCome": "Opening soon..."
       }
+    }
   }
 }
 

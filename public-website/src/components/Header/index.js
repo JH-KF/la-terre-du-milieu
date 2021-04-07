@@ -40,9 +40,15 @@ const Header = () => {
                 className="lg:mx-10 md:mx-6"
               />
             </Link>
-            <Link to={`${i18n.options.fallbackLng[0] === i18n.language ? "/" : "/"+i18n.language}${t("pages.ourRegion.path")}`}>
+            <Link to={`/${i18n.options.fallbackLng[0] === i18n.language ? "" : i18n.language+"/"}${t("pages.ourRegion.path")}`}>
               <BaseTertiaryButton
                 text={t("header.ourRegion")}
+                className="lg:mx-10 md:mx-6"
+              />
+            </Link>
+            <Link to={`/${i18n.options.fallbackLng[0] === i18n.language ? "" : i18n.language+"/"}${t("pages.ourOffers.path")}`}>
+              <BaseTertiaryButton
+                text={t("header.ourOffers")}
                 className="lg:mx-10 md:mx-6"
               />
             </Link>

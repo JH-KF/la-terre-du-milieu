@@ -56,8 +56,8 @@
             "path" : "room/",
             "title": "Fangorn, domain of the Ents",
             "quote": "O! Wanderers in the shadowed landdespair not! For though dark they stand,all woods there be must end at last, and see the open sun go past.",
-            "quoteAuthor": "Fangorn",
-            "description": "A sylvan bedroom with a rustic setting made of wood and stone, will wrap you with mystery and serenity. Those who know how to listen may be lucky enough to hear the murmur of the trees and the ancient legends they tell.",
+            "quoteAuthor": "J.R.R Tolkien",
+            "description": "A sylvan family bedroom with a rustic setting made of wood and stone, will wrap you with mystery and serenity. Those who know how to listen may be lucky enough to hear the murmur of the trees and the ancient legends they tell.",
             "informations": ["Bedroom 20 m2 (215 ft2), private terrace of 12 m2 (129 ft2)", "View on the garden and the swimming pool", "Bed 160x200 cm (63 x 78 in.)", "Desk", "Baby cot on demand", "En-suite bathroom with a shower and a sink, separate toilet", "Bed 90x190 cm (35x75 in. 10€ supplement, breakfast included)"  ]
         }, 
         "fr" :{
@@ -65,9 +65,9 @@
             "path" :  "chambre/",
             "title": "Fangorn, domaine des Ents",
             "quote": "Oh errants dans la terre obscurcie, ne désespérez point. Car si ténébreuses qu’elles soient, toutes les forêts doivent s’éclaircir.",
-            "quoteAuthor": "Gandalf le Gris",
-            "description": "Une chambre sylvestre au décor rustique de bois et de pierres qui vous enveloppera de mystère et de sérénité. Peut-être même aurez-vous la chance d’entendre les murmures des arbres et les légendes anciennes qu’ils racontent à ceux qui savent écouter.",
-            "informations" :["Chambre de 20m2 avec terrasse privative de 12m2", "Vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Lit bébé sur demande", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit 90 x190  (supplément de 10€ incluant le petit-déjeuner)" ]
+            "quoteAuthor": "J.R.R Tolkien",
+            "description": "Une chambre familiale sylvestre au décor rustique de bois et de pierres qui vous enveloppera de mystère et de sérénité. Peut-être même aurez-vous la chance d’entendre les murmures des arbres et les légendes anciennes qu’ils racontent à ceux qui savent écouter.",
+            "informations" :["Chambre familiale de 20m2 avec terrasse privative de 12m2", "Vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Lit bébé sur demande", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit 90 x190  (supplément de 10€ incluant le petit-déjeuner)" ]
         }
     }, 
     {
@@ -84,9 +84,9 @@
             "informations": ["Bedroom 20 m2 (215 ft2), private terrace of 12 m2 (129 ft2)", "View on the garden and the swimming pool", "Bed 160x200 cm (63 x 78 in.)", "Desk", "Baby cot on demand", "En-suite bathroom with a shower and a sink, separate toilet", "Bed 90x190 cm (35x75 in. 10€ supplement, breakfast included)"  ]
         }, 
         "fr" :{
-            "slug" :  "comte",
+            "slug" :  "la-comte",
             "path" :  "chambre/",
-            "title": "Comté, trou de Hobbits",
+            "title": "La Comté, trou de Hobbits",
             "quote": "Ah, mon Cher Frodon, les Hobbits sont vraiment de surprenantes créatures. On peut apprendre tout ce qu’il y a à savoir sur leurs coutumes en un mois, et cependant, au bout de cent ans, ils peuvent encore vous surprendre.",
             "quoteAuthor": "Gandalf le Gris",
             "description": "Il faudra vous baisser un peu pour entrer par la porte ronde, et retrouver votre âme d'enfant pour découvrir le monde des sympathiques et pacifiques petits hobbits joufflus, adeptes de bonne chère, de bière et d'herbe à pipe. Mais c'est une vraie chambre aux tons chaleureux qui vous accueillera pour un séjour confortable et insolite.",

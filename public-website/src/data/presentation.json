@@ -1,0 +1,44 @@
+[
+    {
+       "id": "us",
+       "fr": {
+           "title" : "Il était une fois…",
+           "description": "Ainsi commencent toutes les belles histoires. La nôtre a débuté il y a fort longtemps : le rêve d’ouvrir une structure d’accueil nous a accompagnés durant toute notre vie commune. Un rêve qui se réalise sous forme de maison d’hôtes : « La Terre du Milieu ».\n\n Passionnés de fleurs, d’animaux, de brocante et de convivialité, nous vous accueillerons dans un environnement chaleureux et reposant.\n\nInspirés par le talentueux J.R.R. Tolkien, nos quatre chambres d’hôtes à la décoration soignée vous apporteront confort, dépaysement et calme au milieu des Elfes, des Rois, des Ents et des Hobbits.\n\nAu plaisir de faire votre connaissance,\n\nMartial et Monique Bousch"
+       },
+       "en": {
+         "title" : "Once upon a time...",
+          "description": "This how all beautiful stories start.\n\nOurs began a long time ago, with a shared dream of opening a welcoming place. This dream finally came true in the shape of a guest house : The Middle Earth.\n\nWe are passionate about conviviality, flowers, animals and flea markets, and we will welcome you in a warm and relaxing environment.\n\nOur rooms are inspired by the talented J. R. R. Tolkien, and will offer you calm, cosiness, and a change of scenery amongst elves, ents, kings or hobbits.\n\nWe are looking forward to getting to know you.\n\nMartial and Monique Bousch"
+        },
+       "link": null
+    },
+    {
+      "id": "wellness",
+      "fr": {
+        "title" : "Bien-être",
+        "description": "Dans un jardin clos et aménagé, vous pourrez profiter d'une piscine extérieure aux belles dimensions (10m sur 5m) chauffée de mai à septembre et sécurisée. Aux abords de la piscine, chaises longues et parasols vous assureront confort et détente. Une salle de repos est également mise à votre disposition, ainsi qu'un sauna pour deux personnes moyennant un supplément.\n\nPour parfaire votre détente et assurer votre sérénité, deux masseurs professionnels pourront, sur réservation uniquement, vous proposer différents massages bien-être."
+      },
+      "en": {
+        "title" : "Wellness",
+        "description": "Dans un jardin clos et aménagé, vous pourrez profiter d'une piscine extérieure aux belles dimensions (10m sur 5m) chauffée de mai à septembre et sécurisée. Aux abords de la piscine, chaises longues et parasols vous assureront confort et détente. Une salle de repos est également mise à votre disposition, ainsi qu'un sauna pour deux personnes moyennant un supplément.\n\nPour parfaire votre détente et assurer votre sérénité, deux masseurs professionnels pourront, sur réservation uniquement, vous proposer différents massages bien-être."
+      },
+      "link": {
+        "name": {
+          "fr" : "Voir nos offres",
+          "en": "See our offers"
+        },
+          "to": "ourOffers" 
+      }
+    },
+    {
+      "id": "spicheren",
+      "fr": {
+        "title" : "Spicheren, un joli coin de France",
+        "description": "La Terre du Milieu se situe en Moselle-est dans le sympathique village de Spicheren, connu pour son accueil, ses balades bucoliques et ses petits restaurants incontournables. De nombreux sentiers pédestres ou cyclistes raviront les amateurs du genre. Idéalement situé à cinq minutes de l'Allemagne, à vingt minutes de l'Alsace, à trois quarts d'heures de Metz, à une heure du Luxembourg, son rayonnement géographique vous permettra de découvrir une Lorraine verdoyante, beaucoup moins grise que le charbon des mines qu'elle a abritées durant plus de deux siècles."
+      },
+      "en": {
+        "title" : "Spicheren, a quaint little nook of France",
+        "description": "La Terre du Milieu se situe en Moselle-est dans le sympathique village de Spicheren, connu pour son accueil, ses balades bucoliques et ses petits restaurants incontournables. De nombreux sentiers pédestres ou cyclistes raviront les amateurs du genre. Idéalement situé à cinq minutes de l'Allemagne, à vingt minutes de l'Alsace, à trois quarts d'heures de Metz, à une heure du Luxembourg, son rayonnement géographique vous permettra de découvrir une Lorraine verdoyante, beaucoup moins grise que le charbon des mines qu'elle a abritées durant plus de deux siècles."
+      },
+      "link": null
+    }
+]
