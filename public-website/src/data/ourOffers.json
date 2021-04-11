@@ -1,33 +1,98 @@
 [
     {
-        "id": "" ,
+        "id": "massage" ,
         "fr" : {
-            "title": "", 
-            "description": ""
+            "title": "Massage", 
+            "description": "Le massage relaxant apporte un certain bien-être pour le corps et l'esprit. ... A la limite du massage et du modelage, le massage relaxant s'inscrit dans le même cadre que tous les massages de relaxation qui permettent de lâcher prise et de se détendre pour évacuer le stress accumulé au quotidien."
         },
         "en" : {
-            "title": "", 
-            "description": ""
+            "title": "Massage", 
+            "description": "The relaxing massage brings a certain well-being for the body and the spirit. ... At the limit of massage and modeling, the relaxing massage is part of the same framework as all relaxation massages which allow you to let go and relax to evacuate the stress accumulated in everyday life."
         },
         "de" : {
-            "title": "", 
-            "description": ""
+            "title": "Massage", 
+            "description": "Die entspannende Massage bringt ein gewisses Wohlbefinden für Körper und Geist. ... An der Grenze zwischen Massage und Modellierung ist die Entspannungsmassage Teil des gleichen Rahmens wie alle Entspannungsmassagen, bei denen Sie loslassen und sich entspannen können, um den im Alltag angesammelten Stress abzubauen."
         },
         "deals" : [
             {
-                "id": "",
-                "price": "",
+                "id": "solo",
+                "amount": 25,
                 "fr" : {
-                    "title" : "",
+                    "title" : "Massage Bali",
+                    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"                
+                },
+                "en" : {
+                    "title" : "Massage Bali",
+                    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"    
+                },
+                "de" : {
+                    "title" : "Massage Bali",
+                    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"    
+                }
+            },
+            {
+                "id": "duo",
+                "amount": 45,
+                "fr" : {
+                    "title" : "Massage Tahiti",
+                    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"                
+                },
+                "en" : {
+                    "title" : "Massage Tahiti",
+                    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"                  
+                },
+                "de" : {
+                    "title" : "Massage Tahiti",
+                    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"     
+                }
+            },
+            {
+                "id": "quatuor",
+                "amount": 70,
+                "fr" : {
+                    "title" : "Massage",
                     "subtitle" : ""                
                 },
                 "en" : {
-                    "title" : "",
+                    "title" : "Massage",
                     "subtitle" : ""                
                 },
                 "de" : {
-                    "title": "", 
-                    "description": ""
+                    "title" : "Massage",
+                    "subtitle" : ""     
+                }
+            }
+        ]
+    },
+    {
+        "id": "dining" ,
+        "fr" : {
+            "title": "Dîner", 
+            "description": "Le massage relaxant apporte un certain bien-être pour le corps et l'esprit. ... A la limite du massage et du modelage, le massage relaxant s'inscrit dans le même cadre que tous les massages de relaxation qui permettent de lâcher prise et de se détendre pour évacuer le stress accumulé au quotidien."
+        },
+        "en" : {
+            "title": "Dining", 
+            "description": "The relaxing massage brings a certain well-being for the body and the spirit. ... At the limit of massage and modeling, the relaxing massage is part of the same framework as all relaxation massages which allow you to let go and relax to evacuate the stress accumulated in everyday life."
+        },
+        "de" : {
+            "title": "Massage", 
+            "description": "Die entspannende Massage bringt ein gewisses Wohlbefinden für Körper und Geist. ... An der Grenze zwischen Massage und Modellierung ist die Entspannungsmassage Teil des gleichen Rahmens wie alle Entspannungsmassagen, bei denen Sie loslassen und sich entspannen können, um den im Alltag angesammelten Stress abzubauen."
+        },
+        "deals" : [
+            {
+                "id": "lovely-dining",
+                "amount": 50,
+                "fr" : {
+                    "title" : "Diner amoureur",
+                    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"                
+                },
+                "en" : {
+                    "title" : "Diner amoureur",
+                    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"                
+                },
+                "de" : {
+                    "title" : "Diner amoureur",
+                    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"                
                 }
             }
         ]
