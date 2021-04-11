@@ -20,7 +20,7 @@ const Logo = () => {
           className="mr-4 flex-shrink-0"
         ></StaticImage>
         <span className="text-gray-700 lg:text-2xl md:text-xl xs:text-xl xs:leading-6 font-calligraphy font-bold">
-          {t("siteMetadata.title")}
+          {t("pages.home.title")}
         </span>
       </div>
     </Link>
