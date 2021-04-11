@@ -18,13 +18,16 @@ const BaseDescriptionBlock = ({
   link,
   position,
   className,
+  light = false,
+  
 }) => {
   const { t, i18n } = useTranslation()
   return (
     <BaseParchment
       className={`max-w-md md:max-w-screen-lg flex flex-col lg:flex-row px-2 py-6  ${
         position % 2 ? "md:pr-12" : "md:pl-12"
-      } ${className}`}
+      } ${className}`} 
+      light={light}
     >
       <CustomImage
         hasBorder={true}
