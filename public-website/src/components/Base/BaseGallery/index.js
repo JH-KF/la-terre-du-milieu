@@ -24,7 +24,13 @@ const RoomPictureGallery = ({className, images}) => {
           <div className="block items-center md:hidden relative">
           <PictureSlider images={images} />
           </div>
-          <div onClick={() => setActiveModalImageIndex(0)}  className="cursor-pointer hidden md:block col-start-1 col-end-3 row-start-1 row-end-3 relative picture-custom-border-1">
+          <div 
+            role="button" 
+            tabIndex={-0} 
+            onClick={() => setActiveModalImageIndex(0)}  
+            onKeyDown={() => setActiveModalImageIndex(0)}
+            className="cursor-pointer hidden md:block col-start-1 col-end-3 row-start-1 row-end-3 relative picture-custom-border-1"
+          >
             <GatsbyImage 
               image={getImage(image1)}  
               alt={image1.name}
@@ -33,7 +39,13 @@ const RoomPictureGallery = ({className, images}) => {
               
             />
           </div>
-          <div onClick={() => setActiveModalImageIndex(1)} className="cursor-pointer hidden md:block col-start-3 col-end-4 row-start-1 row-end-2 relative picture-custom-border-1">
+          <div 
+            role="button" 
+            tabIndex={-1} 
+            onClick={() => setActiveModalImageIndex(1)} 
+            onKeyDown={() => setActiveModalImageIndex(1)}
+            className="cursor-pointer hidden md:block col-start-3 col-end-4 row-start-1 row-end-2 relative picture-custom-border-1"
+          >
             <GatsbyImage 
               image={getImage(image2)} 
               alt={image2.name}
@@ -41,7 +53,13 @@ const RoomPictureGallery = ({className, images}) => {
               imgStyle={{clipPath: "url(#image-path)"}} 
             />
           </div>
-          <div onClick={() => setActiveModalImageIndex(2)} className="cursor-pointer hidden md:block col-start-4 col-end-5 row-start-1 row-end-2 relative picture-custom-border-1">
+          <div 
+            role="button" 
+            tabIndex={-2} 
+            onClick={() => setActiveModalImageIndex(2)} 
+            onKeyDown={() => setActiveModalImageIndex(2)}
+            className="cursor-pointer hidden md:block col-start-4 col-end-5 row-start-1 row-end-2 relative picture-custom-border-1"
+          >
             <GatsbyImage 
               image={getImage(image3)} 
               alt={image3.name}
@@ -49,7 +67,13 @@ const RoomPictureGallery = ({className, images}) => {
               imgStyle={{clipPath: "url(#image-path)"}} 
             />
           </div>
-          <div onClick={() => setActiveModalImageIndex(3)} className="cursor-pointer hidden md:block col-start-3 col-end-4 row-start-2 row-end-3 relative picture-custom-border-1">
+          <div 
+            role="button" 
+            tabIndex={-3} 
+            onClick={() => setActiveModalImageIndex(3)}
+            onKeyDown={() => setActiveModalImageIndex(3)}
+            className="cursor-pointer hidden md:block col-start-3 col-end-4 row-start-2 row-end-3 relative picture-custom-border-1"
+          >
             <GatsbyImage 
               image={getImage(image4)} 
               alt={image4.name}
@@ -58,7 +82,13 @@ const RoomPictureGallery = ({className, images}) => {
               />
           </div>
           <div className="hidden md:block col-start-4 col-end-5 row-start-2 row-end-3 relative picture-custom-border-1">
-            <div className="z-10 relative h-full w-full cursor-pointer" onClick={() => setActiveModalImageIndex(4)}>
+            <div 
+              role="button" 
+              tabIndex={-4} 
+              className="z-10 relative h-full w-full cursor-pointer" 
+              onClick={() => setActiveModalImageIndex(4)}
+              onKeyDown={() => setActiveModalImageIndex(4)}
+            >
               <GatsbyImage 
                 image={getImage(image5)}
                 alt={image5.name}

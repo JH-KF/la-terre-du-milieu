@@ -34,7 +34,10 @@ const IndexPage = ({ pageContext }) => {
         nodes {
           name
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData (
+              width: 400
+              quality: 100
+            )
           }
         }
       },
@@ -153,6 +156,7 @@ const IndexPage = ({ pageContext }) => {
               <StaticImage
                 src="../images/home/landing/logo.png"
                 placeholder="tracedSVG"
+                width={450}
                 alt="Chambres d'hôte | La terre du milieu"
               ></StaticImage>
             </div>

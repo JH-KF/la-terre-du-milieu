@@ -17,7 +17,7 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
       <div>
         <div className="flex p-6 justify-between">
           <Logo />
-          <button onClick={handleClickBurgerMenu}>
+          <button name={t("utils.close")} onClick={handleClickBurgerMenu}>
             <HiOutlineX className="h-6 w-6 text-action" />
           </button>
         </div>

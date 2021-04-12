@@ -10,7 +10,10 @@
         "book": "Réserver",
         "discover": "Découvrir",
         "seeMore": "Voir plus",
-        "menu": "Menu"
+        "menu": "Menu",
+        "next": "Suivant",
+        "previous": "Précédent",
+        "close": "Fermer"
       },
       "pages": {
         "home": {
@@ -84,7 +87,10 @@
         "book": "Book",
         "discover": "Discover",
         "seeMore": "See more",
-        "menu": "Menu"
+        "menu": "Menu",
+        "next": "Next",
+        "previous": "Previous",
+        "close": "Close"
       },
       "pages": {
         "home": {

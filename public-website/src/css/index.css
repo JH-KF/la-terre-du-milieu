@@ -9,11 +9,13 @@
 @font-face {
   font-family: Onciale;
   src: url("./fonts/onciale.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Josefin Sans;
   src: url("./fonts/josefin-sans.ttf");
+  font-display: swap;
 }
 
 .global-header::after {

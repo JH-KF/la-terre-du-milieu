@@ -61,6 +61,7 @@ const Header = () => {
           <button
             onClick={handleClickBurgerMenu}
             type="button"
+            name={t("utils.menu")}
             className="xs:block hidden"
           >
             <HiOutlineMenu className="h-6 w-6 text-action" />
