@@ -864,7 +864,7 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@popperjs/core@^2.5.4", "@popperjs/core@^2.9.1":
+"@popperjs/core@^2.5.4", "@popperjs/core@^2.9.2":
   version "2.9.2"
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
 
@@ -875,11 +875,11 @@
     "@reach/utils" "0.13.2"
     tslib "^2.1.0"
 
-"@reach/auto-id@^0.14.0":
-  version "0.14.0"
-  resolved "https://registry.npmjs.org/@reach/auto-id/-/auto-id-0.14.0.tgz#1edfdeddb8fad656ec894a934c78f20c3b341416"
+"@reach/auto-id@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@reach/auto-id/-/auto-id-0.15.0.tgz#f46afebfc140b2099b95c7aec1f049d167d3833d"
   dependencies:
-    "@reach/utils" "0.14.0"
+    "@reach/utils" "0.15.0"
     tslib "^2.1.0"
 
 "@reach/utils@0.13.2":
@@ -890,13 +890,12 @@
     tslib "^2.1.0"
     warning "^4.0.3"
 
-"@reach/utils@0.14.0":
-  version "0.14.0"
-  resolved "https://registry.npmjs.org/@reach/utils/-/utils-0.14.0.tgz#f3ff579c737c3e9528f6f940bc518452f2636810"
+"@reach/utils@0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.15.0.tgz#5b183d668f9bb900b2dec7a33c028a2a828d27b2"
   dependencies:
-    "@types/warning" "^3.0.0"
+    tiny-warning "^1.0.3"
     tslib "^2.1.0"
-    warning "^4.0.3"
 
 "@rexxars/eventsource-polyfill@^1.0.0":
   version "1.0.0"
@@ -906,7 +905,7 @@
   version "1.1.2"
   resolved "https://registry.npmjs.org/@sanity/asset-utils/-/asset-utils-1.1.2.tgz#d6b4b875bee4189cb56f274a7fb5494174463cb2"
 
-"@sanity/base@2.7.4", "@sanity/base@^2.7.4":
+"@sanity/base@2.7.4":
   version "2.7.4"
   resolved "https://registry.npmjs.org/@sanity/base/-/base-2.7.4.tgz#fdf3bf56cf2792f3f6cf97cf431c53435deba36d"
   dependencies:
@@ -927,6 +926,60 @@
     "@sanity/types" "2.7.4"
     "@sanity/ui" "^0.33.9"
     "@sanity/util" "2.7.4"
+    "@sanity/validation" "2.7.4"
+    boundless-arrow-key-navigation "^1.1.0"
+    chance "^1.0.4"
+    circular-at "^1.0.3"
+    classnames "^2.2.5"
+    dataloader "^2.0.0"
+    date-fns "^2.16.1"
+    dom-scroll-into-view "^1.2.1"
+    element-resize-detector "^1.1.14"
+    history "^4.6.3"
+    lodash "^4.17.15"
+    nano-pubsub "^2.0.0"
+    nanoid "^3.1.9"
+    observable-callback "^1.0.1"
+    oneline "^1.0.3"
+    polished "^4.0.5"
+    popper-max-size-modifier "^0.2.0"
+    promise-props "^1.0.0"
+    raf "^3.4.1"
+    react-click-outside "^3.0.0"
+    react-fast-compare "^2.0.2"
+    react-icon-base "^2.1.2"
+    react-popper "^2.2.4"
+    react-props-stream "^1.0.0"
+    react-refractor "^2.1.2"
+    react-sortable-hoc "^1.11.0"
+    react-split-pane "^0.1.84"
+    rxjs "^6.5.3"
+    rxjs-exhaustmap-with-trailing "^1.0.0"
+    semver-compare "^1.0.0"
+    shallow-equals "^1.0.0"
+    styled-components "^5.2.1"
+
+"@sanity/base@2.8.0", "@sanity/base@^2.7.4":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.8.0.tgz#8409b5f0e74809515727df306f33aabbc43638d8"
+  dependencies:
+    "@popperjs/core" "^2.5.4"
+    "@reach/auto-id" "^0.13.2"
+    "@sanity/bifur-client" "^0.0.8"
+    "@sanity/client" "2.8.0"
+    "@sanity/color" "^1.0.0"
+    "@sanity/generate-help-url" "2.2.6"
+    "@sanity/icons" "1.0.5"
+    "@sanity/image-url" "^0.140.19"
+    "@sanity/initial-value-templates" "2.8.0"
+    "@sanity/mutator" "2.2.6"
+    "@sanity/schema" "2.7.4"
+    "@sanity/state-router" "2.7.4"
+    "@sanity/structure" "2.8.0"
+    "@sanity/transaction-collator" "2.7.4"
+    "@sanity/types" "2.8.0"
+    "@sanity/ui" "^0.33.12"
+    "@sanity/util" "2.8.0"
     "@sanity/validation" "2.7.4"
     boundless-arrow-key-navigation "^1.1.0"
     chance "^1.0.4"
@@ -981,6 +1034,18 @@
 "@sanity/client@2.7.1":
   version "2.7.1"
   resolved "https://registry.npmjs.org/@sanity/client/-/client-2.7.1.tgz#0163ecad3ad0875dac5a87bfa20a1652dd3e6a80"
+  dependencies:
+    "@sanity/eventsource" "2.2.6"
+    "@sanity/generate-help-url" "2.2.6"
+    "@sanity/observable" "2.0.9"
+    deep-assign "^2.0.0"
+    get-it "^5.0.3"
+    make-error "^1.3.0"
+    object-assign "^4.1.1"
+
+"@sanity/client@2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-2.8.0.tgz#43e35937e4de0f75c0b6bf029fca0e598c8a04ed"
   dependencies:
     "@sanity/eventsource" "2.2.6"
     "@sanity/generate-help-url" "2.2.6"
@@ -1082,17 +1147,17 @@
     "@sanity/generate-help-url" "2.2.6"
     lodash "^4.17.15"
 
-"@sanity/default-layout@^2.7.4":
-  version "2.7.4"
-  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-2.7.4.tgz#938d3e00f7f31930337749d5c6bd56c85fa94211"
+"@sanity/default-layout@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.8.0.tgz#fac44f02a5b5cbfe84e9a74662cdd014990dfb6b"
   dependencies:
     "@reach/auto-id" "^0.13.2"
-    "@sanity/base" "2.7.4"
-    "@sanity/client" "2.7.1"
+    "@sanity/base" "2.8.0"
+    "@sanity/client" "2.8.0"
     "@sanity/generate-help-url" "2.2.6"
-    "@sanity/types" "2.7.4"
-    "@sanity/ui" "^0.33.9"
-    "@sanity/util" "2.7.4"
+    "@sanity/types" "2.8.0"
+    "@sanity/ui" "^0.33.12"
+    "@sanity/util" "2.8.0"
     classnames "^2.2.5"
     is-hotkey "^0.1.4"
     lodash "^4.17.15"
@@ -1286,6 +1351,17 @@
     memoize-one "^3.1.1"
     oneline "^1.0.3"
 
+"@sanity/initial-value-templates@2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@sanity/initial-value-templates/-/initial-value-templates-2.8.0.tgz#ec8faac6ada2aa3cc13e8f21a983fd3b6595aa7b"
+  dependencies:
+    "@sanity/util" "2.8.0"
+    "@types/lodash" "^4.14.149"
+    "@types/memoize-one" "^3.1.1"
+    lodash "^4.17.15"
+    memoize-one "^3.1.1"
+    oneline "^1.0.3"
+
 "@sanity/mutator@2.2.6":
   version "2.2.6"
   resolved "https://registry.npmjs.org/@sanity/mutator/-/mutator-2.2.6.tgz#5ee69abf014e007b2fc98d2d1da59e4443ba4ee0"
@@ -1431,6 +1507,18 @@
     lodash "^4.17.15"
     memoize-one "^3.1.1"
 
+"@sanity/structure@2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@sanity/structure/-/structure-2.8.0.tgz#67900f030e9fb821f747273a29a85ca37c74eb3d"
+  dependencies:
+    "@sanity/client" "2.8.0"
+    "@sanity/initial-value-templates" "2.8.0"
+    "@sanity/types" "2.8.0"
+    "@types/lodash" "^4.14.149"
+    "@types/memoize-one" "^3.1.1"
+    lodash "^4.17.15"
+    memoize-one "^3.1.1"
+
 "@sanity/timed-out@^4.0.2":
   version "4.0.2"
   resolved "https://registry.npmjs.org/@sanity/timed-out/-/timed-out-4.0.2.tgz#c9f61f9a1609baa1eb3e4235a24ea2a775022cdf"
@@ -1442,7 +1530,7 @@
     "@types/lodash" "^4.14.149"
     lodash "^4.17.15"
 
-"@sanity/types@2.7.4", "@sanity/types@^2.0.0":
+"@sanity/types@2.7.4":
   version "2.7.4"
   resolved "https://registry.npmjs.org/@sanity/types/-/types-2.7.4.tgz#46481dbffb1cb192166a81734754771e536674f3"
   dependencies:
@@ -1450,16 +1538,24 @@
     "@types/react" "^17.0.0"
     rxjs "^6.5.3"
 
-"@sanity/ui@^0.33.9":
-  version "0.33.11"
-  resolved "https://registry.npmjs.org/@sanity/ui/-/ui-0.33.11.tgz#a2f1f64226c453aaaafb5aebb5b42f17eeeda204"
+"@sanity/types@2.8.0", "@sanity/types@^2.0.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@sanity/types/-/types-2.8.0.tgz#d8d3672639c5d6e6aa06373aaae06ad756817285"
+  dependencies:
+    "@sanity/client" "2.8.0"
+    "@types/react" "^17.0.0"
+    rxjs "^6.5.3"
+
+"@sanity/ui@^0.33.12", "@sanity/ui@^0.33.9":
+  version "0.33.15"
+  resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-0.33.15.tgz#fc1d7dc9a8c65e450c02fd9255e87c7cba60a039"
   dependencies:
     "@juggle/resize-observer" "^3.3.0"
-    "@popperjs/core" "^2.9.1"
-    "@reach/auto-id" "^0.14.0"
+    "@popperjs/core" "^2.9.2"
+    "@reach/auto-id" "^0.15.0"
     "@sanity/color" "^2.0.15"
     "@sanity/icons" "^1.0.6"
-    framer-motion "^4.0.3"
+    framer-motion "^4.1.3"
     popper-max-size-modifier "^0.2.0"
     react-is "^17.0.2"
     react-popper "^2.2.5"
@@ -1470,6 +1566,17 @@
   resolved "https://registry.npmjs.org/@sanity/util/-/util-2.7.4.tgz#f3980c8c05dea032473c1cdc6e77303f95e6756c"
   dependencies:
     "@sanity/types" "2.7.4"
+    dotenv "^8.2.0"
+    fs-extra "^6.0.1"
+    get-random-values "^1.2.0"
+    lodash "^4.17.15"
+    resolve-from "^4.0.0"
+
+"@sanity/util@2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@sanity/util/-/util-2.8.0.tgz#f28f054c7c7ed8dd2bb8652cad049964382ec764"
+  dependencies:
+    "@sanity/types" "2.8.0"
     dotenv "^8.2.0"
     fs-extra "^6.0.1"
     get-random-values "^1.2.0"
@@ -3865,9 +3972,9 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^4.0.3:
-  version "4.1.2"
-  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-4.1.2.tgz#2fffb7700ca1c3405e697294d155b1aae51c1031"
+framer-motion@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-4.1.3.tgz#fdde56885910f516233233073f8f0ed6aab6492e"
   dependencies:
     framesync "5.3.0"
     hey-listen "^1.0.8"
