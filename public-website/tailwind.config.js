@@ -39,7 +39,6 @@ module.exports = {
         card: "280px"
       },
       maxWidth: {
-        card: "344px",
         "modal-wrapper": "815px",
         "modal-image" : "600px"
       },

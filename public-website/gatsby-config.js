@@ -2,9 +2,18 @@ const dotenv = require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    author: `Monique et Marial Bousch`,
-    website: "laterredumilieu",
-    websiteName: "La terre du milieu"
+    website: "www.laterredumilieu.com",
+    websiteName: "La terre du milieu",
+    fr: {
+      author: `Monique et Martial Bousch`,
+    },
+    en: {
+      author: `Monique and Martial Bousch`,
+    },
+    de: {
+      author: `Monique und Martial Bousch`,
+    }
+   
   },
   plugins: [
     `gatsby-transformer-json`,

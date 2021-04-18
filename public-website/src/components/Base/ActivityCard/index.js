@@ -15,7 +15,7 @@ const BaseRoomCard = ({ title, description, className, thumbnailImage, url, ligh
   const { t } = useTranslation()
 
   return (
-    <BaseParchment className={`min-w-card max-w-card px-2 pt-4 pb-6 ${className}`} light={light} >
+    <BaseParchment className={`min-w-card max-w-md px-2 pt-4 pb-6 ${className}`} light={light} >
     <CustomImage image={thumbnailImage} alt={title} className="w-full mb-6" typeFrame="landscape" hasBorder={true}/>  
       <div className="mb-6">
         <BaseTitle

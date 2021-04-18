@@ -1,4 +1,5 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
@@ -8,14 +9,22 @@ import { useTranslation } from "react-i18next"
 
 const Footer = () => {
   const { t } = useTranslation()
-
+  const queryData = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          websiteName
+        }
+      }
+    }`
+  ) 
   return (
     <footer className="pt-16 xs:pt-0 global-footer bg-paper">
       <div className="pb-4 xs:pt-12 px-12 xs:px-6 max-w-screen-xl m-auto">
         <div className="flex items-center xs:justify-center mb-12">
           <span className="hidden border-t border-solid border-primary mx-12 flex-grow xs:hidden"></span>
           <span className="font-calligraphy font-semibold text-gray-800 text-3xl text-center xs:text-xl">
-            {t("siteMetadata.title")}
+            {queryData.site.siteMetadata.websiteName}
           </span>
           <span className="border-t border-solid border-primary mx-12 flex-grow xs:hidden"></span>
           <OutboundLink href="https://www.facebook.com/">
@@ -46,6 +55,12 @@ const Footer = () => {
             &nbsp;
             <Link to="/en/">
               <span className="text-action hover:underline">EN</span>
+            </Link>
+            &nbsp;
+            <span>|</span>
+            &nbsp;
+            <Link to="/de/">
+              <span className="text-action hover:underline">DE</span>
             </Link>
           </div>
         

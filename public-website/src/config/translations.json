@@ -2,10 +2,6 @@
   "fr": {
     "default": true,
     "translation": {
-      "siteMetadata": {
-        "title": "La Terre du Milieu",
-        "description": "Chambre d'hôtes insolite, plongez dans l'univers Tolkien !"
-      },
       "utils": {
         "book": "Réserver",
         "discover": "Découvrir",
@@ -70,7 +66,7 @@
       "modal": {
         "callTo": "Vous pouvez m'appeler au :",
         "sendTo": "Ou alors m'envoyer directement un email à l'adresse :",
-        "fromWebsites": "Réservation en ligne via :"
+        "fromWebsites": "Réservation en ligne"
       },
       "room" : {
         "toCome": "Ouverture prochaine..."
@@ -79,10 +75,6 @@
   },
   "en": {
     "translation": {
-      "siteMetadata": {
-        "title": "Middle Earth",
-        "description": "Unique Bed and breakfast, immerse yourself in the Tolkien universe!"
-      },
       "utils": {
         "book": "Book",
         "discover": "Discover",
@@ -96,7 +88,6 @@
         "home": {
           "path": "en/",
           "title": "Home",
-          "slug": "our-rooms",
           "rooms": {
             "title": "Our Rooms",
             "slug": "our-rooms"
@@ -110,7 +101,7 @@
               "rooms": "Non smoking bedrooms, all equiped with comfortable bedding and wifi",
               "bathrooms": "Bathrooms equiped with blow dryers and towels",
               "pool": "Deckchairs, sun umbrellas and swimming pool towels at your disposal",
-              "outsideEquiments": "Une cuisine d'été est à votre disposition (réfrigérateur, gazinière, vaisselle, barbecue...) ainsi qu'un abri vélos/motos"
+              "outsideEquiments": "A summer kitchen is at your disposal (refrigerator, gas stove, dishes, barbecue...), as well as a bike and motorbike shed"
             }
           }
         },
@@ -148,10 +139,83 @@
       "modal": {
         "callTo": "You can call me at:",
         "sendTo": "Or send me a email:",
-        "fromWebsites": "Online booking with:"
+        "fromWebsites": "Online booking"
       },
       "room" : {
         "toCome": "Opening soon..."
+      }
+    }
+  },
+  "de": {
+    "translation": {
+      "utils": {
+        "book": "buchen",
+        "discover": "Entdecken",
+        "seeMore": "Mehr sehen",
+        "menu": "Menu",
+        "next": "Nächster",
+        "previous": "Bisherige",
+        "close": "Schließen"
+      },
+      "pages": {
+        "home": {
+          "path": "de/",
+          "title": "Home",
+          "rooms": {
+            "title": "unsere zimmer",
+            "slug": "unsere-zimmer"
+          },
+          "infos": {
+            "title": "Praktische Informationen und Ausstattung",
+            "content": {
+              "hours": "Ankünfte sind von 16 bis 20 Uhr, Abreisen vor 11 Uhr morgens",
+              "breakfast": "Das reichhaltige und abwechslungsreiche Frühstück wird von 8.00 bis 9.30 Uhr serviert. Bitte geben Sie bei der Buchung eventuelle Allergien oder Unverträglichkeiten an",
+              "pets": "Unsere Haustiere sind leider nicht erlaubt. Nicht, dass wir sie nicht mögen, aber da unser Haus voll davon ist, wäre das Zusammenleben schwierig",
+              "rooms": "Alle unsere Zimmer sind Nichtraucherzimmer, mit bequemen Betten und WLan ausgestattet",
+              "bathrooms": "Die Badezimmer verfügen über einen Haartrockner und Handtücher",
+              "pool": "Eine Sommerküche steht zu Ihrer Verfügung (Kühlschrank, Gasherd, Geschirr, Grill. . . ) sowie ein Fahrrad-/Motorradabstellraum",
+              "outsideEquiments": "Liegestühle, Sonnenschirme und Badetücher sind auf Anfrage erhältlich"
+            }
+          }
+        },
+        "room" : {
+          "other-rooms" : "Unsere anderen Zimmer"
+        },
+        "ourRegion" : {
+          "title": "Unsere region",
+          "path": "unsere-region",
+          "activitiesTitle": "Entdecken",
+          "eventsTitle": "Veranstaltungen",
+          "noEvents": "Derzeit gibt es keine Veranstaltung."
+        },
+        "ourOffers" : {
+          "path": "unsere-angebote",
+          "title": "Unsere angebote"
+        },
+        "404": {
+          "title" : "Seite nicht gefunden",
+          "description" : "Die gesuchte Seite existiert nicht",
+          "homeButton": "Zurück zuhause"
+        }
+      },
+      "header": {
+        "rooms": "Zimmers",
+        "ourRegion": "Unsere region",
+        "home": "Home",
+        "ourOffers": "Unsere angebote"
+      },
+      "footer": {
+        "legalMention": "Rechtliche Erwähnungen",
+        "generalRentalTermsAndConditions": "Allgemeine Mietbedingungen",
+        "madeBy": "Hergestellt mit ❤️ von"
+      },
+      "modal": {
+        "callTo": "Sie können mich anrufen unter:",
+        "sendTo": "Oder schicken Sie mir direkt eine E-Mail an:",
+        "fromWebsites": "Online-Buchung"
+      },
+      "room" : {
+        "toCome": "Baldige Eröffnung..."
       }
     }
   }

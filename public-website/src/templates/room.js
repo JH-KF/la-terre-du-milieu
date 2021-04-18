@@ -13,7 +13,7 @@ import BaseSecondaryButton from "../components/Base/SecondaryButton"
 
 import { BookModalContext } from "../context/bookModalContext"
 
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { getImage, StaticImage, getSrc } from "gatsby-plugin-image"
 
 import { useTranslation } from "react-i18next"
@@ -57,7 +57,7 @@ const Room = ({pageContext, data}) => {
 
   return (
   <>
-    <SEO title={pageContext.room.title} lang={i18n.language} description={pageContext.room.description} path={pageContext.roomPath} image={getSrc(data.roomImages.nodes[0])} />
+    <Seo title={pageContext.room.title} lang={i18n.language} description={pageContext.room.description} path={pageContext.roomPath} image={getSrc(data.roomImages.nodes[0])} />
     <div className="mt-16 md:mt-6">
       <section className="mb-24 bg-paper">
         <div className="max-w-screen-xl mx-auto px-6 md:px-12">
@@ -70,7 +70,7 @@ const Room = ({pageContext, data}) => {
                 <Calendar
                   onChange={onChange}
                   value={date}
-                  locale="fr-FR"
+                  locale={pageContext.locale}
                   minDate={new Date()}
                   maxDate={dayNextYear}
                   showNeighboringMonth={false}

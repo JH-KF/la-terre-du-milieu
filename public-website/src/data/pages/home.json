@@ -1,0 +1,16 @@
+{
+    "home": {
+        "fr": {
+        "title" : "Accueil",
+        "description": "Maison d'hôtes « La Terre du Milieu » à Spicheren, Moselle. 4 chambres décorées sous le thème du seigneur des anneaux. Dépaysement et calme au milieu des Elfes, des Rois, des Ents et des Hobbits."
+        },
+        "en": {
+            "title" : "Home",
+            "description": "Maison d'hôtes « La Terre du Milieu » à Spicheren, Moselle. 4 chambres décorées sous le thème du seigneur des anneaux. Dépaysement et calme au milieu des Elfes, des Rois, des Ents et des Hobbits."
+        },
+        "de": {
+            "title" : "Home",
+            "description": "Maison d'hôtes « La Terre du Milieu » à Spicheren, Moselle. 4 chambres décorées sous le thème du seigneur des anneaux. Dépaysement et calme au milieu des Elfes, des Rois, des Ents et des Hobbits."
+        }
+    }
+}

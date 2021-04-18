@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { useTranslation } from "react-i18next"
 
 
 import PictureSlider from "../../PictureSlider"
@@ -9,6 +10,7 @@ import ModalGallery from "../ModalGallery"
 
 const RoomPictureGallery = ({className, images}) => {
 
+  const { t } = useTranslation()
 
   const [activeModalImageIndex, setActiveModalImageIndex] = useState(null);
   
@@ -98,7 +100,7 @@ const RoomPictureGallery = ({className, images}) => {
             </div>
             { images.length > 5 ?
               <div className="z-10 absolute bottom-4 right-2">
-                <BaseSecondaryButton text={"voir plus"} onClick={() => setActiveModalImageIndex(5)}  />
+                <BaseSecondaryButton text={t("utils.seeMore")} onClick={() => setActiveModalImageIndex(5)}  />
               </div>
               :null
             }

@@ -20,6 +20,15 @@
             "quoteAuthor": "Galadriel, dame de la Lorien",
             "description": "La chambre des Elfes, toute en douceur et en lumières, vous transportera dans un monde enchanteur aux rêves apaisés.",
             "informations" : ["Chambre de 16m2 avec terrasse privative de 12m2, vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit bébé sur demande"]
+        },
+        "de" :{
+            "slug" :  "lorien-das-konigreich-der-elfen",
+            "path" :  "zimmer/",
+            "title": "Lorien, das Königreich der Elfen",
+            "quote": "Lasst eure Herzen nicht beunruhigen. Heute Nacht werdet ihr in Frieden schlafen.",
+            "quoteAuthor": "Galadriel",
+            "description": "Das Zimmer der Elfen, ganz sanft und hell, wird Sie in eine bezaubernde Welt der stillen Träume entführen.",
+            "informations" : ["Zimmer von 16m2 mit privater Terrasse von 12m2, Blick auf den Garten und den Pool", "Lit 160x200", "Schreibtisch", "Angrenzendes Badezimmer mit Dusche, Waschbecken und separatem WC", "Kinderbett auf Anfrage"]
         }
         
     },
@@ -28,8 +37,8 @@
         "thumbnail" : "",
         "isAvailable": true,
         "en" : {
-            "slug" : "gondor-land-of-men",
-            "path" : "room/",
+            "slug": "gondor-land-of-men",
+            "path": "room/",
             "title": "Gondor, land of Men",
             "quote": "From the ashes a fire shall be woken, A light from the shadows shall spring; Renewed shall be blade that was broken, The crownless again shall be king.",
             "quoteAuthor": "Aragorn",
@@ -38,13 +47,22 @@
             
         }, 
         "fr" :{
-            "slug" :  "le-gondor-terre-des-hommes",
-            "path" :  "chambre/",
+            "slug": "le-gondor-terre-des-hommes",
+            "path": "chambre/",
             "title": "Le Gondor, terre des Hommes",
             "quote": "Des cendres, un feu s’éveillera. Des ombres, une lumière jaillira ; Renouvelée sera l’épée qui fut brisée, le sans-couronne sera de nouveau roi.",
             "quoteAuthor": "J.R.R. Tolkien",
             "description": "La chambre d’Aragorn vous plongera dans un univers gris, épuré, au charme discret, où trône l’arbre blanc de Minastirith, l’arbre des Rois, symbole de vie et d’espoir.",
-            "informations" : ["Chambre de 16m2 avec terrasse privative de 12m2, vue sur le jardin et la piscine", "Lit 160x200", "Lit 160x200", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit bébé sur demande"]
+            "informations" : ["Chambre de 16m2 avec terrasse privative de 12m2, vue sur le jardin et la piscine", "Lit 160x200", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit bébé sur demande"]
+        },
+        "de" :{
+            "slug": "gondor-land-der-menschen",
+            "path": "zimmer/",
+            "title": "Gondor, Land der Menschen ",
+            "quote": "Aus der Asche wird ein Feuer entzünden. Aus den Schatten wird ein Licht hervorbrechen; Und das Schwert, das zerbrochen war, wird erneuert werden, und der Krononelose wird wieder König sein.",
+            "quoteAuthor": "J.R.R. Tolkien",
+            "description": "Das Zimmer von Aragorn entführt Sie in eine hellgraue, schlichte und charmante Welt, in der der weiße Baum von Minastirith, der Baum der Könige, ein Symbol des Lebens und der Hoffnung steht.",
+            "informations" : ["Zimmer von 16m2 mit privater Terrasse von 12m2, Blick auf den Garten und den Pool", "Lit 160x200", "Angrenzendes Badezimmer mit Dusche, Waschbecken und separatem WC", "Kinderbett auf Anfrage"]
         }
     },
     {
@@ -68,6 +86,15 @@
             "quoteAuthor": "J.R.R Tolkien",
             "description": "Une chambre familiale sylvestre au décor rustique de bois et de pierres qui vous enveloppera de mystère et de sérénité. Peut-être même aurez-vous la chance d’entendre les murmures des arbres et les légendes anciennes qu’ils racontent à ceux qui savent écouter.",
             "informations" :["Chambre familiale de 20m2 avec terrasse privative de 12m2", "Vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Lit bébé sur demande", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit 90 x190  (supplément de 10€ incluant le petit-déjeuner)" ]
+        },
+        "de" :{
+            "slug" :  "fangorn-Gebiet-der-ents",
+            "path" :  "zimmer/",
+            "title": "Fangorn, Gebiet der Ents",
+            "quote": "O ihr Wanderer im finsteren Land, verzweifelt nicht. Denn so finster sie auch sein mögen, alle Wälder müssen sich aufklären.",
+            "quoteAuthor": "J.R.R Tolkien",
+            "description": "Ein Wald-Familienzimmer mit rustikalem Dekor aus Holz und Steinen, die Sie mit Geheimnis und Heiterkeit umhüllen wird. Vielleicht haben Sie sogar das Glück, das Rauschen der Bäume und die alten Legenden zu hören, die sie denen erzählen, die zuhören können.",
+            "informations" :["Familienzimmer von 20m2 mit privater Terrasse von 12m2", "Blick auf den Garten und den Pool", "Lit 160x200", "Schreibtisch", "Kinderbett auf Anfrage", "Angrenzendes Badezimmer mit Dusche, Waschbecken und separatem WC", "90 x190 Bett (Aufpreis von 10€ inklusive Frühstück)" ]
         }
     }, 
     {
@@ -77,10 +104,10 @@
         "en" : {
             "slug" : "the-shire",
             "path" : "room/",
-            "title": "The Shire, Hobbits' hole",
-            "quote": "Ah, mon Cher Frodon, les Hobbits sont vraiment de surprenantes créatures. On peut apprendre tout ce qu’il y a à savoir sur leurs coutumes en un mois, et cependant, au bout de cent ans, ils peuvent encore vous surprendre.",
+            "title": "The Shire, a hobbit hole",
+            "quote": "My dear Frodo, hobbits really are amazing creatures, as I have said before. You can learn all that there is to know about their ways in a month, and yet after a hundred years they can still surprise you at a pinch.",
             "quoteAuthor": "Gandalf the Grey",
-            "description": "Il faudra vous baisser un peu pour entrer par la porte ronde, et retrouver votre âme d'enfant pour découvrir le monde des sympathiques et pacifiques petits hobbits joufflus, adeptes de bonne chère, de bière et d'herbe à pipe. Mais c'est une vraie chambre aux tons chaleureux qui vous accueillera pour un séjour confortable et insolite.",
+            "description": "The Shire, a hobbit hole You will have to bown down a little to get through the round door. Channel your inner child to discover the peaceful and pleasant realm of the chubby little hobbits, devotees of gastronomy, beer and pipe weed. It is a genuine warm toned bedroom, and your stay will be very comfortable and unconventionnal.",
             "informations": ["Bedroom 20 m2 (215 ft2), private terrace of 12 m2 (129 ft2)", "View on the garden and the swimming pool", "Bed 160x200 cm (63 x 78 in.)", "Desk", "Baby cot on demand", "En-suite bathroom with a shower and a sink, separate toilet", "Bed 90x190 cm (35x75 in. 10€ supplement, breakfast included)"  ]
         }, 
         "fr" :{
@@ -91,6 +118,15 @@
             "quoteAuthor": "Gandalf le Gris",
             "description": "Il faudra vous baisser un peu pour entrer par la porte ronde, et retrouver votre âme d'enfant pour découvrir le monde des sympathiques et pacifiques petits hobbits joufflus, adeptes de bonne chère, de bière et d'herbe à pipe. Mais c'est une vraie chambre aux tons chaleureux qui vous accueillera pour un séjour confortable et insolite.",
             "informations" :["Chambre de 20m2 avec terrasse privative de 12m2", "Vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Lit bébé sur demande", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit 90 x190  (supplément de 10€ incluant le petit-déjeuner)" ]
+        },
+        "de" :{
+            "slug" :  "das-auenland-das-Loch-der-hobbits",
+            "path" :  "zimmer/",
+            "title": "Das Auenland, das Loch der Hobbits",
+            "quote": "Oh, mein lieber Frodon, Hobbits sind wirklich erstaunliche Kreaturen. Man kann alles über ihre Bräuche in einem Monat lernen, und doch, nach 100 Jahren, können sie einen immer noch überraschen.",
+            "quoteAuthor": "Gandalf, der Graue",
+            "description": "Sie müssen sich ein wenig bücken, um durch die runde Tür zu kommen und Ihre kindliche Seele zu finden, um die Welt der freundlichen, friedlichen kleinen Hobbits zu entdecken, die sich nach guten Gelüsten, Bier und Pfeifengras ausrichten. Aber es ist ein echtes Zimmer mit warmen Tönen, die Sie für einen gemütlichen und ungewöhnlichen Aufenthalt begrüßen wird.",
+            "informations" :["Zimmer von 20m2 mit privater Terrasse von 12m2", "Blick auf den Garten und den Pool", "Lit 160x200", "Schreibtisch", "Kinderbett auf Anfrage", "Angrenzendes Badezimmer mit Dusche, Waschbecken und separatem WC", "90 x190 Bett (Aufpreis von 10€ inklusive Frühstück)" ]
         }
     }
 ]

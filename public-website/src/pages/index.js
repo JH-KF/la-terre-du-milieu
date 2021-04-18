@@ -2,7 +2,7 @@ import React from "react"
 import { StaticImage, getImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import BaseHeading from "../components/Base/Heading"
 import BaseDescriptionBlock from "../components/Base/DescriptionBlock"
 import PictureSlider from "../components/PictureSlider"
@@ -16,6 +16,22 @@ const IndexPage = ({ pageContext }) => {
 
   const queryData = useStaticQuery(graphql`
     query {
+      pagesJson {
+        home {
+          de {
+            title
+            description
+          }
+          en {
+            title
+            description
+          }
+          fr {
+            title
+            description
+          }
+        }
+      },
       sliderPictures: allFile(
         sort: { fields: name, order: ASC }
         filter: { relativeDirectory: { eq: "home/slider" } }
@@ -71,6 +87,14 @@ const IndexPage = ({ pageContext }) => {
             slug
             title
           }
+          de {
+            description
+            quote
+            path
+            quoteAuthor
+            slug
+            title
+          }
         }
       },
       allPresentationJson {
@@ -83,11 +107,16 @@ const IndexPage = ({ pageContext }) => {
             description
             title
           }
+          de {
+            description
+            title
+          }
           id
           link {
             name {
               en
               fr
+              de
             }
             to
           }
@@ -140,11 +169,11 @@ const IndexPage = ({ pageContext }) => {
 
   return (
     <div>
-      <SEO
-        title={t("pages.home.title")}
-        description={t("siteMetadata.description")}
+      <Seo
+        title={queryData.pagesJson.home[pageContext.locale].title}
+        description={queryData.pagesJson.home[pageContext.locale].description}
         lang={pageContext.locale}
-      />
+      /> 
       <section className="bg-paper xs:py-16 calligraph-background calligraph-background-before">
         <div className="max-w-screen-xl px-6 md:px-12 m-auto display grid gap-x-24 xs:block grid-cols-5">
           <div className="flex items-center xs:max-w-sm xs:m-auto col-span-2 xs:mb-16">

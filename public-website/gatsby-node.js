@@ -60,6 +60,15 @@ exports.createPages = async ({ graphql, actions }) => {
           title
           informations
         }
+        de {
+          description
+          quote
+          path
+          quoteAuthor
+          slug
+          title
+          informations
+        }
       }
     }
   }

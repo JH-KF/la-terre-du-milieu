@@ -1,13 +1,15 @@
 import React from "react"
-import BaseHeading from "../components/Base/Heading"
 import { graphql } from "gatsby"
-
+import { useTranslation } from "react-i18next"
 import { getImage } from "gatsby-plugin-image"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
+
+import BaseHeading from "../components/Base/Heading"
+import BaseTitle from "../components/Base/Title"
 import BaseDescriptionBlock from "../components/Base/DescriptionBlock"
 
-import { useTranslation } from "react-i18next"
 
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import BaseDescription from "../components/Base/Description"
 import BasePrice from "../components/Base/Price"
 
@@ -19,17 +21,20 @@ const OurOffers = ({pageContext, data}) => {
 
   let offers = [];
   data.allOurOffersJson.nodes.forEach((offer, index) => {
-    const prices = [];
-    offer.deals.forEach(deal => {
-      prices.push(<BasePrice 
-        title={deal[lng].title} 
-        subtitle={deal[lng].subtitle} 
-        amount={deal.amount} 
-        key={deal.id}
-        className="mb-8" 
-        />
-      )
-    })
+    let prices = null;
+    if(offer.deals){
+      prices = [];
+      offer.deals.forEach(deal => {
+        prices.push(<BasePrice 
+          title={deal[lng].title} 
+          subtitle={deal[lng].subtitle} 
+          amount={deal.amount} 
+          key={deal.id}
+          className="mb-8" 
+          />
+        )
+      })
+    }
     offers.push(
         <BaseDescriptionBlock
           title={offer[lng].title}
@@ -55,7 +60,7 @@ const OurOffers = ({pageContext, data}) => {
 
   return (
   <>
-    <SEO title={t("pages.ourOffers.title")} lang={lng} /> 
+    <Seo title={t("pages.ourOffers.title")} lang={lng} /> 
     <section className="bg-paper mt-16 md:mt-6">
       <div className="max-w-screen-xl px-6 md:px-12 m-auto">
         <BaseHeading
@@ -71,18 +76,35 @@ const OurOffers = ({pageContext, data}) => {
           text={"Contact"}
           className="xs:text-center mb-16"
         />
-        <div>
-          <div className="m-auto text-center mb-8">
-            <BaseDescription description={"Vous pouvez m'appeler au :"} />
-            <BaseDescription description={"06 61 32 42 43"} />
+        <div className="m-auto text-center">
+            {/* By phone */}
+            <div className="mt-4 mb-6 text-center">
+              <BaseDescription
+                description={t("modal.callTo")}
+                className="mb-2"
+              />
+              <OutboundLink href={`tel:${process.env.GATSBY_HREF_MONIQUE_MOBILE_PHONE}`}>
+                <BaseTitle
+                  title={process.env.GATSBY_DISPLAY_MONIQUE_MOBILE_PHONE}
+                  className="text-action"
+                />
+              </OutboundLink>
+            </div>
+            {/* By e-mail */}
+            <div className="text-center">
+              <BaseDescription
+                description={t("modal.sendTo")}
+                className="mb-2"
+              />
+              <OutboundLink href={`mailto:${process.env.GATSBY_MONIQUE_EMAIL}`}>
+                <BaseTitle
+                  title={process.env.GATSBY_MONIQUE_EMAIL}
+                  className="text-action"
+                />
+              </OutboundLink>
+            </div>
           </div>
-          <div className="m-auto text-center">
-            <BaseDescription description={"Ou alors m'envoyer directement un email à l'adresse :"} />
-            <BaseDescription description={"moni@laterredumilieu.com"} />
-          </div>
-          
         </div>
-      </div>
     </section>
   </>
   )

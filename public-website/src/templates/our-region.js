@@ -8,7 +8,7 @@ import BaseActivity from "../components/Base/ActivityCard"
 
 import { useTranslation } from "react-i18next"
 
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const OurRegion = ({data, pageContext}) => {
 
@@ -23,7 +23,7 @@ const OurRegion = ({data, pageContext}) => {
       thumbnailImage={getImage(poi.image.asset)} 
       url={poi.url}
       light={true}
-      className="mb-4 mx-auto"
+      className="mb-8 mx-auto md:mx-0"
     />)
   });
   const events = []; 
@@ -34,19 +34,19 @@ const OurRegion = ({data, pageContext}) => {
       description={event.description[lng]} 
       thumbnailImage={getImage(event.image.asset.fluid)}
       url={event.url}
-      className="mb-4 mx-auto"
+      className="mb-8 mx-auto md:mx-0"
     />)
   });
   return (
   <>
-    <SEO title={t("pages.ourRegion.title")} lang={lng} /> 
+    <Seo title={t("pages.ourRegion.title")} lang={lng} /> 
     <section className="bg-paper mt-16 md:mt-6">
       <div className="max-w-screen-xl px-6 md:px-12 m-auto">
         <BaseHeading
           text={t("pages.ourRegion.activitiesTitle")}
           className="xs:text-center mb-16"
         />
-        <div className="min-h-half block md:flex md:flex-wrap md:justify-around md:items-center">
+        <div className="min-h-half block md:flex md:flex-wrap md:items-center md:justify-around">
           {pointsOfInterest}
         </div>
       </div>
@@ -77,6 +77,7 @@ export const query = graphql`
         title {
           fr
           en
+          de
         }
         url
         image {
@@ -87,6 +88,7 @@ export const query = graphql`
         description {
           fr
           en
+          de
         }
       }
     }
@@ -96,6 +98,7 @@ export const query = graphql`
         title {
           fr
           en
+          de
         }
         url
         image {
@@ -106,6 +109,7 @@ export const query = graphql`
         description {
           fr
           en
+          de
         }
       }
     }
