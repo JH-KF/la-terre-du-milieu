@@ -12,18 +12,25 @@ function SEO({ description, lang, meta, title, image, path }) {
       query {
         site {
           siteMetadata {
-            author,
+            fr {author}
+            en {author}
+            de {author}
             website,
             websiteName
+          }
+        }
+        home {
+          fr {
+            title
+            description
           }
         }
       }
     `
   )
 
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
-  const metaDescription = description || site.siteMetadata.description
   const defaultTitle = t("siteMetadata.title")
   const websiteUrl = `https://${process.env.GATSBY_WEBSITE_DOMAIN}.${site.siteMetadata.website}.com`;
 
@@ -37,7 +44,7 @@ function SEO({ description, lang, meta, title, image, path }) {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:title`,
@@ -45,7 +52,7 @@ function SEO({ description, lang, meta, title, image, path }) {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:type`,
@@ -57,7 +64,7 @@ function SEO({ description, lang, meta, title, image, path }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: site.siteMetadata[i18n.language].author || ``,
         },
         {
           name: `twitter:title`,
@@ -65,7 +72,7 @@ function SEO({ description, lang, meta, title, image, path }) {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:image`,
