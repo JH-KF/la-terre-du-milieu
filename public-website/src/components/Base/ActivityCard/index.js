@@ -28,11 +28,16 @@ const BaseRoomCard = ({ title, description, className, thumbnailImage, url, ligh
         /> 
       </div>
       <div className="flex justify-end">
-        <OutboundLink href={url} target="blank">
-        <BaseSecondaryButton
-          text={t("utils.seeMore")}
-        />
-        </OutboundLink>
+        {
+          url ? 
+            <OutboundLink href={url} target="blank">
+            <BaseSecondaryButton
+              text={t("utils.seeMore")}
+            />
+            </OutboundLink>
+          : 
+          null
+        }
       </div>
     </BaseParchment>
   )
