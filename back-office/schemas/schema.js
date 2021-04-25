@@ -96,8 +96,7 @@ export default createSchema({
         {
           title: "Lien",
           name: "url",
-          type: "url",
-          validation: Rule => Rule.required()
+          type: "url"
         }
       ],
       preview: {
@@ -133,8 +132,7 @@ export default createSchema({
         {
           name: "url",
           type: "url",
-          title: "Lien",
-          validation: Rule => Rule.required()
+          title: "Lien"
         }
       ],
       preview: {
