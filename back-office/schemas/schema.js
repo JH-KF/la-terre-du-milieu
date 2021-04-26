@@ -138,7 +138,7 @@ export default createSchema({
       preview: {
         select: {
           title: `title.${baseLanguage.id}`,
-          subtitle: `description.${baseLanguage.description}`,
+          subtitle: `description.${baseLanguage.id}`,
           media: "image"
         }
       }
