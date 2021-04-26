@@ -2,7 +2,7 @@ const dotenv = require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    website: "www.laterredumilieu.com",
+    website: "laterredumilieu",
     websiteName: "La terre du milieu",
     fr: {
       author: `Monique et Martial Bousch`,
