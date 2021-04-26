@@ -64,6 +64,29 @@ const localeText = {
   }))
 }
 
+const localeBlocks = {
+  title: 'Localized block',
+  name: 'localeBlocks',
+  type: 'object',
+  // Fieldsets can be used to group object fields.
+  // Here we omit a fieldset for the "default language",
+  // making it stand out as the main field.
+  fieldsets: [
+    {
+      title: 'Translations',
+      name: 'translations',
+      options: { collapsible: true }
+    }
+  ],
+  // Dynamically define one field per language
+  fields: supportedLanguages.map(lang => ({
+    title: lang.title,
+    name: lang.id,
+    type: 'array', 
+    of: [{type: 'block'}]
+  }))
+}
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -112,7 +135,7 @@ export default createSchema({
       name: "Events",
       type: "document",
       icon: MdEvent,
-      fields: [
+      fields: [      
         {
           title: "Titre",
           name: "title",
@@ -143,7 +166,40 @@ export default createSchema({
         }
       }
     },
+    {
+      name: 'legalMentions',
+      type: 'document',
+      __experimental_actions: ['update','publish'], 
+      initialValue: {
+        _type: "legalMentions",
+        _id: "legal-mentions",
+      },
+      fields: [
+        {
+          title: "Contenu de la page",
+          name: "content",
+          type: "localeBlocks"
+        },
+      ]
+    },
+    {
+      name: 'locationContract',
+      type: 'document',
+      __experimental_actions: ['update','publish'], 
+      initialValue: {
+        _type: "locationContract",
+        _id: "location-contract",
+      },
+      fields: [
+        {
+          title: "Contenu de la page",
+          name: "content",
+          type: "localeBlocks"
+        },
+      ]
+    },
     localeString,
-    localeText
+    localeText,
+    localeBlocks
   ]),
 })
