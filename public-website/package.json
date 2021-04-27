@@ -19,7 +19,7 @@
     "gatsby-source-sanity": "^7.0.4",
     "gatsby-transformer-json": "^3.3.0",
     "gatsby-transformer-sharp": "^3.3.0",
-    "i18next": "^20.2.1",
+    "i18next": "^20.2.2",
     "postcss": "^8.2.12",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
