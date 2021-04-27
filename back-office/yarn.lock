@@ -905,9 +905,9 @@
   version "1.1.2"
   resolved "https://registry.npmjs.org/@sanity/asset-utils/-/asset-utils-1.1.2.tgz#d6b4b875bee4189cb56f274a7fb5494174463cb2"
 
-"@sanity/base@2.9.1", "@sanity/base@^2.8.1":
+"@sanity/base@2.9.1", "@sanity/base@^2.9.1":
   version "2.9.1"
-  resolved "https://registry.npmjs.org/@sanity/base/-/base-2.9.1.tgz#889f424ce50d429999e45b1bea3089cece5edaf0"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.9.1.tgz#889f424ce50d429999e45b1bea3089cece5edaf0"
   dependencies:
     "@juggle/resize-observer" "^3.3.0"
     "@popperjs/core" "^2.5.4"
@@ -984,18 +984,6 @@
 "@sanity/cli@^2.8.0":
   version "2.9.1"
   resolved "https://registry.npmjs.org/@sanity/cli/-/cli-2.9.1.tgz#57a1be173f267dd6de2b620ba329684b5e36433f"
-
-"@sanity/client@2.7.1":
-  version "2.7.1"
-  resolved "https://registry.npmjs.org/@sanity/client/-/client-2.7.1.tgz#0163ecad3ad0875dac5a87bfa20a1652dd3e6a80"
-  dependencies:
-    "@sanity/eventsource" "2.2.6"
-    "@sanity/generate-help-url" "2.2.6"
-    "@sanity/observable" "2.0.9"
-    deep-assign "^2.0.0"
-    get-it "^5.0.3"
-    make-error "^1.3.0"
-    object-assign "^4.1.1"
 
 "@sanity/client@2.8.0":
   version "2.8.0"
@@ -1376,21 +1364,9 @@
     path-exists "^3.0.0"
     promise-props-recursive "^1.0.0"
 
-"@sanity/schema@2.9.1":
+"@sanity/schema@2.9.1", "@sanity/schema@^2.0.0":
   version "2.9.1"
   resolved "https://registry.npmjs.org/@sanity/schema/-/schema-2.9.1.tgz#f76ed161a520cfcd0309eb6d0b24622520ff9500"
-  dependencies:
-    "@sanity/generate-help-url" "2.2.6"
-    arrify "^1.0.1"
-    humanize-list "^1.0.1"
-    json-reduce "^1.0.0"
-    leven "^2.1.0"
-    lodash "^4.17.15"
-    object-inspect "^1.6.0"
-
-"@sanity/schema@^2.0.0":
-  version "2.7.4"
-  resolved "https://registry.npmjs.org/@sanity/schema/-/schema-2.7.4.tgz#1acaa9ef507626fa1e37abf129a2afbefbb0063f"
   dependencies:
     "@sanity/generate-help-url" "2.2.6"
     arrify "^1.0.1"
@@ -1482,19 +1458,11 @@
     "@types/lodash" "^4.14.149"
     lodash "^4.17.15"
 
-"@sanity/types@2.9.1":
+"@sanity/types@2.9.1", "@sanity/types@^2.0.0":
   version "2.9.1"
   resolved "https://registry.npmjs.org/@sanity/types/-/types-2.9.1.tgz#cab101422c5ab17047fd120ef2dd264add9415a2"
   dependencies:
     "@sanity/client" "2.8.0"
-    "@types/react" "^17.0.0"
-    rxjs "^6.5.3"
-
-"@sanity/types@^2.0.0":
-  version "2.7.4"
-  resolved "https://registry.npmjs.org/@sanity/types/-/types-2.7.4.tgz#46481dbffb1cb192166a81734754771e536674f3"
-  dependencies:
-    "@sanity/client" "2.7.1"
     "@types/react" "^17.0.0"
     rxjs "^6.5.3"
 
