@@ -160,9 +160,9 @@
       "pages": {
         "home": {
           "path": "de/",
-          "title": "Home",
+          "title": "Zur Begrüssung",
           "rooms": {
-            "title": "unsere zimmer",
+            "title": "Unsere Zimmer",
             "slug": "unsere-zimmer"
           },
           "infos": {
@@ -199,9 +199,9 @@
         }
       },
       "header": {
-        "rooms": "Zimmers",
+        "rooms": "Unsere Zimmer",
         "ourRegion": "Unsere region",
-        "home": "Home",
+        "home": "Zur Begrüssung",
         "ourOffers": "Unsere angebote"
       },
       "footer": {

@@ -2,7 +2,7 @@
     {
         "id": "gift",
         "fr" : {
-            "title": "Bons cadeau", 
+            "title": "Bons-cadeaux", 
             "description": "Sur simple demande, nous vous enverrons un joli bon cadeau personnalisé et calligraphié de la valeur de votre choix, valable sans limitation de durée."
         },
         "en" : {
@@ -13,6 +13,7 @@
             "title": "Geschenkgutscheine", 
             "description": "Auf einfache Anfrage senden wir Ihnen einen in Schönschrift geschriebenen Geschenkgutschein im Wert ihrer Wahl, gültig  ohne zeitliche Begrenzung."
         },
+        "url": null,
         "deals" : null
     },
     {
@@ -29,12 +30,13 @@
             "title": "Romantische eskapade", 
             "description": "Haben Sie Lust auf einen besonderen Moment zu zweit in einer raffinierten Umgebung, abseits von Zeit und Raum? In MITTELERDE wird alles getan, um diesen Moment einzigartig und unvergesslich zu machen.\n\nDie Eskapade beinhaltet eine Übernachtung in Lorien, süße Aufmerksamkeiten bei der Ankunft, ein Candle-Dinner auf der Terrasse bei schönem Wetter oder in einem privaten, gemütlichen Zimmer, ein reichhaltiges und abwechslungsreiches Frühstück, eine Sauna für zwei Personen und natürlich den Zugang zum beheizten Pool.\n\nMöglichkeit : 30 Minuten Massage pro Person.\n\nNur bei Buchung mindestens zwei Wochen vor dem gewünschten Termin."
         },
+        "url": null,
         "deals" : [
             {
                 "id": "deal-1",
                 "amount": 179,
                 "fr" : {
-                    "title" : "Couple",
+                    "title" : "Prix par couple",
                     "subtitle" : "sans massages"                
                 },
                 "en" : {
@@ -42,8 +44,24 @@
                     "subtitle" : "without the massage"                
                 },
                 "de" : {
-                    "title" : "Paar",
+                    "title" : "Preis pro Paar",
                     "subtitle" : "ohne Massage"                
+                }
+            },
+            {
+                "id": "deal-2",
+                "amount": 239,
+                "fr" : {
+                    "title" : "Prix par couple et massages",
+                    "subtitle" : "massages de 30 minutes"                
+                },
+                "en" : {
+                    "title" : "Price per couple and massages",
+                    "subtitle" : "30 minutes massages"                
+                },
+                "de" : {
+                    "title" : "Preis pro Paar und Massagen",
+                    "subtitle" : "mit Massage - 30 Minuten"                
                 }
             }
         ]
@@ -62,6 +80,7 @@
             "title": "Forfait cycliste", 
             "description": "Ce forfait comprend une nuitée en chambre Gondor ou Fangorn, un dîner ou un déjeuner, un petit déjeuner, une boisson de récupération (du genre houblonnée), accès à la piscine chauffée et sauna\n\n\nUm das Fahrrad herum 🚴\n\nEin besonderer Empfang ist für unsere Radfahrer-Freunde reserviert. Ihre Fahrräder werden in einem geschlossenen Hof sicher sein. Eine Verpflegungsmöglichkeit wird angeboten, entweder in Form eines Picknickes zum Mitnehmen, wenn Sie einen Tagesausflug machen möchten, oder in Form eines Essens, das für Sportler geeignet ist. \n\nMartial, ein begeisterter Radfahrer, würde sich freuen, Ihnen unsere schöne Region mit dem Mountainbike oder mit dem Rennrad zu erkunden. Er kann Sie auch über alle Touren informieren, die Sie alleine oder in der Gruppe machen können.Sie haben auch die Möglichkeit, jeden Sonntagmorgen dem Cyclo Club Ariane in Spicheren/Alsting beizutreten."
         },
+        "url": "https://ccariane.fr.gd/",
         "deals" : [
             {
                 "id": "single",
@@ -117,7 +136,7 @@
         "id": "massage",
         "fr" : {
             "title": "Massages / Relaxation", 
-            "description": "Neng, diplômée de massages bien être, saura prendre soin de vous grâce à différents massages relaxants (uniquement sur RDV au minimum deux semaines avant la date souhaitée).\nQue ce soit pour libèrer les tensions accumulées, apaiser l'esprit ou permettre un lâcher prise, vous apprécierez l'expérience d'une professionnelle souriante et compétente.\n\nVoir la liste de prestations et de tarifs ci-dessous\n\n- Massages aux huiles\n\n- Masssages yoga thaï\n\n- Réflexologie plantaire`\n\n\nLes prix sont identiques pour tous les massages."
+            "description": "Neng, diplômée de massages bien être, saura prendre soin de vous grâce à différents massages relaxants (uniquement sur RDV au minimum deux semaines avant la date souhaitée).\nQue ce soit pour libèrer les tensions accumulées, apaiser l'esprit ou permettre un lâcher prise, vous apprécierez l'expérience d'une professionnelle souriante et compétente.\n\nVoir la liste de prestations et de tarifs ci-dessous\n\n- Massages aux huiles\n\n- Masssages yoga thaï\n\n- Réflexologie plantaire\n\n\nLes prix sont identiques pour tous les massages."
         },
         "en" : {
             "title": "Massage / Relaxation", 
@@ -127,6 +146,7 @@
             "title": "Massagen / Entspannung", 
             "description": "Neng, diplomierte Wellness-Masseurin, wird sich mit verschiedenen entspannenden Massagen um Sie kümmern. (nur nach Vereinbarung mindestens zwei Wochen vor dem gewünschten Termin.)\nSei es, um angestaute Spannungen zu lösen, den Geist zu beruhigen oder ein Loslassen zu ermöglichen, werden Sie die Erfahrung einer lächelnden und kompetenten Profi-Masseurin zu schätzen wissen.\n\nSiehe Liste der Leistungen und der Preise :\n\n- Ölmassagen\n\n- Thaï yoga Massage\n\n- Fussreflexzonenmassage\n\n\nDie Preise sind fü alle Massagen gleich."
         },
+        "url": null,
         "deals" : [
             {
                 "id": "30",

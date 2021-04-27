@@ -38,6 +38,7 @@ const OurOffers = ({pageContext, data}) => {
         <BaseDescriptionBlock
           title={offer[lng].title}
           description={offer[lng].description}
+          url={offer.url}
           key={offer.id}
           image={data.offerImages.nodes
             .filter(img => img.name === offer.id)
@@ -117,6 +118,7 @@ export const query = graphql`
     allOurOffersJson {
       nodes {
         id
+        url
         fr {
           description
           title

@@ -19,7 +19,7 @@
             "quote": "Ne laissez pas vos cœurs se troubler, ce soir, vous dormirez en paix.",
             "quoteAuthor": "Galadriel, dame de la Lorien",
             "description": "La chambre des Elfes, toute en douceur et en lumières, vous transportera dans un monde enchanteur aux rêves apaisés.",
-            "informations" : ["Chambre de 16m2 avec terrasse privative de 12m2, vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit bébé sur demande"]
+            "informations" : ["Chambre pour 2 personnes de 16m2 avec terrasse privative de 12m2, vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit bébé sur demande"]
         },
         "de" :{
             "slug" :  "lorien-das-konigreich-der-elfen",
@@ -53,7 +53,7 @@
             "quote": "Des cendres, un feu s’éveillera. Des ombres, une lumière jaillira ; Renouvelée sera l’épée qui fut brisée, le sans-couronne sera de nouveau roi.",
             "quoteAuthor": "J.R.R. Tolkien",
             "description": "La chambre d’Aragorn vous plongera dans un univers gris, épuré, au charme discret, où trône l’arbre blanc de Minastirith, l’arbre des Rois, symbole de vie et d’espoir.",
-            "informations" : ["Chambre de 16m2 avec terrasse privative de 12m2, vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit bébé sur demande"]
+            "informations" : ["Chambre pour 2 personnes de 16m2 avec terrasse privative de 12m2, vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit bébé sur demande"]
         },
         "de" :{
             "slug": "gondor-land-der-menschen",
@@ -85,7 +85,7 @@
             "quote": "Oh errants dans la terre obscurcie, ne désespérez point. Car si ténébreuses qu’elles soient, toutes les forêts doivent s’éclaircir.",
             "quoteAuthor": "J.R.R Tolkien",
             "description": "Une chambre familiale sylvestre au décor rustique de bois et de pierres qui vous enveloppera de mystère et de sérénité. Peut-être même aurez-vous la chance d’entendre les murmures des arbres et les légendes anciennes qu’ils racontent à ceux qui savent écouter.",
-            "informations" :["Chambre familiale de 20m2 avec terrasse privative de 12m2", "Vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Lit bébé sur demande", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit 90 x190  (supplément de 10€ incluant le petit-déjeuner)" ]
+            "informations" :["Chambre familiale pour 2 adultes et un enfant (tarif enfant jusqu'à 14 ans) de 20m2 avec terrasse privative de 12m2", "Vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Lit bébé sur demande", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit 90 x190  (supplément de 10€ incluant le petit-déjeuner)" ]
         },
         "de" :{
             "slug" :  "fangorn-Gebiet-der-ents",
@@ -117,7 +117,7 @@
             "quote": "Ah, mon Cher Frodon, les Hobbits sont vraiment de surprenantes créatures. On peut apprendre tout ce qu’il y a à savoir sur leurs coutumes en un mois, et cependant, au bout de cent ans, ils peuvent encore vous surprendre.",
             "quoteAuthor": "Gandalf le Gris",
             "description": "Il faudra vous baisser un peu pour entrer par la porte ronde, et retrouver votre âme d'enfant pour découvrir le monde des sympathiques et pacifiques petits hobbits joufflus, adeptes de bonne chère, de bière et d'herbe à pipe. Mais c'est une vraie chambre aux tons chaleureux qui vous accueillera pour un séjour confortable et insolite.",
-            "informations" :["Chambre de 20m2 avec terrasse privative de 12m2", "Vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Lit bébé sur demande", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit 90 x190  (supplément de 10€ incluant le petit-déjeuner)" ]
+            "informations" :["Chambre pour 2 personnes de 20m2 avec terrasse privative de 12m2", "Vue sur le jardin et la piscine", "Lit 160x200", "Bureau", "Lit bébé sur demande", "Salle de bains attenante avec douche, lavabo et WC séparé", "Lit 90 x190  (supplément de 10€ incluant le petit-déjeuner)" ]
         },
         "de" :{
             "slug" :  "das-auenland-das-Loch-der-hobbits",

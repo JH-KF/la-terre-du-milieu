@@ -1,4 +1,5 @@
 import React from "react"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import BaseTitle from "../Title/index"
 import BaseDescription from "../Description/index"
@@ -14,6 +15,7 @@ import { useTranslation } from "react-i18next"
 const BaseDescriptionBlock = ({
   title,
   description,
+  url,
   image,
   link,
   position,
@@ -42,7 +44,7 @@ const BaseDescriptionBlock = ({
         />
         <div className="order-none">
           <BaseTitle title={title} className="mb-10 font-calligraphy" />
-          <BaseDescription description={description} />
+          <BaseDescription description={url ? <>{description}<br /><OutboundLink href={url}><span className="text-action underline">{url}</span></OutboundLink></> : description} />
           {link ? 
           <div className="text-center md:text-right my-4">
             <Link to={`/${i18n.options.fallbackLng[0] === i18n.language ? "" : i18n.language + "/"}${t(`pages.${link.to}.path`)}`} className="mb">
