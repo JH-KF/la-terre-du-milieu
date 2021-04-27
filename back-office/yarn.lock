@@ -1021,9 +1021,9 @@
   version "2.2.6"
   resolved "https://registry.npmjs.org/@sanity/components/-/components-2.2.6.tgz#d1d6d1017a53ebb413ef026eabd5dd0b4a1bcdad"
 
-"@sanity/core@^2.8.0":
+"@sanity/core@^2.9.1":
   version "2.9.1"
-  resolved "https://registry.npmjs.org/@sanity/core/-/core-2.9.1.tgz#8d57eaea7f6b96f281a17aec06adf390d70779b5"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.9.1.tgz#8d57eaea7f6b96f281a17aec06adf390d70779b5"
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.10.4"
     "@babel/preset-env" "^7.11.5"
@@ -1376,21 +1376,9 @@
     path-exists "^3.0.0"
     promise-props-recursive "^1.0.0"
 
-"@sanity/schema@2.9.1":
+"@sanity/schema@2.9.1", "@sanity/schema@^2.0.0":
   version "2.9.1"
   resolved "https://registry.npmjs.org/@sanity/schema/-/schema-2.9.1.tgz#f76ed161a520cfcd0309eb6d0b24622520ff9500"
-  dependencies:
-    "@sanity/generate-help-url" "2.2.6"
-    arrify "^1.0.1"
-    humanize-list "^1.0.1"
-    json-reduce "^1.0.0"
-    leven "^2.1.0"
-    lodash "^4.17.15"
-    object-inspect "^1.6.0"
-
-"@sanity/schema@^2.0.0":
-  version "2.7.4"
-  resolved "https://registry.npmjs.org/@sanity/schema/-/schema-2.7.4.tgz#1acaa9ef507626fa1e37abf129a2afbefbb0063f"
   dependencies:
     "@sanity/generate-help-url" "2.2.6"
     arrify "^1.0.1"
