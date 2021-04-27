@@ -15,7 +15,6 @@ import BasePrice from "../components/Base/Price"
 
 const OurOffers = ({pageContext, data}) => {
 
-  console.log(data)
   const { t } = useTranslation()
   const lng = pageContext.locale
 
