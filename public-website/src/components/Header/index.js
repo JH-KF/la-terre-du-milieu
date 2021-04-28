@@ -5,6 +5,7 @@ import BasePrimaryButton from "../Base/PrimaryButton"
 import BaseTertiaryButton from "../Base/TertiaryButton"
 import Logo from "../Logo"
 import MobileNav from "../MobileNav"
+import LanguageSelector from "../LanguageSelector"
 
 import { HiOutlineMenu } from "react-icons/hi"
 
@@ -57,6 +58,8 @@ const Header = () => {
               className="lg:ml-10 md:ml-6"
               onClick={openModal}
             />
+            
+            <LanguageSelector />
           </nav>
           <button
             onClick={handleClickBurgerMenu}
