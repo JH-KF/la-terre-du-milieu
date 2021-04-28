@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next"
 import BaseDescription from "../../Base/Description"
 import BaseParchment from "../../Base/Parchment"
 
-const HomePracticalInformations = () => {
+const HomePracticalInformation = () => {
   const { t } = useTranslation()
   return (
     <div className="m-auto max-w-4xl">
@@ -99,4 +99,4 @@ const HomePracticalInformations = () => {
   )
 }
 
-export default HomePracticalInformations
+export default HomePracticalInformation

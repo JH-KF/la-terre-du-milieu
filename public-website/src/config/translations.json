@@ -32,6 +32,17 @@
               "pool": "Des transats, parasols et serviettes de piscine sont fournis sur simple demande",
               "outsideEquiments": "Une cuisine d'été est à votre disposition (réfrigérateur, gazinière, vaisselle, barbecue...) ainsi qu'un abri vélos/motos"
             }
+          },
+          "transport": {
+            "title": "Transports",
+            "nearbyStations": "Gares à proximité :",
+            "station1": "Forback à 10mn",
+            "station2": "Sarrebrück à 20mn",
+            "station3": "Sarreguemines à 20 mn",
+            "nearbyAirports": "Aéroports à proximité :",
+            "airport1": "Sarrebrück/Ensheim à 20mn",
+            "airport2": "Luxembourg à 1h20",
+            "airport3": "Strasbourg à 1h30"
           }
         },
         "room" : {
@@ -64,16 +75,6 @@
         "address1": "21, rue de la carrière",
         "address2": "57350 Spicheren",
         "GpsCoordinates": "Coordonnées GPS :",
-        "latitude": "Latitude :",
-        "longitude": "Longitude :",
-        "nearbyStations": "Gares à proximité :",
-        "station1": "Forback à 10mn",
-        "station2": "Sarrebrück à 20mn",
-        "station3": "Sarreguemines à 20 mn",
-        "nearbyAirports": "Aéroport à proximité :",
-        "airport1": "Sarrebrück/Ensheim à 20mn",
-        "airport2": "Luxembourg à 1h20",
-        "airport3": "Strasbourg à 1h30",
         "legalMention": "Mentions légales",
         "generalRentalTermsAndConditions": "Conditions générales de location",
         "madeBy": "Fait avec ❤️ par"
@@ -120,6 +121,17 @@
               "pool": "Deckchairs, sun umbrellas and swimming pool towels at your disposal",
               "outsideEquiments": "A summer kitchen is at your disposal (refrigerator, gas stove, dishes, barbecue...), as well as a bike and motorbike shed"
             }
+          },
+          "transport":{
+            "title": "Transports",
+            "nearbyStations": "Nearby stations :",
+            "station1": "Forback at 10 minutes",
+            "station2": "Sarrebrück at 20 minutes",
+            "station3": "Sarreguemines at 20 minutes",
+            "nearbyAirports": "Nearby airports :",
+            "airport1": "Sarrebrück/Ensheim at 20 minutes",
+            "airport2": "Luxembourg at 1h20",
+            "airport3": "Strasbourg at 1h30"
           }
         },
         "room" : {
@@ -152,16 +164,6 @@
         "address1": "21, rue de la carrière",
         "address2": "57350 Spicheren",
         "GpsCoordinates": "GPS Coordinates",
-        "latitude": "Latitude :",
-        "longitude": "Longitude :",
-        "nearbyStations": "Nearby stations :",
-        "station1": "Forback at 10 minutes",
-        "station2": "Sarrebrück at 20 minutes",
-        "station3": "Sarreguemines at 20 minutes",
-        "nearbyAirports": "Nearby airports :",
-        "airport1": "Sarrebrück/Ensheim at 20 minutes",
-        "airport2": "Luxembourg at 1h20",
-        "airport3": "Strasbourg at 1h30",
         "legalMention": "Legal mentions",
         "generalRentalTermsAndConditions": "General Rental Terms and Conditions",
         "madeBy": "Made with ❤️ by"
@@ -208,6 +210,17 @@
               "pool": "Eine Sommerküche steht zu Ihrer Verfügung (Kühlschrank, Gasherd, Geschirr, Grill. . . ) sowie ein Fahrrad-/Motorradabstellraum",
               "outsideEquiments": "Liegestühle, Sonnenschirme und Badetücher sind auf Anfrage erhältlich"
             }
+          },
+          "transport": {
+            "title": "Transport",
+            "nearbyStations": "Nächstgelegene Stationen :",
+            "station1": "Forback - 10 Minuten",
+            "station2": "Sarrebrück - 20 Minuten",
+            "station3": "Sarreguemines - 20 Minutes",
+            "nearbyAirports": "Nächstgelegene Flughäfen",
+            "airport1": "Sarrebrück/Ensheim - 20 Minutes",
+            "airport2": "Luxembourg - 1h20",
+            "airport3": "Strasbourg - 1h30"
           }
         },
         "room" : {
@@ -240,16 +253,6 @@
         "address1": "21, rue de la carrière",
         "address2": "57350 Spichren",
         "GpsCoordinates": "GPS Koordinaten",
-        "latitude": "Breitengrad :",
-        "longitude": "Längengrad :",
-        "nearbyStations": "Nächstgelegene Stationen :",
-        "station1": "Forback - 10 Minuten",
-        "station2": "Sarrebrück - 20 Minuten",
-        "station3": "Sarreguemines - 20 Minutes",
-        "nearbyAirports": "Nächstgelegene Flughäfen",
-        "airport1": "Sarrebrück/Ensheim - 20 Minutes",
-        "airport2": "Luxembourg - 1h20",
-        "airport3": "Strasbourg - 1h30",
         "legalMention": "Rechtliche Erwähnungen",
         "generalRentalTermsAndConditions": "Allgemeine Mietbedingungen",
         "madeBy": "Hergestellt mit ❤️ von"

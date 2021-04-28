@@ -7,7 +7,8 @@ import BaseHeading from "../components/Base/Heading"
 import BaseDescriptionBlock from "../components/Base/DescriptionBlock"
 import PictureSlider from "../components/PictureSlider"
 import BaseRoomCard from "../components/Base/RoomCard"
-import HomePracticalInformations from "../components/Home/HomePracticalInformations"
+import HomePracticalInformation from "../components/Home/HomePracticalInformation"
+import HomeTransportInformation from "../components/Home/HomeTransportInformation"
 
 import { useTranslation } from "react-i18next"
 
@@ -228,11 +229,21 @@ const IndexPage = ({ pageContext }) => {
       </section>
       <section className="bg-paper bg-paper--white py-24 px-8 xs:py-12 altered-before">
         <div className="max-w-screen-xl m-auto px-6 md:px-12">
-          <BaseHeading
-            text={t("pages.home.infos.title")}
-            className="xs:text-center mb-16"
-          />
-          <HomePracticalInformations />
+          <div className="mb-24">
+            <BaseHeading
+              text={t("pages.home.infos.title")}
+              className="xs:text-center mb-16"
+            />
+            <HomePracticalInformation />
+          </div>
+          <div>
+            <BaseHeading
+              text={t("pages.home.transport.title")}
+              className="xs:text-center mb-16"
+            />
+            <HomeTransportInformation />
+          </div>
+
         </div>
       </section>
     </div>
