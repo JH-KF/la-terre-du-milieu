@@ -32,7 +32,7 @@ const OurRegion = ({data, pageContext}) => {
       key={event.id} 
       title={event.title[lng]} 
       description={event.description[lng]} 
-      thumbnailImage={getImage(event.image.asset.fluid)}
+      thumbnailImage={getImage(event.image.asset)}
       url={event.url}
       className="mb-8 mx-auto md:mx-0"
     />)
