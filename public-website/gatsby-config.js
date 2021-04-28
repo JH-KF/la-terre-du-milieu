@@ -64,6 +64,13 @@ module.exports = {
             short_name: `La terre du milieu`,
             description: `Die Anwendung macht coole Dinge und macht Ihr Leben besser.`,
           },
+          {
+            start_url: `/de/`,
+            lang: `de`,
+            name: `Guest rooms | La terre du milieu`,
+            short_name: `La terre du milieu`,
+            description: `Die Anwendung macht coole Dinge und macht Ihr Leben besser.`,
+          },
         ],
       },
     },
@@ -76,7 +83,8 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-E06DVTWCBR", // Google Analytics / GA
+          // Google Analytics / GA
+          process.env.NODE_ENV === "production" ? "G-E06DVTWCBR" : "", 
           ],
         // This object is used for configuration specific to this plugin
         pluginConfig: {
