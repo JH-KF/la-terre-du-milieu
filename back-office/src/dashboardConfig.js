@@ -25,7 +25,7 @@ export default {
       {
         name: 'document-list', 
         options: {
-          title: "Derniers POI mit à jour", 
+          title: "Derniers POI mis à jour", 
           order: '_updatedAt desc', 
           types: ['POI'],
           createButtonText: 'Ajouter POI'
@@ -37,7 +37,7 @@ export default {
       {
         name: 'document-list', 
         options: {
-          title: 'Derniers évènements mit à jour', 
+          title: 'Derniers évènements mis à jour', 
           order: '_updatedAt desc', 
           types: ['Events'],
           createButtonText: 'Ajouter évènement'
