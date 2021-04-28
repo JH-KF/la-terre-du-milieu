@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next"
 
 import BaseTertiaryButton from "./Base/TertiaryButton"
 import BaseSecondaryButton from "./Base/SecondaryButton"
+import LanguageSelector from "./LanguageSelector"
 import Logo from "./Logo"
 
 const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
@@ -66,6 +67,9 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
             openModal()
           }}
         />
+      </section>
+      <section className="flex-col justify-items-center items-center">
+        <LanguageSelector />
       </section>
     </nav>
   )
