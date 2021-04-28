@@ -37,31 +37,31 @@
                 "amount": 179,
                 "fr" : {
                     "title" : "Prix par couple",
-                    "subtitle" : "sans massages"                
+                    "subtitle" : null                
                 },
                 "en" : {
                     "title" : "Couple",
-                    "subtitle" : "without the massage"                
+                    "subtitle" : null                
                 },
                 "de" : {
                     "title" : "Preis pro Paar",
-                    "subtitle" : "ohne Massage"                
+                    "subtitle" : null                
                 }
             },
             {
                 "id": "deal-2",
                 "amount": 239,
                 "fr" : {
-                    "title" : "Prix par couple et massages",
-                    "subtitle" : "massages de 30 minutes"                
+                    "title" : "Prix par couple avec 30 minutes de massage",
+                    "subtitle" : null               
                 },
                 "en" : {
-                    "title" : "Price per couple and massages",
-                    "subtitle" : "30 minutes massages"                
+                    "title" : "Price per couple and 30 minutes massage",
+                    "subtitle" : null                
                 },
                 "de" : {
-                    "title" : "Preis pro Paar und Massagen",
-                    "subtitle" : "mit Massage - 30 Minuten"                
+                    "title" : "Preis pro Paar und Massagen mit 30 Minuten Massage",
+                    "subtitle" : null               
                 }
             }
         ]
