@@ -1,15 +1,24 @@
 import S from "@sanity/desk-tool/structure-builder";
 import { MdEuroSymbol } from 'react-icons/md'
 import { GiInjustice } from "react-icons/gi"
+import { ImMap } from "react-icons/im"
 
 export default () =>
   S.list()
-    .title('Contenus')
+    .title('Pages')
     .items([
-      // List out the rest of the document types, but filter out the config type
-      ...S.documentTypeListItems()
-        .filter(listItem => !["legalMentions", "locationContract"].includes(listItem.getId())),
-      S.divider(),
+        S.listItem()
+          .title('Notre région')
+          .icon(ImMap)
+          .child(
+            S.list()
+              .title("Notre région")
+              .items([
+                // List out the rest of the document types, but filter out the config type
+                ...S.documentTypeListItems()
+                  .filter(listItem => !["legalMentions", "locationContract"].includes(listItem.getId())),
+              ])
+          ), 
       S.listItem()
       .title('Mentions légales')
       .icon(GiInjustice)
@@ -19,7 +28,6 @@ export default () =>
           .schemaType('legalMentions')
           .documentId('legal-mentions')
       ),
-      S.divider(),
       S.listItem()
       .title('Conditions générales de location')
       .icon(MdEuroSymbol)
