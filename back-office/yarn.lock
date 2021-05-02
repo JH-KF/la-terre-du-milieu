@@ -1147,7 +1147,7 @@
 
 "@sanity/desk-tool@^2.10.1":
   version "2.10.1"
-  resolved "https://registry.npmjs.org/@sanity/desk-tool/-/desk-tool-2.10.1.tgz#06b4fda90178cb1e969dfe076b2b59929ded1f3f"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.10.1.tgz#06b4fda90178cb1e969dfe076b2b59929ded1f3f"
   dependencies:
     "@popperjs/core" "^2.5.4"
     "@reach/auto-id" "^0.13.2"
