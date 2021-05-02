@@ -23,7 +23,6 @@ const HomePracticalInformation = () => {
         <FaClock className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.hours")}
-          className="xs:text-justify"
         />
       </BaseParchment>
 
@@ -34,7 +33,6 @@ const HomePracticalInformation = () => {
         <FaCoffee className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.breakfast")}
-          className="xs:text-justify"
         />
       </BaseParchment>
 
@@ -45,7 +43,6 @@ const HomePracticalInformation = () => {
         <FaPaw className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.pets")}
-          className="xs:text-justify"
         />
       </BaseParchment>
 
@@ -56,7 +53,6 @@ const HomePracticalInformation = () => {
         <TiWiFi className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.rooms")}
-          className="xs:text-justify"
         />
       </BaseParchment>
 
@@ -67,7 +63,6 @@ const HomePracticalInformation = () => {
         <FaBath className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.bathrooms")}
-          className="xs:text-justify"
         />
       </BaseParchment>
 
@@ -78,7 +73,6 @@ const HomePracticalInformation = () => {
         <GiBarbecue className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
         <BaseDescription
           description={t("pages.home.infos.content.outsideEquiments")}
-          className="xs:text-justify"
         />
       </BaseParchment>
 
@@ -92,7 +86,6 @@ const HomePracticalInformation = () => {
         />
         <BaseDescription
           description={t("pages.home.infos.content.pool")}
-          className="xs:text-justify"
         />
       </BaseParchment>
     </div>
