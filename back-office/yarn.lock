@@ -939,7 +939,7 @@
 
 "@sanity/base@2.10.0", "@sanity/base@^2.10.0":
   version "2.10.0"
-  resolved "https://registry.npmjs.org/@sanity/base/-/base-2.10.0.tgz#a7e92c78c93669bd8467bb3eb187510a6070c439"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.10.0.tgz#a7e92c78c93669bd8467bb3eb187510a6070c439"
   dependencies:
     "@juggle/resize-observer" "^3.3.0"
     "@popperjs/core" "^2.5.4"
