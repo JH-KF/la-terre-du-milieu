@@ -36,7 +36,7 @@
           "transport": {
             "title": "Transports",
             "nearbyStations": "Gares à proximité :",
-            "station1": "Forback à 10mn",
+            "station1": "Forbach à 10mn",
             "station2": "Sarrebrück à 20mn",
             "station3": "Sarreguemines à 20 mn",
             "nearbyAirports": "Aéroports à proximité :",
@@ -125,7 +125,7 @@
           "transport":{
             "title": "Transports",
             "nearbyStations": "Nearby stations :",
-            "station1": "Forback at 10 minutes",
+            "station1": "Forbach at 10 minutes",
             "station2": "Sarrebrück at 20 minutes",
             "station3": "Sarreguemines at 20 minutes",
             "nearbyAirports": "Nearby airports :",
@@ -214,7 +214,7 @@
           "transport": {
             "title": "Transport",
             "nearbyStations": "Nächstgelegene Stationen :",
-            "station1": "Forback - 10 Minuten",
+            "station1": "Forbach - 10 Minuten",
             "station2": "Sarrebrück - 20 Minuten",
             "station3": "Sarreguemines - 20 Minutes",
             "nearbyAirports": "Nächstgelegene Flughäfen",
