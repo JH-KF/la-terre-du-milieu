@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next"
 import BaseDescription from "../Base/Description"
 
 const Footer = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const queryData = useStaticQuery(graphql`
     query {
       site {
@@ -68,10 +68,10 @@ const Footer = () => {
           </OutboundLink>
         </div>
         <div className="text-center text-primary text-opacity-70">
-          <Link to="/">
+          <Link to={`/${i18n.options.fallbackLng[0] === i18n.language ? "" : i18n.language+"/"}${t("pages.legalMentions.path")}`}>
             <div className="hover:underline">{t("footer.legalMention")}</div>
           </Link>
-          <Link to="/">
+          <Link to={`/${i18n.options.fallbackLng[0] === i18n.language ? "" : i18n.language+"/"}${t("pages.locationContract.path")}`}>
             <div className="hover:underline">{t("footer.generalRentalTermsAndConditions")}</div>
           </Link>
         </div>

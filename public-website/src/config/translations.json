@@ -59,6 +59,14 @@
           "path": "nos-offres",
           "title": "Nos offres"
         },
+        "legalMentions": {
+          "path": "mentions-legales",
+          "title": "Mentions légales"
+        },
+        "locationContract": {
+          "path": "conditions-generales-de-location",
+          "title": "Conditions générales de location"
+        },
         "404" : {
           "title" : "Désolé, page non trouvée",
           "description" : "La page que vous recherchiez n'existe pas.",
@@ -148,6 +156,14 @@
           "path": "our-offers",
           "title": "Our Offers"
         },
+        "legalMentions": {
+          "path": "legal-mentions",
+          "title": "Legal mentions"
+        },
+        "locationContract": {
+          "path": "general-rental-terms-and-conditions",
+          "title": "General Rental Terms and Conditions"
+        },
         "404": {
           "title" : "Page not found",
           "description" : "The page you were looking for doesn't exist",
@@ -236,6 +252,14 @@
         "ourOffers" : {
           "path": "unsere-angebote",
           "title": "Unsere angebote"
+        },
+        "legalMentions": {
+          "path": "impressum",
+          "title": "Impressum"
+        },
+        "locationContract": {
+          "path": "allgemeine-mietbedingungen",
+          "title": "Allgemeine Mietbedingungen"
         },
         "404": {
           "title" : "Seite nicht gefunden",

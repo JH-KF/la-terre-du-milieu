@@ -121,4 +121,32 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+  const legalMentionsTemplate = path.resolve("src/templates/legal-mentions.js");
+  Object.keys(translations).forEach(lang => {
+    const localizedPath = translations[lang].default
+        ? translations[lang].translation.pages.legalMentions.path 
+        : `${lang}/${translations[lang].translation.pages.legalMentions.path}`
+    createPage({
+      path: localizedPath,
+      component: legalMentionsTemplate,
+      context: {
+        locale: lang
+      },
+    })
+  })
+
+  const locationContract = path.resolve("src/templates/location-contract.js");
+  Object.keys(translations).forEach(lang => {
+    const localizedPath = translations[lang].default
+        ? translations[lang].translation.pages.locationContract.path 
+        : `${lang}/${translations[lang].translation.pages.locationContract.path}`
+    createPage({
+      path: localizedPath,
+      component: locationContract,
+      context: {
+        locale: lang
+      },
+    })
+  })
 }
