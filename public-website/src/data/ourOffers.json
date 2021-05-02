@@ -1,20 +1,37 @@
 [
     {
-        "id": "gift",
+        "id": "wellness",
         "fr" : {
-            "title": "Bons-cadeaux", 
-            "description": "Sur simple demande, nous vous enverrons un joli bon cadeau personnalisé et calligraphié de la valeur de votre choix, valable sans limitation de durée."
+            "title": "Bien-être", 
+            "description": "Dans une pièce à proximité des chambres, équipée d'une douche à l'italienne et d'une salle de repos, vous pourrez profiter d'un sauna traditionnel pour deux personnes, sur réservation dans la journée."
         },
         "en" : {
-            "title": "Gift cards", 
-            "description": "We can send a personalised and calligraphed gift card on request, of the value of your choice, without any time limit."
+            "title": "Wellness", 
+            "description": "In a room near the bedrooms, equipped with a walk-in shower and a rest room, you can enjoy a traditional sauna for two people, by reservation during the day."
         },
         "de" : {
-            "title": "Geschenkgutscheine", 
-            "description": "Auf einfache Anfrage senden wir Ihnen einen in Schönschrift geschriebenen Geschenkgutschein im Wert ihrer Wahl, gültig  ohne zeitliche Begrenzung."
+            "title": "Wohlbefinden", 
+            "description": "In einem Zimmer in der Nähe der Schlafzimmer, das mit einer ebenerdigen Dusche und einem Ruheraum ausgestattet ist, können Sie tagsüber nach vorheriger Reservierung eine traditionelle Sauna für zwei Personen genießen."
         },
         "url": null,
-        "deals" : null
+        "deals" : [
+            {
+                "id": "10",
+                "amount": 10,
+                "fr" : {
+                    "title" : "Tarif par personne",
+                    "subtitle" : null                
+                },
+                "en" : {
+                    "title" : "Price per person",
+                    "subtitle" : null                
+                },
+                "de" : {
+                    "title" : "Preis pro Person",
+                    "subtitle" : null                
+                }
+            }
+        ]
     },
     {
         "id": "love",
@@ -197,5 +214,22 @@
                 }
             }
         ]
+    },
+    {
+        "id": "gift",
+        "fr" : {
+            "title": "Bons-cadeaux", 
+            "description": "Sur simple demande, nous vous enverrons un joli bon cadeau personnalisé et calligraphié de la valeur de votre choix, valable sans limitation de durée."
+        },
+        "en" : {
+            "title": "Gift cards", 
+            "description": "We can send a personalised and calligraphed gift card on request, of the value of your choice, without any time limit."
+        },
+        "de" : {
+            "title": "Geschenkgutscheine", 
+            "description": "Auf einfache Anfrage senden wir Ihnen einen in Schönschrift geschriebenen Geschenkgutschein im Wert ihrer Wahl, gültig  ohne zeitliche Begrenzung."
+        },
+        "url": null,
+        "deals" : null
     } 
 ]
