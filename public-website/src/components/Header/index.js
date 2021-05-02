@@ -58,8 +58,7 @@ const Header = () => {
               className="lg:ml-10 md:ml-6"
               onClick={openModal}
             />
-            
-            <LanguageSelector />
+          <LanguageSelector className="ml-6 lg:ml-10" />
           </nav>
           <button
             onClick={handleClickBurgerMenu}

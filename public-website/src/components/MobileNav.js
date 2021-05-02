@@ -68,9 +68,7 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
           }}
         />
       </section>
-      <section className="flex-col justify-items-center items-center">
-        <LanguageSelector />
-      </section>
+      <LanguageSelector className="mx-auto" />
     </nav>
   )
 }
