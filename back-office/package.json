@@ -31,7 +31,8 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "sanity-plugin-dashboard-widget-document-list": "^0.0.13",
-    "sanity-plugin-dashboard-widget-netlify": "^1.1.0"
+    "sanity-plugin-dashboard-widget-netlify": "^1.1.0",
+    "sanity-plugin-order-documents": "^0.0.17"
   },
   "devDependencies": {}
 }

@@ -120,6 +120,13 @@ export default createSchema({
           title: "Lien",
           name: "url",
           type: "url"
+        },
+        // Custom ordering with the plugin order-documents
+        {
+          name: "order",
+          title: "Order",
+          type: "number",
+          hidden: true,
         }
       ],
       preview: {
@@ -128,7 +135,16 @@ export default createSchema({
           subtitle: `description.${baseLanguage.id}`,
           media: "image"
         }
-      }
+      },
+      orderings: [
+        {
+          title: 'Ordre',
+          name: 'order',
+          by: [
+            {field: 'order', direction: 'asc'}
+          ]
+        }
+      ]
     },
     {
       title: "Évènements",
@@ -156,6 +172,13 @@ export default createSchema({
           name: "url",
           type: "url",
           title: "Lien"
+        },
+        // Custom ordering with the plugin order-documents
+        {
+          name: "order",
+          title: "Order",
+          type: "number",
+          hidden: true,
         }
       ],
       preview: {
@@ -164,7 +187,16 @@ export default createSchema({
           subtitle: `description.${baseLanguage.id}`,
           media: "image"
         }
-      }
+      },
+      orderings: [
+        {
+          title: 'Ordre',
+          name: 'order',
+          by: [
+            {field: 'order', direction: 'asc'}
+          ]
+        }
+      ]
     },
     {
       name: 'legalMentions',
