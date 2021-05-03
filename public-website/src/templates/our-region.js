@@ -15,7 +15,7 @@ const OurRegion = ({data, pageContext}) => {
   const { t } = useTranslation()
   const lng = pageContext.locale
   const pointsOfInterest = []; 
-  data.allSanityPoi.nodes.sort((a, b) => a.order - b.order).forEach( poi => {
+  data.allSanityPoi.nodes.filter(poi => !poi.isArchived).sort((a, b) => a.order - b.order).forEach( poi => {
     pointsOfInterest.push(<BaseActivity 
       key={poi.id} 
       title={poi.title[lng]} 
@@ -27,7 +27,7 @@ const OurRegion = ({data, pageContext}) => {
     />)
   });
   const events = []; 
-  data.allSanityEvents.nodes.sort((a, b) => a.order - b.order).forEach(event => {
+  data.allSanityEvents.nodes.filter(event => !event.isArchived).sort((a, b) => a.order - b.order).forEach(event => {
     events.push(<BaseActivity 
       key={event.id} 
       title={event.title[lng]} 
@@ -91,6 +91,7 @@ export const query = graphql`
           de
         }
         order
+        isArchived
       }
     }
     allSanityEvents {
@@ -113,6 +114,7 @@ export const query = graphql`
           de
         }
         order
+        isArchived
       }
     }
   }`

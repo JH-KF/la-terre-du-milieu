@@ -101,6 +101,12 @@ export default createSchema({
       icon: MdPlace,
       fields: [
         {
+          title: 'Archiver',
+          name: 'isArchived',
+          type: 'boolean',
+          initialValue: false
+        },
+        {
           title: "Titre",
           name: "title",
           type: "localeString",
@@ -133,7 +139,16 @@ export default createSchema({
         select: {
           title: `title.${baseLanguage.id}`,
           subtitle: `description.${baseLanguage.id}`,
-          media: "image"
+          media: "image",
+          isArchived: "isArchived"
+        },
+        prepare(selection) {
+          const {title = "", subtitle, media, isArchived} = selection
+          return {
+            title: `${isArchived ? "[ARCHIVE]" : ""} ${title}`,
+            subtitle,
+            media
+          }
         }
       },
       orderings: [
@@ -151,7 +166,13 @@ export default createSchema({
       name: "Events",
       type: "document",
       icon: MdEvent,
-      fields: [      
+      fields: [
+        {
+          title: 'Archiver',
+          name: 'isArchived',
+          type: 'boolean',
+          initialValue: false
+        },     
         {
           title: "Titre",
           name: "title",
@@ -185,7 +206,16 @@ export default createSchema({
         select: {
           title: `title.${baseLanguage.id}`,
           subtitle: `description.${baseLanguage.id}`,
-          media: "image"
+          media: "image",
+          isArchived : "isArchived"
+        },
+        prepare(selection) {
+          const {title = "", subtitle, media, isArchived} = selection
+          return {
+            title: `${isArchived ? "[ARCHIVE]" : ""} ${title}`,
+            subtitle,
+            media
+          }
         }
       },
       orderings: [
