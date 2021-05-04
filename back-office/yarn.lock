@@ -1094,9 +1094,9 @@
   version "2.2.6"
   resolved "https://registry.npmjs.org/@sanity/components/-/components-2.2.6.tgz#d1d6d1017a53ebb413ef026eabd5dd0b4a1bcdad"
 
-"@sanity/core@^2.10.0":
-  version "2.10.0"
-  resolved "https://registry.npmjs.org/@sanity/core/-/core-2.10.0.tgz#8e8777b9698177b0230103b8e9ceef7183ec95b9"
+"@sanity/core@^2.10.2":
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.10.2.tgz#7937f4b4a95a262bf3e32f6727cc4b30d1847d4f"
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.10.4"
     "@babel/preset-env" "^7.11.5"
@@ -1106,8 +1106,8 @@
     "@sanity/eventsource" "2.2.6"
     "@sanity/export" "2.8.0"
     "@sanity/generate-help-url" "2.2.6"
-    "@sanity/import" "2.8.0"
-    "@sanity/mutator" "2.2.6"
+    "@sanity/import" "2.10.2"
+    "@sanity/mutator" "2.10.2"
     "@sanity/plugin-loader" "2.10.0"
     "@sanity/resolver" "2.10.0"
     "@sanity/schema" "2.10.0"
@@ -1355,12 +1355,12 @@
     dom-event "1.0.0"
     lodash "^4.17.15"
 
-"@sanity/import@2.8.0":
-  version "2.8.0"
-  resolved "https://registry.npmjs.org/@sanity/import/-/import-2.8.0.tgz#84f9ea1b383d8907095aaca08ad2b96435871332"
+"@sanity/import@2.10.2":
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/@sanity/import/-/import-2.10.2.tgz#990b57fd1fe17aa71cc51ed3f3dd7bc764c9454b"
   dependencies:
     "@sanity/generate-help-url" "2.2.6"
-    "@sanity/mutator" "2.2.6"
+    "@sanity/mutator" "2.10.2"
     "@sanity/uuid" "^3.0.1"
     debug "^3.1.0"
     file-url "^2.0.2"
@@ -1388,6 +1388,15 @@
     lodash "^4.17.15"
     memoize-one "^3.1.1"
     oneline "^1.0.3"
+
+"@sanity/mutator@2.10.2":
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/@sanity/mutator/-/mutator-2.10.2.tgz#46bc87f57f2c8fb4fddfc7b946eb66ed3e39af82"
+  dependencies:
+    "@types/diff-match-patch" "^1.0.32"
+    debug "^3.1.0"
+    diff-match-patch "^1.0.4"
+    lodash "^4.17.15"
 
 "@sanity/mutator@2.2.6":
   version "2.2.6"
