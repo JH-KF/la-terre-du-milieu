@@ -43,7 +43,7 @@ const Room = ({pageContext, data}) => {
         quote={room.quote}
         quoteAuthor={room.quoteAuthor}
         key={room.id}
-        path={`/${room.path}${room.slug}`}
+        path={`${i18n.options.fallbackLng[0] === i18n.language ? "" : "/"+i18n.language}/${room.path}${room.slug}`}
         isAvailable={room.isAvailable}
         thumbnailImage={data.roomThumbnailImages.nodes
           .filter(img => img.name === room.id)

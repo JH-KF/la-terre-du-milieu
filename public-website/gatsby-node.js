@@ -77,7 +77,9 @@ exports.createPages = async ({ graphql, actions }) => {
   allRooms.data.allRoomsJson.nodes.forEach(node => {
     const rooms = allRooms.data.allRoomsJson.nodes;
     Object.keys(translations).forEach(lang => {
-      const path = `/${node[lang].path}${node[lang].slug}`;
+      const path = translations[lang].default
+      ? `${node[lang].path}${node[lang].slug}`
+      : `${lang}/${node[lang].path}${node[lang].slug}`;
       createPage({
         path: path ,
         component: roomTemplate,

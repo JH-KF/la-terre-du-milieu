@@ -148,7 +148,7 @@ const IndexPage = ({ pageContext }) => {
   )
   let roomsListElements = []
   queryData.allRoomsJson.nodes.forEach(room => {
-    const path = `/${room[pageContext.locale].path+room[pageContext.locale].slug}`;
+    const path = `${i18n.options.fallbackLng[0] === i18n.language ? "" : "/"+i18n.language}/${room[pageContext.locale].path+room[pageContext.locale].slug}`;
     roomsListElements.push(
       <BaseRoomCard
         elevation={true}
