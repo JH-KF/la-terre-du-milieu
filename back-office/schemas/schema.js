@@ -37,7 +37,7 @@ const localeString = {
     title: lang.title,
     name: lang.id,
     type: 'string',
-    validation: Rule => Rule.required()
+    validation: Rule => Rule.required().error(`Le titre [${lang.id}] est requise.`)
   }))
 }
 
@@ -60,7 +60,7 @@ const localeText = {
     title: lang.title,
     name: lang.id,
     type: 'text',
-    validation: Rule => Rule.required()
+    validation: Rule => Rule.required().error(`La description [${lang.id}] est requise.`)
   }))
 }
 
@@ -109,18 +109,18 @@ export default createSchema({
         {
           title: "Titre",
           name: "title",
-          type: "localeString",
+          type: "localeString"
         },
         {
           name: "image",
           type: "image",
           title: "Image",
-          validation: Rule => Rule.required()
+          validation: Rule => Rule.required().error("L'image est requise.")
         },
         {
           title: "Description",
           name: "description",
-          type: "localeText",
+          type: "localeText"
         },
         {
           title: "Lien",
@@ -182,12 +182,12 @@ export default createSchema({
           title: "Image",
           name: "image",
           type: "image",
-          validation: Rule => Rule.required()
+          validation: Rule => Rule.required().error("L'image est requise.")
         },
         {
           title: "Description",
           name: "description",
-          type: "localeText",
+          type: "localeText"
         },
         {
           name: "url",
