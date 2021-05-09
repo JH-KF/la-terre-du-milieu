@@ -9,7 +9,7 @@ const CustomImage = ({ className, hasBorder = false, typeFrame, alt, image = {} 
       case "square":
         return "100%"
       case "landscape":
-        return "70%"
+        return "75%"
       case "portrait":
         return "150%"
       default:
