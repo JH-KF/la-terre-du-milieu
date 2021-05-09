@@ -118,6 +118,18 @@ export default createSchema({
           validation: Rule => Rule.required().error("L'image est requise.")
         },
         {
+          title: 'Catégorie',
+          name: 'category',
+          type: 'string',
+          options: {
+            list: [
+              { title: 'randonnées/balades', value: 'walks' },
+              { title: 'loisirs/détente', value: 'leisure' },
+              { title: 'culture/histoire', value: 'history' }
+            ]
+          }
+        },
+        {
           title: "Description",
           name: "description",
           type: "localeText"
@@ -183,6 +195,18 @@ export default createSchema({
           name: "image",
           type: "image",
           validation: Rule => Rule.required().error("L'image est requise.")
+        },
+        {
+          title: 'Catégorie',
+          name: 'category',
+          type: 'string',
+          options: {
+            list: [
+              { title: 'randonnées/balades', value: 'walks' },
+              { title: 'loisirs/détente', value: 'leisure' },
+              { title: 'culture/histoire', value: 'history' }
+            ]
+          }
         },
         {
           title: "Description",

@@ -52,6 +52,9 @@
           "title": "Notre région",
           "path": "notre-region",
           "activitiesTitle": "A découvrir",
+          "walks": "Randonnées / Balades",
+          "leisure": "Loisirs / Détente",
+          "history": "Culture / Histoire",
           "eventsTitle": "Évènements",
           "noEvents": "Pas d'évènements en cours."
         },
@@ -149,6 +152,9 @@
           "title": "Our region",
           "path": "our-region",
           "activitiesTitle": "To discover",
+          "walks": "Hikes / Walks",
+          "leisure": "Leisure / Relaxation",
+          "history": "Culture / History",
           "eventsTitle": "Events",
           "noEvents": "Currently, there is no event around."
         },
@@ -245,6 +251,9 @@
         "ourRegion" : {
           "title": "Unsere region",
           "path": "unsere-region",
+          "walks": "Wanderungen / Spaziergänge",
+          "leisure": "Freizeit / Entspannung",
+          "history": "Kultur / Geschichte",
           "activitiesTitle": "Entdecken",
           "eventsTitle": "Veranstaltungen",
           "noEvents": "Derzeit gibt es keine Veranstaltung."

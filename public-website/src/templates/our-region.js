@@ -9,6 +9,7 @@ import BaseActivity from "../components/Base/ActivityCard"
 import { useTranslation } from "react-i18next"
 
 import Seo from "../components/seo"
+import BaseTitle from "../components/Base/Title"
 
 const OurRegion = ({data, pageContext}) => {
 
@@ -16,7 +17,7 @@ const OurRegion = ({data, pageContext}) => {
   const lng = pageContext.locale
   const pointsOfInterest = []; 
   data.allSanityPoi.nodes.filter(poi => !poi.isArchived).sort((a, b) => a.order - b.order).forEach( poi => {
-    pointsOfInterest.push(<BaseActivity 
+    pointsOfInterest.push({component:<BaseActivity 
       key={poi.id} 
       title={poi.title[lng]} 
       description={poi.description[lng]} 
@@ -24,19 +25,32 @@ const OurRegion = ({data, pageContext}) => {
       url={poi.url}
       light={true}
       className="mb-8 mx-auto md:mx-0"
-    />)
+    />, category: poi.category})
   });
   const events = []; 
   data.allSanityEvents.nodes.filter(event => !event.isArchived).sort((a, b) => a.order - b.order).forEach(event => {
-    events.push(<BaseActivity 
+    events.push({component: <BaseActivity 
       key={event.id} 
       title={event.title[lng]} 
       description={event.description[lng]} 
       thumbnailImage={getImage(event.image.asset)}
       url={event.url}
       className="mb-8 mx-auto md:mx-0"
-    />)
+    />, category: event.category})
   });
+  const categories = ["walks", "leisure", "history"]
+  const getCategory = (cards, category) => {
+    return cards.some(card => card.category === category) ? 
+      <>
+        <BaseTitle title={t(`pages.ourRegion.${category}`)} className="text-center md:text-left my-16 font-calligraphy" />
+        <div className="min-h-half block md:flex md:flex-wrap md:items-center md:justify-around">
+          {cards.filter(card => card.category === category).map(card => card.component)}
+        </div>
+      </>
+      : null  
+  } 
+
+
   return (
   <>
     <Seo title={t("pages.ourRegion.title")} lang={lng} /> 
@@ -46,9 +60,12 @@ const OurRegion = ({data, pageContext}) => {
           text={t("pages.ourRegion.activitiesTitle")}
           className="xs:text-center mb-16"
         />
-        <div className="min-h-half block md:flex md:flex-wrap md:items-center md:justify-around">
-          {pointsOfInterest}
+        <div className="block md:flex md:flex-wrap md:items-center md:justify-around">
+          {pointsOfInterest.filter(poi => !poi.category).map(poi => poi.component)}
         </div>
+        {
+          categories.map(category => getCategory(pointsOfInterest, category))
+        }
       </div>
     </section>
     <section className="relative bg-paper bg-paper--white mt-16 md:mt-6 py-12 md:py-24 altered-before">
@@ -57,9 +74,13 @@ const OurRegion = ({data, pageContext}) => {
           text={t("pages.ourRegion.eventsTitle")}
           className="xs:text-center mb-16"
         />
-        <div className="min-h-half block md:flex md:flex-wrap md:justify-around md:items-center">
-          {events.length ? events : <BaseDescription description={t("pages.ourRegion.noEvents")} />}
+        <div className="block md:flex md:flex-wrap md:justify-around md:items-center">
+          {events.length ? events.filter(event => !event.category).map(event => event.component) : null }
         </div>
+        {
+          categories.map(category => getCategory(events, category))
+        }
+        {events.length ? null : <BaseDescription className="text-center" description={t("pages.ourRegion.noEvents")} /> }
       </div>
     </section>
   </>
@@ -85,6 +106,7 @@ export const query = graphql`
             gatsbyImageData(width: 400)
           }
         }
+        category
         description {
           fr
           en
@@ -108,6 +130,7 @@ export const query = graphql`
             gatsbyImageData(width: 400)
           }
         }
+        category
         description {
           fr
           en
