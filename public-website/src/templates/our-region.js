@@ -43,13 +43,12 @@ const OurRegion = ({data, pageContext}) => {
     return cards.some(card => card.category === category) ? 
       <>
         <BaseTitle title={t(`pages.ourRegion.${category}`)} className="text-center md:text-left my-16 font-calligraphy" />
-        <div className="min-h-half block md:flex md:flex-wrap md:items-center md:justify-around">
+        <div className="block md:grid md:gap-4 md:col-span-1 md:items-start md:grid-cols-2 lg:grid-cols-3">
           {cards.filter(card => card.category === category).map(card => card.component)}
         </div>
       </>
       : null  
   } 
-
 
   return (
   <>
@@ -58,9 +57,9 @@ const OurRegion = ({data, pageContext}) => {
       <div className="max-w-screen-xl px-6 md:px-12 m-auto">
         <BaseHeading
           text={t("pages.ourRegion.activitiesTitle")}
-          className="xs:text-center mb-16"
+          className={`text-center md:text-left ${ events.filter(event => !event.category).length ? 'mb-16' : ''}`}
         />
-        <div className="block md:flex md:flex-wrap md:items-center md:justify-around">
+        <div className="block md:grid md:gap-4 md:col-span-1 md:items-start md:grid-cols-2 lg:grid-cols-3">
           {pointsOfInterest.filter(poi => !poi.category).map(poi => poi.component)}
         </div>
         {
@@ -72,9 +71,9 @@ const OurRegion = ({data, pageContext}) => {
       <div className="max-w-screen-xl px-6 md:px-12 m-auto">
         <BaseHeading
           text={t("pages.ourRegion.eventsTitle")}
-          className="xs:text-center mb-16"
+          className={`text-center md:text-left ${ events.filter(event => !event.category).length || !events.length ? 'mb-16' : ''}`}
         />
-        <div className="block md:flex md:flex-wrap md:justify-around md:items-center">
+        <div className="block md:grid md:gap-4 md:col-span-1 md:items-start md:grid-cols-2 lg:grid-cols-3">
           {events.length ? events.filter(event => !event.category).map(event => event.component) : null }
         </div>
         {
