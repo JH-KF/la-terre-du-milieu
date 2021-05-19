@@ -16,6 +16,21 @@ const supportedLanguages = [
   { id: 'en', title: 'Anglais'}
 ]
 
+const CATEGORIES = {
+  walks: {
+    value: 'walks',
+    title: 'randonnées/balades',
+  },
+  history: {
+    value: 'history',
+    title: 'culture/histoire',
+  },
+  leisure: {
+    value: 'leisure',
+    title: 'loisirs/détente',
+  },
+}
+
 const baseLanguage = supportedLanguages.find(l => l.isDefault)
 
 const localeString = {
@@ -122,11 +137,7 @@ export default createSchema({
           name: 'category',
           type: 'string',
           options: {
-            list: [
-              { title: 'randonnées/balades', value: 'walks' },
-              { title: 'loisirs/détente', value: 'leisure' },
-              { title: 'culture/histoire', value: 'history' }
-            ]
+            list: Object.values(CATEGORIES)
           }
         },
         {
@@ -151,14 +162,15 @@ export default createSchema({
         select: {
           title: `title.${baseLanguage.id}`,
           subtitle: `description.${baseLanguage.id}`,
+          category: `category`,
           media: "image",
           isArchived: "isArchived"
         },
         prepare(selection) {
-          const {title = "", subtitle, media, isArchived} = selection
+          const {title = "", subtitle, category, media, isArchived} = selection
           return {
             title: `${isArchived ? "[ARCHIVE]" : ""} ${title}`,
-            subtitle,
+            subtitle : `${category ? `[${CATEGORIES[category].title.toUpperCase()}]` : ''} ${subtitle}`,
             media
           }
         }
@@ -201,11 +213,7 @@ export default createSchema({
           name: 'category',
           type: 'string',
           options: {
-            list: [
-              { title: 'randonnées/balades', value: 'walks' },
-              { title: 'loisirs/détente', value: 'leisure' },
-              { title: 'culture/histoire', value: 'history' }
-            ]
+            list: Object.values(CATEGORIES)
           }
         },
         {
@@ -230,14 +238,15 @@ export default createSchema({
         select: {
           title: `title.${baseLanguage.id}`,
           subtitle: `description.${baseLanguage.id}`,
+          category: `category`,
           media: "image",
           isArchived : "isArchived"
         },
         prepare(selection) {
-          const {title = "", subtitle, media, isArchived} = selection
+          const {title = "", subtitle, category, media, isArchived} = selection
           return {
             title: `${isArchived ? "[ARCHIVE]" : ""} ${title}`,
-            subtitle,
+            subtitle : `${category ? `[${CATEGORIES[category].title.toUpperCase()}]` : ''} ${subtitle}`,
             media
           }
         }
