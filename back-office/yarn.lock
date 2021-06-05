@@ -1170,7 +1170,7 @@
 
 "@sanity/dashboard@^2.10.5":
   version "2.10.5"
-  resolved "https://registry.npmjs.org/@sanity/dashboard/-/dashboard-2.10.5.tgz#1cf377b0afd46b25da166c3e68911d7aa76a8aea"
+  resolved "https://registry.yarnpkg.com/@sanity/dashboard/-/dashboard-2.10.5.tgz#1cf377b0afd46b25da166c3e68911d7aa76a8aea"
   dependencies:
     "@sanity/image-url" "^0.140.19"
     lodash "^4.17.15"
