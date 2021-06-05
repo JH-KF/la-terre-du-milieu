@@ -1004,7 +1004,7 @@
 
 "@sanity/base@2.10.5", "@sanity/base@^2.10.5":
   version "2.10.5"
-  resolved "https://registry.npmjs.org/@sanity/base/-/base-2.10.5.tgz#11c4e244e954d3bf06be8f90aedd6d131b7aa2ee"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.10.5.tgz#11c4e244e954d3bf06be8f90aedd6d131b7aa2ee"
   dependencies:
     "@juggle/resize-observer" "^3.3.0"
     "@popperjs/core" "^2.5.4"
