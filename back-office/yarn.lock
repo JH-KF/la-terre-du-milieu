@@ -6946,9 +6946,9 @@ react-refractor@^2.1.2, react-refractor@^2.1.4:
     unist-util-filter "^2.0.2"
     unist-util-visit-parents "^3.0.2"
 
-react-select@^4.3.0:
+react-select@^4.3.1:
   version "4.3.1"
-  resolved "https://registry.npmjs.org/react-select/-/react-select-4.3.1.tgz#389fc07c9bc7cf7d3c377b7a05ea18cd7399cb81"
+  resolved "https://registry.yarnpkg.com/react-select/-/react-select-4.3.1.tgz#389fc07c9bc7cf7d3c377b7a05ea18cd7399cb81"
   dependencies:
     "@babel/runtime" "^7.12.0"
     "@emotion/cache" "^11.4.0"
@@ -7400,14 +7400,14 @@ sanity-plugin-dashboard-widget-netlify@^1.1.0:
     react-props-stream "^1.0.0"
     rxjs "^6.0.0"
 
-sanity-plugin-order-documents@^0.0.17:
-  version "0.0.17"
-  resolved "https://registry.npmjs.org/sanity-plugin-order-documents/-/sanity-plugin-order-documents-0.0.17.tgz#57fd10363c66b6fddd6a3ea643111acc8eda667b"
+sanity-plugin-order-documents@^0.0.19:
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/sanity-plugin-order-documents/-/sanity-plugin-order-documents-0.0.19.tgz#a108a0b8f5f5804812b7545ccfd18cf8cdd16a02"
   dependencies:
     immutability-helper "^3.1.1"
     react-dnd "^14.0.2"
     react-dnd-html5-backend "^14.0.0"
-    react-select "^4.3.0"
+    react-select "^4.3.1"
     react-tippy "^1.4.0"
 
 sax@~1.2.4:
