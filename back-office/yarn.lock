@@ -1097,7 +1097,7 @@
 
 "@sanity/core@^2.10.5":
   version "2.10.5"
-  resolved "https://registry.npmjs.org/@sanity/core/-/core-2.10.5.tgz#99acae4af56291ab144a43c3d7da44e25c2897f7"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.10.5.tgz#99acae4af56291ab144a43c3d7da44e25c2897f7"
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.10.4"
     "@babel/preset-env" "^7.11.5"
