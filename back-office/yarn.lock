@@ -1204,7 +1204,7 @@
 
 "@sanity/default-login@^2.10.5":
   version "2.10.5"
-  resolved "https://registry.npmjs.org/@sanity/default-login/-/default-login-2.10.5.tgz#f33cad5e59c742bad9a618d1269d8b81e661de8a"
+  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-2.10.5.tgz#f33cad5e59c742bad9a618d1269d8b81e661de8a"
   dependencies:
     "@sanity/generate-help-url" "2.2.6"
     prop-types "^15.6.0"
