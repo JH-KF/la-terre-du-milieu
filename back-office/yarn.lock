@@ -1185,7 +1185,7 @@
 
 "@sanity/default-layout@^2.10.5":
   version "2.10.5"
-  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-2.10.5.tgz#afbc28b8dbed45322c6636f77786167bbbcec57e"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.10.5.tgz#afbc28b8dbed45322c6636f77786167bbbcec57e"
   dependencies:
     "@reach/auto-id" "^0.13.2"
     "@sanity/base" "2.10.5"
