@@ -1,13 +1,37 @@
+# dependabot.yml file
+
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/public-website"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-  target-branch: develop
-- package-ecosystem: npm
-  directory: "/back-office"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
+  # Keep poetry dependencies up to date
+  - package-ecosystem: "npm"
+    directory: "/back-office"
+    schedule:
+      interval: "daily"
+    labels:
+      - "[BO] Upgrade dependencies"
+    target-branch: "main"
+    assignees:
+      - "KevinFabre"
+      - "justinehell"
+    commit-message:
+      # Prefix all commit messages with "dependabot/"
+      prefix: "dependabot-bo/"
+  - package-ecosystem: "npm"
+    directory: "/public-website"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "gatsby"
+      - dependency-name: "i18next"
+      - dependency-name: "react-i18next"
+      - dependency-name: "react-icons"
+      - dependency-name: "tailwindcss"
+    labels:
+      - "[WEB] Upgrade dependencies"
+    target-branch: "main"
+    assignees:
+      - "KevinFabre"
+      - "justinehell"
+    commit-message:
+      # Prefix all commit messages with "dependabot/"
+      prefix: "dependabot-web/"
