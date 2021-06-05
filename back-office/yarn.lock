@@ -1073,7 +1073,7 @@
 
 "@sanity/cli@^2.10.5":
   version "2.10.5"
-  resolved "https://registry.npmjs.org/@sanity/cli/-/cli-2.10.5.tgz#03188d9a27b009e5a6526edbc0b8796d81bcd99c"
+  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-2.10.5.tgz#03188d9a27b009e5a6526edbc0b8796d81bcd99c"
 
 "@sanity/client@2.10.5":
   version "2.10.5"
