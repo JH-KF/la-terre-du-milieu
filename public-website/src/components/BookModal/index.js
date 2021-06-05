@@ -47,7 +47,9 @@ const BookModal = ({ roomName }) => {
                   description={t("modal.callTo")}
                   className="mb-2"
                 />
-                <OutboundLink href={`tel:${process.env.GATSBY_HREF_MONIQUE_MOBILE_PHONE}`}>
+                <OutboundLink
+                  href={`tel:${process.env.GATSBY_HREF_MONIQUE_MOBILE_PHONE}`}
+                >
                   <BaseTitle
                     title={process.env.GATSBY_DISPLAY_MONIQUE_MOBILE_PHONE}
                     className="text-action"
@@ -60,7 +62,9 @@ const BookModal = ({ roomName }) => {
                   description={t("modal.sendTo")}
                   className="mb-2"
                 />
-                <OutboundLink href={`mailto:${process.env.GATSBY_MONIQUE_EMAIL}`}>
+                <OutboundLink
+                  href={`mailto:${process.env.GATSBY_MONIQUE_EMAIL}`}
+                >
                   <BaseTitle
                     title={process.env.GATSBY_MONIQUE_EMAIL}
                     className="text-action"
@@ -75,29 +79,37 @@ const BookModal = ({ roomName }) => {
                 className="mb-4"
               />
               <div className="flex mt-6 xs:block">
-                <OutboundLink href="https://www.gites-de-france.com/" target="blank" className="flex-1 w-32 mr-4">
+                <OutboundLink
+                  href="https://www.gites-de-france.com/"
+                  target="blank"
+                  className="flex-1 w-32 mr-4"
+                >
                   <BaseParchment className="w-full flex-1 p-4">
-                      <BaseDescription
-                        description="Gîtes de France"
-                        className="mb-6 text-action font-calligraphy"
+                    <BaseDescription
+                      description="Gîtes de France"
+                      className="mb-6 text-action font-calligraphy"
+                    />
+                    <div className="w-24 h-24 m-auto flex justify-center items-center">
+                      <StaticImage
+                        src="../../images/modal/gite-de-france-logo.png"
+                        alt="gite de france"
+                        layout="constrained"
+                        width={96}
                       />
-                      <div className="w-24 h-24 m-auto flex justify-center items-center">
-                        <StaticImage
-                          src="../../images/modal/gite-de-france-logo.png"
-                          alt="gite de france"
-                          layout="constrained"
-                          width={96}
-                        />
-                      </div>
-                      {roomName ? (
-                        <BaseDescription
-                          description={roomName}
-                          className="mt-2"
-                        />
-                      ) : null}
+                    </div>
+                    {roomName ? (
+                      <BaseDescription
+                        description={roomName}
+                        className="mt-2"
+                      />
+                    ) : null}
                   </BaseParchment>
                 </OutboundLink>
-                <OutboundLink href="https://www.booking.com" target="blank" className="flex-1 w-32">
+                <OutboundLink
+                  href="https://www.booking.com"
+                  target="blank"
+                  className="flex-1 w-32"
+                >
                   <BaseParchment className="w-full  p-4">
                     <BaseDescription
                       description="Booking"
@@ -117,7 +129,7 @@ const BookModal = ({ roomName }) => {
                         className="mt-2"
                       />
                     ) : null}
-                    </BaseParchment>
+                  </BaseParchment>
                 </OutboundLink>
               </div>
             </div>

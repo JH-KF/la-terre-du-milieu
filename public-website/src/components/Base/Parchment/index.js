@@ -6,9 +6,7 @@ const BaseParchment = ({ className, light, horizontal, children }) => {
     <article
       className={`bg-paper parchment ${className} ${
         light ? "parchment--light" : ""
-      } ${
-        horizontal ? "parchment--horizontal" : ""
-      } `}
+      } ${horizontal ? "parchment--horizontal" : ""} `}
     >
       {children}
     </article>

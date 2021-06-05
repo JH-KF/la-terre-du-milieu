@@ -11,7 +11,6 @@ import { Link } from "gatsby"
 
 import { useTranslation } from "react-i18next"
 
-
 const BaseDescriptionBlock = ({
   title,
   description,
@@ -21,13 +20,12 @@ const BaseDescriptionBlock = ({
   position,
   className,
   light = false,
-  children
-  
+  children,
 }) => {
   const { t, i18n } = useTranslation()
   return (
     <BaseParchment
-      className={`max-w-md md:max-w-screen-lg px-4 md:px-12 py-6  ${className}`} 
+      className={`max-w-md md:max-w-screen-lg px-4 md:px-12 py-6  ${className}`}
       light={light}
     >
       <div className="flex flex-col lg:flex-row mb-8 lg:mb-0">
@@ -44,20 +42,38 @@ const BaseDescriptionBlock = ({
         />
         <div className="order-none">
           <BaseTitle title={title} className="mb-10 font-calligraphy" />
-          <BaseDescription description={url ? <>{description}<br /><OutboundLink href={url}><span className="text-action underline">{url}</span></OutboundLink></> : description} />
-          {link ? 
-          <div className="text-center md:text-right my-4">
-            <Link to={`/${i18n.options.fallbackLng[0] === i18n.language ? "" : i18n.language + "/"}${t(`pages.${link.to}.path`)}`} className="mb">
-              <BaseTertiaryButton text={link.name[i18n.language]} /> 
-            </Link>
-          </div>
-          : 
-          null}
+          <BaseDescription
+            description={
+              url ? (
+                <>
+                  {description}
+                  <br />
+                  <OutboundLink href={url}>
+                    <span className="text-action underline">{url}</span>
+                  </OutboundLink>
+                </>
+              ) : (
+                description
+              )
+            }
+          />
+          {link ? (
+            <div className="text-center md:text-right my-4">
+              <Link
+                to={`/${
+                  i18n.options.fallbackLng[0] === i18n.language
+                    ? ""
+                    : i18n.language + "/"
+                }${t(`pages.${link.to}.path`)}`}
+                className="mb"
+              >
+                <BaseTertiaryButton text={link.name[i18n.language]} />
+              </Link>
+            </div>
+          ) : null}
         </div>
       </div>
-      <div className={children ? "mt-10" : ""}>
-        {children}
-      </div>
+      <div className={children ? "mt-10" : ""}>{children}</div>
     </BaseParchment>
   )
 }

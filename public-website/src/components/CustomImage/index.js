@@ -2,8 +2,13 @@ import React from "react"
 
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const CustomImage = ({ className, hasBorder = false, typeFrame, alt, image = {} }) => {
- 
+const CustomImage = ({
+  className,
+  hasBorder = false,
+  typeFrame,
+  alt,
+  image = {},
+}) => {
   const getPaddingBottom = () => {
     switch (typeFrame) {
       case "square":
@@ -26,11 +31,11 @@ const CustomImage = ({ className, hasBorder = false, typeFrame, alt, image = {} 
     >
       <div className="relative" style={{ paddingBottom: getPaddingBottom() }}>
         <div className="absolute inset-0">
-          <GatsbyImage 
+          <GatsbyImage
             image={image}
             alt={alt}
-            imgStyle={{clipPath: "url(#image-path)"}}
-            style={{height: "100%" , width: "100%"}}
+            imgStyle={{ clipPath: "url(#image-path)" }}
+            style={{ height: "100%", width: "100%" }}
           ></GatsbyImage>
         </div>
       </div>

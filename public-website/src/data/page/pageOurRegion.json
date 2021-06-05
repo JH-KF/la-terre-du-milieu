@@ -1,0 +1,18 @@
+{
+  "id": "our-region",
+  "fr": {
+    "path": "/notre-region",
+    "title": "Notre région",
+    "description": "Ce n'est certes ni le soleil du sud, ni la beauté de la Bretagne, mais la Lorraine a plus d'un atout pour vous faire aimer notre verte région grâce à sa gastronomie généreuse, son biculturalisme, ses nombreuses escapades, visites, randonnées et découvertes."
+  },
+  "en": {
+    "path": "/our-region",
+    "title": "Our region",
+    "description": "It is certainly neither the sun of the south, nor the beauty of Brittany, but Lorraine has more than one asset to make you love our green region thanks to its generous gastronomy, its biculturalism, its many escapades, visits, hikes and discoveries."
+  },
+  "de": {
+    "path": "/unsere-region",
+    "title": "Unsere region",
+    "description": "Es ist sicherlich weder die Sonne des Südens noch die Schönheit der Bretagne, aber Lothringen hat mehr als einen Vorteil, der sie dank seiner großzügigen Gastronomie, seines Bikulturalismus, seiner vielen Eskapaden, Besuche, Wanderungen und Entdeckungen dazu bringt, unsere grüne Region zu lieben."
+  }
+}

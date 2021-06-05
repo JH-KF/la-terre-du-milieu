@@ -1,235 +1,235 @@
 [
-    {
-        "id": "wellness",
-        "fr" : {
-            "title": "Bien-être", 
-            "description": "Dans une pièce à proximité des chambres, équipée d'une douche à l'italienne et d'une salle de repos, vous pourrez profiter d'un sauna traditionnel pour deux personnes, sur réservation dans la journée."
-        },
-        "en" : {
-            "title": "Wellness", 
-            "description": "In a room near the bedrooms, equipped with a walk-in shower and a rest room, you can enjoy a traditional sauna for two people, by reservation during the day."
-        },
-        "de" : {
-            "title": "Wohlbefinden", 
-            "description": "In einem Zimmer in der Nähe der Schlafzimmer, das mit einer ebenerdigen Dusche und einem Ruheraum ausgestattet ist, können Sie tagsüber nach vorheriger Reservierung eine traditionelle Sauna für zwei Personen genießen."
-        },
-        "url": null,
-        "deals" : [
-            {
-                "id": "10",
-                "amount": 10,
-                "fr" : {
-                    "title" : "Tarif par personne",
-                    "subtitle" : null                
-                },
-                "en" : {
-                    "title" : "Price per person",
-                    "subtitle" : null                
-                },
-                "de" : {
-                    "title" : "Preis pro Person",
-                    "subtitle" : null                
-                }
-            }
-        ]
+  {
+    "id": "wellness",
+    "fr": {
+      "title": "Bien-être",
+      "description": "Dans une pièce à proximité des chambres, équipée d'une douche à l'italienne et d'une salle de repos, vous pourrez profiter d'un sauna traditionnel pour deux personnes, sur réservation dans la journée."
     },
-    {
-        "id": "love",
-        "fr" : {
-            "title": "Escapade romantique", 
-            "description": "Vous avez envie de vivre un moment privilégié à deux dans un décor raffiné, hors du temps et de l'espace ? En Terre du Milieu, tout sera mis en oeuvre pour que ce moment soit unique et inoubliable.\n\nL'escapade comprend une nuitée dans la Lorien, de douces attentions à votre arrivée, un dîner aux chandelles servi en terrasse à la belle saison ou dans une pièce chaleureuse privatisée, un petit déjeuner copieux et varié, un sauna pour deux, et bien sûr un accès à la piscine chauffée.\n\nEn option : 30mn de massages par personne.\n\nSur réservation uniquement, au minimum deux semaines avant la date souhaitée "
-        },
-        "en" : {
-            "title": "Romantic getaway", 
-            "description": "Do you wish to live a priviledged moment in a refined decor, out of time ans space? In the Middle Earth, everything will be done for you to enjoy a unique and unforgettable experience.\n\nThe getaway includes one night in the Lorien, sweet little attentions at your arrival, a candlelit dinner served on the terrace or in a privatized cosy room, a varied and hearty breakfast, a sauna session for two, and of course access to the heated swimming pool.\n\nA 30 minute massage is optional.\n\nOn reservation only, at least two weeks in advance."
-        },
-        "de" : {
-            "title": "Romantische eskapade", 
-            "description": "Haben Sie Lust auf einen besonderen Moment zu zweit in einer raffinierten Umgebung, abseits von Zeit und Raum? In MITTELERDE wird alles getan, um diesen Moment einzigartig und unvergesslich zu machen.\n\nDie Eskapade beinhaltet eine Übernachtung in Lorien, süße Aufmerksamkeiten bei der Ankunft, ein Candle-Dinner auf der Terrasse bei schönem Wetter oder in einem privaten, gemütlichen Zimmer, ein reichhaltiges und abwechslungsreiches Frühstück, eine Sauna für zwei Personen und natürlich den Zugang zum beheizten Pool.\n\nMöglichkeit : 30 Minuten Massage pro Person.\n\nNur bei Buchung mindestens zwei Wochen vor dem gewünschten Termin."
-        },
-        "url": null,
-        "deals" : [
-            {
-                "id": "deal-1",
-                "amount": 179,
-                "fr" : {
-                    "title" : "Prix par couple",
-                    "subtitle" : null                
-                },
-                "en" : {
-                    "title" : "Couple",
-                    "subtitle" : null                
-                },
-                "de" : {
-                    "title" : "Preis pro Paar",
-                    "subtitle" : null                
-                }
-            },
-            {
-                "id": "deal-2",
-                "amount": 239,
-                "fr" : {
-                    "title" : "Prix par couple avec 30 minutes de massage",
-                    "subtitle" : null               
-                },
-                "en" : {
-                    "title" : "Price per couple and 30 minutes massage",
-                    "subtitle" : null                
-                },
-                "de" : {
-                    "title" : "Preis pro Paar und Massagen mit 30 Minuten Massage",
-                    "subtitle" : null               
-                }
-            }
-        ]
+    "en": {
+      "title": "Wellness",
+      "description": "In a room near the bedrooms, equipped with a walk-in shower and a rest room, you can enjoy a traditional sauna for two people, by reservation during the day."
     },
-    {
-        "id": "bycicle",
-        "fr" : {
-            "title": "Forfait cycliste", 
-            "description": "Ce forfait comprend une nuitée en chambre Gondor ou Fangorn, un dîner ou un déjeuner, un petit déjeuner, une boisson de récupération (du genre houblonnée), un sauna, l'accès à la piscine chauffée.\n\n\nAutour du vélo 🚴\n\nUn accueil particulier est réservé à nos amis cyclistes. Vos vélos seront gardés dans un endroit sécurisé. Une possibilité de restauration vous est proposée soit sous forme de pique nique à emporter si vous désirez partir pour la journée, soit sous forme de repas adapté aux sportifs (dîner ou déjeuner).\n\nMartial, passionné de vélo, serait heureux de vous faire découvrir notre belle région en VTT ou en vélo route. Il pourra aussi parfaitement vous renseigner sur tous les circuits à faire seul ou en groupe.Vous avez également la possibilité de vous joindre au cyclo club Ariane de Spicheren/Alsting tous les dimanches matins."
-        },
-        "en" : {
-            "title": "Cyclist package", 
-            "description": "Includes one night in Gondor or Fangorn, a lunch or a dinner, a breakfast, a hoppy recovery drink, a sauna session, and access to the heated swimming pool.\n\n\nAbout the bycicle 🚴\n\nWe reserve a special welcome for our cyclist friends. Your bikes will be safe in a closed courtyard. If you wish to cycle all day, a special picnic to go can be provided. On the spot you can also get an adapted meal for sportsmen and women.\n\n Martial, who is passionate about cycling, would be glad to take you along for you to discover our beautiful region, either on mountain bike or road bike. He knows all of the cycling circuits in the area, whether you wish to cycle alone or in a group. The local cycling club of Spicheren/Alsting will give you a warm welcome if you wish to join them on sunday mornings."
-        },
-        "de" : {
-            "title": "Fahrradpaket", 
-            "description": "Dieses Angebot beinhaltet eine Übernachtung im Zimmer Gondor oder Fangorn, ein Abendessen oder ein Mittagessen, ein Frühstück, ein Erholungsgetränk auf Hopfenbasis,  eine Sauna, den Zugang zum beheizten Pool\n\n\nUm das Fahrrad herum 🚴\n\nEin besonderer Empfang ist für unsere Radfahrer-Freunde reserviert. Ihre Fahrräder werden in einem geschlossenen Hof sicher sein. Eine Verpflegungsmöglichkeit wird angeboten, entweder in Form eines Picknickes zum Mitnehmen, wenn Sie einen Tagesausflug machen möchten, oder in Form eines Essens, das für Sportler geeignet ist. \n\nMartial, ein begeisterter Radfahrer, würde sich freuen, Ihnen unsere schöne Region mit dem Mountainbike oder mit dem Rennrad zu erkunden. Er kann Sie auch über alle Touren informieren, die Sie alleine oder in der Gruppe machen können.Sie haben auch die Möglichkeit, jeden Sonntagmorgen dem Cyclo Club Ariane in Spicheren/Alsting beizutreten."
-        },
-        "url": "https://ccariane.fr.gd/",
-        "deals" : [
-            {
-                "id": "single",
-                "amount": 110,
-                "fr" : {
-                    "title" : "Solo",
-                    "subtitle" : "par jour"                
-                },
-                "en" : {
-                    "title" : "Single",
-                    "subtitle" : "per day"                
-                },
-                "de" : {
-                    "title" : "Single",
-                    "subtitle" : "per day"                
-                }
-            },
-            {
-                "id": "couple",
-                "amount": 140,
-                "fr" : {
-                    "title" : "Couple",
-                    "subtitle" : "par jour"                
-                },
-                "en" : {
-                    "title" : "Couple",
-                    "subtitle" : "per day"                
-                },
-                "de" : {
-                    "title" : "Paar",
-                    "subtitle" : "per day"                
-                }
-            },
-            {
-                "id": "takeaway",
-                "amount": 15,
-                "fr" : {
-                    "title" : "Pique nique à emporter",
-                    "subtitle" : null                
-                },
-                "en" : {
-                    "title" : "Picnic to go",
-                    "subtitle" : null                
-                },
-                "de" : {
-                    "title" : "Picknick zum Mitnehmen",
-                    "subtitle" : null                
-                }
-            }
-        ]
+    "de": {
+      "title": "Wohlbefinden",
+      "description": "In einem Zimmer in der Nähe der Schlafzimmer, das mit einer ebenerdigen Dusche und einem Ruheraum ausgestattet ist, können Sie tagsüber nach vorheriger Reservierung eine traditionelle Sauna für zwei Personen genießen."
     },
-    {
-        "id": "massage",
-        "fr" : {
-            "title": "Massages / Relaxation", 
-            "description": "Neng, diplômée de massages bien être, saura prendre soin de vous grâce à différents massages relaxants (uniquement sur RDV au minimum deux semaines avant la date souhaitée).\nQue ce soit pour libèrer les tensions accumulées, apaiser l'esprit ou permettre un lâcher prise, vous apprécierez l'expérience d'une professionnelle souriante et compétente.\n\nVoir la liste de prestations et de tarifs ci-dessous\n\n- Massages aux huiles\n\n- Masssages yoga thaï\n\n- Réflexologie plantaire\n\n\nLes prix sont identiques pour tous les massages."
+    "url": null,
+    "deals": [
+      {
+        "id": "10",
+        "amount": 10,
+        "fr": {
+          "title": "Tarif par personne",
+          "subtitle": null
         },
-        "en" : {
-            "title": "Massage / Relaxation", 
-            "description": "Neng is a certified wellness masseuse and she will pamper you with a variety of relaxing massages (on reservation only, at least two weeks in advance).\nWhether you wish to get rid of some accumulated tensions, calm your mind, or just let go, you will be appreciative of the know-how of a smiling and competent professional.\n\nList of massages and prices below :\n\n- Oil massage\n\n- Massage yoga thaï\n\n- Foot reflexology\n\n\nFor all massages, the prices are the same."
+        "en": {
+          "title": "Price per person",
+          "subtitle": null
         },
-        "de" : {
-            "title": "Massagen / Entspannung", 
-            "description": "Neng, diplomierte Wellness-Masseurin, wird sich mit verschiedenen entspannenden Massagen um Sie kümmern. (nur nach Vereinbarung mindestens zwei Wochen vor dem gewünschten Termin.)\nSei es, um angestaute Spannungen zu lösen, den Geist zu beruhigen oder ein Loslassen zu ermöglichen, werden Sie die Erfahrung einer lächelnden und kompetenten Profi-Masseurin zu schätzen wissen.\n\nSiehe Liste der Leistungen und der Preise :\n\n- Ölmassagen\n\n- Thaï yoga Massage\n\n- Fussreflexzonenmassage\n\n\nDie Preise sind für alle Massagen gleich."
-        },
-        "url": null,
-        "deals" : [
-            {
-                "id": "30",
-                "amount": 35,
-                "fr" : {
-                    "title" : "30 minutes",
-                    "subtitle" : null               
-                },
-                "en" : {
-                    "title" : "30 minutes",
-                    "subtitle" : null    
-                },
-                "de" : {
-                    "title" : "30 Minuten",
-                    "subtitle" : null  
-                }
-            },
-            {
-                "id": "45",
-                "amount": 50,
-                "fr" : {
-                    "title" : "45 minutes",
-                    "subtitle" : null               
-                },
-                "en" : {
-                    "title" : "45 minutes",
-                    "subtitle" : null                  
-                },
-                "de" : {
-                    "title" : "45 Minuten",
-                    "subtitle" : null    
-                }
-            },
-            {
-                "id": "60",
-                "amount": 65,
-                "fr" : {
-                    "title" : "60 minutes",
-                    "subtitle" : null                
-                },
-                "en" : {
-                    "title" : "60 minutes",
-                    "subtitle" : null                
-                },
-                "de" : {
-                    "title" : "60 Minuten",
-                    "subtitle" : null     
-                }
-            }
-        ]
+        "de": {
+          "title": "Preis pro Person",
+          "subtitle": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "love",
+    "fr": {
+      "title": "Escapade romantique",
+      "description": "Vous avez envie de vivre un moment privilégié à deux dans un décor raffiné, hors du temps et de l'espace ? En Terre du Milieu, tout sera mis en oeuvre pour que ce moment soit unique et inoubliable.\n\nL'escapade comprend une nuitée dans la Lorien, de douces attentions à votre arrivée, un dîner aux chandelles servi en terrasse à la belle saison ou dans une pièce chaleureuse privatisée, un petit déjeuner copieux et varié, un sauna pour deux, et bien sûr un accès à la piscine chauffée.\n\nEn option : 30mn de massages par personne.\n\nSur réservation uniquement, au minimum deux semaines avant la date souhaitée "
     },
-    {
-        "id": "gift",
-        "fr" : {
-            "title": "Bons-cadeaux", 
-            "description": "Sur simple demande, nous vous enverrons un joli bon cadeau personnalisé et calligraphié de la valeur de votre choix, valable sans limitation de durée."
+    "en": {
+      "title": "Romantic getaway",
+      "description": "Do you wish to live a priviledged moment in a refined decor, out of time ans space? In the Middle Earth, everything will be done for you to enjoy a unique and unforgettable experience.\n\nThe getaway includes one night in the Lorien, sweet little attentions at your arrival, a candlelit dinner served on the terrace or in a privatized cosy room, a varied and hearty breakfast, a sauna session for two, and of course access to the heated swimming pool.\n\nA 30 minute massage is optional.\n\nOn reservation only, at least two weeks in advance."
+    },
+    "de": {
+      "title": "Romantische eskapade",
+      "description": "Haben Sie Lust auf einen besonderen Moment zu zweit in einer raffinierten Umgebung, abseits von Zeit und Raum? In MITTELERDE wird alles getan, um diesen Moment einzigartig und unvergesslich zu machen.\n\nDie Eskapade beinhaltet eine Übernachtung in Lorien, süße Aufmerksamkeiten bei der Ankunft, ein Candle-Dinner auf der Terrasse bei schönem Wetter oder in einem privaten, gemütlichen Zimmer, ein reichhaltiges und abwechslungsreiches Frühstück, eine Sauna für zwei Personen und natürlich den Zugang zum beheizten Pool.\n\nMöglichkeit : 30 Minuten Massage pro Person.\n\nNur bei Buchung mindestens zwei Wochen vor dem gewünschten Termin."
+    },
+    "url": null,
+    "deals": [
+      {
+        "id": "deal-1",
+        "amount": 179,
+        "fr": {
+          "title": "Prix par couple",
+          "subtitle": null
         },
-        "en" : {
-            "title": "Gift cards", 
-            "description": "We can send a personalised and calligraphed gift card on request, of the value of your choice, without any time limit."
+        "en": {
+          "title": "Couple",
+          "subtitle": null
         },
-        "de" : {
-            "title": "Geschenkgutscheine", 
-            "description": "Auf einfache Anfrage senden wir Ihnen einen in Schönschrift geschriebenen Geschenkgutschein im Wert ihrer Wahl, gültig  ohne zeitliche Begrenzung."
+        "de": {
+          "title": "Preis pro Paar",
+          "subtitle": null
+        }
+      },
+      {
+        "id": "deal-2",
+        "amount": 239,
+        "fr": {
+          "title": "Prix par couple avec 30 minutes de massage",
+          "subtitle": null
         },
-        "url": null,
-        "deals" : null
-    } 
+        "en": {
+          "title": "Price per couple and 30 minutes massage",
+          "subtitle": null
+        },
+        "de": {
+          "title": "Preis pro Paar und Massagen mit 30 Minuten Massage",
+          "subtitle": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "bycicle",
+    "fr": {
+      "title": "Forfait cycliste",
+      "description": "Ce forfait comprend une nuitée en chambre Gondor ou Fangorn, un dîner ou un déjeuner, un petit déjeuner, une boisson de récupération (du genre houblonnée), un sauna, l'accès à la piscine chauffée.\n\n\nAutour du vélo 🚴\n\nUn accueil particulier est réservé à nos amis cyclistes. Vos vélos seront gardés dans un endroit sécurisé. Une possibilité de restauration vous est proposée soit sous forme de pique nique à emporter si vous désirez partir pour la journée, soit sous forme de repas adapté aux sportifs (dîner ou déjeuner).\n\nMartial, passionné de vélo, serait heureux de vous faire découvrir notre belle région en VTT ou en vélo route. Il pourra aussi parfaitement vous renseigner sur tous les circuits à faire seul ou en groupe.Vous avez également la possibilité de vous joindre au cyclo club Ariane de Spicheren/Alsting tous les dimanches matins."
+    },
+    "en": {
+      "title": "Cyclist package",
+      "description": "Includes one night in Gondor or Fangorn, a lunch or a dinner, a breakfast, a hoppy recovery drink, a sauna session, and access to the heated swimming pool.\n\n\nAbout the bycicle 🚴\n\nWe reserve a special welcome for our cyclist friends. Your bikes will be safe in a closed courtyard. If you wish to cycle all day, a special picnic to go can be provided. On the spot you can also get an adapted meal for sportsmen and women.\n\n Martial, who is passionate about cycling, would be glad to take you along for you to discover our beautiful region, either on mountain bike or road bike. He knows all of the cycling circuits in the area, whether you wish to cycle alone or in a group. The local cycling club of Spicheren/Alsting will give you a warm welcome if you wish to join them on sunday mornings."
+    },
+    "de": {
+      "title": "Fahrradpaket",
+      "description": "Dieses Angebot beinhaltet eine Übernachtung im Zimmer Gondor oder Fangorn, ein Abendessen oder ein Mittagessen, ein Frühstück, ein Erholungsgetränk auf Hopfenbasis,  eine Sauna, den Zugang zum beheizten Pool\n\n\nUm das Fahrrad herum 🚴\n\nEin besonderer Empfang ist für unsere Radfahrer-Freunde reserviert. Ihre Fahrräder werden in einem geschlossenen Hof sicher sein. Eine Verpflegungsmöglichkeit wird angeboten, entweder in Form eines Picknickes zum Mitnehmen, wenn Sie einen Tagesausflug machen möchten, oder in Form eines Essens, das für Sportler geeignet ist. \n\nMartial, ein begeisterter Radfahrer, würde sich freuen, Ihnen unsere schöne Region mit dem Mountainbike oder mit dem Rennrad zu erkunden. Er kann Sie auch über alle Touren informieren, die Sie alleine oder in der Gruppe machen können.Sie haben auch die Möglichkeit, jeden Sonntagmorgen dem Cyclo Club Ariane in Spicheren/Alsting beizutreten."
+    },
+    "url": "https://www.facebook.com/cycloclub.ariane/",
+    "deals": [
+      {
+        "id": "single",
+        "amount": 110,
+        "fr": {
+          "title": "Solo",
+          "subtitle": "par jour"
+        },
+        "en": {
+          "title": "Single",
+          "subtitle": "per day"
+        },
+        "de": {
+          "title": "Single",
+          "subtitle": "per day"
+        }
+      },
+      {
+        "id": "couple",
+        "amount": 140,
+        "fr": {
+          "title": "Couple",
+          "subtitle": "par jour"
+        },
+        "en": {
+          "title": "Couple",
+          "subtitle": "per day"
+        },
+        "de": {
+          "title": "Paar",
+          "subtitle": "per day"
+        }
+      },
+      {
+        "id": "takeaway",
+        "amount": 15,
+        "fr": {
+          "title": "Pique nique à emporter",
+          "subtitle": null
+        },
+        "en": {
+          "title": "Picnic to go",
+          "subtitle": null
+        },
+        "de": {
+          "title": "Picknick zum Mitnehmen",
+          "subtitle": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "massage",
+    "fr": {
+      "title": "Massages / Relaxation",
+      "description": "Neng, diplômée de massages bien être, saura prendre soin de vous grâce à différents massages relaxants (uniquement sur RDV au minimum deux semaines avant la date souhaitée).\nQue ce soit pour libèrer les tensions accumulées, apaiser l'esprit ou permettre un lâcher prise, vous apprécierez l'expérience d'une professionnelle souriante et compétente.\n\nVoir la liste de prestations et de tarifs ci-dessous\n\n- Massages aux huiles\n\n- Masssages yoga thaï\n\n- Réflexologie plantaire\n\n\nLes prix sont identiques pour tous les massages."
+    },
+    "en": {
+      "title": "Massage / Relaxation",
+      "description": "Neng is a certified wellness masseuse and she will pamper you with a variety of relaxing massages (on reservation only, at least two weeks in advance).\nWhether you wish to get rid of some accumulated tensions, calm your mind, or just let go, you will be appreciative of the know-how of a smiling and competent professional.\n\nList of massages and prices below :\n\n- Oil massage\n\n- Massage yoga thaï\n\n- Foot reflexology\n\n\nFor all massages, the prices are the same."
+    },
+    "de": {
+      "title": "Massagen / Entspannung",
+      "description": "Neng, diplomierte Wellness-Masseurin, wird sich mit verschiedenen entspannenden Massagen um Sie kümmern. (nur nach Vereinbarung mindestens zwei Wochen vor dem gewünschten Termin.)\nSei es, um angestaute Spannungen zu lösen, den Geist zu beruhigen oder ein Loslassen zu ermöglichen, werden Sie die Erfahrung einer lächelnden und kompetenten Profi-Masseurin zu schätzen wissen.\n\nSiehe Liste der Leistungen und der Preise :\n\n- Ölmassagen\n\n- Thaï yoga Massage\n\n- Fussreflexzonenmassage\n\n\nDie Preise sind für alle Massagen gleich."
+    },
+    "url": null,
+    "deals": [
+      {
+        "id": "30",
+        "amount": 35,
+        "fr": {
+          "title": "30 minutes",
+          "subtitle": null
+        },
+        "en": {
+          "title": "30 minutes",
+          "subtitle": null
+        },
+        "de": {
+          "title": "30 Minuten",
+          "subtitle": null
+        }
+      },
+      {
+        "id": "45",
+        "amount": 50,
+        "fr": {
+          "title": "45 minutes",
+          "subtitle": null
+        },
+        "en": {
+          "title": "45 minutes",
+          "subtitle": null
+        },
+        "de": {
+          "title": "45 Minuten",
+          "subtitle": null
+        }
+      },
+      {
+        "id": "60",
+        "amount": 65,
+        "fr": {
+          "title": "60 minutes",
+          "subtitle": null
+        },
+        "en": {
+          "title": "60 minutes",
+          "subtitle": null
+        },
+        "de": {
+          "title": "60 Minuten",
+          "subtitle": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "gift",
+    "fr": {
+      "title": "Bons-cadeaux",
+      "description": "Sur simple demande, nous vous enverrons un joli bon cadeau personnalisé et calligraphié de la valeur de votre choix, valable sans limitation de durée."
+    },
+    "en": {
+      "title": "Gift cards",
+      "description": "We can send a personalised and calligraphed gift card on request, of the value of your choice, without any time limit."
+    },
+    "de": {
+      "title": "Geschenkgutscheine",
+      "description": "Auf einfache Anfrage senden wir Ihnen einen in Schönschrift geschriebenen Geschenkgutschein im Wert ihrer Wahl, gültig  ohne zeitliche Begrenzung."
+    },
+    "url": null,
+    "deals": null
+  }
 ]

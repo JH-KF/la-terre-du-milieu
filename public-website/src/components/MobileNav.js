@@ -25,15 +25,15 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
         <hr />
         <section className="relative px-6 pt-12 flex flex-col items-center bg-paper bg-paper--white altered-after altered-before">
           <div className="mb-12">
-            <Link to={"/"+t("pages.home.path")}>
-              <BaseTertiaryButton 
-                onClick={() => handleClickBurgerMenu()} 
-                text={t("header.home")} 
+            <Link to={"/" + t("pages.home.path")}>
+              <BaseTertiaryButton
+                onClick={() => handleClickBurgerMenu()}
+                text={t("header.home")}
               />
             </Link>
           </div>
           <div className="mb-12">
-          <Link to={`/${t("pages.home.path")}#${t("pages.home.rooms.slug")}`}>
+            <Link to={`/${t("pages.home.path")}#${t("pages.home.rooms.slug")}`}>
               <BaseTertiaryButton
                 onClick={() => handleClickBurgerMenu()}
                 text={t("header.rooms")}
@@ -42,17 +42,17 @@ const MobileNav = ({ className, handleClickBurgerMenu, openModal }) => {
           </div>
           <div className="mb-12">
             <Link to={`/${t("pages.home.path")}${t("pages.ourRegion.path")}`}>
-              <BaseTertiaryButton 
-                onClick={() => handleClickBurgerMenu()} 
-                text={t("header.ourRegion")} 
+              <BaseTertiaryButton
+                onClick={() => handleClickBurgerMenu()}
+                text={t("header.ourRegion")}
               />
             </Link>
           </div>
           <div className="mb-12">
             <Link to={`/${t("pages.home.path")}${t("pages.ourOffers.path")}`}>
-              <BaseTertiaryButton 
-                onClick={() => handleClickBurgerMenu()} 
-                text={t("header.ourOffers")} 
+              <BaseTertiaryButton
+                onClick={() => handleClickBurgerMenu()}
+                text={t("header.ourOffers")}
               />
             </Link>
           </div>

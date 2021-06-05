@@ -1,57 +1,57 @@
 [
-    {
-       "id": "us",
-       "fr": {
-           "title" : "Il était une fois…",
-           "description": "Ainsi commencent toutes les belles histoires. La nôtre a débuté il y a fort longtemps : le rêve d’ouvrir une structure d’accueil nous a accompagnés durant toute notre vie commune. Un rêve qui se réalise sous forme de maison d’hôtes : « La Terre du Milieu ».\n\n Passionnés de fleurs, d’animaux, de brocante et de convivialité, nous vous accueillerons dans un environnement chaleureux et reposant.\n\nInspirées par le talentueux J.R.R. Tolkien, nos quatre chambres d’hôtes à la décoration soignée vous apporteront confort, dépaysement et calme au milieu des Elfes, des Rois, des Ents et des Hobbits.\n\nAu plaisir de faire votre connaissance,\n\nMartial et Monique Bousch"
-       },
-       "en": {
-         "title" : "Once upon a time...",
-          "description": "This is how all beautiful stories start.\n\nOurs began a long time ago, with a shared dream of opening a welcoming place. This dream finally came true in the shape of a guest house : The Middle Earth.\n\nWe are passionate about conviviality, flowers, animals and flea markets, and we will welcome you in a warm and relaxing environment.\n\nOur rooms are inspired by the talented J. R. R. Tolkien, and will offer you calm, cosiness, and a change of scenery amongst elves, ents, kings or hobbits.\n\nWe are looking forward to getting to know you.\n\nMartial and Monique Bousch"
-        },
-        "de": {
-          "title": "Es war einmal. . .",
-          "description": "So fangen alle schönen Geschichten an.\n\nUnsere begann vor langer Zeit : Der Traum, eine Empfangseinrichtung zu eröffnen, hat uns unser gemeinsames Leben lang begleitet. Ein Traum, der sich in Form eines Gästehauses verwirklicht: Mittelerde.\n\nBegeistert von Blumen, Tieren, Flohmarkt und Geselligkeit empfangen wir Sie in einer herzlichen und erholsamen Umgebung.\n\nInspiriert von dem talentierten J. R. R. Tolkien, bieten Ihnen unsere vier sorgfältig eingerichteten Gästezimmer Komfort, eine willkommene Abwechslung und Ruhe inmitten von Elfen, Königen, Ents und Hobbits.\n\nIn der Hoffnung Ihre Bekanntschaft machen zu dürfen.\n\nMartial und Monique Bousch"
-        },
-       "link": null
+  {
+    "id": "us",
+    "fr": {
+      "title": "Il était une fois…",
+      "description": "Ainsi commencent toutes les belles histoires. La nôtre a débuté il y a fort longtemps : le rêve d’ouvrir une structure d’accueil nous a accompagnés durant toute notre vie commune. Un rêve qui se réalise sous forme de maison d’hôtes : « La Terre du Milieu ».\n\n Passionnés de fleurs, d’animaux, de brocante et de convivialité, nous vous accueillerons dans un environnement chaleureux et reposant.\n\nInspirées par le talentueux J.R.R. Tolkien, nos quatre chambres d’hôtes à la décoration soignée vous apporteront confort, dépaysement et calme au milieu des Elfes, des Rois, des Ents et des Hobbits.\n\nAu plaisir de faire votre connaissance,\n\nMartial et Monique Bousch"
     },
-    {
-      "id": "wellness",
-      "fr": {
-        "title" : "Bien-être",
-        "description": "Dans un jardin clos et aménagé, vous pourrez profiter d'une piscine extérieure aux belles dimensions (10m sur 5m) chauffée de mai à septembre et sécurisée. Aux abords de la piscine, chaises longues et parasols vous assureront confort et détente. Une salle de repos est également mise à votre disposition, ainsi qu'un sauna pour deux personnes moyennant un supplément.\n\nPour parfaire votre détente et assurer votre sérénité, une masseuse professionnelle pourra, sur réservation uniquement, vous proposer différents massages bien-être."
-      },
-      "en": {
-        "title" : "Wellness",
-        "description": "In an enclosed and landscaped garden, you will enjoy a beautifully sized and secured swimming pool (10 by 5 metres), which is heated between the months of may and september. You will find deck chairs and sun umbrellas alongside it, everything you need to feel entirely comfortable and relaxed. A rest room is also available, as well as a sauna for two people (for a small fee). To bring relaxation and serenity to perfection, a professional masseuse will provide different types of massages – a reservation is required."
-      },
-      "de": {
-        "title": "Wohlbefinden",
-        "description": "In einem umzäunten und angelegten Garten können Sie einen schönen Außenpool (10m x 5m) genießen, der von Mai bis September beheizt und abgesichert ist. Am Poolbereich sorgen Liegestühle und Sonnenschirme für Bequemlichkeit und Entspannung. Ein Ruheraum und eine Sauna für zwei Personen sind gegen Aufpreis ebenfalls vorhanden. Um Ihre Entspannung zu verfeinern und Ihre Gelassenheit zu gewährleisten, können zwei professionelle Masseure, nur nach vorheriger Reservierung, verschiedene Wellness-Massagen anbieten."
-      },
-      "link": {
-        "name": {
-          "fr" : "Voir nos offres",
-          "en": "See our offers",
-          "de": "Siehe unsere angebote"
-        },
-          "to": "ourOffers" 
-      }
+    "en": {
+      "title": "Once upon a time...",
+      "description": "This is how all beautiful stories start.\n\nOurs began a long time ago, with a shared dream of opening a welcoming place. This dream finally came true in the shape of a guest house : The Middle Earth.\n\nWe are passionate about conviviality, flowers, animals and flea markets, and we will welcome you in a warm and relaxing environment.\n\nOur rooms are inspired by the talented J. R. R. Tolkien, and will offer you calm, cosiness, and a change of scenery amongst elves, ents, kings or hobbits.\n\nWe are looking forward to getting to know you.\n\nMartial and Monique Bousch"
     },
-    {
-      "id": "spicheren",
-      "fr": {
-        "title" : "Spicheren, un joli coin de France",
-        "description": "La Terre du Milieu se situe en Moselle-est dans le sympathique village de Spicheren, connu pour son accueil, ses balades bucoliques et ses petits restaurants incontournables. De nombreux sentiers pédestres ou cyclistes raviront les amateurs du genre. Idéalement situé à cinq minutes de l'Allemagne, à vingt minutes de l'Alsace, à trois quarts d'heures de Metz, à une heure du Luxembourg, son rayonnement géographique vous permettra de découvrir une Lorraine verdoyante, beaucoup moins grise que le charbon des mines qu'elle a abritées durant plus de deux siècles."
+    "de": {
+      "title": "Es war einmal. . .",
+      "description": "So fangen alle schönen Geschichten an.\n\nUnsere begann vor langer Zeit : Der Traum, eine Empfangseinrichtung zu eröffnen, hat uns unser gemeinsames Leben lang begleitet. Ein Traum, der sich in Form eines Gästehauses verwirklicht: Mittelerde.\n\nBegeistert von Blumen, Tieren, Flohmarkt und Geselligkeit empfangen wir Sie in einer herzlichen und erholsamen Umgebung.\n\nInspiriert von dem talentierten J. R. R. Tolkien, bieten Ihnen unsere vier sorgfältig eingerichteten Gästezimmer Komfort, eine willkommene Abwechslung und Ruhe inmitten von Elfen, Königen, Ents und Hobbits.\n\nIn der Hoffnung Ihre Bekanntschaft machen zu dürfen.\n\nMartial und Monique Bousch"
+    },
+    "link": null
+  },
+  {
+    "id": "wellness",
+    "fr": {
+      "title": "Bien-être",
+      "description": "Dans un jardin clos et aménagé, vous pourrez profiter d'une piscine extérieure aux belles dimensions (10m sur 5m) chauffée de mai à septembre et sécurisée. Aux abords de la piscine, chaises longues et parasols vous assureront confort et détente. Une salle de repos est également mise à votre disposition, ainsi qu'un sauna pour deux personnes moyennant un supplément.\n\nPour parfaire votre détente et assurer votre sérénité, une masseuse professionnelle pourra, sur réservation uniquement, vous proposer différents massages bien-être."
+    },
+    "en": {
+      "title": "Wellness",
+      "description": "In an enclosed and landscaped garden, you will enjoy a beautifully sized and secured swimming pool (10 by 5 metres), which is heated between the months of may and september. You will find deck chairs and sun umbrellas alongside it, everything you need to feel entirely comfortable and relaxed. A rest room is also available, as well as a sauna for two people (for a small fee). To bring relaxation and serenity to perfection, a professional masseuse will provide different types of massages – a reservation is required."
+    },
+    "de": {
+      "title": "Wohlbefinden",
+      "description": "In einem umzäunten und angelegten Garten können Sie einen schönen Außenpool (10m x 5m) genießen, der von Mai bis September beheizt und abgesichert ist. Am Poolbereich sorgen Liegestühle und Sonnenschirme für Bequemlichkeit und Entspannung. Ein Ruheraum und eine Sauna für zwei Personen sind gegen Aufpreis ebenfalls vorhanden. Um Ihre Entspannung zu verfeinern und Ihre Gelassenheit zu gewährleisten, können zwei professionelle Masseure, nur nach vorheriger Reservierung, verschiedene Wellness-Massagen anbieten."
+    },
+    "link": {
+      "name": {
+        "fr": "Voir nos offres",
+        "en": "See our offers",
+        "de": "Siehe unsere angebote"
       },
-      "en": {
-        "title" : "Spicheren, a quaint little nook of France",
-        "description": "The Middle Earth is found in eastern Moselle in the nice village of Spicheren, known for its hospitality, its bucolic strolls and unmissable restaurants. The many walking trails and cycling circuits will please all of the nature lovers. Ideally located five minutes away from Germany, twenty from the Alsace region, forty-five from Metz and one hour from Luxembourg, this large geographic scope will enable you to discover a verdant Lorraine region, much less grey than the coal mines it housed for over two centuries." 
-      },
-      "de": {
-        "title": "Spichern, ein schöner kleiner Ort in Frankreich",
-        "description": "Mittelerde liegt im Osten der Moselle, in Spicher(e)n, einem angenehmen Dorf, das für seine Gastfreundlichkeit, seine idyllischen Spaziergänge und seine kleinen unumgänglichen Restaurants bekannt ist. Zahlreiche Wander- oder Radwege werden die Naturliebhaber begeistern. Auf Grund seiner idealen Lage, bzw. fünf Minuten von Deutschland, 20 Minuten vom Elsass, Dreiviertelstunden von Metz und eine Stunde von Luxemburg entfernt, können Sie dank seiner geographischen Ausstrahlung ein sattgrünes lothringen entdecken, das weit weniger grau ist als die Kohle der Bergwerke, die es über zwei Jahrhunderte beherbergte." 
-      },
-      "link": null
+      "to": "ourOffers"
     }
+  },
+  {
+    "id": "spicheren",
+    "fr": {
+      "title": "Spicheren, un joli coin de France",
+      "description": "La Terre du Milieu se situe en Moselle-est dans le sympathique village de Spicheren, connu pour son accueil, ses balades bucoliques et ses petits restaurants incontournables. De nombreux sentiers pédestres ou cyclistes raviront les amateurs du genre. Idéalement situé à cinq minutes de l'Allemagne, à vingt minutes de l'Alsace, à trois quarts d'heures de Metz, à une heure du Luxembourg, son rayonnement géographique vous permettra de découvrir une Lorraine verdoyante, beaucoup moins grise que le charbon des mines qu'elle a abritées durant plus de deux siècles."
+    },
+    "en": {
+      "title": "Spicheren, a quaint little nook of France",
+      "description": "The Middle Earth is found in eastern Moselle in the nice village of Spicheren, known for its hospitality, its bucolic strolls and unmissable restaurants. The many walking trails and cycling circuits will please all of the nature lovers. Ideally located five minutes away from Germany, twenty from the Alsace region, forty-five from Metz and one hour from Luxembourg, this large geographic scope will enable you to discover a verdant Lorraine region, much less grey than the coal mines it housed for over two centuries."
+    },
+    "de": {
+      "title": "Spichern, ein schöner kleiner Ort in Frankreich",
+      "description": "Mittelerde liegt im Osten der Moselle, in Spicher(e)n, einem angenehmen Dorf, das für seine Gastfreundlichkeit, seine idyllischen Spaziergänge und seine kleinen unumgänglichen Restaurants bekannt ist. Zahlreiche Wander- oder Radwege werden die Naturliebhaber begeistern. Auf Grund seiner idealen Lage, bzw. fünf Minuten von Deutschland, 20 Minuten vom Elsass, Dreiviertelstunden von Metz und eine Stunde von Luxemburg entfernt, können Sie dank seiner geographischen Ausstrahlung ein sattgrünes lothringen entdecken, das weit weniger grau ist als die Kohle der Bergwerke, die es über zwei Jahrhunderte beherbergte."
+    },
+    "link": null
+  }
 ]

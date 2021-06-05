@@ -7,7 +7,7 @@ import { BsChevronRight } from "react-icons/bs"
 
 import CustomImage from "../CustomImage"
 
-const PictureSlider = ({images}) => {
+const PictureSlider = ({ images }) => {
   const { t } = useTranslation()
 
   const [index, setIndex] = useState(0)
@@ -31,7 +31,11 @@ const PictureSlider = ({images}) => {
         hasBorder={true}
       />
       <div className="absolute bottom-0 right-0 mb-6 mr-6 z-10">
-        <button name={t("utils.previous")} onClick={() => handlePrevious()} className="mr-3">
+        <button
+          name={t("utils.previous")}
+          onClick={() => handlePrevious()}
+          className="mr-3"
+        >
           <BsChevronLeft className="h-10 w-10 text-white" />
         </button>
         <button name={t("utils.previous")} onClick={() => handleNext()}>

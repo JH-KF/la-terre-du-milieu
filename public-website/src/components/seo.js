@@ -12,10 +12,16 @@ function SEO({ description, lang, meta, title, image, path }) {
       query {
         site {
           siteMetadata {
-            fr {author}
-            en {author}
-            de {author}
-            website,
+            fr {
+              author
+            }
+            en {
+              author
+            }
+            de {
+              author
+            }
+            website
             websiteName
           }
         }
@@ -25,8 +31,8 @@ function SEO({ description, lang, meta, title, image, path }) {
 
   const { i18n } = useTranslation()
 
-  const defaultTitle = site.siteMetadata.websiteName;
-  const websiteUrl = `https://${process.env.GATSBY_WEBSITE_DOMAIN}.${site.siteMetadata.website}.com`;
+  const defaultTitle = site.siteMetadata.websiteName
+  const websiteUrl = `https://${process.env.GATSBY_WEBSITE_DOMAIN}.${site.siteMetadata.website}.com`
 
   return (
     <Helmet
@@ -74,16 +80,16 @@ function SEO({ description, lang, meta, title, image, path }) {
         },
         {
           property: `og:url`,
-          content: `${ path ? websiteUrl+path : websiteUrl}`,
+          content: `${path ? websiteUrl + path : websiteUrl}`,
         },
         {
           property: `og:local`,
           content: lang,
-        }, 
+        },
         {
           property: `og:site_name`,
           content: site.siteMetadata.websiteName,
-        }
+        },
       ].concat(meta)}
     />
   )
@@ -92,8 +98,8 @@ function SEO({ description, lang, meta, title, image, path }) {
 SEO.defaultProps = {
   lang: `fr`,
   meta: [],
-  description: ``, 
-  path: ""
+  description: ``,
+  path: "",
 }
 
 SEO.propTypes = {
@@ -101,7 +107,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  path: PropTypes.string
+  path: PropTypes.string,
 }
 
 export default SEO

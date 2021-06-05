@@ -17,57 +17,52 @@ const IndexPage = ({ pageContext }) => {
 
   const queryData = useStaticQuery(graphql`
     query {
-      pagesJson {
-        home {
-          de {
-            title
-            description
-          }
-          en {
-            title
-            description
-          }
-          fr {
-            title
-            description
-          }
+      pageJson(id: { eq: "home" }) {
+        fr {
+          description
+          title
         }
-      },
+        en {
+          description
+          title
+        }
+        de {
+          description
+          title
+        }
+      }
       sliderPictures: allFile(
         sort: { fields: name, order: ASC }
         filter: { relativeDirectory: { eq: "home/slider" } }
       ) {
-        nodes { 
+        nodes {
           id
           name
           childImageSharp {
             gatsbyImageData
           }
         }
-      },
+      }
       blockImages: allFile(
         filter: { relativeDirectory: { eq: "home/blocks" } }
       ) {
         nodes {
           name
           childImageSharp {
-            gatsbyImageData (
-              width: 400
-              quality: 100
-            )
+            gatsbyImageData(width: 400, quality: 100)
           }
         }
-      },
+      }
       roomThumbnailImages: allFile(
-        filter: { relativeDirectory: {eq : "rooms/thumbnails"} }
+        filter: { relativeDirectory: { eq: "rooms/thumbnails" } }
       ) {
-        nodes {  
+        nodes {
           name
           childImageSharp {
             gatsbyImageData
           }
         }
-      },
+      }
       allRoomsJson {
         nodes {
           id
@@ -97,7 +92,7 @@ const IndexPage = ({ pageContext }) => {
             title
           }
         }
-      },
+      }
       allPresentationJson {
         nodes {
           en {
@@ -125,17 +120,19 @@ const IndexPage = ({ pageContext }) => {
       }
     }
   `)
-    
-  let blockListElements = [];
+
+  let blockListElements = []
   queryData.allPresentationJson.nodes.forEach((block, index) =>
     blockListElements.push(
       <BaseDescriptionBlock
         title={block[i18n.language].title}
         description={block[i18n.language].description}
         key={block.id}
-        image={queryData.blockImages.nodes
-          .filter(img => img.name === block.id)
-          .map(img => getImage(img))[0]}
+        image={
+          queryData.blockImages.nodes
+            .filter(img => img.name === block.id)
+            .map(img => getImage(img))[0]
+        }
         link={block.link}
         position={index + 1}
         className={`mx-24 xs:mx-0 ${
@@ -148,7 +145,9 @@ const IndexPage = ({ pageContext }) => {
   )
   let roomsListElements = []
   queryData.allRoomsJson.nodes.forEach(room => {
-    const path = `${i18n.options.fallbackLng[0] === i18n.language ? "" : "/"+i18n.language}/${room[pageContext.locale].path+room[pageContext.locale].slug}`;
+    const path = `${
+      i18n.options.fallbackLng[0] === i18n.language ? "" : "/" + i18n.language
+    }/${room[pageContext.locale].path + room[pageContext.locale].slug}`
     roomsListElements.push(
       <BaseRoomCard
         elevation={true}
@@ -159,28 +158,34 @@ const IndexPage = ({ pageContext }) => {
         key={room.id}
         path={path}
         isAvailable={room.isAvailable}
-        thumbnailImage={queryData.roomThumbnailImages.nodes
-          .filter(img => img.name === room.id)
-          .map(img => getImage(img))[0]}
+        thumbnailImage={
+          queryData.roomThumbnailImages.nodes
+            .filter(img => img.name === room.id)
+            .map(img => getImage(img))[0]
+        }
         className={"mb-24"}
       />
     )
-    }
-  )
+  })
 
   return (
     <div>
       <Seo
-        title={queryData.pagesJson.home[pageContext.locale].title}
-        description={queryData.pagesJson.home[pageContext.locale].description}
+        title={queryData.pageJson[pageContext.locale].title}
+        description={queryData.pageJson[pageContext.locale].description}
         lang={pageContext.locale}
-      /> 
+        path={
+          i18n.options.fallbackLng[0] === i18n.language
+            ? ""
+            : `/${i18n.language}`
+        }
+      />
       <section className="bg-paper xs:py-16 calligraph-background calligraph-background-before">
         <div className="max-w-screen-xl px-6 md:px-12 m-auto display grid gap-x-24 xs:block grid-cols-5">
           <div className="flex items-center xs:max-w-sm xs:m-auto col-span-2 xs:mb-16">
-            <div style={{width: "100%"}}>
+            <div style={{ width: "100%" }}>
               <div className="text-lg text-center text-primary font-calligraphy mb-4">
-                  Parlez Ami et entrez
+                Parlez Ami et entrez
               </div>
 
               <StaticImage
@@ -214,7 +219,7 @@ const IndexPage = ({ pageContext }) => {
         </div>
       </section>
       <section
-        id={t("pages.home.rooms.slug")} 
+        id={t("pages.home.rooms.slug")}
         className="relative bg-paper anchor py-24 m-auto xs:py-12 altered-before"
       >
         <div className="max-w-screen-xl m-auto px-6 md:px-12">
@@ -243,7 +248,6 @@ const IndexPage = ({ pageContext }) => {
             />
             <HomeTransportInformation />
           </div>
-
         </div>
       </section>
     </div>

@@ -1,0 +1,18 @@
+{
+  "id": "our-offers",
+  "fr": {
+    "path": "/nos-offres",
+    "title": "Nos offres",
+    "description": "Un week-end cocooning ou sportif, des vacances dans notre beau pays de France, une halte dans votre voyage, un déplacement professionnel... laissez nous prendre soin de vous le temps de votre séjour en Terre du Milieu : nous nous ferons une joie de vous accueillir et de vous chouchouter."
+  },
+  "en": {
+    "path": "/our-offers",
+    "title": "Our offers",
+    "description": "A cocooning or sporting weekend, a holiday in our beautiful country of France, a stopover in your trip, a business trip ... let us take care of you during your stay in Middle-earth: we will be happy to welcome you and pamper you."
+  },
+  "de": {
+    "path": "/unsere-angebote",
+    "title": "Unsere Angebote",
+    "description": "Ein Kokon- oder Sportwochenende, ein Urlaub in unserem wunderschönen Land Frankreich, ein Zwischenstopp auf Ihrer Reise, eine Geschäftsreise ... lassen sie sich während ihres Aufenthalts in Mittelerde verwöhnen : wir freuen uns darauf sie empfangen zu dürfen und uns um sie zu kümmern."
+  }
+}

@@ -33,121 +33,128 @@ exports.onCreatePage = async ({
 }
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
 
   const roomTemplate = path.resolve(`src/templates/room.js`)
   const allRooms = await graphql(`
-  query allRooms {
-    allRoomsJson {
-      nodes {
-        id
-        isAvailable
-        fr {
-          description
-          path
-          quote
-          quoteAuthor
-          slug
-          title
-          informations
-        }
-        en {
-          description
-          quote
-          path
-          quoteAuthor
-          slug
-          title
-          informations
-        }
-        de {
-          description
-          quote
-          path
-          quoteAuthor
-          slug
-          title
-          informations
+    query allRooms {
+      allRoomsJson {
+        nodes {
+          id
+          isAvailable
+          fr {
+            description
+            path
+            quote
+            quoteAuthor
+            slug
+            title
+            informations
+          }
+          en {
+            description
+            quote
+            path
+            quoteAuthor
+            slug
+            title
+            informations
+          }
+          de {
+            description
+            quote
+            path
+            quoteAuthor
+            slug
+            title
+            informations
+          }
         }
       }
     }
-  }
-  
-`)
+  `)
   allRooms.data.allRoomsJson.nodes.forEach(node => {
-    const rooms = allRooms.data.allRoomsJson.nodes;
+    const rooms = allRooms.data.allRoomsJson.nodes
     Object.keys(translations).forEach(lang => {
       const path = translations[lang].default
-      ? `${node[lang].path}${node[lang].slug}`
-      : `${lang}/${node[lang].path}${node[lang].slug}`;
+        ? `${node[lang].path}${node[lang].slug}`
+        : `${lang}/${node[lang].path}${node[lang].slug}`
       createPage({
-        path: path ,
+        path: path,
         component: roomTemplate,
         context: {
           locale: lang,
           room: node[lang],
-          id : node.id,
+          id: node.id,
           roomPath: path,
           isAvailable: node.isAvailable,
           imagesPath: `rooms/${node.id}`,
-          otherRooms: rooms.filter(otherRoom => otherRoom.id !== node.id).map(room => { return {id: room.id, isAvailable: room.isAvailable, ...room[lang]}})
+          otherRooms: rooms
+            .filter(otherRoom => otherRoom.id !== node.id)
+            .map(room => {
+              return {
+                id: room.id,
+                isAvailable: room.isAvailable,
+                ...room[lang],
+              }
+            }),
         },
       })
     })
   })
 
-  const ourRegionTemplate = path.resolve("src/templates/our-region.js");
+  const ourRegionTemplate = path.resolve("src/templates/our-region.js")
   Object.keys(translations).forEach(lang => {
     const localizedPath = translations[lang].default
-        ? translations[lang].translation.pages.ourRegion.path 
-        : `${lang}/${translations[lang].translation.pages.ourRegion.path}`
+      ? translations[lang].translation.pages.ourRegion.path
+      : `${lang}/${translations[lang].translation.pages.ourRegion.path}`
     createPage({
       path: localizedPath,
       component: ourRegionTemplate,
       context: {
-        locale: lang
+        locale: lang,
       },
     })
   })
 
-  const ourOffersTemplate = path.resolve("src/templates/our-offers.js");
+  const ourOffersTemplate = path.resolve("src/templates/our-offers.js")
   Object.keys(translations).forEach(lang => {
     const localizedPath = translations[lang].default
-        ? translations[lang].translation.pages.ourOffers.path 
-        : `${lang}/${translations[lang].translation.pages.ourOffers.path}`
+      ? translations[lang].translation.pages.ourOffers.path
+      : `${lang}/${translations[lang].translation.pages.ourOffers.path}`
     createPage({
       path: localizedPath,
       component: ourOffersTemplate,
       context: {
-        locale: lang
+        locale: lang,
       },
     })
   })
 
-  const legalMentionsTemplate = path.resolve("src/templates/legal-mentions.js");
+  const legalMentionsTemplate = path.resolve("src/templates/legal-mentions.js")
   Object.keys(translations).forEach(lang => {
     const localizedPath = translations[lang].default
-        ? translations[lang].translation.pages.legalMentions.path 
-        : `${lang}/${translations[lang].translation.pages.legalMentions.path}`
+      ? translations[lang].translation.pages.legalMentions.path
+      : `${lang}/${translations[lang].translation.pages.legalMentions.path}`
     createPage({
       path: localizedPath,
       component: legalMentionsTemplate,
       context: {
-        locale: lang
+        locale: lang,
       },
     })
   })
 
-  const locationContract = path.resolve("src/templates/location-contract.js");
+  const locationContract = path.resolve("src/templates/location-contract.js")
   Object.keys(translations).forEach(lang => {
     const localizedPath = translations[lang].default
-        ? translations[lang].translation.pages.locationContract.path 
-        : `${lang}/${translations[lang].translation.pages.locationContract.path}`
+      ? translations[lang].translation.pages.locationContract.path
+      : `${lang}/${translations[lang].translation.pages.locationContract.path}`
     createPage({
       path: localizedPath,
       component: locationContract,
       context: {
-        locale: lang
+        locale: lang,
       },
     })
   })

@@ -1,0 +1,15 @@
+{
+  "id": "home",
+  "fr": {
+    "title": "Accueil",
+    "description": "Bonjour en elfique se dit \"elen sila lumenn omentielvo\", ce qui signifie \"une étoile brille sur l'heure de notre rencontre\". Bienvenue chez Monique et Martial Bousch en Terre du Milieu, une maison d'hôtes de charme dans le Grand-est lorrain."
+  },
+  "en": {
+    "title": "Home",
+    "description": "Hello in Elvish is said to be \"elen sila lumenn omentielvo\", which means \"a star shines on the hour of our meeting\". Welcome to Monique and Martial Bousch in Middle-Earth, a charming guest house in Grand-est Lorraine."
+  },
+  "de": {
+    "title": "Zur Begrüssung",
+    "description": "Hallo auf Elbisch heißt \"elen sila lumenn omentielvo\", was \"ein Stern scheint zur Stunde unseres Treffens\" bedeutet. Willkommen bei Monique und Martial Bousch in Mittelerde, ein charmantes Gästehaus in Lothringen."
+  }
+}

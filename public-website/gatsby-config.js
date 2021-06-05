@@ -12,8 +12,7 @@ module.exports = {
     },
     de: {
       author: `Monique und Martial Bousch`,
-    }
-   
+    },
   },
   plugins: [
     `gatsby-transformer-json`,
@@ -35,11 +34,12 @@ module.exports = {
       resolve: `gatsby-source-sanity`,
       options: {
         projectId: "351nji64",
-        dataset: process.env.NODE_ENV === "development" ? "development" : "production",
+        dataset:
+          process.env.NODE_ENV === "development" ? "development" : "production",
         // when making a change in sanity CMS and save, it will automatically be updated inside gatsby, real time editing experience (no need to rebuild)
         watchMode: process.env.NODE_ENV === "development" ? true : false,
         token: process.env.SANITY_TOKEN,
-        apiVersion: '2021-03-28'
+        apiVersion: "2021-03-28",
       },
     },
     `gatsby-plugin-image`,
@@ -84,8 +84,8 @@ module.exports = {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
           // Google Analytics / GA
-          process.env.NODE_ENV === "production" ? "G-E06DVTWCBR" : "", 
-          ],
+          process.env.NODE_ENV === "production" ? "G-E06DVTWCBR" : "",
+        ],
         // This object is used for configuration specific to this plugin
         pluginConfig: {
           // Puts tracking script in the head instead of the body
@@ -96,6 +96,6 @@ module.exports = {
           exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
-    }
+    },
   ],
 }

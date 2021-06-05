@@ -21,9 +21,7 @@ const HomePracticalInformation = () => {
         horizontal
       >
         <FaClock className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
-        <BaseDescription
-          description={t("pages.home.infos.content.hours")}
-        />
+        <BaseDescription description={t("pages.home.infos.content.hours")} />
       </BaseParchment>
 
       <BaseParchment
@@ -41,9 +39,7 @@ const HomePracticalInformation = () => {
         horizontal
       >
         <FaPaw className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
-        <BaseDescription
-          description={t("pages.home.infos.content.pets")}
-        />
+        <BaseDescription description={t("pages.home.infos.content.pets")} />
       </BaseParchment>
 
       <BaseParchment
@@ -51,9 +47,7 @@ const HomePracticalInformation = () => {
         horizontal
       >
         <TiWiFi className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6" />
-        <BaseDescription
-          description={t("pages.home.infos.content.rooms")}
-        />
+        <BaseDescription description={t("pages.home.infos.content.rooms")} />
       </BaseParchment>
 
       <BaseParchment
@@ -84,9 +78,7 @@ const HomePracticalInformation = () => {
           size={24}
           className="text-action flex-shrink-0 h-6 w-6 mr-6 xs:h-10 xs:w-10 xs:mx-auto xs:mb-6"
         />
-        <BaseDescription
-          description={t("pages.home.infos.content.pool")}
-        />
+        <BaseDescription description={t("pages.home.infos.content.pool")} />
       </BaseParchment>
     </div>
   )
