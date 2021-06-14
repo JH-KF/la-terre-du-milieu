@@ -1091,6 +1091,10 @@
   version "2.1.1"
   resolved "https://registry.npmjs.org/@sanity/color/-/color-2.1.1.tgz#e209e71c4fb3390eca974f5b488172690b67c5d5"
 
+"@sanity/color@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@sanity/color/-/color-2.1.2.tgz#a5fd77d18d02e715809e2e99fd329f70611ee3ca"
+
 "@sanity/components@^2.2.6":
   version "2.2.6"
   resolved "https://registry.npmjs.org/@sanity/components/-/components-2.2.6.tgz#d1d6d1017a53ebb413ef026eabd5dd0b4a1bcdad"
@@ -1338,9 +1342,9 @@
   version "1.0.5"
   resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.0.5.tgz#e00fb474f48e57b90bd169e668c37422d6dae3b0"
 
-"@sanity/icons@^1.0.1", "@sanity/icons@^1.0.5", "@sanity/icons@^1.1.0":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.1.1.tgz#b1090c04ae2866886e00572078c2990e8b602ebf"
+"@sanity/icons@^1.0.1", "@sanity/icons@^1.1.0", "@sanity/icons@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-1.1.2.tgz#9ad5e24c8b0c744879c69463091070eaea56b735"
 
 "@sanity/image-url@^0.140.19":
   version "0.140.22"
@@ -1567,6 +1571,21 @@
     react-popper "^2.2.5"
     react-refractor "^2.1.4"
 
+"@sanity/ui@^0.34.2":
+  version "0.34.2"
+  resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-0.34.2.tgz#2ad594752911505b9084b175bbb05caf0b83e9b4"
+  dependencies:
+    "@juggle/resize-observer" "^3.3.1"
+    "@popperjs/core" "^2.9.2"
+    "@reach/auto-id" "^0.15.0"
+    "@sanity/color" "^2.1.2"
+    "@sanity/icons" "^1.1.2"
+    framer-motion "^4.1.17"
+    popper-max-size-modifier "^0.2.0"
+    react-is "^17.0.2"
+    react-popper "^2.2.5"
+    react-refractor "^2.1.4"
+
 "@sanity/util@2.10.5":
   version "2.10.5"
   resolved "https://registry.npmjs.org/@sanity/util/-/util-2.10.5.tgz#4589e2baf76fcb7d02a79fa95b0c3b5de3840fee"
@@ -1595,12 +1614,12 @@
     es6-error "^4.0.2"
     type-of-is "^3.5.1"
 
-"@sanity/vision@^2.10.5":
-  version "2.10.5"
-  resolved "https://registry.npmjs.org/@sanity/vision/-/vision-2.10.5.tgz#b2b8743d3106907d6973d605a4a7f93d879d4570"
+"@sanity/vision@^2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-2.11.0.tgz#84b540b6fe85ab4e050189853e7229cf1c6d977e"
   dependencies:
-    "@sanity/icons" "^1.0.5"
-    "@sanity/ui" "^0.33.19"
+    "@sanity/icons" "^1.1.2"
+    "@sanity/ui" "^0.34.2"
     classnames "^2.2.5"
     codemirror "^5.47.0"
     moment "^2.19.1"
