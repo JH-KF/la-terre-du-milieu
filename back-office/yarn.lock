@@ -1243,7 +1243,7 @@
 
 "@sanity/cli@^2.11.0":
   version "2.11.0"
-  resolved "https://registry.npmjs.org/@sanity/cli/-/cli-2.11.0.tgz#8ff186933929bd42bb802b1b6478aee67c893c9e"
+  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-2.11.0.tgz#8ff186933929bd42bb802b1b6478aee67c893c9e"
   integrity sha512-Zw5+17GpNTs4cjqKTwahiRVZd5nNjuFKXJpBjS3i4ag2NRQzSgUI3GAFI3GpCRbTAw3gVYgHyMpyWYEWkZ960A==
 
 "@sanity/client@2.11.0":
