@@ -1383,7 +1383,7 @@
 
 "@sanity/default-login@^2.11.1":
   version "2.11.1"
-  resolved "https://registry.npmjs.org/@sanity/default-login/-/default-login-2.11.1.tgz#e3d4db645ad248fa755aede637d432c92a8f52d0"
+  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-2.11.1.tgz#e3d4db645ad248fa755aede637d432c92a8f52d0"
   integrity sha512-EXy3xeg/mqxpGuHKlAZoK98cCNh6HwcnowLqTD4fRvkq36fAEf8cf/STQLmttM60zAXdSg1mz+dDbHzodDaDiw==
   dependencies:
     "@sanity/generate-help-url" "2.2.6"
