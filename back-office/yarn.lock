@@ -1271,7 +1271,7 @@
 
 "@sanity/core@^2.11.0":
   version "2.11.0"
-  resolved "https://registry.npmjs.org/@sanity/core/-/core-2.11.0.tgz#3f3513b6f24a0469168c444b0ca65e029f9baba7"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.11.0.tgz#3f3513b6f24a0469168c444b0ca65e029f9baba7"
   integrity sha512-dyjShna0CSNNWeuFRwoUVUNhyM7p8LuVZGg+AUBwhuwiBKm4osRyfjDX4DuKyRMyYuzxS9hSXHRn2Gk6aQ96IQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.10.4"
